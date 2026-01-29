@@ -22,11 +22,11 @@ npx skills add wondelai/skills/scorecard-marketing
 
 | Skill | Description | Based On |
 |-------|-------------|----------|
-| jobs-to-be-done | JTBD framework for product innovation | [Clayton Christensen](https://x.com/claychristensen)'s [*"Competing Against Luck"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612) |
-| cro-methodology | Conversion rate optimization methodology | [Karl Blanks](https://www.karlblanks.com/) & [Ben Jesson](https://www.ben-jesson.co.uk/)'s [*"Making Websites Win"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513) |
+| jobs-to-be-done | JTBD framework for product innovation | [Clayton Christensen](https://x.com/claychristensen)'s [*"Competing Against Luck"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612?tag=wondelai00-20) |
+| cro-methodology | Conversion rate optimization methodology | [Karl Blanks](https://www.karlblanks.com/) & [Ben Jesson](https://www.ben-jesson.co.uk/)'s [*"Making Websites Win"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513?tag=wondelai00-20) |
 | refactoring-ui | Practical UI design system | [Adam Wathan](https://x.com/adamwathan) & [Steve Schoger](https://x.com/steveschoger)'s [*"Refactoring UI"*](https://www.refactoringui.com/) |
 | ios-hig-design | Native iOS app design guidelines | [Apple](https://x.com/Apple)'s [*Human Interface Guidelines*](https://developer.apple.com/design/human-interface-guidelines/) |
-| scorecard-marketing | Quiz/assessment funnel lead generation | [Daniel Priestley](https://x.com/DanielPriestley)'s [*"Scorecard Marketing"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195) |
+| scorecard-marketing | Quiz/assessment funnel lead generation | [Daniel Priestley](https://x.com/DanielPriestley)'s [*"Scorecard Marketing"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195?tag=wondelai00-20) |
 
 ---
 
@@ -36,7 +36,7 @@ npx skills add wondelai/skills/scorecard-marketing
 
 Strategic framework for discovering and designing product innovations. Customers don't buy products—they "hire" them to make progress in specific circumstances.
 
-**About the author:** [Clayton M. Christensen](https://x.com/claychristensen) (1952–2020) was a Harvard Business School professor widely regarded as one of the most influential business thinkers of our time. Named the world's most influential business thinker by Thinkers50 in 2011 and 2013, he developed the theory of "disruptive innovation" and authored nine books including *The Innovator's Dilemma*. Christensen co-founded Innosight (growth strategy consultancy), Rose Park Advisors (investment firm), and the Christensen Institute (non-profit think tank). His JTBD framework, detailed in [*"Competing Against Luck"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612), has been adopted by companies like Netflix, Intuit, and countless startups worldwide.
+**About the author:** [Clayton M. Christensen](https://x.com/claychristensen) (1952–2020) was a Harvard Business School professor widely regarded as one of the most influential business thinkers of our time. Named the world's most influential business thinker by Thinkers50 in 2011 and 2013, he developed the theory of "disruptive innovation" and authored nine books including *The Innovator's Dilemma*. Christensen co-founded Innosight (growth strategy consultancy), Rose Park Advisors (investment firm), and the Christensen Institute (non-profit think tank). His JTBD framework, detailed in [*"Competing Against Luck"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612?tag=wondelai00-20), has been adopted by companies like Netflix, Intuit, and countless startups worldwide.
 
 **Use when you need to:**
 - Understand why customers really buy (or don't buy) your product
@@ -59,7 +59,7 @@ Strategic framework for discovering and designing product innovations. Customers
 
 Scientific, customer-centric approach to conversion rate optimization. Rejects "best practices" in favor of evidence-based testing—understand WHY visitors don't convert before changing anything.
 
-**About the authors:** [Dr. Karl Blanks](https://www.karlblanks.com/) and [Ben Jesson](https://www.ben-jesson.co.uk/) are co-founders of Conversion Rate Experts (CRE), the world's leading conversion rate optimization agency. They received the Queen's Award for Enterprise twice—first for Innovation (codifying the scientific methodology now used by companies like Amazon and Google), and again for International Trade. Their client list includes Google, Apple, Facebook, Amazon, Dropbox, and many other leading tech companies. Their methodology has generated billions in additional revenue. [*"Making Websites Win"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513) became an Amazon #1 bestseller in 15 categories. All profits from the book are donated to the charity Mary's Meals.
+**About the authors:** [Dr. Karl Blanks](https://www.karlblanks.com/) and [Ben Jesson](https://www.ben-jesson.co.uk/) are co-founders of Conversion Rate Experts (CRE), the world's leading conversion rate optimization agency. They received the Queen's Award for Enterprise twice—first for Innovation (codifying the scientific methodology now used by companies like Amazon and Google), and again for International Trade. Their client list includes Google, Apple, Facebook, Amazon, Dropbox, and many other leading tech companies. Their methodology has generated billions in additional revenue. [*"Making Websites Win"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513?tag=wondelai00-20) became an Amazon #1 bestseller in 15 categories. All profits from the book are donated to the charity Mary's Meals.
 
 **Use when you need to:**
 - Audit a landing page or website for conversion issues
@@ -130,7 +130,7 @@ Design native iOS apps that feel intuitive and aligned with Apple's platform con
 
 Lead generation system using interactive quiz/assessment funnels. Converts 30-50% vs 3-10% for traditional PDF lead magnets by creating psychological tension and self-qualification.
 
-**About the author:** [Daniel Priestley](https://x.com/DanielPriestley) is a serial entrepreneur who has built and sold multiple businesses. He founded Dent Global, one of the world's leading business accelerators for entrepreneurs, and co-founded ScoreApp, a marketing software platform serving over 150,000 businesses globally. Priestley has won major business awards and authored seven books on entrepreneurship, including bestsellers *Key Person of Influence*, *Entrepreneur Revolution*, *Oversubscribed*, and *24 Assets*. [*"Scorecard Marketing"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195), co-authored with Glen Carlson, distills the methodology that powers ScoreApp into a practical playbook for generating qualified leads at scale.
+**About the author:** [Daniel Priestley](https://x.com/DanielPriestley) is a serial entrepreneur who has built and sold multiple businesses. He founded Dent Global, one of the world's leading business accelerators for entrepreneurs, and co-founded ScoreApp, a marketing software platform serving over 150,000 businesses globally. Priestley has won major business awards and authored seven books on entrepreneurship, including bestsellers *Key Person of Influence*, *Entrepreneur Revolution*, *Oversubscribed*, and *24 Assets*. [*"Scorecard Marketing"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195?tag=wondelai00-20), co-authored with Glen Carlson, distills the methodology that powers ScoreApp into a practical playbook for generating qualified leads at scale.
 
 **Use when you need to:**
 - Create a lead magnet that actually converts
