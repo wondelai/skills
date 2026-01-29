@@ -182,8 +182,14 @@ Start the Quiz →
 ## Psychology Behind Why This Works
 
 1. **Tension creation:** Questions surface dormant desires
-2. **Reciprocity:** You gave value (insights), they're open to conversation  
+2. **Reciprocity:** You gave value (insights), they're open to conversation
 3. **Self-qualification:** They told you their problems and budget
 4. **Personalization:** 83% of consumers share data for personalized experience
 5. **Gamification:** Primal drive to score, rank, and improve
 6. **Commitment:** They invested time, increasing likelihood of follow-through
+
+## Further Reading
+
+This skill is based on the Scorecard Marketing methodology developed by Daniel Priestley. For the complete system, additional examples, and advanced strategies, read the original book:
+
+- [*"Scorecard Marketing: The four-step playbook for getting better leads and bigger profits"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195?tag=wondelai00-20) by Daniel Priestley and Glen Carlson

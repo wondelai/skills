@@ -138,3 +138,9 @@ See: [references/diagnostics.md](references/diagnostics.md) for diagnostic check
 ## Examples and Case Studies
 
 See: [references/case-studies.md](references/case-studies.md) for detailed analyses (SNHU, American Girl, Intuit).
+
+## Further Reading
+
+This skill is based on the Jobs to Be Done framework developed by Clayton M. Christensen. For the complete methodology, case studies, and deeper insights, read the original book:
+
+- [*"Competing Against Luck: The Story of Innovation and Customer Choice"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612?tag=wondelai00-20) by Clayton M. Christensen, Taddy Hall, Karen Dillon, and David S. Duncan

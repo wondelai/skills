@@ -123,3 +123,9 @@ When optimizing any page:
 - [COPYWRITING.md](references/COPYWRITING.md): Headlines, proof elements, persuasive writing
 - [PERSUASION.md](references/PERSUASION.md): Persuasion assets checklist, psychological triggers
 - [RESEARCH.md](references/RESEARCH.md): Tools, survey questions, data analysis
+
+## Further Reading
+
+This skill is based on the CRE Methodology™ developed by Conversion Rate Experts. For the complete methodology, detailed case studies, and advanced techniques, read the original book:
+
+- [*"Making Websites Win: Apply the Customer-Centric Methodology That Has Doubled the Sales of Many Leading Websites"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513?tag=wondelai00-20) by Dr. Karl Blanks and Ben Jesson
