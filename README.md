@@ -35,6 +35,7 @@ npx skills add wondelai/skills/hooked-ux
 npx skills add wondelai/skills/ux-heuristics
 npx skills add wondelai/skills/web-typography
 npx skills add wondelai/skills/top-design
+npx skills add wondelai/skills/negotiation
 ```
 
 ## Available Skills
@@ -51,6 +52,7 @@ npx skills add wondelai/skills/top-design
 | ux-heuristics | Usability evaluation and principles | [Steve Krug](https://x.com/skrug)'s [*"Don't Make Me Think"*](https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515?tag=wondelai00-20) & [Jakob Nielsen](https://x.com/nngroup)'s [10 Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) |
 | web-typography | Web typography principles and implementation | [Jason Santa Maria](https://x.com/jasonsantamaria)'s [*"On Web Typography"*](https://www.amazon.com/Web-Typography-Jason-Santa-Maria/dp/1937557065?tag=wondelai00-20) |
 | top-design | Award-winning 10/10 web design matching elite agencies | Techniques from Locomotive, Studio Freight, AREA 17, Awwwards winners |
+| negotiation | Tactical negotiation framework for high-stakes conversations | [Chris Voss](https://x.com/VossNegotiation)'s [*"Never Split the Difference"*](https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805?tag=wondelai00-20) |
 
 ---
 
@@ -293,6 +295,32 @@ Create award-winning websites and applications with design and typography rated 
 
 ---
 
+### negotiation
+
+Tactical empathy-based negotiation framework from FBI hostage negotiator Chris Voss. Master techniques like mirroring, labeling, calibrated questions, and the Ackerman bargaining method to navigate high-stakes conversations.
+
+**About the author:** [Chris Voss](https://x.com/VossNegotiation) is a former FBI hostage negotiator who served as the lead international kidnapping negotiator for the FBI. During his 24-year career, he was trained in the art of negotiation by the FBI, Scotland Yard, and Harvard Law School. Voss has taught negotiation at Harvard, Georgetown, MIT, and USC. He founded The Black Swan Group, a consulting firm that trains Fortune 500 companies, including Microsoft, Google, and Cisco. [*"Never Split the Difference: Negotiating As If Your Life Depended On It"*](https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805?tag=wondelai00-20), co-authored with Tahl Raz, became a Wall Street Journal bestseller and has transformed how people negotiate in business, salary discussions, and everyday life.
+
+**Use when you need to:**
+- Prepare for salary or contract negotiations
+- Handle difficult conversations with stakeholders
+- Craft responses to unreasonable demands
+- Analyze counterpart behavior and motivations
+- Navigate vendor or partnership negotiations
+- De-escalate tense situations
+- Build rapport in adversarial settings
+- Close deals without compromising your position
+
+**Example prompts:**
+- *"I'm negotiating a 20% raise. Help me prepare using the Ackerman method. Use negotiation skill."*
+- *"My client said 'that's not fair.' How do I respond? Use negotiation skill."*
+- *"Write calibrated questions to uncover why the vendor won't budge on price. Use negotiation skill."*
+- *"Draft an accusation audit for a meeting where they think we've been unresponsive. Use negotiation skill."*
+- *"How do I get them to say 'That's right' about our proposal? Use negotiation skill."*
+- *"The other party has gone silent. What's my re-engagement strategy? Use negotiation skill."*
+
+---
+
 ## Copyright & Disclaimer
 
 The methodologies and frameworks referenced in these skills are the intellectual property of their respective authors and publishers. All copyrights belong to:
@@ -308,6 +336,7 @@ The methodologies and frameworks referenced in these skills are the intellectual
 - **10 Usability Heuristics**: Jakob Nielsen (Nielsen Norman Group)
 - **On Web Typography**: Jason Santa Maria
 - **Top Design**: Techniques inspired by Locomotive, Studio Freight, AREA 17, Active Theory, Hello Monday, Dogstudio, Tonik, Instrument, Resn
+- **Never Split the Difference**: Chris Voss, Tahl Raz
 
 These skills were created without directly copying or reproducing content from the original books or materials. They are based on:
 - Publicly available information about the methodologies
