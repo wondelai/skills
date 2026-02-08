@@ -1,0 +1,80 @@
+# Wondel.ai Skills Repository
+
+You are working in a collection of agent skills for Claude Code and agentskills.io-compatible agents.
+
+## Repository Purpose
+
+This repository contains specialized domain knowledge skills for AI agents. Each skill provides frameworks and methodologies for specific use cases (UX design, marketing, product strategy, etc.).
+
+## Strict Requirements
+
+### When Modifying Skills
+
+1. **ALWAYS bump version numbers** in SKILL.md frontmatter when making changes:
+   - MINOR bump (e.g., 1.0.0 → 1.1.0) for new features or significant enhancements
+   - PATCH bump (e.g., 1.0.1 → 1.0.2) for bug fixes, typos, or small clarifications
+
+2. **YAML frontmatter is REQUIRED** - Every SKILL.md must have:
+   ```yaml
+   ---
+   name: skill-name
+   description: What the skill does and when to use it (max 1024 chars, include trigger phrases)
+   license: MIT
+   metadata:
+     author: wondelai
+     version: "x.y.z"
+   ---
+   ```
+
+3. **Name constraints**:
+   - Max 64 characters
+   - Lowercase letters, numbers, hyphens only
+   - No start/end hyphens, no consecutive hyphens
+   - MUST match parent directory name exactly
+
+4. **Description requirements**:
+   - Max 1024 characters
+   - Include specific trigger phrases and keywords
+   - Describe BOTH what it does AND when to use it
+
+### Directory Structure
+
+```
+skills/
+├── .claude-plugin/
+│   └── marketplace.json   # Plugin marketplace configuration
+├── {skill-name}/
+│   ├── SKILL.md           # Main skill file (YAML frontmatter + markdown)
+│   └── references/        # Optional: supporting reference files
+│       └── *.md
+└── README.md              # Skill catalog
+```
+
+### Adding New Skills
+
+1. Create folder: `{skill-name}/`
+2. Create `SKILL.md` with valid YAML frontmatter
+3. Add to `README.md` with description and examples
+4. Add to `.claude-plugin/marketplace.json` in appropriate collection
+
+### Code Style
+
+- Use clear, semantic markdown
+- Keep main SKILL.md concise (< 500 lines recommended)
+- Move detailed content to `references/*.md` files
+- Use progressive disclosure: metadata → instructions → resources
+
+### Quality Standards
+
+- Instructions should be actionable and specific
+- Include examples where helpful
+- Focus on practical application, not theory
+- Write for AI agents as the primary audience
+
+## Commit Policy
+
+Commit directly to main branch - no PRs required.
+
+## OpenAgentSkills Compliance
+
+All skills MUST comply with the OpenAgentSkills specification (https://agentskills.io/specification). This ensures cross-platform compatibility with Claude Code, skills.sh, and other agentskills.io-compatible agents.

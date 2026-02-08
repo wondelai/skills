@@ -11,11 +11,12 @@
   "plugins": [
     {
       "name": "product-strategy",
-      "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design",
+      "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design, plus tactical negotiation skills (Chris Voss)",
       "source": "./",
       "strict": false,
       "skills": [
-        "./jobs-to-be-done"
+        "./jobs-to-be-done",
+        "./negotiation"
       ]
     },
     {
