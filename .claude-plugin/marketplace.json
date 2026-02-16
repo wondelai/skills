@@ -1,17 +1,29 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "wondelai-skills",
+  "description": "25 agent skills for product strategy, UX design, marketing, sales, motivation, and conversion optimization — based on bestselling business books",
   "owner": {
     "name": "Wondel.ai",
     "email": "hello@wondel.ai"
   },
   "metadata": {
-    "description": "Agent skills for product strategy, UX design, marketing, sales, motivation, and conversion optimization",
-    "version": "1.1.0"
+    "description": "25 agent skills for product strategy, UX design, marketing, sales, motivation, and conversion optimization — based on bestselling business books",
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "product-strategy",
       "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design, plus tactical negotiation skills (Chris Voss)",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["product-strategy", "jobs-to-be-done", "negotiation", "customer-discovery", "innovation"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -22,6 +34,16 @@
     {
       "name": "ux-design",
       "description": "UX and UI design skills including Refactoring UI, iOS HIG design, usability heuristics, habit-forming product design, web typography, award-winning top-design, and Don Norman's foundational design principles",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "design",
+      "keywords": ["ux", "ui", "design", "ios", "hig", "typography", "usability", "refactoring-ui", "hooked"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -36,7 +58,17 @@
     },
     {
       "name": "marketing-cro",
-      "description": "Marketing and conversion optimization skills including CRO methodology, StoryBrand messaging, and Scorecard Marketing lead generation",
+      "description": "Marketing and conversion optimization skills including CRO methodology, StoryBrand messaging, Scorecard Marketing lead generation, viral marketing (Contagious), and 1-Page Marketing Plan",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["marketing", "cro", "conversion", "storybrand", "copywriting", "lead-generation", "virality"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -49,7 +81,17 @@
     },
     {
       "name": "sales-influence",
-      "description": "Sales, persuasion, and messaging skills including Cialdini's influence psychology, Aaron Ross's outbound sales methodology, and Heath Brothers' sticky messaging framework",
+      "description": "Sales, persuasion, and messaging skills including Cialdini's influence psychology, Aaron Ross's outbound sales methodology, Heath Brothers' sticky messaging, and Alex Hormozi's offer creation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["sales", "influence", "persuasion", "outbound", "messaging", "offers", "copywriting"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -62,6 +104,16 @@
     {
       "name": "product-innovation",
       "description": "Product innovation and validation frameworks including Lean Startup methodology, Google Ventures Design Sprint, and Don Norman's design principles",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["lean-startup", "mvp", "design-sprint", "validation", "innovation", "prototyping"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -72,7 +124,17 @@
     },
     {
       "name": "strategy-growth",
-      "description": "Business strategy and growth frameworks including Crossing the Chasm tech adoption, Blue Ocean Strategy value innovation, and EOS business operating system",
+      "description": "Business strategy and growth frameworks including Crossing the Chasm tech adoption, Blue Ocean Strategy value innovation, EOS business operating system, and Obviously Awesome positioning",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["strategy", "growth", "positioning", "blue-ocean", "eos", "go-to-market", "traction"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -84,7 +146,17 @@
     },
     {
       "name": "team-motivation",
-      "description": "Team motivation and intrinsic drive framework based on Daniel Pink's Autonomy, Mastery, Purpose (AMP) principles",
+      "description": "Team motivation and intrinsic drive framework based on Daniel Pink's Autonomy, Mastery, Purpose (AMP) principles for designing engaging products and teams",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["motivation", "autonomy", "mastery", "purpose", "engagement", "team-management"],
       "source": "./",
       "strict": false,
       "skills": [
