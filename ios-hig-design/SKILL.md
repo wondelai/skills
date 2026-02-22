@@ -1,10 +1,10 @@
 ---
 name: ios-hig-design
-description: 'Native iOS app design framework based on Apple''s Human Interface Guidelines. Use when you need to: (1) design iPhone/iPad interfaces following Apple conventions, (2) build SwiftUI/UIKit components that feel native, (3) implement navigation patterns, (4) ensure accessibility compliance, (5) handle safe areas and Dynamic Island, (6) validate designs against HIG standards.'
+description: 'Design native iOS interfaces following Apple Human Interface Guidelines. Use when the user mentions "iPhone app", "iPad layout", "SwiftUI", "UIKit", "Dynamic Island", "safe areas", or "HIG compliance". Covers navigation patterns, accessibility, SF Symbols, and platform conventions. For general UI polish, see refactoring-ui. For affordance design, see design-everyday-things.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # iOS Human Interface Guidelines Design Skill

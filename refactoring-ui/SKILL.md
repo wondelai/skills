@@ -1,10 +1,10 @@
 ---
 name: refactoring-ui
-description: 'Practical UI design system based on Adam Wathan & Steve Schoger''s "Refactoring UI". Use when you need to: (1) fix visual hierarchy problems, (2) choose consistent spacing and typography scales, (3) build color palettes with proper contrast, (4) add depth with shadows and layering, (5) design in grayscale first and add color last, (6) style components in Tailwind CSS, (7) make UI look professional without a designer.'
+description: 'Audit and fix visual hierarchy, spacing, color, and depth in web UIs. Use when the user mentions "my UI looks off", "fix the design", "Tailwind styling", "color palette", or "visual hierarchy". Covers grayscale-first workflow, constrained design scales, shadows, and component styling. For typeface selection, see web-typography. For usability audits, see ux-heuristics.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Refactoring UI Design System

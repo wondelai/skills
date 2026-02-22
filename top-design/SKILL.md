@@ -1,10 +1,10 @@
 ---
 name: top-design
-description: 'Award-winning web design framework inspired by elite agencies (Locomotive, Studio Freight, AREA 17). Use when you need to: (1) build premium portfolio sites and brand websites, (2) create immersive web experiences with custom animations, (3) implement exceptional typography with dramatic scale contrast, (4) design scroll-based compositions with purposeful motion, (5) match the quality of Awwwards-winning sites, (6) implement performance-optimized animations.'
+description: 'Create award-winning, immersive web experiences at the level of Awwwards-featured agencies. Use when the user mentions "premium website", "portfolio site", "scroll animations", "Awwwards quality", or "brand experience". Covers dramatic typography, purposeful motion, scroll-based composition, and performance-optimized animation. For foundational UI, see refactoring-ui. For type selection, see web-typography.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Top-Design: Award-Winning Digital Experiences

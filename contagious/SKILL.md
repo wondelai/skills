@@ -1,10 +1,10 @@
 ---
 name: contagious
-description: 'Word-of-mouth and virality framework based on Jonah Berger''s "Contagious: Why Things Catch On". Use when you need to: (1) engineer word-of-mouth using the STEPPS framework, (2) design products and features that people naturally share, (3) create content that goes viral, (4) build social currency into your product, (5) design environmental triggers that keep your brand top-of-mind, (6) craft high-arousal emotional content, (7) make your product publicly visible and imitable.'
+description: 'Engineer word-of-mouth and virality using the STEPPS framework (Social Currency, Triggers, Emotion, Public, Practical Value, Stories). Use when the user mentions "go viral", "word of mouth", "shareable content", "social currency", or "why people share". Covers environmental triggers and high-arousal emotional content. For sticky messaging, see made-to-stick. For persuasion tactics, see influence-psychology.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Word-of-Mouth & Virality Framework

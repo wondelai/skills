@@ -1,10 +1,10 @@
 ---
 name: cro-methodology
-description: 'Customer-centric conversion rate optimization methodology based on Karl Blanks & Ben Jesson''s "Making Websites Win". Use when you need to: (1) audit landing pages and websites for conversion issues, (2) identify why visitors aren''t converting, (3) write persuasive copy that addresses objections, (4) design bold A/B tests, (5) find hidden persuasion assets, (6) map and optimize conversion funnels, (7) create objection/counter-objection frameworks.'
+description: 'Audit websites and landing pages for conversion issues and design evidence-based A/B tests. Use when the user mentions "landing page isn''t converting", "conversion rate", "A/B test", "why visitors leave", or "objection handling". Covers funnel mapping, persuasion assets, and objection/counter-objection frameworks. For overall marketing strategy, see one-page-marketing. For usability issues, see ux-heuristics.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # CRO Methodology

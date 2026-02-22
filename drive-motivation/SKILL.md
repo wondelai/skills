@@ -1,10 +1,10 @@
 ---
 name: drive-motivation
-description: 'Motivation science framework based on Daniel Pink''s "Drive". Use when you need to: (1) design features that leverage intrinsic motivation, (2) create progress systems that support mastery, (3) craft purpose-driven messaging and missions, (4) audit if product mechanics undermine autonomy, (5) design team structures and incentives with AMP principles (Autonomy, Mastery, Purpose), (6) understand why gamification fails, (7) replace carrot-and-stick approaches with intrinsic motivation.'
+description: 'Design motivation systems using Autonomy, Mastery, and Purpose (AMP) for products and teams. Use when the user mentions "intrinsic motivation", "gamification isn''t working", "team incentives", "autonomy", "mastery", or "purpose-driven". Covers why carrot-and-stick fails and how to build progress systems. For habit-forming product loops, see hooked-ux. For retention behavior design, see improve-retention.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Drive Motivation Framework

@@ -1,10 +1,10 @@
 ---
 name: jobs-to-be-done
-description: 'Strategic framework for discovering and designing product innovations based on Clayton Christensen''s Jobs to Be Done (JTBD) theory from "Competing Against Luck". Use when you need to: (1) understand customers'' true motivations, (2) design a new product or feature, (3) conduct customer discovery interviews, (4) analyze competition through the "jobs" lens, (5) diagnose why a product isn''t selling or customers are churning, (6) create positioning strategy, (7) build a jobs-oriented organization.'
+description: 'Discover what customers truly need by analyzing the "job" they hire your product to do. Use when the user mentions "customer discovery", "why customers churn", "what job does this solve", "competing against luck", or "product-market fit". Covers JTBD interviews, competition analysis, and jobs-oriented roadmaps. For product positioning, see obviously-awesome. For rapid validation, see design-sprint.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Jobs to Be Done Framework

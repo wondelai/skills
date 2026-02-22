@@ -1,10 +1,10 @@
 ---
 name: predictable-revenue
-description: 'Outbound sales methodology based on Aaron Ross'' "Predictable Revenue". Use when you need to: (1) build a scalable outbound sales process, (2) implement Cold Calling 2.0, (3) structure sales team roles (SDR/AE/CSM), (4) design lead generation and qualification frameworks, (5) scale B2B SaaS sales predictably, (6) create prospecting email sequences, (7) build sales development pipeline, (8) separate prospecting from closing.'
+description: 'Build a scalable outbound B2B sales process with specialized roles (SDR, AE, CSM). Use when the user mentions "outbound sales", "Cold Calling 2.0", "prospecting emails", "sales pipeline", "SDR process", or "B2B SaaS sales". Covers lead generation, qualification frameworks, and separating prospecting from closing. For offer design, see hundred-million-offers. For persuasion science, see influence-psychology.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Predictable Revenue Framework

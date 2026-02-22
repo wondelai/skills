@@ -1,10 +1,10 @@
 ---
 name: negotiation
-description: 'Tactical negotiation framework based on Chris Voss''s "Never Split the Difference". Use when you need to: (1) prepare for salary, contract, or business negotiations, (2) handle objections and difficult conversations, (3) analyze counterpart behavior and negotiation styles, (4) craft empathetic responses using mirroring and labeling, (5) apply calibrated questions and accusation audits, (6) use the Ackerman bargaining method for monetary negotiations, (7) discover Black Swans and hidden leverage, (8) close deals with the "That''s Right" technique.'
+description: 'Prepare and execute negotiations using tactical empathy, calibrated questions, and the Ackerman method. Use when the user mentions "salary negotiation", "contract terms", "handling objections", "mirroring and labeling", or "difficult conversation". Covers accusation audits, Black Swan discovery, and the "That''s Right" technique. For persuasion in product/marketing, see influence-psychology.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Negotiation

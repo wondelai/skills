@@ -1,10 +1,10 @@
 ---
 name: influence-psychology
-description: 'Persuasion science framework based on Robert Cialdini''s "Influence: The Psychology of Persuasion". Use when you need to: (1) design features that leverage social proof, (2) write persuasive copy and messaging, (3) analyze why users take (or don''t take) actions, (4) create onboarding flows using commitment/consistency, (5) design referral programs using reciprocity, (6) audit for ethical persuasion, (7) apply influence psychology to product design, marketing, sales, or negotiation.'
+description: 'Apply the six principles of ethical persuasion (reciprocity, commitment, social proof, authority, liking, scarcity) to product design, copy, and sales. Use when the user mentions "social proof", "persuasive copy", "why users don''t convert", or "ethical persuasion". For deal negotiation tactics, see negotiation. For viral word-of-mouth, see contagious.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Influence Psychology Framework

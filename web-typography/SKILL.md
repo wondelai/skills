@@ -1,10 +1,10 @@
 ---
 name: web-typography
-description: 'Web typography framework based on Jason Santa Maria''s "On Web Typography". Use when you need to: (1) select typefaces for body text, headlines, and UI, (2) evaluate typeface quality for screen readability, (3) pair fonts that work together, (4) set optimal line length, line height, and font size, (5) implement responsive typography with CSS, (6) build type hierarchies that guide readers, (7) optimize web font loading for performance.'
+description: 'Select, pair, and implement typefaces for web projects. Use when the user mentions "font pairing", "which typeface", "line height", "responsive typography", "web font loading", or "type hierarchy". Covers readability evaluation, CSS implementation, and performance optimization. For overall UI design systems, see refactoring-ui. For dramatic typographic experiences, see top-design.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Web Typography

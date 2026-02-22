@@ -1,10 +1,10 @@
 ---
 name: one-page-marketing
-description: 'End-to-end marketing plan framework based on Allan Dib''s "The 1-Page Marketing Plan". Use when you need to: (1) define your target market using the PVP Index, (2) craft a compelling message and USP, (3) choose advertising media and channels, (4) design lead capture systems and magnets, (5) build lead nurture sequences, (6) optimize sales conversion, (7) create world-class customer experiences, (8) increase customer lifetime value, (9) build referral and advocacy systems.'
+description: 'Build a complete marketing plan covering the full customer journey from stranger to raving fan. Use when the user mentions "marketing plan", "target market", "USP", "lead nurture", "customer lifetime value", or "referral program". Covers the PVP Index, channel selection, and advocacy systems. For brand messaging, see storybrand-messaging. For conversion optimization, see cro-methodology.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # The 1-Page Marketing Plan Framework

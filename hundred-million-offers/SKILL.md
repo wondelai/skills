@@ -1,10 +1,10 @@
 ---
 name: hundred-million-offers
-description: 'Grand Slam Offer creation framework based on Alex Hormozi''s "$100M Offers". Use when you need to: (1) create irresistible offers using the Value Equation, (2) design Grand Slam Offers with bonuses, guarantees, and scarcity, (3) find your starving crowd and ideal market, (4) implement value-based pricing with 10:1 value-to-price ratio, (5) stack bonuses that increase perceived value, (6) design risk-reversing guarantees, (7) apply ethical scarcity and urgency, (8) name offers using the MAGIC formula.'
+description: 'Create irresistible offers using the Value Equation, bonus stacking, risk-reversing guarantees, and ethical scarcity. Use when the user mentions "pricing strategy", "irresistible offer", "bonuses and guarantees", "value-to-price ratio", or "offer naming". Covers the MAGIC naming formula and starving-crowd targeting. For product positioning, see obviously-awesome. For outbound sales, see predictable-revenue.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Grand Slam Offer Creation Framework

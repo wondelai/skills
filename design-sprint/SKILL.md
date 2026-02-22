@@ -1,10 +1,10 @@
 ---
 name: design-sprint
-description: 'Design Sprint methodology based on Jake Knapp''s "Sprint" (Google Ventures). Use when you need to: (1) validate product ideas in 5 days instead of months, (2) rapidly prototype and test solutions, (3) answer critical business questions quickly, (4) align teams on product direction, (5) de-risk product development before building, (6) test multiple concepts with real users, (7) make fast strategic decisions through structured process.'
+description: 'Run a structured 5-day process to prototype, test, and validate product ideas with real users. Use when the user mentions "design sprint", "validate in a week", "rapid prototype", "test with users", or "de-risk before building". Covers mapping, sketching, deciding, prototyping, and testing. For ongoing experimentation, see lean-startup. For customer job analysis, see jobs-to-be-done.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Design Sprint Framework

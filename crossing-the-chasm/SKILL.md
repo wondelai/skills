@@ -1,10 +1,10 @@
 ---
 name: crossing-the-chasm
-description: 'Technology adoption and go-to-market strategy based on Geoffrey Moore''s "Crossing the Chasm". Use when you need to: (1) identify where your product is in the adoption lifecycle, (2) choose a beachhead market segment, (3) build a "whole product" solution for mainstream buyers, (4) position against incumbent competition, (5) transition from early adopters to mainstream market, (6) develop B2B tech marketing strategy, (7) understand why tech products fail to gain mainstream traction.'
+description: 'Navigate the technology adoption lifecycle from early adopters to mainstream market. Use when the user mentions "crossing the chasm", "beachhead segment", "whole product", "early adopters vs. mainstream", or "tech go-to-market". Covers D-Day analogy, bowling-pin strategy, and positioning against incumbents. For product positioning, see obviously-awesome. For new market creation, see blue-ocean-strategy.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Crossing the Chasm Framework

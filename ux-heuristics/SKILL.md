@@ -1,10 +1,10 @@
 ---
 name: ux-heuristics
-description: 'Usability heuristics and principles based on Steve Krug''s "Don''t Make Me Think" and Jakob Nielsen''s 10 heuristics. Use when you need to: (1) audit a UI for usability problems, (2) identify why users are confused or frustrated, (3) simplify navigation and information architecture, (4) conduct heuristic evaluations, (5) prioritize UX fixes by severity, (6) review designs before development, (7) improve form usability, (8) validate that interfaces follow established UX principles.'
+description: 'Evaluate and improve interface usability using heuristic analysis. Use when the user mentions "usability audit", "UX review", "users are confused", "heuristic evaluation", "form usability", or "navigation problems". Covers Nielsen''s 10 heuristics, severity ratings, and information architecture. For visual design fixes, see refactoring-ui. For conversion-focused audits, see cro-methodology.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.2.0"
+  version: "1.2.1"
 ---
 
 # UX Heuristics Framework

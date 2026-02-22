@@ -1,10 +1,10 @@
 ---
 name: scorecard-marketing
-description: 'Lead generation framework using quiz/assessment funnels based on Daniel Priestley''s "Scorecard Marketing". Use when you need to: (1) create lead magnets that convert 30-50% vs traditional 3-10%, (2) build quiz funnel landing pages, (3) design assessment questions that qualify leads, (4) write dynamic results content based on score tiers, (5) set up automated follow-up sequences by segment, (6) generate scorecard concepts for any industry.'
+description: 'Build quiz and assessment funnels that generate qualified leads at 30-50% conversion. Use when the user mentions "lead magnet", "quiz funnel", "assessment tool", "lead generation", or "score-based segmentation". Covers question design, dynamic results by tier, and automated follow-up sequences. For landing page conversion, see cro-methodology. For full marketing plans, see one-page-marketing.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Scorecard Marketing Skill

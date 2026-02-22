@@ -1,10 +1,10 @@
 ---
 name: improve-retention
-description: 'Behavior design framework based on BJ Fogg''s "Tiny Habits". Use when you need to: (1) diagnose why users aren''t completing key actions, (2) reduce friction using the Ability Chain, (3) design effective prompts, (4) create tiny behaviors that compound into retention, (5) audit motivation-ability mismatches, (6) design onboarding that builds lasting habits, (7) apply B=MAP to improve activation and retention metrics.'
+description: 'Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions "users drop off", "activation rate", "onboarding friction", "retention metrics", or "why users don''t complete". Covers the Ability Chain, prompt design, and tiny behaviors that compound. For habit loops and variable rewards, see hooked-ux. For intrinsic motivation, see drive-motivation.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Behavior Design Framework

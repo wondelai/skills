@@ -1,10 +1,10 @@
 ---
 name: design-everyday-things
-description: 'Fundamental design principles based on Don Norman''s "The Design of Everyday Things". Use when you need to: (1) design affordances and signifiers into interfaces, (2) analyze why products are confusing, (3) apply constraints to prevent errors, (4) design clear feedback mechanisms, (5) bridge gulfs of execution and evaluation, (6) create intuitive conceptual models, (7) apply human-centered design, (8) understand why users make errors and design fault-tolerant systems.'
+description: 'Apply foundational design principles: affordances, signifiers, constraints, feedback, and conceptual models. Use when the user mentions "why is this confusing", "affordance", "error prevention", "discoverability", "human-centered design", or "fault tolerance". Covers the gulfs of execution and evaluation. For usability scoring, see ux-heuristics. For iOS-specific patterns, see ios-hig-design.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Design of Everyday Things Framework

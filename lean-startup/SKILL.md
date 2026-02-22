@@ -1,10 +1,10 @@
 ---
 name: lean-startup
-description: 'Lean Startup methodology based on Eric Ries'' "The Lean Startup". Use when you need to: (1) design MVP scope for new product ideas, (2) define validated learning experiments, (3) create innovation accounting frameworks, (4) decide when to pivot vs. persevere, (5) set up metrics that matter vs. vanity metrics, (6) reduce product development waste, (7) apply scientific method to entrepreneurship, (8) test business model assumptions quickly.'
+description: 'Design MVPs, validated learning experiments, and pivot-or-persevere decisions using Build-Measure-Learn. Use when the user mentions "MVP scope", "validated learning", "pivot or persevere", "vanity metrics", or "test assumptions". Covers innovation accounting and actionable metrics. For 5-day prototype testing, see design-sprint. For customer motivation analysis, see jobs-to-be-done.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Lean Startup Methodology

@@ -1,10 +1,10 @@
 ---
 name: made-to-stick
-description: 'Sticky messaging framework based on Chip & Dan Heath''s "Made to Stick". Use when you need to: (1) make product messaging more memorable, (2) write sticky taglines and value propositions, (3) create compelling product demos and presentations, (4) design memorable onboarding experiences, (5) craft internal communications that stick, (6) apply the SUCCESs framework (Simple, Unexpected, Concrete, Credible, Emotional, Stories), (7) analyze why messaging isn''t resonating.'
+description: 'Craft messages that are understood, remembered, and drive action using the SUCCESs checklist (Simple, Unexpected, Concrete, Credible, Emotional, Stories). Use when the user mentions "make it memorable", "sticky messaging", "tagline", "value proposition", or "why the message isn''t landing". For narrative brand frameworks, see storybrand-messaging. For viral sharing, see contagious.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Made to Stick Framework

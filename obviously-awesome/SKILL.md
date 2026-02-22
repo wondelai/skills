@@ -1,10 +1,10 @@
 ---
 name: obviously-awesome
-description: 'Product positioning framework based on April Dunford''s "Obviously Awesome". Use when you need to: (1) define competitive alternatives your customers actually consider, (2) identify unique attributes that differentiate your product, (3) map attributes to customer value themes, (4) define best-fit target customers, (5) choose the right market category, (6) create a positioning canvas for team alignment, (7) run team positioning exercises and workshops.'
+description: 'Define product positioning by mapping competitive alternatives, unique attributes, and best-fit customers to the right market category. Use when the user mentions "positioning", "competitive alternatives", "how to position", "market category", or "why customers don''t get it". Covers positioning canvas and team workshops. For customer jobs analysis, see jobs-to-be-done. For go-to-market, see crossing-the-chasm.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Product Positioning Framework

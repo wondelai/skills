@@ -1,10 +1,10 @@
 ---
 name: traction-eos
-description: 'Entrepreneurial Operating System (EOS) based on Gino Wickman''s "Traction". Use when you need to: (1) implement a complete business operating system, (2) create Vision/Traction Organizer (V/TO), (3) set quarterly rocks (priorities), (4) run Level 10 meetings, (5) build accountability charts, (6) solve issues using IDS (Identify-Discuss-Solve), (7) align leadership team on vision and execution, (8) get a grip on your business.'
+description: 'Implement the Entrepreneurial Operating System (EOS) to align vision and execution across a company. Use when the user mentions "EOS", "V/TO", "quarterly rocks", "Level 10 meetings", "accountability chart", or "IDS process". Covers the six EOS components: Vision, People, Data, Issues, Process, Traction. For team motivation design, see drive-motivation. For lean experimentation, see lean-startup.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Entrepreneurial Operating System (EOS)

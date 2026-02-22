@@ -1,10 +1,10 @@
 ---
 name: blue-ocean-strategy
-description: 'Blue Ocean Strategy framework based on W. Chan Kim & Renée Mauborgne''s book. Use when you need to: (1) create uncontested market space instead of competing head-to-head, (2) analyze competitive landscape (red vs. blue oceans), (3) design value innovation propositions, (4) use Strategy Canvas and Four Actions Framework (ERRC), (5) identify non-customers and convert them, (6) break the value-cost trade-off, (7) shift from competition to value innovation.'
+description: 'Create uncontested market space using value innovation instead of competing head-to-head. Use when the user mentions "blue ocean", "red ocean", "strategy canvas", "ERRC framework", "value innovation", or "non-customers". Covers the Four Actions Framework, buyer utility map, and value-cost trade-offs. For tech adoption strategy, see crossing-the-chasm. For product positioning, see obviously-awesome.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Blue Ocean Strategy Framework
