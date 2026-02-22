@@ -4,7 +4,7 @@ description: 'Usability heuristics and principles based on Steve Krug''s "Don''t
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # UX Heuristics Framework
@@ -159,335 +159,36 @@ See: [references/krug-principles.md](references/krug-principles.md) for the full
 ## Nielsen's 10 Usability Heuristics
 
 ### 1. Visibility of System Status
-
-**Core concept:** The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.
-
-**Why it works:** When users don't know the system's state, they assume it's broken. Anxiety and confusion lead to repeated clicks, abandoned tasks, and lost trust. Visible status creates confidence.
-
-**Key insights:**
-- Every action needs immediate visual acknowledgment
-- Long operations need progress indicators (percentage, spinner, skeleton screen)
-- Successful actions need confirmation ("Saved!", checkmark)
-- Silent failures are worse than visible errors
-- Status should be proportional to importance (subtle for minor, prominent for critical)
-
-**Product applications:**
-
-| Context | Status Feedback | Example |
-|---------|----------------|---------|
-| **File upload** | Progress bar with percentage | "Uploading... 67%" |
-| **Form submit** | Success confirmation | "Your message has been sent" with checkmark |
-| **Background sync** | Non-intrusive notification | "Syncing 3 files..." in status bar |
-| **Payment processing** | Clear progress with reassurance | "Processing your payment... don't close this page" |
-| **Search** | Loading skeleton then results | Skeleton screens that match result layout |
-
-**Copy patterns:**
-- "Saving..." / "Saved" (immediate state transitions)
-- "Processing your request..." (for operations > 1 second)
-- "Upload complete. 3 files added." (specific confirmation)
-- "Something went wrong. Please try again." (failure with action)
-
-**Ethical boundary:** Status indicators should be honest. Don't show fake progress bars or artificial loading delays to create a perception of "work being done."
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for detailed examples and severity ratings.
+Keep users informed about what's happening through timely feedback. Every action needs acknowledgment — progress bars for uploads, confirmations for submissions, skeleton screens for loading. Silent failures destroy trust. Copy pattern: "Saving..." → "Saved" (immediate state transitions).
 
 ### 2. Match Between System and Real World
-
-**Core concept:** The system should speak the users' language, with words, phrases, and concepts familiar to the user, rather than system-oriented terms.
-
-**Why it works:** Users bring mental models from the real world. When digital interfaces match these models -- using familiar language, logical sequences, and recognizable metaphors -- users feel oriented and confident.
-
-**Key insights:**
-- Use "Sign in" not "Authenticate", "Search" not "Query", "Folder" not "Repository"
-- Real-world metaphors reduce learning curve (trash bin, shopping cart, bookmark)
-- Information should appear in a natural, logical order
-- Icons should match real-world objects users already recognize
-- One term per concept -- never use different words for the same thing
-
-**Product applications:**
-
-| Context | Real-World Match | Example |
-|---------|-----------------|---------|
-| **Labels** | User-tested terms over internal names | "Search" not "Query", "Cancel" not "Terminate" |
-| **Metaphors** | Digital elements mirror physical | Trash bin, folder, desktop, shopping cart |
-| **Sequences** | Follow real-world order | Address form: street, city, state, zip (not zip first) |
-| **Icons** | Recognizable real-world objects | Magnifying glass for search, envelope for email |
-| **Categories** | Match user mental models | Grocery app: "Fruits & Vegetables" not "Produce SKU Group" |
-
-**Copy patterns:**
-- "Go to" not "Navigate to"
-- "Start" not "Initiate"
-- "End" not "Terminate session"
-- "Your files" not "User repository contents"
-
-**Ethical boundary:** Don't use real-world metaphors to deceive -- e.g., a "close" button that actually submits a form, or a "free" label that hides costs.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for language mapping examples.
+Speak users' language, not system language. Use "Sign in" not "Authenticate", "Search" not "Query." Follow real-world metaphors (trash bin, shopping cart) and natural ordering (street → city → state → zip). One term per concept, everywhere.
 
 ### 3. User Control and Freedom
-
-**Core concept:** Users often choose system functions by mistake and need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue.
-
-**Why it works:** Users explore by clicking. Without easy escape routes, they become afraid to act. Undo is superior to confirmation dialogs because users click through "Are you sure?" without reading, but undo lets them act confidently knowing they can reverse.
-
-**Key insights:**
-- Undo is always better than "Are you sure?" confirmation dialogs
-- Every flow needs a visible cancel/exit option
-- The back button must never be broken or hijacked
-- Forced wizards without skip or back options trap users
-- Soft delete with undo beats immediate permanent deletion
-
-**Product applications:**
-
-| Context | Control Mechanism | Example |
-|---------|-------------------|---------|
-| **Email** | Undo send | Gmail's "Undo" toast after sending |
-| **Navigation** | Back button always works | Never hijack browser history |
-| **Modals** | Clear close/cancel buttons | "X" button plus "Cancel" text link |
-| **Wizards** | Non-linear navigation | Allow jumping to previous steps |
-| **Destructive actions** | Soft delete + undo | "Message deleted. Undo" (timed) |
-
-**Copy patterns:**
-- "Undo" (single-word, immediate, low-friction)
-- "Cancel" (always present alongside primary action)
-- "Go back" (clear escape from unwanted state)
-- "Exit without saving" (honest about consequences)
-
-**Ethical boundary:** Never make it easy to enter a state (subscription, trial, commitment) but hard to leave. Roach motel patterns -- easy in, hard out -- are a dark pattern.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for control and freedom patterns.
+Provide clear "emergency exits." Undo beats "Are you sure?" dialogs every time — users click through confirmations without reading. Every flow needs cancel/exit, back buttons must never break, and soft delete with undo beats permanent deletion.
 
 ### 4. Consistency and Standards
-
-**Core concept:** Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions.
-
-**Why it works:** Consistency reduces learning. When the same patterns work everywhere, users transfer knowledge between pages and products. Breaking conventions forces re-learning and creates confusion.
-
-**Key insights:**
-- Internal consistency: same button style, terms, and behaviors throughout your app
-- External consistency: follow platform conventions (logo top-left, search top-right, cart icon)
-- Visual consistency: same colors always mean the same things
-- Functional consistency: same action always produces the same result
-- Linguistic consistency: one term per concept, everywhere
-
-**Product applications:**
-
-| Context | Consistency Standard | Example |
-|---------|---------------------|---------|
-| **Buttons** | Same style hierarchy everywhere | Primary (filled), secondary (outlined), text link |
-| **Layout** | Logo top-left, links to home | Industry convention users expect |
-| **Terminology** | One word per concept | Always "Sign in", never mix with "Log in" |
-| **Behavior** | Links open consistently | Don't surprise with new tabs |
-| **Forms** | Primary action right/bottom | "Submit" on the right, "Cancel" on the left |
-
-**Copy patterns:**
-- Pick one term and use it everywhere ("Projects" not sometimes "Projects" and sometimes "Workspaces")
-- Follow platform language ("Share" on mobile, "Send link" in email context)
-- Button labels should predict outcomes ("Save changes" not just "OK")
-- Error formats should be identical throughout the app
-
-**Ethical boundary:** Consistency should not be weaponized. Don't make "Accept" and "Decline" look identical to trick users into accepting terms they didn't read.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for consistency types and platform conventions.
+Same words, styles, and behaviors should mean the same thing throughout. Internal consistency (your app) and external consistency (platform conventions: logo top-left, search top-right). Pick one term per concept — "Projects" everywhere, never mixing with "Workspaces."
 
 ### 5. Error Prevention
-
-**Core concept:** Even better than good error messages is a careful design which prevents a problem from occurring in the first place.
-
-**Why it works:** The cheapest error to fix is one that never happens. Constraints, suggestions, defaults, and warnings eliminate entire categories of user mistakes before they occur.
-
-**Key insights:**
-- Constrained inputs (date pickers, dropdowns) prevent invalid entries
-- Autocomplete and suggestions reduce typos and wrong choices
-- Sensible defaults pre-fill common values so users don't have to guess
-- "Unsaved changes" warnings prevent lost work
-- There are two error types: slips (accidental wrong action) and mistakes (wrong intention) -- each needs different prevention
-
-**Product applications:**
-
-| Context | Prevention Strategy | Example |
-|---------|-------------------|---------|
-| **Date input** | Constrained picker | Calendar widget instead of free text field |
-| **Search** | Autocomplete suggestions | Dropdown with matching results as user types |
-| **Forms** | Inline validation on blur | "Email must include @" shown before submit |
-| **Destructive actions** | Confirmation for irreversible | "Delete permanently? This cannot be undone." |
-| **Data entry** | Smart defaults | Pre-fill country based on IP, pre-select common options |
-
-**Copy patterns:**
-- Inline validation: "Password must be at least 8 characters" (shown while typing)
-- Save warnings: "You have unsaved changes. Leave anyway?"
-- Format hints: "MM/DD/YYYY" as placeholder text
-- Destructive confirmations: "Delete 3 items permanently? This cannot be undone."
-
-**Ethical boundary:** Error prevention should protect users, not restrict them. Don't use "prevention" as an excuse to block legitimate actions (e.g., preventing unsubscribe by showing warnings).
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for prevention strategies by error type.
+Prevent problems before they occur. Constrained inputs (date pickers over text fields), autocomplete, sensible defaults, and "unsaved changes" warnings. Two error types need different prevention: slips (accidental wrong action) and mistakes (wrong intention).
 
 ### 6. Recognition Rather Than Recall
-
-**Core concept:** Minimize the user's memory load by making objects, actions, and options visible. Don't require users to remember information from one part of the interface to another.
-
-**Why it works:** Human working memory is limited (roughly 7 items). Recognition is dramatically easier than recall. Showing options, recent items, and contextual information eliminates the need for memorization.
-
-**Key insights:**
-- Show menus of options instead of requiring typed commands
-- Provide dropdowns and autocomplete instead of empty fields requiring memorization
-- Display breadcrumbs and recent history so users know where they've been
-- Show decoded values (country names, not codes)
-- Pre-fill information from previous steps so users don't re-enter data
-
-**Product applications:**
-
-| Context | Recognition Technique | Example |
-|---------|----------------------|---------|
-| **Navigation** | Breadcrumbs, recent history | "Home > Products > Shoes" trail |
-| **Search** | Recent searches, suggestions | "Recent: running shoes, Nike Air Max" |
-| **Forms** | Pre-filled fields from prior steps | Email pre-populated from login |
-| **Data entry** | Dropdowns with decoded values | Country dropdown, not "Enter 2-letter code" |
-| **Settings** | Current values shown | "Notifications: On (email, push)" visible |
-
-**Copy patterns:**
-- Placeholder examples: "e.g., john@example.com"
-- Contextual reminders: "You selected the Pro plan ($29/mo)"
-- Recent items: "Recently viewed: Dashboard, Settings, Reports"
-- Inline documentation: tooltips with "?" icons next to non-obvious fields
-
-**Ethical boundary:** Making options visible should not include manipulative defaults. Pre-selected checkboxes for marketing consent or add-ons exploit recognition bias.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for recognition techniques and examples.
+Minimize memory load — show options, don't require memorization. Breadcrumbs, recent searches, pre-filled fields, dropdowns with decoded values (country names, not codes). Human working memory holds ~7 items; recognition is far easier than recall.
 
 ### 7. Flexibility and Efficiency of Use
-
-**Core concept:** Accelerators -- unseen by the novice user -- may often speed up the interaction for the expert user. Allow users to tailor frequent actions.
-
-**Why it works:** Novices and experts have different needs. Progressive disclosure keeps things simple for beginners while accelerators let power users move fast. The best interfaces serve both without compromise.
-
-**Key insights:**
-- Keyboard shortcuts (Ctrl+S) speed up expert workflows
-- Touch gestures (swipe to archive) reduce tap count
-- Recent/favorites provide quick access to common items
-- Bulk actions eliminate tedious repetition
-- Customization lets users tailor the interface to their workflow
-- Progressive disclosure: novices see essentials, experts access full power
-
-**Product applications:**
-
-| Context | Accelerator | Example |
-|---------|-------------|---------|
-| **Email** | Keyboard shortcuts | "E" to archive, "R" to reply in Gmail |
-| **Lists** | Bulk actions | Select all > Move to folder |
-| **Dashboards** | Customization | Drag-and-drop widget arrangement |
-| **Search** | Saved searches/filters | "My filter: Open bugs assigned to me" |
-| **Navigation** | Command palette | Cmd+K to jump anywhere (Slack, VS Code) |
-
-**Copy patterns:**
-- Shortcut hints: "Ctrl+S to save" shown in tooltip
-- "Customize this view" (for dashboard personalization)
-- "Advanced options" (expandable for power users)
-- Tutorial skip: "Already know the basics? Skip setup"
-
-**Ethical boundary:** Efficiency features should never be paywalled if they address basic usability. Don't make essential shortcuts "premium" while leaving free users with a deliberately slow experience.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for accelerator patterns and progressive disclosure.
+Serve both novices and experts. Keyboard shortcuts, touch gestures, bulk actions, saved searches, and command palettes (Cmd+K) speed up power users. Progressive disclosure keeps it simple for beginners while experts access full power.
 
 ### 8. Aesthetic and Minimalist Design
-
-**Core concept:** Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information competes with the relevant units and diminishes their relative visibility.
-
-**Why it works:** Signal-to-noise ratio determines usability. When everything screams for attention, nothing stands out. Whitespace, hierarchy, and ruthless prioritization make interfaces scannable and fast.
-
-**Key insights:**
-- Increase signal, reduce noise -- every element must earn its place
-- Visual hierarchy makes important things stand out (size, color, position)
-- Whitespace gives elements room to breathe and aids scanning
-- Show what matters now, hide what doesn't (progressive disclosure)
-- If everything is "important," nothing is important
-
-**Product applications:**
-
-| Context | Minimalist Approach | Example |
-|---------|-------------------|---------|
-| **Dashboards** | Show key metrics, hide details | 3-5 KPIs visible, "See details" for the rest |
-| **Forms** | Remove optional fields | Only ask what's truly required |
-| **Landing pages** | One primary CTA | Single "Start free trial" button, not five competing CTAs |
-| **Settings** | Group and hide rarely-used options | "Advanced settings" collapsed by default |
-| **Content** | Break up walls of text | Short paragraphs, headings, bullet lists |
-
-**Copy patterns:**
-- Headlines over paragraphs: lead with the key message
-- "Show more" / "See details" for secondary information
-- Remove "Welcome to..." happy-talk
-- One instruction per screen in onboarding
-
-**Ethical boundary:** Minimalism must not hide critical information. Terms, pricing, data usage, and cancellation options must remain discoverable. Hiding unfavorable content under "Show more" is deceptive.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for minimalist design principles.
+Every element must earn its place. Signal-to-noise ratio determines usability — when everything screams for attention, nothing stands out. Show what matters now, hide what doesn't. One primary CTA per page, not five competing ones.
 
 ### 9. Help Users Recognize, Diagnose, and Recover from Errors
-
-**Core concept:** Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.
-
-**Why it works:** Errors are inevitable. What matters is whether users can understand what happened and get back on track. Technical jargon, generic messages, and blame create frustration; plain language, specificity, and next steps create recovery.
-
-**Key insights:**
-- Every error message needs three parts: what happened, why, and how to fix it
-- Plain language always: "Connection failed" not "ECONNREFUSED"
-- Be specific: "Password must be at least 8 characters" not "Invalid password"
-- Never blame the user: "Card declined" not "You entered wrong information"
-- Preserve user input on error -- never clear the form as punishment
-
-**Product applications:**
-
-| Context | Error Recovery | Example |
-|---------|---------------|---------|
-| **Form validation** | Inline, specific, preserves input | Red outline on field + "Email must include @" |
-| **Payment errors** | Clear reason + alternative | "Card declined. Try a different card or contact your bank." |
-| **Server errors** | Friendly fallback + retry | "Something went wrong. Try again or contact support." |
-| **404 pages** | Helpful direction | "Page not found. Try searching or go to the homepage." |
-| **Auth errors** | Specific without security risk | "Incorrect password" (not "Account not found" which leaks info) |
-
-**Copy patterns:**
-- "Couldn't save. Check your connection and try again." (what + fix)
-- "Email already in use. Sign in instead?" (problem + next step)
-- "Password must include a number and be 8+ characters." (specific requirement)
-- "We hit a snag. Your work is saved -- try refreshing." (reassurance + action)
-
-**Ethical boundary:** Error states should help users recover, not be used to funnel them into unwanted paths (e.g., "Error: upgrade to Premium to continue").
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for error message guidelines and examples.
+Error messages need three parts: what happened, why, and how to fix it. Plain language always ("Connection failed" not "ECONNREFUSED"), specific ("Password must be 8+ characters" not "Invalid"), never blame the user, and preserve their input.
 
 ### 10. Help and Documentation
+Help should be searchable, task-focused ("How to..." not technical reference), and contextual (tooltips, inline hints). Types: inline help, contextual "?" icons, searchable knowledge base, guided tours, live support.
 
-**Core concept:** Even though it's better if the system can be used without documentation, it may be necessary to provide help. Such information should be easy to search, focused on the user's task, and concise.
-
-**Why it works:** Users resort to help when they're stuck. If help is hard to find, unsearchable, or written in developer-speak, it fails at the moment it's needed most. Good help is contextual, task-focused, and brief.
-
-**Key insights:**
-- Help should be searchable with full-text search
-- Task-focused format: "How to..." rather than technical reference
-- Contextual help (tooltips, inline hints) keeps users in flow
-- Documentation should be scannable: short paragraphs, lists, steps
-- Types: inline help (tooltips), contextual ("?" icons), docs (knowledge base), guided tours, live support
-
-**Product applications:**
-
-| Context | Help Type | Example |
-|---------|-----------|---------|
-| **Complex fields** | Inline tooltips | "?" icon next to "APR" with plain-language definition |
-| **New features** | Guided tour | Step-by-step overlay highlighting new UI elements |
-| **Settings** | Contextual descriptions | Short explanation under each toggle |
-| **Knowledge base** | Searchable docs | Full-text search with task-focused "How to..." articles |
-| **Edge cases** | Live support | Chat widget that appears after user shows frustration signals |
-
-**Copy patterns:**
-- Tooltip: "Your API key. Find it in Settings > Developer." (concise, actionable)
-- Guide step: "Click 'Create project' to get started." (one action per step)
-- FAQ: "How do I cancel my subscription?" (user's question, not yours)
-- Search placeholder: "Search help articles..." (clear purpose)
-
-**Ethical boundary:** Help should be genuinely helpful. Don't bury cancellation or deletion instructions behind layers of documentation while making upgrade paths prominently documented.
-
-See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for help documentation patterns.
+See: [references/nielsen-heuristics.md](references/nielsen-heuristics.md) for detailed examples, product applications, copy patterns, and ethical boundaries for all 10 heuristics.
 
 ## Severity Rating Scale
 
