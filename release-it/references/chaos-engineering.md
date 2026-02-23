@@ -2,6 +2,8 @@
 
 Chaos engineering is the discipline of experimenting on a system in order to build confidence in its ability to withstand turbulent conditions in production. It is not about breaking things for fun -- it is a rigorous, scientific approach to discovering weaknesses before they cause outages.
 
+> **Safety note:** This reference describes chaos engineering *concepts and planning patterns*. All failure injection experiments must be performed by authorized engineers using dedicated chaos tooling (e.g., Gremlin, Litmus, AWS Fault Injection Simulator) with proper approvals, blast radius controls, monitoring, and rollback plans. Commands shown are for reference only -- never run them without authorization and safeguards.
+
 The fundamental insight is simple: you cannot know how your system handles failure until it actually fails. Waiting for production incidents to discover weaknesses is reactive and expensive. Chaos engineering is proactive and controlled.
 
 ## Principles of Chaos Engineering
@@ -39,24 +41,24 @@ as measured by [steady state metric] remaining within [acceptable bounds]."
 
 | Failure | Hypothesis | Metric |
 |---------|-----------|--------|
-| Kill one API instance | System continues serving traffic with no user-visible errors | Error rate stays < 0.1% |
-| Add 500ms latency to database | Response time degrades but stays within SLO; circuit breaker does not trip | p99 < 2s; no circuit breaker events |
-| Payment service returns 503 | Checkout shows graceful error; other features unaffected | Non-checkout error rate unchanged |
-| Fill disk to 95% | Log rotation triggers; alerts fire; no service disruption | Disk drops below 90% within 10 minutes |
+| Terminate one API instance (via chaos tooling) | System continues serving traffic with no user-visible errors | Error rate stays < 0.1% |
+| Add 500ms latency to database (via chaos tooling) | Response time degrades but stays within SLO; circuit breaker does not trip | p99 < 2s; no circuit breaker events |
+| Payment service returns 503 (via fault injection proxy) | Checkout shows graceful error; other features unaffected | Non-checkout error rate unchanged |
+| Disk at 95% capacity (via chaos tooling) | Log rotation triggers; alerts fire; no service disruption | Disk drops below 90% within 10 minutes |
 
 ### 3. Introduce Real-World Failures
 
 Chaos experiments should simulate failures that actually happen in production, not theoretical edge cases.
 
-**Common failure types to inject:**
+**Common failure types to simulate (via dedicated chaos tooling):**
 
-| Category | Failures | How to Inject |
-|----------|----------|---------------|
-| **Infrastructure** | Instance crash, disk failure, network partition | Kill process, fill disk, iptables rules |
-| **Network** | Latency, packet loss, DNS failure | tc (traffic control), toxiproxy, DNS blackhole |
-| **Application** | Memory exhaustion, CPU spike, thread deadlock | Stress-ng, allocate memory, mutex injection |
-| **Dependency** | Service unavailable, slow response, corrupt response | Proxy that returns errors, adds delay, or modifies responses |
-| **Cloud** | AZ failure, region degradation, API throttling | Disable instances in one AZ; simulate API rate limits |
+| Category | Failures | Tooling Examples |
+|----------|----------|-----------------|
+| **Infrastructure** | Instance crash, disk failure, network partition | Gremlin, Litmus, AWS FIS |
+| **Network** | Latency, packet loss, DNS failure | Toxiproxy, Istio fault injection, tc (traffic control) |
+| **Application** | Memory pressure, CPU saturation, thread contention | stress-ng (controlled), Gremlin resource attacks |
+| **Dependency** | Service unavailable, slow response, corrupt response | Toxiproxy, Envoy fault injection, mock services |
+| **Cloud** | AZ failure, region degradation, API throttling | AWS FIS, GCP Fault Injection, Azure Chaos Studio |
 
 ### 4. Run in Production
 
@@ -65,7 +67,7 @@ Staging environments do not reproduce the complexity of production. They lack re
 **But safely:**
 - Start with non-production, then graduate to production
 - Use the smallest blast radius possible
-- Have a kill switch to stop the experiment immediately
+- Have an emergency stop mechanism to halt the experiment immediately
 - Run during business hours when the team is available to respond
 - Inform the on-call team before running experiments
 - Never experiment during peak traffic or known risky periods
@@ -139,7 +141,7 @@ Blast radius is the scope of impact if the experiment causes unexpected damage. 
 **Blast radius controls:**
 - **Targeting:** Limit experiment to specific instances, user segments, or traffic percentage
 - **Duration:** Set maximum experiment duration; auto-revert after timeout
-- **Kill switch:** One-button (or automatic) experiment termination
+- **Emergency stop:** One-button (or automatic) experiment termination
 - **Monitoring:** Real-time dashboards showing experiment impact on steady state metrics
 - **Rollback:** Pre-planned steps to undo the experiment if things go wrong
 
@@ -149,54 +151,54 @@ Blast radius is the scope of impact if the experiment causes unexpected damage. 
 
 ### Process-Level Failures
 
-| Technique | What It Simulates | Tool/Command |
-|-----------|-------------------|-------------|
-| Kill process | Crash | `kill -9 <pid>`, Kubernetes pod delete |
-| SIGSTOP process | Hang/freeze | `kill -STOP <pid>` |
-| CPU stress | CPU saturation | `stress-ng --cpu 8 --timeout 60` |
-| Memory stress | Memory pressure/OOM | `stress-ng --vm 2 --vm-bytes 1G` |
-| Fork bomb (controlled) | Process table exhaustion | Controlled fork with limit |
+| Technique | What It Simulates | Chaos Tooling |
+|-----------|-------------------|--------------|
+| Instance termination | Crash | Gremlin process attack, Kubernetes pod disruption budget, Litmus ChaosEngine |
+| Process freeze | Hang/unresponsive | Gremlin process attack (pause), Litmus pod-cpu-hog |
+| CPU saturation | Compute pressure | Gremlin CPU attack, Litmus cpu-hog, stress-ng (controlled, authorized) |
+| Memory pressure | Memory exhaustion | Gremlin memory attack, Litmus pod-memory-hog |
+| Process flood | Process table exhaustion | Gremlin process attack with controlled parameters |
 
 ### Network-Level Failures
 
-| Technique | What It Simulates | Tool/Command |
-|-----------|-------------------|-------------|
-| Add latency | Slow network | `tc qdisc add dev eth0 root netem delay 500ms` |
-| Packet loss | Unreliable network | `tc qdisc add dev eth0 root netem loss 10%` |
-| Partition | Network split | `iptables -A INPUT -s <ip> -j DROP` |
-| DNS failure | DNS outage | Modify `/etc/hosts` or block port 53 |
-| Bandwidth limit | Constrained network | `tc qdisc add dev eth0 root tbf rate 1mbit` |
+| Technique | What It Simulates | Chaos Tooling |
+|-----------|-------------------|--------------|
+| Latency injection | Slow network | Toxiproxy, Gremlin latency attack, Istio fault injection |
+| Packet loss | Unreliable network | Gremlin packet loss attack, Toxiproxy, tc netem (authorized) |
+| Network partition | Network split | Gremlin blackhole attack, Litmus pod-network-partition |
+| DNS failure | DNS outage | Gremlin DNS attack, Litmus pod-dns-error |
+| Bandwidth limit | Constrained network | Toxiproxy bandwidth limit, Gremlin bandwidth attack |
 
 ### Dependency-Level Failures
 
-| Technique | What It Simulates | Tool |
-|-----------|-------------------|------|
+| Technique | What It Simulates | Chaos Tooling |
+|-----------|-------------------|--------------|
 | Error injection proxy | Downstream errors | Toxiproxy, Envoy fault injection |
 | Latency injection | Slow dependency | Toxiproxy, Istio fault injection |
-| Connection limit | Pool exhaustion | Limit max connections at proxy or firewall |
-| Response corruption | Data integrity issues | Custom proxy that modifies response bodies |
-| Certificate expiration | TLS failures | Expired test certificate |
+| Connection limit | Pool exhaustion | Toxiproxy connection limit, Gremlin blackhole |
+| Response corruption | Data integrity issues | Custom fault injection proxy |
+| Certificate expiration | TLS failures | Expired test certificate in staging |
 
 ### Disk-Level Failures
 
-| Technique | What It Simulates | Tool/Command |
-|-----------|-------------------|-------------|
-| Fill disk | Disk full | `fallocate -l 10G /tmp/fill` |
-| Slow I/O | Storage degradation | `tc qdisc` on block device, or `dm-delay` |
-| Read-only filesystem | Mount failure | `mount -o remount,ro /` |
-| Corrupt file | Data corruption | Write random bytes to non-critical file |
+| Technique | What It Simulates | Chaos Tooling |
+|-----------|-------------------|--------------|
+| Disk pressure | Disk full | Gremlin disk attack, Litmus disk-fill |
+| Slow I/O | Storage degradation | Gremlin IO attack, dm-delay (authorized) |
+| Read-only filesystem | Mount failure | Gremlin disk attack (read-only mode) |
+| Data corruption | Integrity issues | Controlled corruption of test data in staging |
 
 ---
 
 ## Chaos Monkey and Netflix's Approach
 
-Netflix pioneered chaos engineering with Chaos Monkey, which randomly terminates production instances during business hours.
+Netflix pioneered chaos engineering with Chaos Monkey, which randomly terminates production instances during business hours using automated, authorized tooling with built-in safeguards.
 
 ### The Netflix Chaos Engineering Stack
 
 | Tool | What It Does | Scope |
 |------|-------------|-------|
-| **Chaos Monkey** | Kills random instances | Single instance |
+| **Chaos Monkey** | Terminates random instances (automated, authorized) | Single instance |
 | **Chaos Kong** | Simulates entire region failure | Region |
 | **Latency Monkey** | Injects network latency | Network |
 | **Conformity Monkey** | Finds instances not following best practices | Compliance |
@@ -204,7 +206,7 @@ Netflix pioneered chaos engineering with Chaos Monkey, which randomly terminates
 
 ### Key Lessons from Netflix
 
-1. **Start small:** Chaos Monkey kills one instance at a time. Only after years of practice did Netflix graduate to region-level chaos (Chaos Kong).
+1. **Start small:** Chaos Monkey terminates one instance at a time. Only after years of practice did Netflix graduate to region-level chaos (Chaos Kong).
 2. **Business hours only:** Run experiments when the team is available to respond. Late-night chaos is just an outage.
 3. **Opt-out, not opt-in:** By default, all services are enrolled. Teams must explicitly justify opting out.
 4. **No blame:** Finding a weakness is a success, not a failure. Teams that discover and fix problems through chaos engineering are celebrated.
@@ -230,7 +232,7 @@ A GameDay is a scheduled exercise where a team practices responding to a realist
 
 | Scenario | Complexity | What It Tests |
 |----------|-----------|---------------|
-| Kill a single instance | Low | Auto-healing, health checks, load balancing |
+| Terminate a single instance | Low | Auto-healing, health checks, load balancing |
 | Simulate database failover | Medium | Connection handling, read replica routing, data consistency |
 | Full AZ failure | High | Multi-AZ architecture, DNS failover, stateful service recovery |
 | Dependency outage (payment provider) | Medium | Circuit breakers, fallback behavior, user communication |
@@ -251,7 +253,7 @@ A GameDay is a scheduled exercise where a team practices responding to a realist
 
 - **The facilitator does not fix things.** Their job is to inject failures, observe the response, and take notes.
 - **Start with known weaknesses.** The first GameDay should test a scenario the team suspects might fail -- the learning is in confirming the suspicion and practicing the response.
-- **Increase difficulty over time.** First GameDay: kill one instance. Tenth GameDay: simultaneous database failover + network partition + on-call engineer is unavailable.
+- **Increase difficulty over time.** First GameDay: terminate one instance. Tenth GameDay: simultaneous database failover + network partition + on-call engineer is unavailable.
 - **Celebrate findings.** Every weakness discovered in a GameDay is a weakness that will not cause a real outage. This is a win.
 
 ---
@@ -292,9 +294,9 @@ If you have never done chaos engineering, start here:
 
 1. **Pick one service** -- the one you are most worried about
 2. **Define its steady state** -- what metrics prove it is working?
-3. **Form one hypothesis** -- "If we kill one instance, the service will continue serving traffic"
+3. **Form one hypothesis** -- "If we terminate one instance, the service will continue serving traffic"
 4. **Run the experiment in staging** -- verify your tooling and monitoring work
-5. **Run the experiment in production** -- with minimal blast radius and a kill switch
+5. **Run the experiment in production** -- with minimal blast radius and an emergency stop mechanism
 6. **Document the results** -- what happened? Was the hypothesis confirmed?
 7. **Fix what you found** -- if the hypothesis was disproven, fix the weakness
 8. **Repeat** -- expand to more failure types, more services, more complex scenarios
@@ -306,7 +308,7 @@ If you have never done chaos engineering, start here:
 | "We can't break production on purpose!" | You are already breaking production accidentally. Chaos engineering lets you do it on your terms, when you are prepared. |
 | "Our system isn't resilient enough for chaos" | That is exactly why you need chaos engineering -- to find and fix the weaknesses. Start small. |
 | "We don't have time for this" | You have time for incident response, post-mortems, and customer apologies. Chaos engineering reduces all three. |
-| "What if we cause an outage?" | Start with minimal blast radius. Kill one process. If that causes an outage, you have learned something invaluable. |
+| "What if we cause an outage?" | Start with minimal blast radius in staging. Terminate one process. If that causes an outage, you have learned something invaluable. |
 | "Management won't approve this" | Frame it as risk reduction, not risk creation. Show the cost of recent outages vs. the cost of preventive experiments. |
 
 ### Anti-Fragility

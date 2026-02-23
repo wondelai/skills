@@ -4,7 +4,7 @@ description: 'Model software around the business domain using bounded contexts, 
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Domain-Driven Design Framework
@@ -68,7 +68,7 @@ See: [references/ubiquitous-language.md](references/ubiquitous-language.md)
 | Team collaboration | Shared Kernel | Two teams co-own a small `Money` value object library |
 | Legacy migration | Conformist / ACL | Wrap legacy system behind an adapter that speaks your domain language |
 | API design | Open Host Service + Published Language | Expose a well-documented REST API with a canonical schema |
-| Module boundaries | Separate packages per context | `com.app.shipping` and `com.app.billing` with explicit translation |
+| Module boundaries | Separate packages per context | `myapp.shipping` and `myapp.billing` packages with explicit translation |
 
 See: [references/bounded-contexts.md](references/bounded-contexts.md)
 

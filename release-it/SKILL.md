@@ -4,7 +4,7 @@ description: 'Build production-ready systems with stability patterns: circuit br
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Release It! Framework
@@ -124,7 +124,7 @@ See: [references/capacity-planning.md](references/capacity-planning.md) for test
 |---------|---------|---------|
 | **Deploys** | Blue-green with health check gate | Deploy to green; run smoke tests; swap router |
 | **Progressive rollout** | Canary with automated rollback | Route 5% traffic to canary; auto-rollback if error rate > 1% |
-| **Feature launch** | Feature flags with kill switch | Ship code behind flag; enable for 10% of users; monitor; ramp |
+| **Feature launch** | Feature flags with emergency off switch | Ship code behind flag; enable for 10% of users; monitor; ramp |
 | **Schema changes** | Expand-contract migration pattern | Add new column; deploy code that writes both; backfill; drop old column |
 | **Rollback** | Instant rollback via traffic routing | Keep previous version running; rollback = switch load balancer target |
 
@@ -159,15 +159,17 @@ See: [references/observability.md](references/observability.md) for health check
 
 ### 6. Adaptation and Chaos Engineering
 
-**Core concept:** Confidence in your system's resilience comes from testing it under realistic failure conditions. Chaos engineering is the discipline of experimenting on a production system to build confidence in its ability to withstand turbulent conditions.
+> **Safety note:** Chaos engineering experiments are design-time planning activities. The patterns below describe *what to test* and *what to verify*, not actions for an AI agent to execute autonomously. All failure injection must be performed by authorized engineers using dedicated tooling (e.g., Gremlin, Litmus, AWS FIS) with proper approvals, rollback plans, and blast radius controls in place.
+
+**Core concept:** Confidence in your system's resilience comes from testing it under realistic failure conditions. Chaos engineering is the discipline of experimenting on a system in a controlled environment to build confidence in its ability to withstand turbulent conditions.
 
 **Why it works:** You cannot know how your system handles failure until it actually fails. Waiting for production incidents to discover weaknesses is reactive and expensive. Chaos engineering proactively injects failures in a controlled way, turning unknown-unknowns into known-knowns before they cause real outages.
 
 **Key insights:**
 - Define steady state first -- you need a measurable baseline to detect when behavior deviates
-- Start small: kill a single process, add latency to one call, fill a disk -- then escalate
-- Minimize blast radius: use canary populations, feature flags, and kill switches for experiments
-- Run experiments in production -- staging environments do not reproduce the complexity of real traffic and real state
+- Start small in non-production environments: terminate a single process, add latency to one call -- then escalate gradually with approvals
+- Minimize blast radius: use canary populations, feature flags, and emergency stop mechanisms for experiments
+- Production experiments require explicit authorization, monitoring, and immediate rollback capability
 - Automate recurring experiments so resilience is continuously verified, not a one-time event
 - GameDay exercises combine chaos engineering with incident response practice -- test both the system and the team
 - Every experiment should have a hypothesis: "We believe that when X fails, the system will Y"
@@ -177,10 +179,10 @@ See: [references/observability.md](references/observability.md) for health check
 
 | Context | Pattern | Example |
 |---------|---------|---------|
-| **Process failure** | Random instance termination | Kill one pod every hour; verify service recovers within SLO |
-| **Network failure** | Inject latency or partition between services | Add 500ms latency to DB calls; verify circuit breaker trips |
-| **Dependency failure** | Simulate downstream service outage | Return 503 from payment API; verify graceful degradation |
-| **Resource exhaustion** | Fill disk, exhaust file handles, OOM | Allocate memory until limit; verify process restarts cleanly |
+| **Process failure** | Controlled instance termination (via chaos tooling) | Terminate one pod using Gremlin/Litmus; verify service recovers within SLO |
+| **Network failure** | Inject latency or partition between services (via chaos tooling) | Add 500ms latency to DB calls; verify circuit breaker trips |
+| **Dependency failure** | Simulate downstream service outage (via chaos tooling) | Return 503 from payment API; verify graceful degradation |
+| **Resource exhaustion** | Simulate resource pressure (via chaos tooling) | Stress-test memory limits; verify process restarts cleanly |
 | **GameDay** | Scheduled team exercise with realistic failure scenario | "Primary database goes read-only at 2pm" -- practice response |
 
 See: [references/chaos-engineering.md](references/chaos-engineering.md) for experiment design, blast radius management, and building a chaos engineering practice.
