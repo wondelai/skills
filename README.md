@@ -1,6 +1,6 @@
 # Wondel.ai Skills
 
-Agent skills for Claude Code and agentskills.io-compatible agents.
+Agent skills for Claude Code and agentskills.io-compatible agents. Browse all skills at [skills.wondel.ai](https://skills.wondel.ai/).
 
 ## Installation
 
@@ -78,47 +78,47 @@ npx skills add wondelai/skills/high-perf-browser
 
 | Skill | Description | Based On |
 |-------|-------------|----------|
-| jobs-to-be-done | JTBD framework for product innovation | [Clayton Christensen](https://x.com/claychristensen)'s [*"Competing Against Luck"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612?tag=wondelai00-20) |
-| cro-methodology | Conversion rate optimization methodology | [Karl Blanks](https://www.karlblanks.com/) & [Ben Jesson](https://www.ben-jesson.co.uk/)'s [*"Making Websites Win"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513?tag=wondelai00-20) |
-| refactoring-ui | Practical UI design system | [Adam Wathan](https://x.com/adamwathan) & [Steve Schoger](https://x.com/steveschoger)'s [*"Refactoring UI"*](https://www.refactoringui.com/) |
-| ios-hig-design | Native iOS app design guidelines | [Apple](https://x.com/Apple)'s [*Human Interface Guidelines*](https://developer.apple.com/design/human-interface-guidelines/) |
-| scorecard-marketing | Quiz/assessment funnel lead generation | [Daniel Priestley](https://x.com/DanielPriestley)'s [*"Scorecard Marketing"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195?tag=wondelai00-20) |
-| storybrand-messaging | Clear brand messaging using story structure | [Donald Miller](https://x.com/donlonemiller)'s [*"Building a StoryBrand"*](https://www.amazon.com/Building-StoryBrand-Clarify-Message-Customers/dp/0718033329?tag=wondelai00-20) |
-| hooked-ux | Habit-forming product design | [Nir Eyal](https://x.com/naboreeyal)'s [*"Hooked"*](https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788?tag=wondelai00-20) |
-| improve-retention | Behavior design for user retention using B=MAP | [BJ Fogg](https://x.com/bjfogg)'s [*"Tiny Habits"*](https://www.amazon.com/Tiny-Habits-Small-Changes-Everything/dp/0358003326?tag=wondelai00-20) |
-| ux-heuristics | Usability evaluation and principles | [Steve Krug](https://x.com/skrug)'s [*"Don't Make Me Think"*](https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515?tag=wondelai00-20) & [Jakob Nielsen](https://x.com/nngroup)'s [10 Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) |
-| web-typography | Web typography principles and implementation | [Jason Santa Maria](https://x.com/jasonsantamaria)'s [*"On Web Typography"*](https://www.amazon.com/Web-Typography-Jason-Santa-Maria/dp/1937557065?tag=wondelai00-20) |
-| top-design | Award-winning 10/10 web design matching elite agencies | Techniques from Locomotive, Studio Freight, AREA 17, Awwwards winners |
-| negotiation | Tactical negotiation framework for high-stakes conversations | [Chris Voss](https://x.com/VossNegotiation)'s [*"Never Split the Difference"*](https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805?tag=wondelai00-20) |
-| influence-psychology | Persuasion science and ethical influence principles | [Robert Cialdini](https://x.com/RobertCialdini)'s [*"Influence: The Psychology of Persuasion"*](https://www.amazon.com/Influence-Psychology-Persuasion-Robert-Cialdini/dp/006124189X?tag=wondelai00-20) |
-| lean-startup | Build-Measure-Learn methodology for startups and new products | [Eric Ries](https://x.com/ericries)'s [*"The Lean Startup"*](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898?tag=wondelai00-20) |
-| design-sprint | 5-day process for validating ideas through prototyping and testing | [Jake Knapp](https://x.com/jakek)'s [*"Sprint"*](https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X?tag=wondelai00-20) |
-| crossing-the-chasm | Technology adoption lifecycle and go-to-market for tech products | [Geoffrey Moore](https://x.com/geoffreyamoore)'s [*"Crossing the Chasm"*](https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986?tag=wondelai00-20) |
-| blue-ocean-strategy | Create uncontested market space with value innovation | W. Chan Kim & Renée Mauborgne's [*"Blue Ocean Strategy"*](https://www.amazon.com/Blue-Ocean-Strategy-Expanded-Uncontested/dp/1625274491?tag=wondelai00-20) |
-| traction-eos | Entrepreneurial Operating System for running a business | [Gino Wickman](https://x.com/ginowickman)'s [*"Traction"*](https://www.amazon.com/Traction-Get-Grip-Your-Business/dp/1936661837?tag=wondelai00-20) |
-| design-everyday-things | Foundational design principles: affordances, signifiers, feedback | [Don Norman](https://x.com/jabornik)'s [*"The Design of Everyday Things"*](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654?tag=wondelai00-20) |
-| predictable-revenue | Outbound sales process and Cold Calling 2.0 methodology | [Aaron Ross](https://x.com/motoceo)'s [*"Predictable Revenue"*](https://www.amazon.com/Predictable-Revenue-Business-Practices-Salesforce-com/dp/0984380213?tag=wondelai00-20) |
-| made-to-stick | SUCCESs framework for creating memorable messaging | [Chip Heath](https://x.com/chipheath) & Dan Heath's [*"Made to Stick"*](https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287?tag=wondelai00-20) |
-| drive-motivation | Intrinsic motivation science: Autonomy, Mastery, Purpose | [Daniel Pink](https://x.com/DanielPink)'s [*"Drive"*](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805?tag=wondelai00-20) |
-| hundred-million-offers | Grand Slam Offer creation: Value Equation, pricing, bonuses, guarantees, scarcity | [Alex Hormozi](https://x.com/AlexHormozi)'s [*"$100M Offers"*](https://www.amazon.com/100M-Offers-People-Cant-Refuse/dp/1737475731?tag=wondelai00-20) |
-| obviously-awesome | Product positioning: competitive alternatives, unique value, target customers, market category | [April Dunford](https://x.com/aprildunford)'s [*"Obviously Awesome"*](https://www.amazon.com/Obviously-Awesome-Product-Positioning-Customers/dp/1999023005?tag=wondelai00-20) |
-| contagious | Word-of-mouth and virality using the STEPPS framework | [Jonah Berger](https://x.com/j1berger)'s [*"Contagious"*](https://www.amazon.com/Contagious-Things-Catch-Jonah-Berger/dp/1451686587?tag=wondelai00-20) |
-| one-page-marketing | End-to-end marketing plan: 9-square grid from prospect to raving fan | [Allan Dib](https://x.com/successwise)'s [*"The 1-Page Marketing Plan"*](https://www.amazon.com/1-Page-Marketing-Plan-Customers-Money/dp/1989025013?tag=wondelai00-20) |
-| mom-test | Customer interview framework: talk about their life, not your idea | [Rob Fitzpatrick](https://x.com/robfitz)'s [*"The Mom Test"*](https://www.amazon.com/Mom-Test-customers-business-everyone/dp/1492180742?tag=wondelai00-20) |
-| inspired-product | Empowered product teams with discovery and delivery dual-track | [Marty Cagan](https://x.com/caborez)'s [*"Inspired"*](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507?tag=wondelai00-20) |
-| lean-ux | Hypothesis-driven UX design with rapid experiments | [Jeff Gothelf](https://x.com/jboogie)'s [*"Lean UX"*](https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1098116305?tag=wondelai00-20) |
-| continuous-discovery | Weekly customer touchpoints using Opportunity Solution Trees | [Teresa Torres](https://x.com/ttorres)'s [*"Continuous Discovery Habits"*](https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products/dp/1736633309?tag=wondelai00-20) |
-| microinteractions | Design triggers, rules, feedback, loops and modes for interaction polish | [Dan Saffer](https://x.com/odannyboy)'s [*"Microinteractions"*](https://www.amazon.com/Microinteractions-Full-Color-Designing-Details/dp/1491945923?tag=wondelai00-20) |
-| clean-code | Readable, maintainable code through naming, small functions, and clean error handling | [Robert C. Martin](https://x.com/unclebobmartin)'s [*"Clean Code"*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882?tag=wondelai00-20) |
-| refactoring-patterns | Named refactoring transformations to improve code structure safely | [Martin Fowler](https://x.com/martinfowler)'s [*"Refactoring"*](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599?tag=wondelai00-20) |
-| software-design-philosophy | Managing complexity through deep modules and information hiding | [John Ousterhout](https://x.com/JohnOusterhout)'s [*"A Philosophy of Software Design"*](https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X?tag=wondelai00-20) |
-| pragmatic-programmer | Meta-principles: DRY, orthogonality, tracer bullets, design by contract | [Andrew Hunt](https://x.com/pragmaticandy) & David Thomas's [*"The Pragmatic Programmer"*](https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052?tag=wondelai00-20) |
-| domain-driven-design | Model software around business domains with bounded contexts and aggregates | [Eric Evans](https://x.com/ericevans0)'s [*"Domain-Driven Design"*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=wondelai00-20) |
-| ddia-systems | Data system design: storage engines, replication, partitioning, consistency | [Martin Kleppmann](https://x.com/martinkl)'s [*"Designing Data-Intensive Applications"*](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321?tag=wondelai00-20) |
-| system-design | Scalable distributed systems: load balancing, caching, database scaling | [Alex Xu](https://x.com/aleaborysov)'s [*"System Design Interview"*](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF?tag=wondelai00-20) |
-| clean-architecture | The Dependency Rule: dependencies point inward from frameworks to entities | [Robert C. Martin](https://x.com/unclebobmartin)'s [*"Clean Architecture"*](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164?tag=wondelai00-20) |
-| release-it | Production-ready systems: circuit breakers, bulkheads, timeouts, retry logic | [Michael Nygard](https://x.com/mtnygard)'s [*"Release It!"*](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=wondelai00-20) |
-| high-perf-browser | Web performance: network protocols, resource loading, browser rendering | [Ilya Grigorik](https://x.com/igrigorik)'s [*"High Performance Browser Networking"*](https://www.amazon.com/High-Performance-Browser-Networking-performance/dp/1449344763?tag=wondelai00-20) |
+| [jobs-to-be-done](https://skills.wondel.ai/skills/jobs-to-be-done/) | JTBD framework for product innovation | [Clayton Christensen](https://x.com/claychristensen)'s [*"Competing Against Luck"*](https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612?tag=wondelai00-20) |
+| [cro-methodology](https://skills.wondel.ai/skills/cro-methodology/) | Conversion rate optimization methodology | [Karl Blanks](https://www.karlblanks.com/) & [Ben Jesson](https://www.ben-jesson.co.uk/)'s [*"Making Websites Win"*](https://www.amazon.com/Making-Websites-Win-Customer-Centric-Methodology/dp/1544500513?tag=wondelai00-20) |
+| [refactoring-ui](https://skills.wondel.ai/skills/refactoring-ui/) | Practical UI design system | [Adam Wathan](https://x.com/adamwathan) & [Steve Schoger](https://x.com/steveschoger)'s [*"Refactoring UI"*](https://www.refactoringui.com/) |
+| [ios-hig-design](https://skills.wondel.ai/skills/ios-hig-design/) | Native iOS app design guidelines | [Apple](https://x.com/Apple)'s [*Human Interface Guidelines*](https://developer.apple.com/design/human-interface-guidelines/) |
+| [scorecard-marketing](https://skills.wondel.ai/skills/scorecard-marketing/) | Quiz/assessment funnel lead generation | [Daniel Priestley](https://x.com/DanielPriestley)'s [*"Scorecard Marketing"*](https://www.amazon.com/Scorecard-Marketing-four-step-playbook-getting/dp/1781337195?tag=wondelai00-20) |
+| [storybrand-messaging](https://skills.wondel.ai/skills/storybrand-messaging/) | Clear brand messaging using story structure | [Donald Miller](https://x.com/donlonemiller)'s [*"Building a StoryBrand"*](https://www.amazon.com/Building-StoryBrand-Clarify-Message-Customers/dp/0718033329?tag=wondelai00-20) |
+| [hooked-ux](https://skills.wondel.ai/skills/hooked-ux/) | Habit-forming product design | [Nir Eyal](https://x.com/naboreeyal)'s [*"Hooked"*](https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788?tag=wondelai00-20) |
+| [improve-retention](https://skills.wondel.ai/skills/improve-retention/) | Behavior design for user retention using B=MAP | [BJ Fogg](https://x.com/bjfogg)'s [*"Tiny Habits"*](https://www.amazon.com/Tiny-Habits-Small-Changes-Everything/dp/0358003326?tag=wondelai00-20) |
+| [ux-heuristics](https://skills.wondel.ai/skills/ux-heuristics/) | Usability evaluation and principles | [Steve Krug](https://x.com/skrug)'s [*"Don't Make Me Think"*](https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515?tag=wondelai00-20) & [Jakob Nielsen](https://x.com/nngroup)'s [10 Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) |
+| [web-typography](https://skills.wondel.ai/skills/web-typography/) | Web typography principles and implementation | [Jason Santa Maria](https://x.com/jasonsantamaria)'s [*"On Web Typography"*](https://www.amazon.com/Web-Typography-Jason-Santa-Maria/dp/1937557065?tag=wondelai00-20) |
+| [top-design](https://skills.wondel.ai/skills/top-design/) | Award-winning 10/10 web design matching elite agencies | Techniques from Locomotive, Studio Freight, AREA 17, Awwwards winners |
+| [negotiation](https://skills.wondel.ai/skills/negotiation/) | Tactical negotiation framework for high-stakes conversations | [Chris Voss](https://x.com/VossNegotiation)'s [*"Never Split the Difference"*](https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805?tag=wondelai00-20) |
+| [influence-psychology](https://skills.wondel.ai/skills/influence-psychology/) | Persuasion science and ethical influence principles | [Robert Cialdini](https://x.com/RobertCialdini)'s [*"Influence: The Psychology of Persuasion"*](https://www.amazon.com/Influence-Psychology-Persuasion-Robert-Cialdini/dp/006124189X?tag=wondelai00-20) |
+| [lean-startup](https://skills.wondel.ai/skills/lean-startup/) | Build-Measure-Learn methodology for startups and new products | [Eric Ries](https://x.com/ericries)'s [*"The Lean Startup"*](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898?tag=wondelai00-20) |
+| [design-sprint](https://skills.wondel.ai/skills/design-sprint/) | 5-day process for validating ideas through prototyping and testing | [Jake Knapp](https://x.com/jakek)'s [*"Sprint"*](https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X?tag=wondelai00-20) |
+| [crossing-the-chasm](https://skills.wondel.ai/skills/crossing-the-chasm/) | Technology adoption lifecycle and go-to-market for tech products | [Geoffrey Moore](https://x.com/geoffreyamoore)'s [*"Crossing the Chasm"*](https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986?tag=wondelai00-20) |
+| [blue-ocean-strategy](https://skills.wondel.ai/skills/blue-ocean-strategy/) | Create uncontested market space with value innovation | W. Chan Kim & Renée Mauborgne's [*"Blue Ocean Strategy"*](https://www.amazon.com/Blue-Ocean-Strategy-Expanded-Uncontested/dp/1625274491?tag=wondelai00-20) |
+| [traction-eos](https://skills.wondel.ai/skills/traction-eos/) | Entrepreneurial Operating System for running a business | [Gino Wickman](https://x.com/ginowickman)'s [*"Traction"*](https://www.amazon.com/Traction-Get-Grip-Your-Business/dp/1936661837?tag=wondelai00-20) |
+| [design-everyday-things](https://skills.wondel.ai/skills/design-everyday-things/) | Foundational design principles: affordances, signifiers, feedback | [Don Norman](https://x.com/jabornik)'s [*"The Design of Everyday Things"*](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654?tag=wondelai00-20) |
+| [predictable-revenue](https://skills.wondel.ai/skills/predictable-revenue/) | Outbound sales process and Cold Calling 2.0 methodology | [Aaron Ross](https://x.com/motoceo)'s [*"Predictable Revenue"*](https://www.amazon.com/Predictable-Revenue-Business-Practices-Salesforce-com/dp/0984380213?tag=wondelai00-20) |
+| [made-to-stick](https://skills.wondel.ai/skills/made-to-stick/) | SUCCESs framework for creating memorable messaging | [Chip Heath](https://x.com/chipheath) & Dan Heath's [*"Made to Stick"*](https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287?tag=wondelai00-20) |
+| [drive-motivation](https://skills.wondel.ai/skills/drive-motivation/) | Intrinsic motivation science: Autonomy, Mastery, Purpose | [Daniel Pink](https://x.com/DanielPink)'s [*"Drive"*](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805?tag=wondelai00-20) |
+| [hundred-million-offers](https://skills.wondel.ai/skills/hundred-million-offers/) | Grand Slam Offer creation: Value Equation, pricing, bonuses, guarantees, scarcity | [Alex Hormozi](https://x.com/AlexHormozi)'s [*"$100M Offers"*](https://www.amazon.com/100M-Offers-People-Cant-Refuse/dp/1737475731?tag=wondelai00-20) |
+| [obviously-awesome](https://skills.wondel.ai/skills/obviously-awesome/) | Product positioning: competitive alternatives, unique value, target customers, market category | [April Dunford](https://x.com/aprildunford)'s [*"Obviously Awesome"*](https://www.amazon.com/Obviously-Awesome-Product-Positioning-Customers/dp/1999023005?tag=wondelai00-20) |
+| [contagious](https://skills.wondel.ai/skills/contagious/) | Word-of-mouth and virality using the STEPPS framework | [Jonah Berger](https://x.com/j1berger)'s [*"Contagious"*](https://www.amazon.com/Contagious-Things-Catch-Jonah-Berger/dp/1451686587?tag=wondelai00-20) |
+| [one-page-marketing](https://skills.wondel.ai/skills/one-page-marketing/) | End-to-end marketing plan: 9-square grid from prospect to raving fan | [Allan Dib](https://x.com/successwise)'s [*"The 1-Page Marketing Plan"*](https://www.amazon.com/1-Page-Marketing-Plan-Customers-Money/dp/1989025013?tag=wondelai00-20) |
+| [mom-test](https://skills.wondel.ai/skills/mom-test/) | Customer interview framework: talk about their life, not your idea | [Rob Fitzpatrick](https://x.com/robfitz)'s [*"The Mom Test"*](https://www.amazon.com/Mom-Test-customers-business-everyone/dp/1492180742?tag=wondelai00-20) |
+| [inspired-product](https://skills.wondel.ai/skills/inspired-product/) | Empowered product teams with discovery and delivery dual-track | [Marty Cagan](https://x.com/caborez)'s [*"Inspired"*](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507?tag=wondelai00-20) |
+| [lean-ux](https://skills.wondel.ai/skills/lean-ux/) | Hypothesis-driven UX design with rapid experiments | [Jeff Gothelf](https://x.com/jboogie)'s [*"Lean UX"*](https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1098116305?tag=wondelai00-20) |
+| [continuous-discovery](https://skills.wondel.ai/skills/continuous-discovery/) | Weekly customer touchpoints using Opportunity Solution Trees | [Teresa Torres](https://x.com/ttorres)'s [*"Continuous Discovery Habits"*](https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products/dp/1736633309?tag=wondelai00-20) |
+| [microinteractions](https://skills.wondel.ai/skills/microinteractions/) | Design triggers, rules, feedback, loops and modes for interaction polish | [Dan Saffer](https://x.com/odannyboy)'s [*"Microinteractions"*](https://www.amazon.com/Microinteractions-Full-Color-Designing-Details/dp/1491945923?tag=wondelai00-20) |
+| [clean-code](https://skills.wondel.ai/skills/clean-code/) | Readable, maintainable code through naming, small functions, and clean error handling | [Robert C. Martin](https://x.com/unclebobmartin)'s [*"Clean Code"*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882?tag=wondelai00-20) |
+| [refactoring-patterns](https://skills.wondel.ai/skills/refactoring-patterns/) | Named refactoring transformations to improve code structure safely | [Martin Fowler](https://x.com/martinfowler)'s [*"Refactoring"*](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599?tag=wondelai00-20) |
+| [software-design-philosophy](https://skills.wondel.ai/skills/software-design-philosophy/) | Managing complexity through deep modules and information hiding | [John Ousterhout](https://x.com/JohnOusterhout)'s [*"A Philosophy of Software Design"*](https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X?tag=wondelai00-20) |
+| [pragmatic-programmer](https://skills.wondel.ai/skills/pragmatic-programmer/) | Meta-principles: DRY, orthogonality, tracer bullets, design by contract | [Andrew Hunt](https://x.com/pragmaticandy) & David Thomas's [*"The Pragmatic Programmer"*](https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052?tag=wondelai00-20) |
+| [domain-driven-design](https://skills.wondel.ai/skills/domain-driven-design/) | Model software around business domains with bounded contexts and aggregates | [Eric Evans](https://x.com/ericevans0)'s [*"Domain-Driven Design"*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=wondelai00-20) |
+| [ddia-systems](https://skills.wondel.ai/skills/ddia-systems/) | Data system design: storage engines, replication, partitioning, consistency | [Martin Kleppmann](https://x.com/martinkl)'s [*"Designing Data-Intensive Applications"*](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321?tag=wondelai00-20) |
+| [system-design](https://skills.wondel.ai/skills/system-design/) | Scalable distributed systems: load balancing, caching, database scaling | [Alex Xu](https://x.com/aleaborysov)'s [*"System Design Interview"*](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF?tag=wondelai00-20) |
+| [clean-architecture](https://skills.wondel.ai/skills/clean-architecture/) | The Dependency Rule: dependencies point inward from frameworks to entities | [Robert C. Martin](https://x.com/unclebobmartin)'s [*"Clean Architecture"*](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164?tag=wondelai00-20) |
+| [release-it](https://skills.wondel.ai/skills/release-it/) | Production-ready systems: circuit breakers, bulkheads, timeouts, retry logic | [Michael Nygard](https://x.com/mtnygard)'s [*"Release It!"*](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=wondelai00-20) |
+| [high-perf-browser](https://skills.wondel.ai/skills/high-perf-browser/) | Web performance: network protocols, resource loading, browser rendering | [Ilya Grigorik](https://x.com/igrigorik)'s [*"High Performance Browser Networking"*](https://www.amazon.com/High-Performance-Browser-Networking-performance/dp/1449344763?tag=wondelai00-20) |
 
 > **Looking for real-world scenarios?** See [EXAMPLES.md](EXAMPLES.md) for 49 copy-pasteable prompts organized by persona (founders, PMs, marketers, designers, sales, copywriters, solopreneurs).
 
@@ -126,7 +126,7 @@ npx skills add wondelai/skills/high-perf-browser
 
 ## Skill Details
 
-### jobs-to-be-done
+### [jobs-to-be-done](https://skills.wondel.ai/skills/jobs-to-be-done/)
 
 Strategic framework for discovering and designing product innovations. Customers don't buy products—they "hire" them to make progress in specific circumstances.
 
@@ -149,7 +149,7 @@ Strategic framework for discovering and designing product innovations. Customers
 
 ---
 
-### cro-methodology
+### [cro-methodology](https://skills.wondel.ai/skills/cro-methodology/)
 
 Scientific, customer-centric approach to conversion rate optimization. Rejects "best practices" in favor of evidence-based testing—understand WHY visitors don't convert before changing anything.
 
@@ -172,7 +172,7 @@ Scientific, customer-centric approach to conversion rate optimization. Rejects "
 
 ---
 
-### refactoring-ui
+### [refactoring-ui](https://skills.wondel.ai/skills/refactoring-ui/)
 
 Practical, opinionated UI design system for developers. Design in grayscale first, add color last. Start with too much white space, then remove.
 
@@ -196,7 +196,7 @@ Practical, opinionated UI design system for developers. Design in grayscale firs
 
 ---
 
-### ios-hig-design
+### [ios-hig-design](https://skills.wondel.ai/skills/ios-hig-design/)
 
 Design native iOS apps that feel intuitive and aligned with Apple's platform conventions. Covers layout, typography, navigation, gestures, colors, and accessibility.
 
@@ -220,7 +220,7 @@ Design native iOS apps that feel intuitive and aligned with Apple's platform con
 
 ---
 
-### scorecard-marketing
+### [scorecard-marketing](https://skills.wondel.ai/skills/scorecard-marketing/)
 
 Lead generation system using interactive quiz/assessment funnels. Converts 30-50% vs 3-10% for traditional PDF lead magnets by creating psychological tension and self-qualification.
 
@@ -243,7 +243,7 @@ Lead generation system using interactive quiz/assessment funnels. Converts 30-50
 
 ---
 
-### storybrand-messaging
+### [storybrand-messaging](https://skills.wondel.ai/skills/storybrand-messaging/)
 
 StoryBrand framework for clarifying your message so customers will listen. Positions your customer as the hero and your brand as the guide in a story structure that resonates.
 
@@ -267,7 +267,7 @@ StoryBrand framework for clarifying your message so customers will listen. Posit
 
 ---
 
-### hooked-ux
+### [hooked-ux](https://skills.wondel.ai/skills/hooked-ux/)
 
 Hook Model framework for building habit-forming products. The four-phase process (Trigger → Action → Variable Reward → Investment) that connects users to your product through successive cycles.
 
@@ -292,7 +292,7 @@ Hook Model framework for building habit-forming products. The four-phase process
 
 ---
 
-### improve-retention
+### [improve-retention](https://skills.wondel.ai/skills/improve-retention/)
 
 Behavior design framework for diagnosing and fixing retention problems. Uses BJ Fogg's B=MAP model (Behavior = Motivation + Ability + Prompt) to systematically identify why users aren't completing key actions and design behaviors that stick.
 
@@ -316,7 +316,7 @@ Behavior design framework for diagnosing and fixing retention problems. Uses BJ 
 
 ---
 
-### ux-heuristics
+### [ux-heuristics](https://skills.wondel.ai/skills/ux-heuristics/)
 
 Usability heuristics and evaluation principles combining Steve Krug's practical "Don't Make Me Think" approach with Jakob Nielsen's 10 heuristics for systematic interface evaluation.
 
@@ -341,7 +341,7 @@ Usability heuristics and evaluation principles combining Steve Krug's practical 
 
 ---
 
-### web-typography
+### [web-typography](https://skills.wondel.ai/skills/web-typography/)
 
 Web typography principles for choosing, pairing, and implementing typefaces. Typography serves communication—the best typography is invisible, immersing readers in content rather than calling attention to itself.
 
@@ -365,7 +365,7 @@ Web typography principles for choosing, pairing, and implementing typefaces. Typ
 
 ---
 
-### top-design
+### [top-design](https://skills.wondel.ai/skills/top-design/)
 
 Create award-winning websites and applications with design and typography rated 10/10. Build premium digital experiences that match the quality of elite agencies like Locomotive, Studio Freight, AREA 17, Active Theory, Hello Monday, and Awwwards winners.
 
@@ -387,7 +387,7 @@ Create award-winning websites and applications with design and typography rated 
 
 ---
 
-### negotiation
+### [negotiation](https://skills.wondel.ai/skills/negotiation/)
 
 Tactical empathy-based negotiation framework from FBI hostage negotiator Chris Voss. Master techniques like mirroring, labeling, calibrated questions, and the Ackerman bargaining method to navigate high-stakes conversations.
 
@@ -413,7 +413,7 @@ Tactical empathy-based negotiation framework from FBI hostage negotiator Chris V
 
 ---
 
-### influence-psychology
+### [influence-psychology](https://skills.wondel.ai/skills/influence-psychology/)
 
 Persuasion science framework applying Robert Cialdini's seven universal principles of influence (Reciprocity, Commitment & Consistency, Social Proof, Authority, Liking, Scarcity, Unity) to product design, marketing, and communication.
 
@@ -436,7 +436,7 @@ Persuasion science framework applying Robert Cialdini's seven universal principl
 
 ---
 
-### lean-startup
+### [lean-startup](https://skills.wondel.ai/skills/lean-startup/)
 
 Build-Measure-Learn methodology for startups and new products. Test assumptions with MVPs, measure with actionable metrics, and decide when to pivot or persevere.
 
@@ -459,7 +459,7 @@ Build-Measure-Learn methodology for startups and new products. Test assumptions 
 
 ---
 
-### design-sprint
+### [design-sprint](https://skills.wondel.ai/skills/design-sprint/)
 
 Google Ventures' 5-day process for answering critical business questions through design, prototyping, and testing with real users.
 
@@ -480,7 +480,7 @@ Google Ventures' 5-day process for answering critical business questions through
 
 ---
 
-### crossing-the-chasm
+### [crossing-the-chasm](https://skills.wondel.ai/skills/crossing-the-chasm/)
 
 Strategic framework for marketing and selling disruptive technology products, focusing on the critical transition from early adopters to mainstream customers.
 
@@ -502,7 +502,7 @@ Strategic framework for marketing and selling disruptive technology products, fo
 
 ---
 
-### blue-ocean-strategy
+### [blue-ocean-strategy](https://skills.wondel.ai/skills/blue-ocean-strategy/)
 
 Create uncontested market space using value innovation. Use the Strategy Canvas, Four Actions Framework (ERRC), and Six Paths to find blue oceans where competition is irrelevant.
 
@@ -524,7 +524,7 @@ Create uncontested market space using value innovation. Use the Strategy Canvas,
 
 ---
 
-### traction-eos
+### [traction-eos](https://skills.wondel.ai/skills/traction-eos/)
 
 Complete Entrepreneurial Operating System (EOS) for running a business. Covers Vision/Traction Organizer, quarterly Rocks, Level 10 Meetings, Scorecard, Accountability Chart, and IDS process.
 
@@ -546,7 +546,7 @@ Complete Entrepreneurial Operating System (EOS) for running a business. Covers V
 
 ---
 
-### design-everyday-things
+### [design-everyday-things](https://skills.wondel.ai/skills/design-everyday-things/)
 
 Foundational design principles: affordances, signifiers, mappings, constraints, feedback, and conceptual models. The "bible of UX" for creating intuitive, discoverable products.
 
@@ -568,7 +568,7 @@ Foundational design principles: affordances, signifiers, mappings, constraints, 
 
 ---
 
-### predictable-revenue
+### [predictable-revenue](https://skills.wondel.ai/skills/predictable-revenue/)
 
 Outbound sales process and Cold Calling 2.0 methodology. Build a scalable sales machine with role specialization (SDR/AE/CSM) and predictable pipeline generation.
 
@@ -590,7 +590,7 @@ Outbound sales process and Cold Calling 2.0 methodology. Build a scalable sales 
 
 ---
 
-### made-to-stick
+### [made-to-stick](https://skills.wondel.ai/skills/made-to-stick/)
 
 SUCCESs framework for creating memorable, impactful messaging. Make ideas stick using Simple, Unexpected, Concrete, Credible, Emotional, Stories principles.
 
@@ -612,7 +612,7 @@ SUCCESs framework for creating memorable, impactful messaging. Make ideas stick 
 
 ---
 
-### drive-motivation
+### [drive-motivation](https://skills.wondel.ai/skills/drive-motivation/)
 
 Intrinsic motivation science: Autonomy, Mastery, Purpose (AMP). Design products, features, and teams that tap into what truly motivates people — replacing carrot-and-stick with lasting engagement.
 
@@ -635,7 +635,7 @@ Intrinsic motivation science: Autonomy, Mastery, Purpose (AMP). Design products,
 
 ---
 
-### hundred-million-offers
+### [hundred-million-offers](https://skills.wondel.ai/skills/hundred-million-offers/)
 
 Grand Slam Offer creation framework for building offers so good people feel stupid saying no. Covers the Value Equation, value-based pricing, bonus stacking, guarantees, scarcity, urgency, and the MAGIC naming formula.
 
@@ -660,7 +660,7 @@ Grand Slam Offer creation framework for building offers so good people feel stup
 
 ---
 
-### obviously-awesome
+### [obviously-awesome](https://skills.wondel.ai/skills/obviously-awesome/)
 
 Product positioning framework for defining how your product wins in customers' minds. Covers competitive alternatives, unique attributes, value mapping, target customers, and market category selection.
 
@@ -684,7 +684,7 @@ Product positioning framework for defining how your product wins in customers' m
 
 ---
 
-### contagious
+### [contagious](https://skills.wondel.ai/skills/contagious/)
 
 Word-of-mouth and virality framework using the STEPPS model (Social Currency, Triggers, Emotion, Public, Practical Value, Stories). Engineer sharing into your products, content, and campaigns.
 
@@ -708,7 +708,7 @@ Word-of-mouth and virality framework using the STEPPS model (Social Currency, Tr
 
 ---
 
-### one-page-marketing
+### [one-page-marketing](https://skills.wondel.ai/skills/one-page-marketing/)
 
 Complete end-to-end marketing plan on a single page using Allan Dib's 9-square grid. Covers the full customer journey from prospect to raving fan across three phases: Before (target market, message, media), During (capture, nurture, convert), and After (experience, lifetime value, referrals).
 
@@ -735,7 +735,7 @@ Complete end-to-end marketing plan on a single page using Allan Dib's 9-square g
 
 ---
 
-### mom-test
+### [mom-test](https://skills.wondel.ai/skills/mom-test/)
 
 Customer interview framework that teaches you to talk about customers' lives instead of your idea. The three rules: talk about their life not your idea, ask about specifics in the past, and talk less.
 
@@ -755,7 +755,7 @@ Customer interview framework that teaches you to talk about customers' lives ins
 
 ---
 
-### inspired-product
+### [inspired-product](https://skills.wondel.ai/skills/inspired-product/)
 
 Build empowered product teams using discovery and delivery dual-track. Replace feature factories with teams that discover solutions customers love, that work for the business.
 
@@ -775,7 +775,7 @@ Build empowered product teams using discovery and delivery dual-track. Replace f
 
 ---
 
-### lean-ux
+### [lean-ux](https://skills.wondel.ai/skills/lean-ux/)
 
 Hypothesis-driven UX design that replaces heavy deliverables with rapid experiments and collaborative sketching. Outcomes over outputs.
 
@@ -795,7 +795,7 @@ Hypothesis-driven UX design that replaces heavy deliverables with rapid experime
 
 ---
 
-### continuous-discovery
+### [continuous-discovery](https://skills.wondel.ai/skills/continuous-discovery/)
 
 Build a weekly cadence of customer touchpoints using Opportunity Solution Trees, assumption mapping, and interview snapshots.
 
@@ -815,7 +815,7 @@ Build a weekly cadence of customer touchpoints using Opportunity Solution Trees,
 
 ---
 
-### microinteractions
+### [microinteractions](https://skills.wondel.ai/skills/microinteractions/)
 
 Design the small details — triggers, rules, feedback, loops and modes — that separate good products from great ones.
 
@@ -835,7 +835,7 @@ Design the small details — triggers, rules, feedback, loops and modes — that
 
 ---
 
-### clean-code
+### [clean-code](https://skills.wondel.ai/skills/clean-code/)
 
 Write readable, maintainable code through disciplined naming, small functions, and clean error handling. Code is read far more than it is written.
 
@@ -855,7 +855,7 @@ Write readable, maintainable code through disciplined naming, small functions, a
 
 ---
 
-### refactoring-patterns
+### [refactoring-patterns](https://skills.wondel.ai/skills/refactoring-patterns/)
 
 Apply named refactoring transformations to improve code structure without changing behavior. Smell-driven, test-guarded, safe transformations.
 
@@ -875,7 +875,7 @@ Apply named refactoring transformations to improve code structure without changi
 
 ---
 
-### software-design-philosophy
+### [software-design-philosophy](https://skills.wondel.ai/skills/software-design-philosophy/)
 
 Manage software complexity through deep modules, information hiding, and strategic programming. Complexity is the root cause of most software problems.
 
@@ -895,7 +895,7 @@ Manage software complexity through deep modules, information hiding, and strateg
 
 ---
 
-### pragmatic-programmer
+### [pragmatic-programmer](https://skills.wondel.ai/skills/pragmatic-programmer/)
 
 Meta-principles of software craftsmanship: DRY, orthogonality, tracer bullets, and design by contract. Think about your work as you work.
 
@@ -915,7 +915,7 @@ Meta-principles of software craftsmanship: DRY, orthogonality, tracer bullets, a
 
 ---
 
-### domain-driven-design
+### [domain-driven-design](https://skills.wondel.ai/skills/domain-driven-design/)
 
 Model software around the business domain using bounded contexts, aggregates, and ubiquitous language. The structure of the code should reflect the structure of the domain.
 
@@ -935,7 +935,7 @@ Model software around the business domain using bounded contexts, aggregates, an
 
 ---
 
-### ddia-systems
+### [ddia-systems](https://skills.wondel.ai/skills/ddia-systems/)
 
 Design data systems by understanding storage engines, replication, partitioning, transactions, and consistency models. Fundamentals of data-intensive application design.
 
@@ -955,7 +955,7 @@ Design data systems by understanding storage engines, replication, partitioning,
 
 ---
 
-### system-design
+### [system-design](https://skills.wondel.ai/skills/system-design/)
 
 Design scalable distributed systems using structured approaches for load balancing, caching, database scaling, and message queues.
 
@@ -975,7 +975,7 @@ Design scalable distributed systems using structured approaches for load balanci
 
 ---
 
-### clean-architecture
+### [clean-architecture](https://skills.wondel.ai/skills/clean-architecture/)
 
 Structure software around the Dependency Rule: source code dependencies point inward from frameworks to use cases to entities.
 
@@ -995,7 +995,7 @@ Structure software around the Dependency Rule: source code dependencies point in
 
 ---
 
-### release-it
+### [release-it](https://skills.wondel.ai/skills/release-it/)
 
 Build production-ready systems with stability patterns: circuit breakers, bulkheads, timeouts, and retry logic. Design for the real world.
 
@@ -1015,7 +1015,7 @@ Build production-ready systems with stability patterns: circuit breakers, bulkhe
 
 ---
 
-### high-perf-browser
+### [high-perf-browser](https://skills.wondel.ai/skills/high-perf-browser/)
 
 Optimize web performance through network protocols, resource loading, and browser rendering internals.
 
