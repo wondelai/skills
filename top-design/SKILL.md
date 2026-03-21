@@ -4,7 +4,7 @@ description: 'Create award-winning, immersive web experiences at the level of Aw
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.1"
+  version: "1.2.0"
 ---
 
 # Top-Design: Award-Winning Digital Experiences
@@ -71,7 +71,7 @@ Create websites and applications at the level of world-class digital agencies. T
 |-------|----------|
 | 0-3 | Default cursors, no hover states, generic everything |
 | 4-6 | Basic hover states, some custom elements |
-| 7-8 | Custom cursor, magnetic buttons, branded selection colors |
+| 7-8 | Magnetic buttons, branded selection colors, custom cursor (if user-approved) |
 | 9-10 | Every micro-detail considered -- focus states, loading, empty states, scroll indicators |
 
 ### Quick Score Formula
@@ -294,12 +294,14 @@ See: [references/technical-stack.md](references/technical-stack.md) for librarie
 
 ### 7. Micro-Interactions
 
-**Core concept:** The details that signal craft live in the 1% that most designers skip: custom cursors, branded selection colors, magnetic button effects, designed focus states, considered loading states, crafted error pages, and correct micro-typography. These details are the difference between professional and world-class.
+**Core concept:** The details that signal craft live in the 1% that most designers skip: branded selection colors, magnetic button effects, designed focus states, considered loading states, crafted error pages, and correct micro-typography. These details are the difference between professional and world-class.
+
+**IMPORTANT: Custom cursors are OPT-IN only.** Do not implement custom cursors (replacing the native cursor with a custom element) unless the user explicitly requests or confirms they want one. Custom cursors can hurt usability, confuse users, and feel gimmicky when misapplied. Always ask the user before adding a custom cursor.
 
 **Why it works:** Micro-interactions create a sense that every pixel was considered. When a cursor changes on hover, when text selection has a branded color, when a button has a subtle magnetic pull, and when focus states are beautiful AND accessible, users feel the care embedded in the experience. These details compound -- individually subtle, collectively transformative.
 
 **Key insights:**
-- **Custom cursor reflects brand personality** -- cursor changes on interactive elements, with optional magnetic effect on buttons
+- **Custom cursor reflects brand personality (opt-in only -- ask user before implementing)** -- cursor changes on interactive elements, with optional magnetic effect on buttons
 - **Selection colors are branded** -- custom `::selection` color that works well on all backgrounds
 - **Every link has a considered hover state** -- images have scale or overlay treatment, cards transform meaningfully
 - **Focus states are visible AND beautiful** -- focus indicators match brand aesthetic while remaining clearly visible for keyboard navigation
@@ -310,7 +312,7 @@ See: [references/technical-stack.md](references/technical-stack.md) for librarie
 
 | Context | Application | Example |
 |---------|-------------|---------|
-| Cursor | Custom cursor with interactive-element variants | Dogstudio custom cursor system |
+| Cursor | Custom cursor with interactive-element variants (opt-in -- confirm with user first) | Dogstudio custom cursor system |
 | Selection | Branded `::selection` background color | On-brand highlight that works on all surfaces |
 | Buttons | Magnetic hover effect with subtle pull | Studio Freight magnetic buttons |
 | Focus | Styled focus-visible rings matching brand | Accessible + beautiful focus indicators |
@@ -319,11 +321,11 @@ See: [references/technical-stack.md](references/technical-stack.md) for librarie
 
 **Copy patterns:**
 - `::selection { background: var(--color-accent); color: var(--color-light); }`
-- `cursor: none;` on body with custom cursor div following mouse position
-- Magnetic effect: calculate distance between cursor and button center, apply proportional transform
+- `cursor: none;` on body with custom cursor div following mouse position (only if user confirms they want a custom cursor)
+- Magnetic effect: calculate distance between cursor and button center, apply proportional transform (only if user confirms they want a custom cursor)
 - Smart quotes: use `&ldquo;` and `&rdquo;` or configure your build tool to auto-convert
 
-**Ethical boundary:** Micro-interactions must enhance usability, not hinder it. Custom cursors must remain functional and visible. Focus states must meet accessibility requirements -- beauty cannot replace visibility. Designed error states must be genuinely helpful, not just clever.
+**Ethical boundary:** Micro-interactions must enhance usability, not hinder it. Custom cursors must only be implemented when the user explicitly requests or approves them, and must remain functional and visible when used. Focus states must meet accessibility requirements -- beauty cannot replace visibility. Designed error states must be genuinely helpful, not just clever.
 
 See: [references/case-studies.md](references/case-studies.md) for agency technique breakdowns on micro-interaction implementation.
 
@@ -415,7 +417,7 @@ Consult these for detailed implementation:
 | Do the colors feel invented for THIS project? | Palette could belong to any brand | Develop a signature color identity: monochromatic tension, bold signature, or contextual shifting |
 | Is the page load choreographed (not all at once)? | Elements pop in simultaneously | Implement staggered reveal: structure first, then hero, then supporting elements |
 | Does scroll feel custom and weighted? | Using default browser scroll | Implement Lenis or Locomotive Scroll for smooth, physical scroll behavior |
-| Are micro-details considered (selection, focus, cursor)? | Default browser behaviors remain | Add branded selection colors, designed focus states, and considered cursor behavior |
+| Are micro-details considered (selection, focus, cursor)? | Default browser behaviors remain | Add branded selection colors, designed focus states, and considered cursor behavior (ask user before adding custom cursors) |
 | Is CLS near zero and LCP under 2.5s? | Performance undermines perceived quality | Subset fonts, optimize images (WebP/AVIF), animate only transform/opacity |
 | Does every animation answer "why does this move?" | Motion is decorative, not purposeful | Remove animations that do not serve narrative, hierarchy, or user guidance |
 | Are focus states both beautiful AND accessible? | Accessibility sacrificed for aesthetics or vice versa | Design focus indicators that match brand aesthetic while meeting WCAG visibility requirements |
