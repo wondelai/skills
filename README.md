@@ -1035,6 +1035,21 @@ Optimize web performance through network protocols, resource loading, and browse
 
 ---
 
+## Learn More: The Skills Ecosystem
+
+Want to go deeper with skills — how they work, how to create your own, and what's available across the community?
+
+**[The Skills Ecosystem](https://developertoolkit.ai/en/shared-workflows/skills-ecosystem/)** on [Developer Toolkit](https://developertoolkit.ai/) covers everything you need:
+
+- **How skills work** — persistent, markdown-based instructions that load automatically at the start of every AI coding session
+- **The skills marketplace** — browse 200+ community skills across categories at [skills.sh](https://skills.sh)
+- **Creating your own skills** — write custom skills encoding your team's conventions, framework patterns, and workflow instructions
+- **Cross-tool support** — skills work across Claude Code, Cursor, and Codex
+
+Developer Toolkit is a comprehensive learning platform for mastering AI-assisted coding, with 350+ tutorials, 80+ copy-paste recipes, and weekly updates tracking tool evolution.
+
+---
+
 ## Copyright & Disclaimer
 
 The methodologies and frameworks referenced in these skills are the intellectual property of their respective authors and publishers. All copyrights belong to:
