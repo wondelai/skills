@@ -2,6 +2,17 @@
 
 Systematic methods for rapidly testing product ideas against the four critical risks before committing engineering resources to delivery.
 
+
+## Table of Contents
+1. [The Four Risks](#the-four-risks)
+2. [Prototyping Techniques](#prototyping-techniques)
+3. [Customer Interview Techniques](#customer-interview-techniques)
+4. [User Testing](#user-testing)
+5. [Data-Driven Discovery](#data-driven-discovery)
+6. [Discovery Cadence](#discovery-cadence)
+
+---
+
 ## The Four Risks
 
 Every product idea carries four categories of risk. Discovery must address all four before an idea is considered validated.

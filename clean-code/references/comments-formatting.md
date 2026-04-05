@@ -2,6 +2,16 @@
 
 Comprehensive guide to comment discipline and code formatting. Based on Robert C. Martin's *Clean Code*, Chapters 4 and 5.
 
+
+## Table of Contents
+1. [The Truth About Comments](#the-truth-about-comments)
+2. [Good Comments](#good-comments)
+3. [Bad Comments](#bad-comments)
+4. [Formatting](#formatting)
+5. [When Comments Are Truly Necessary](#when-comments-are-truly-necessary)
+
+---
+
 ## The Truth About Comments
 
 **Don't comment bad code -- rewrite it.** Comments are, at best, a necessary evil. The proper use of comments is to compensate for our failure to express ourselves in code. Every time you write a comment, you should grimace and feel the failure of your ability of expression.

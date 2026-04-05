@@ -4,6 +4,19 @@ The go-to-market strategy that wins early adopters will fail with pragmatists. E
 
 This reference provides the complete go-to-market playbook for transitioning from early adopter sales to mainstream market penetration.
 
+
+## Table of Contents
+1. [Distribution Strategy by Adoption Segment](#distribution-strategy-by-adoption-segment)
+2. [Sales Strategy Shift](#sales-strategy-shift)
+3. [Marketing Message Transformation](#marketing-message-transformation)
+4. [Content Marketing for Pragmatists](#content-marketing-for-pragmatists)
+5. [Channel Partner Selection and Management](#channel-partner-selection-and-management)
+6. [Pricing Strategy Across the Chasm](#pricing-strategy-across-the-chasm)
+7. [Launch Playbook for Crossing the Chasm](#launch-playbook-for-crossing-the-chasm)
+8. [Lead Generation for Pragmatist Buyers](#lead-generation-for-pragmatist-buyers)
+
+---
+
 ## Distribution Strategy by Adoption Segment
 
 ### How Each Segment Buys

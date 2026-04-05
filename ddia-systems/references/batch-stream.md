@@ -2,6 +2,19 @@
 
 Data processing systems fall into three categories: services (online systems that handle requests), batch processing (offline systems that process large volumes of accumulated data), and stream processing (near-real-time systems that process data as it arrives). Understanding when and how to use batch and stream processing is essential for building data pipelines, analytics systems, and derived data stores.
 
+
+## Table of Contents
+1. [Batch Processing: MapReduce and Beyond](#batch-processing-mapreduce-and-beyond)
+2. [Dataflow Engines: Beyond MapReduce](#dataflow-engines-beyond-mapreduce)
+3. [Event Sourcing](#event-sourcing)
+4. [Change Data Capture (CDC)](#change-data-capture-cdc)
+5. [Stream-Table Duality](#stream-table-duality)
+6. [Exactly-Once Semantics](#exactly-once-semantics)
+7. [Time Windowing](#time-windowing)
+8. [Architecture Patterns](#architecture-patterns)
+
+---
+
 ## Batch Processing: MapReduce and Beyond
 
 ### The MapReduce Paradigm

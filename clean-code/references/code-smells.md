@@ -2,6 +2,19 @@
 
 Comprehensive catalog of code smells organized by category, with identification criteria and targeted refactorings. Based on Robert C. Martin's *Clean Code*, Chapter 17.
 
+
+## Table of Contents
+1. [What Is a Code Smell?](#what-is-a-code-smell)
+2. [Comment Smells](#comment-smells)
+3. [Environment Smells](#environment-smells)
+4. [Function Smells](#function-smells)
+5. [General Smells](#general-smells)
+6. [Naming Smells](#naming-smells)
+7. [Test Smells](#test-smells)
+8. [Smell Detection Quick Reference](#smell-detection-quick-reference)
+
+---
+
 ## What Is a Code Smell?
 
 A code smell is a surface indication that usually corresponds to a deeper problem in the system. Smells are not bugs -- the code works. But they suggest fragility, rigidity, or unnecessary complexity that will cause problems as the codebase evolves. Learn to recognize smells quickly and you'll know where to focus refactoring effort.

@@ -2,6 +2,24 @@
 
 Page-by-page structure for a website that converts visitors into customers using the SB7 framework.
 
+
+## Table of Contents
+1. [Above the Fold (First Screen)](#above-the-fold-first-screen)
+2. [Stakes Section](#stakes-section)
+3. [Value Proposition Section](#value-proposition-section)
+4. [Guide Section](#guide-section)
+5. [Plan Section](#plan-section)
+6. [Explanatory Section (Optional)](#explanatory-section-optional)
+7. [Testimonial Section](#testimonial-section)
+8. [Transitional CTA Section (Lead Magnet)](#transitional-cta-section-lead-magnet)
+9. [Final CTA Section](#final-cta-section)
+10. [Footer](#footer)
+11. [Complete Page Checklist](#complete-page-checklist)
+12. [Interior Page Templates](#interior-page-templates)
+13. [Interior Page Checklist](#interior-page-checklist)
+
+---
+
 ## Above the Fold (First Screen)
 
 The most important real estate. Visitors decide in 5 seconds if they'll stay.

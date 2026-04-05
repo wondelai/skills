@@ -2,6 +2,15 @@
 
 Detailed reference for refactorings that tame complex conditional structures. Conditionals are the hardest code to read and the most likely to harbor bugs. These refactorings decompose, consolidate, and replace conditionals with clearer alternatives.
 
+## Table of Contents
+1. [Decompose Conditional](#decompose-conditional)
+2. [Consolidate Conditional Expression](#consolidate-conditional-expression)
+3. [Replace Nested Conditional with Guard Clauses](#replace-nested-conditional-with-guard-clauses)
+4. [Replace Conditional with Polymorphism](#replace-conditional-with-polymorphism)
+5. [Introduce Special Case (Null Object)](#introduce-special-case-null-object)
+6. [Introduce Assertion](#introduce-assertion)
+7. [Decision Guide: Which Conditional Refactoring to Use](#decision-guide-which-conditional-refactoring-to-use)
+
 ---
 
 ## Decompose Conditional

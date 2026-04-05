@@ -2,6 +2,20 @@
 
 Guidelines for when and how to animate UI elements effectively.
 
+
+## Table of Contents
+1. [The Purpose of Animation](#the-purpose-of-animation)
+2. [Timing & Duration](#timing-duration)
+3. [Easing Functions](#easing-functions)
+4. [Common Animation Patterns](#common-animation-patterns)
+5. [Loading States](#loading-states)
+6. [Microinteractions](#microinteractions)
+7. [Accessibility Considerations](#accessibility-considerations)
+8. [Performance Guidelines](#performance-guidelines)
+9. [Animation Checklist](#animation-checklist)
+
+---
+
 ## The Purpose of Animation
 
 Animation should serve a function, not just look nice.

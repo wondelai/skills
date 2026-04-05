@@ -2,6 +2,21 @@
 
 Stories are the oldest technology for transferring knowledge. They predate writing, libraries, and the internet. When we hear a story, our brains simulate the experience as if it were happening to us. Neural coupling research shows that a listener's brain activity mirrors the speaker's brain activity during a well-told story. This makes stories the most powerful vehicle for making ideas stick.
 
+
+## Table of Contents
+1. [Why Stories Work](#why-stories-work)
+2. [Three Story Plots](#three-story-plots)
+3. [Story Structure for Product Messaging](#story-structure-for-product-messaging)
+4. [Spotting Stories in the Wild](#spotting-stories-in-the-wild)
+5. [Story Collection Systems](#story-collection-systems)
+6. [Story Templates for Different Contexts](#story-templates-for-different-contexts)
+7. [Mental Simulation: Stories as Flight Simulators](#mental-simulation-stories-as-flight-simulators)
+8. [Stories for Inspiration vs. Stories for Instruction](#stories-for-inspiration-vs-stories-for-instruction)
+9. [Before/After: Transforming Facts into Stories](#beforeafter-transforming-facts-into-stories)
+10. [Building an Organizational Story Library](#building-an-organizational-story-library)
+
+---
+
 ## Why Stories Work
 
 Stories achieve two things that no other communication format can match:

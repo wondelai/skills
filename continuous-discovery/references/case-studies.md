@@ -2,6 +2,13 @@
 
 Four realistic scenarios showing how product teams apply continuous discovery habits across different contexts. Each case study follows a team from establishing the practice through making evidence-based decisions.
 
+## Table of Contents
+1. [Case Study 1: B2B SaaS -- Project Management Tool](#case-study-1-b2b-saas-project-management-tool)
+2. [Case Study 2: Consumer Mobile -- Fitness App](#case-study-2-consumer-mobile-fitness-app)
+3. [Case Study 3: Platform Team -- Internal Developer Platform](#case-study-3-platform-team-internal-developer-platform)
+4. [Case Study 4: Growth Team -- E-Commerce Marketplace](#case-study-4-growth-team-e-commerce-marketplace)
+5. [Patterns Across Case Studies](#patterns-across-case-studies)
+
 ---
 
 ## Case Study 1: B2B SaaS -- Project Management Tool

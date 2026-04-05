@@ -2,6 +2,20 @@
 
 Creating a blue ocean strategy is only half the challenge. Executing it requires organizational alignment, leadership that can mobilize change rapidly, and fair process that builds trust and voluntary cooperation. This reference covers the complete implementation journey from strategic decision to sustained execution, including how to protect blue oceans once created and how to renew them when they inevitably turn red.
 
+
+## Table of Contents
+1. [Organizational Alignment for Blue Ocean Execution](#organizational-alignment-for-blue-ocean-execution)
+2. [Tipping Point Leadership](#tipping-point-leadership)
+3. [Fair Process](#fair-process)
+4. [Overcoming Organizational Hurdles](#overcoming-organizational-hurdles)
+5. [Blue Ocean Initiative Planning Template](#blue-ocean-initiative-planning-template)
+6. [Risk Assessment and Mitigation](#risk-assessment-and-mitigation)
+7. [Measuring Blue Ocean Success](#measuring-blue-ocean-success)
+8. [Sustaining Blue Oceans](#sustaining-blue-oceans)
+9. [When Blue Oceans Turn Red: Renewal Strategies](#when-blue-oceans-turn-red-renewal-strategies)
+
+---
+
 ## Organizational Alignment for Blue Ocean Execution
 
 A blue ocean strategy demands that the entire organization aligns around the new value curve. This means every function (operations, marketing, sales, HR, finance) must support the ERRC decisions simultaneously.

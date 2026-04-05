@@ -1,10 +1,10 @@
 ---
 name: release-it
-description: 'Build production-ready systems with stability patterns: circuit breakers, bulkheads, timeouts, and retry logic. Use when the user mentions "production outage", "circuit breaker", "timeout strategy", "deployment pipeline", or "chaos engineering". Covers capacity planning, health checks, and anti-fragility patterns. For data systems, see ddia-systems. For system architecture, see system-design.'
+description: 'Build production-ready systems with stability patterns: circuit breakers, bulkheads, timeouts, and retry logic. Use when the user mentions "production outage", "circuit breaker", "timeout strategy", "deployment pipeline", "chaos engineering", "bulkhead pattern", "retry with backoff", or "health checks". Also trigger when designing resilient microservices, planning zero-downtime deployments, or investigating cascading failure scenarios. Covers capacity planning, health checks, and anti-fragility patterns. For data systems, see ddia-systems. For system architecture, see system-design.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.1"
+  version: "1.1.0"
 ---
 
 # Release It! Framework

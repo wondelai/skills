@@ -2,6 +2,18 @@
 
 Detailed analysis of how successful products implement the Hook Model, including both successes and instructive failures.
 
+
+## Table of Contents
+1. [Instagram: The Visual Tribe Hook](#instagram-the-visual-tribe-hook)
+2. [Slack: The Workplace Communication Hook](#slack-the-workplace-communication-hook)
+3. [Duolingo: The Gamified Learning Hook](#duolingo-the-gamified-learning-hook)
+4. [Pinterest: The Visual Hunt Hook](#pinterest-the-visual-hunt-hook)
+5. [Failed Products: Learning From Mistakes](#failed-products-learning-from-mistakes)
+6. [B2B SaaS: Asana Case Study](#b2b-saas-asana-case-study)
+7. [Applying Case Study Learnings](#applying-case-study-learnings)
+
+---
+
 ## Instagram: The Visual Tribe Hook
 
 ### The Hook Cycle

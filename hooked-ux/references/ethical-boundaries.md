@@ -2,6 +2,21 @@
 
 Distinguishing ethical engagement from dark patterns, protecting vulnerable users, and building products that genuinely improve lives.
 
+
+## Table of Contents
+1. [The Ethics Question](#the-ethics-question)
+2. [The Manipulation Matrix Revisited](#the-manipulation-matrix-revisited)
+3. [Dark Patterns vs. Ethical Engagement](#dark-patterns-vs-ethical-engagement)
+4. [Protecting Vulnerable Users](#protecting-vulnerable-users)
+5. [Questions to Ask Your Team](#questions-to-ask-your-team)
+6. [Ethical Design Practices](#ethical-design-practices)
+7. [Regulatory Landscape](#regulatory-landscape)
+8. [Case Studies: Getting It Right](#case-studies-getting-it-right)
+9. [The Long-Term View](#the-long-term-view)
+10. [Ethical Design Checklist](#ethical-design-checklist)
+
+---
+
 ## The Ethics Question
 
 Every habit-forming product must answer: **"Does this make users' lives better?"**

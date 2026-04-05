@@ -4,6 +4,18 @@ Pragmatist buyers do not buy products. They buy solutions to problems. The gap b
 
 This reference provides the complete whole product framework, gap analysis tools, partnership strategies, and planning templates to ensure your offering meets the pragmatist's actual buying criteria.
 
+
+## Table of Contents
+1. [The Four Layers of the Whole Product](#the-four-layers-of-the-whole-product)
+2. [Whole Product Gap Analysis Template](#whole-product-gap-analysis-template)
+3. [Common Whole Product Gaps](#common-whole-product-gaps)
+4. [Partnership Strategy for Filling Gaps](#partnership-strategy-for-filling-gaps)
+5. [Industry Examples of Whole Product Evolution](#industry-examples-of-whole-product-evolution)
+6. [Whole Product Planning Canvas](#whole-product-planning-canvas)
+7. [Prioritizing Which Gaps to Fill First](#prioritizing-which-gaps-to-fill-first)
+
+---
+
 ## The Four Layers of the Whole Product
 
 ### Layer 1: Generic Product

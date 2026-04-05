@@ -1,10 +1,10 @@
 ---
 name: improve-retention
-description: 'Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions "users drop off", "activation rate", "onboarding friction", "retention metrics", or "why users don''t complete". Covers the Ability Chain, prompt design, and tiny behaviors that compound. For habit loops and variable rewards, see hooked-ux. For intrinsic motivation, see drive-motivation.'
+description: 'Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions "users drop off", "activation rate", "onboarding friction", "retention metrics", "why users dont complete", "churn analysis", "user activation", or "aha moment". Also trigger when analyzing cohort retention curves, designing activation milestones, reducing time-to-value for new users, or investigating why users stop after their first session. Covers the Ability Chain, prompt design, and tiny behaviors that compound. For habit loops and variable rewards, see hooked-ux. For intrinsic motivation, see drive-motivation.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.1"
+  version: "1.1.0"
 ---
 
 # Behavior Design Framework

@@ -2,6 +2,19 @@
 
 A system is only as good as its ability to stay up, recover from failures, and be observed. This reference covers the operational practices that turn a design diagram into a production system.
 
+
+## Table of Contents
+1. [Health Checks](#health-checks)
+2. [Monitoring and Alerting](#monitoring-and-alerting)
+3. [Logging](#logging)
+4. [Deployment Strategies](#deployment-strategies)
+5. [Disaster Recovery](#disaster-recovery)
+6. [Data Center Redundancy](#data-center-redundancy)
+7. [Autoscaling](#autoscaling)
+8. [Operational Readiness Checklist](#operational-readiness-checklist)
+
+---
+
 ## Health Checks
 
 ### Liveness vs Readiness

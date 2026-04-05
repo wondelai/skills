@@ -2,6 +2,20 @@
 
 The strategy canvas is the central diagnostic and action framework of blue ocean strategy. It captures the current state of play in an industry, shows where competitors invest, and reveals opportunities to create new market space. This reference provides step-by-step instructions for creating, reading, and using strategy canvases.
 
+
+## Table of Contents
+1. [What a Strategy Canvas Shows](#what-a-strategy-canvas-shows)
+2. [Step-by-Step: Creating a Strategy Canvas](#step-by-step-creating-a-strategy-canvas)
+3. [Reading the Canvas: What Curve Shapes Mean](#reading-the-canvas-what-curve-shapes-mean)
+4. [Strategy Canvas Templates for Common Industries](#strategy-canvas-templates-for-common-industries)
+5. [Before/After Strategy Canvas Examples](#beforeafter-strategy-canvas-examples)
+6. [Common Mistakes When Creating Strategy Canvases](#common-mistakes-when-creating-strategy-canvases)
+7. [Using the Strategy Canvas in Team Workshops](#using-the-strategy-canvas-in-team-workshops)
+8. [Digital Tools for Strategy Canvas Creation](#digital-tools-for-strategy-canvas-creation)
+9. [Strategy Canvas Checklist](#strategy-canvas-checklist)
+
+---
+
 ## What a Strategy Canvas Shows
 
 A strategy canvas is a one-page visual that plots:

@@ -4,6 +4,20 @@ Geoffrey Moore wrote Crossing the Chasm in 1991, when enterprise software was so
 
 This reference applies the Crossing the Chasm framework to the realities of modern B2B SaaS.
 
+
+## Table of Contents
+1. [How SaaS Changes the Adoption Curve](#how-saas-changes-the-adoption-curve)
+2. [Product-Led Growth and the Chasm](#product-led-growth-and-the-chasm)
+3. [How Freemium Changes the Adoption Curve](#how-freemium-changes-the-adoption-curve)
+4. [Modern Beachhead Selection for SaaS](#modern-beachhead-selection-for-saas)
+5. [Whole Product in the API/Integration Era](#whole-product-in-the-apiintegration-era)
+6. [Community-Led Growth as Chasm-Crossing Strategy](#community-led-growth-as-chasm-crossing-strategy)
+7. [Modern Metrics for Tracking Adoption Lifecycle Position](#modern-metrics-for-tracking-adoption-lifecycle-position)
+8. [Case Studies: Modern SaaS Through the Chasm Lens](#case-studies-modern-saas-through-the-chasm-lens)
+9. [The Modern SaaS Chasm-Crossing Playbook](#the-modern-saas-chasm-crossing-playbook)
+
+---
+
 ## How SaaS Changes the Adoption Curve
 
 ### Traditional Software vs SaaS Adoption Dynamics

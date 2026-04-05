@@ -2,6 +2,19 @@
 
 The Eliminate-Reduce-Raise-Create (ERRC) grid is the operational tool that translates blue ocean thinking into concrete strategic actions. It forces companies to pursue differentiation and low cost simultaneously by asking four questions that challenge industry logic. This reference provides a complete guide to facilitating, applying, and validating ERRC decisions.
 
+
+## Table of Contents
+1. [The Four Actions](#the-four-actions)
+2. [ERRC Grid Template](#errc-grid-template)
+3. [Detailed Questions for Each Action](#detailed-questions-for-each-action)
+4. [Industry Examples of ERRC Applied](#industry-examples-of-errc-applied)
+5. [Step-by-Step ERRC Workshop Facilitation Guide](#step-by-step-errc-workshop-facilitation-guide)
+6. [Validating ERRC Decisions](#validating-errc-decisions)
+7. [From ERRC to Execution: Action Planning Template](#from-errc-to-execution-action-planning-template)
+8. [Common ERRC Mistakes](#common-errc-mistakes)
+
+---
+
 ## The Four Actions
 
 ### Eliminate

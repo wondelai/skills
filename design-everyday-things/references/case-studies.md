@@ -2,6 +2,17 @@
 
 This collection of case studies applies Don Norman's design principles to real products, both physical and digital. Each case follows the same structure: the product, the design problem, the principle violated, a detailed analysis, the fix, and the broader lesson. These cases demonstrate that the same small set of principles explains why products are intuitive or infuriating.
 
+## Table of Contents
+1. [Case Study 1: The Norman Door](#case-study-1-the-norman-door)
+2. [Case Study 2: The Thermostat Mental Model](#case-study-2-the-thermostat-mental-model)
+3. [Case Study 3: Stovetop Burner Mapping](#case-study-3-stovetop-burner-mapping)
+4. [Case Study 4: Airplane Cockpit Mode Errors](#case-study-4-airplane-cockpit-mode-errors)
+5. [Case Study 5: Hospital Medication Errors](#case-study-5-hospital-medication-errors)
+6. [Case Study 6: ATM Interface Evolution](#case-study-6-atm-interface-evolution)
+7. [Case Study 7: Smartphone Unlock Evolution](#case-study-7-smartphone-unlock-evolution)
+8. [Case Study 8: Smart Home Light Controls](#case-study-8-smart-home-light-controls)
+9. [Cross-Cutting Patterns: What Makes Designs Intuitive vs. Confusing](#cross-cutting-patterns-what-makes-designs-intuitive-vs-confusing)
+
 ---
 
 ## Case Study 1: The Norman Door

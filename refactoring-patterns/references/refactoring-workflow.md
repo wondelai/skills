@@ -2,6 +2,17 @@
 
 Detailed reference for when and how to refactor safely. The discipline of refactoring is as important as knowing the individual transformations. This reference covers the refactoring cycle, timing, safety techniques, and strategies for large-scale refactoring in production systems.
 
+## Table of Contents
+1. [The Refactoring Cycle](#the-refactoring-cycle)
+2. [When to Refactor](#when-to-refactor)
+3. [When NOT to Refactor](#when-not-to-refactor)
+4. [Testing and Refactoring](#testing-and-refactoring)
+5. [Refactoring and Performance](#refactoring-and-performance)
+6. [Branch by Abstraction](#branch-by-abstraction)
+7. [Parallel Change (Expand-Migrate-Contract)](#parallel-change-expand-migrate-contract)
+8. [Large-Scale Refactoring Strategies](#large-scale-refactoring-strategies)
+9. [Refactoring Checklist](#refactoring-checklist)
+
 ---
 
 ## The Refactoring Cycle

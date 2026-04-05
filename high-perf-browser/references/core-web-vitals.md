@@ -2,6 +2,19 @@
 
 Core Web Vitals are Google's standardized performance metrics that measure real user experience. They directly impact search ranking and correlate strongly with user engagement, conversion rates, and bounce rates.
 
+
+## Table of Contents
+1. [The Three Core Web Vitals](#the-three-core-web-vitals)
+2. [LCP: Largest Contentful Paint](#lcp-largest-contentful-paint)
+3. [INP: Interaction to Next Paint](#inp-interaction-to-next-paint)
+4. [CLS: Cumulative Layout Shift](#cls-cumulative-layout-shift)
+5. [Measuring Core Web Vitals](#measuring-core-web-vitals)
+6. [Performance Budgets](#performance-budgets)
+7. [Debugging Workflow](#debugging-workflow)
+8. [Quick Reference: Optimization Impact](#quick-reference-optimization-impact)
+
+---
+
 ## The Three Core Web Vitals
 
 | Metric | Measures | Good | Needs Improvement | Poor |

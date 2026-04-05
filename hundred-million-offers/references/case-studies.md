@@ -2,6 +2,18 @@
 
 Theory is only useful when applied. This reference provides detailed breakdowns of Grand Slam Offers across six different business types: SaaS, coaching/consulting, e-commerce, agency, local business, and info product. Each case study follows the same structure: context, original offer, Grand Slam redesign, and key lessons. These are composite examples drawn from common patterns in each industry, not specific company case studies.
 
+
+## Table of Contents
+1. [Case Study 1: SaaS -- Project Management Tool](#case-study-1-saas-project-management-tool)
+2. [Case Study 2: Coaching/Consulting -- Business Coach](#case-study-2-coachingconsulting-business-coach)
+3. [Case Study 3: E-Commerce -- Skincare Brand](#case-study-3-e-commerce-skincare-brand)
+4. [Case Study 4: Agency -- Digital Marketing Agency](#case-study-4-agency-digital-marketing-agency)
+5. [Case Study 5: Local Business -- Personal Training Gym](#case-study-5-local-business-personal-training-gym)
+6. [Case Study 6: Info Product -- Online Course Creator](#case-study-6-info-product-online-course-creator)
+7. [Cross-Case Patterns](#cross-case-patterns)
+
+---
+
 ## Case Study 1: SaaS -- Project Management Tool
 
 ### Context

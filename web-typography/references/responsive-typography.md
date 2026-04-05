@@ -2,6 +2,24 @@
 
 Adapting type to screens, viewports, and reading contexts.
 
+
+## Table of Contents
+1. [Core Principle](#core-principle)
+2. [The Problem with Fixed Sizes](#the-problem-with-fixed-sizes)
+3. [Fluid Typography with clamp()](#fluid-typography-with-clamp)
+4. [Complete Fluid Type System](#complete-fluid-type-system)
+5. [Responsive Line Length](#responsive-line-length)
+6. [Responsive Line Height](#responsive-line-height)
+7. [Breakpoint Strategy](#breakpoint-strategy)
+8. [Container Queries (Modern Approach)](#container-queries-modern-approach)
+9. [Reading Distance Considerations](#reading-distance-considerations)
+10. [Viewport Units Reference](#viewport-units-reference)
+11. [Practical Responsive Checklist](#practical-responsive-checklist)
+12. [Complete Example](#complete-example)
+13. [Tools and Resources](#tools-and-resources)
+
+---
+
 ## Core Principle
 
 **Typography must respond to context.** A phone held at arm's length, a desktop monitor at desk distance, and a tablet on a couch all demand different typographic treatment.

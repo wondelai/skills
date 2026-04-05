@@ -2,6 +2,18 @@
 
 Adapting the SB7 framework across social media, video, podcasts, PR, and other channels.
 
+
+## Table of Contents
+1. [The Consistency Principle](#the-consistency-principle)
+2. [Social Media Adaptation](#social-media-adaptation)
+3. [Video Scripts](#video-scripts)
+4. [Podcast Adaptation](#podcast-adaptation)
+5. [PR and Media](#pr-and-media)
+6. [Email Marketing (Beyond Sequences)](#email-marketing-beyond-sequences)
+7. [Maintaining Consistency](#maintaining-consistency)
+
+---
+
 ## The Consistency Principle
 
 Your brand message must be recognizable across every channel, but adapted to each platform's format and audience expectations.

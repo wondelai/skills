@@ -2,6 +2,18 @@
 
 Comments are one of the most debated topics in software engineering. Ousterhout argues that comments are not merely helpful -- they are essential design documentation that captures information that cannot be expressed in code. The belief that "good code is self-documenting" is partially true for implementation details, but dangerously wrong for abstractions, design decisions, and cross-cutting concerns.
 
+
+## Table of Contents
+1. [Why Comments Matter](#why-comments-matter)
+2. [The Four Types of Comments](#the-four-types-of-comments)
+3. [Comment-Driven Design](#comment-driven-design)
+4. [The "Self-Documenting Code" Myth](#the-self-documenting-code-myth)
+5. [Maintaining Comments](#maintaining-comments)
+6. [Comments Anti-Patterns](#comments-anti-patterns)
+7. [Summary](#summary)
+
+---
+
 ## Why Comments Matter
 
 Code tells you **what** the program does. Comments tell you:

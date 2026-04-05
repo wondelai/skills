@@ -2,6 +2,21 @@
 
 Creating effective color themes and implementing dark mode correctly.
 
+
+## Table of Contents
+1. [Dark Mode Philosophy](#dark-mode-philosophy)
+2. [Dark Mode Color Principles](#dark-mode-color-principles)
+3. [Building a Dark Mode Palette](#building-a-dark-mode-palette)
+4. [Implementation Strategies](#implementation-strategies)
+5. [Component Considerations](#component-considerations)
+6. [Testing Dark Mode](#testing-dark-mode)
+7. [Theme Toggle UI](#theme-toggle-ui)
+8. [Advanced: Multiple Themes](#advanced-multiple-themes)
+9. [Common Mistakes](#common-mistakes)
+10. [Quick Reference](#quick-reference)
+
+---
+
 ## Dark Mode Philosophy
 
 Dark mode isn't just inverting colors—it requires deliberate design decisions to maintain usability, hierarchy, and aesthetics.

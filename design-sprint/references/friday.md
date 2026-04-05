@@ -2,6 +2,19 @@
 
 Friday is the payoff. Five customers interact with the prototype while the team watches, listens, and takes notes. By the end of the day, the team will have clear evidence of what works, what fails, and what to do next. The quality of Friday depends entirely on the quality of the interviews and the discipline of the observation.
 
+
+## Table of Contents
+1. [Schedule Overview](#schedule-overview)
+2. [The Five-Act Interview Script](#the-five-act-interview-script)
+3. [Interviewer Techniques](#interviewer-techniques)
+4. [Observation Room Setup](#observation-room-setup)
+5. [Pattern Recognition](#pattern-recognition)
+6. [End-of-Sprint Debrief](#end-of-sprint-debrief)
+7. [Templates](#templates)
+8. [Common Friday Mistakes](#common-friday-mistakes)
+
+---
+
 ## Schedule Overview
 
 | Time | Activity | Duration |

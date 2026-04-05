@@ -2,6 +2,18 @@
 
 Applying the SB7 framework to sales calls, discovery questions, and objection handling.
 
+
+## Table of Contents
+1. [Sales Philosophy](#sales-philosophy)
+2. [The Discovery Call Structure](#the-discovery-call-structure)
+3. [Discovery Questions Library](#discovery-questions-library)
+4. [Objection Handling](#objection-handling)
+5. [Presenting Price](#presenting-price)
+6. [Follow-Up Sequences](#follow-up-sequences)
+7. [Scripts for Key Moments](#scripts-for-key-moments)
+
+---
+
 ## Sales Philosophy
 
 **The salesperson is the guide, not the hero.**

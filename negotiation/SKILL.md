@@ -1,10 +1,10 @@
 ---
 name: negotiation
-description: 'Prepare and execute negotiations using tactical empathy, calibrated questions, and the Ackerman method. Use when the user mentions "salary negotiation", "contract terms", "handling objections", "mirroring and labeling", or "difficult conversation". Covers accusation audits, Black Swan discovery, and the "That''s Right" technique. For persuasion in product/marketing, see influence-psychology.'
+description: 'Prepare and execute negotiations using tactical empathy, calibrated questions, and the Ackerman method. Use when the user mentions "salary negotiation", "contract terms", "handling objections", "mirroring and labeling", "difficult conversation", "deal terms", "BATNA", or "anchoring". Also trigger when preparing for vendor negotiations, resolving pricing disputes, or navigating high-stakes conversations where both parties need to feel heard. Covers accusation audits, Black Swan discovery, and the "Thats Right" technique. For persuasion in product/marketing, see influence-psychology.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.1"
+  version: "1.2.0"
 ---
 
 # Negotiation

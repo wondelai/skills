@@ -4,6 +4,18 @@ You cannot operate what you cannot observe. Observability is the ability to unde
 
 A well-observed system lets you answer questions you did not anticipate at design time. A poorly observed system forces you to deploy new instrumentation during an outage -- exactly when you can least afford the risk.
 
+
+## Table of Contents
+1. [The Three Pillars of Observability](#the-three-pillars-of-observability)
+2. [Health Check Patterns](#health-check-patterns)
+3. [The RED Method](#the-red-method)
+4. [The USE Method](#the-use-method)
+5. [SLIs, SLOs, and SLAs](#slis-slos-and-slas)
+6. [Alerting Strategy](#alerting-strategy)
+7. [Dashboards That Matter](#dashboards-that-matter)
+
+---
+
 ## The Three Pillars of Observability
 
 ### 1. Structured Logs

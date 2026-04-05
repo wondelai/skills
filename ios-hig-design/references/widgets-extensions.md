@@ -2,6 +2,18 @@
 
 Design guidelines for widgets, App Clips, and system extensions.
 
+
+## Table of Contents
+1. [Widget Design](#widget-design)
+2. [Widget Configuration](#widget-configuration)
+3. [App Clips](#app-clips)
+4. [Share Extensions](#share-extensions)
+5. [Action Extensions](#action-extensions)
+6. [Live Activities](#live-activities)
+7. [Widget Development Tips](#widget-development-tips)
+
+---
+
 ## Widget Design
 
 ### Widget Philosophy

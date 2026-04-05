@@ -2,6 +2,18 @@
 
 Overcoming resistance, building jobs-oriented organizations, and avoiding the feature-factory trap.
 
+
+## Table of Contents
+1. [Common Objections to JTBD](#common-objections-to-jtbd)
+2. [The Feature-Factory Trap](#the-feature-factory-trap)
+3. [Getting Executive Buy-In](#getting-executive-buy-in)
+4. [Building a Jobs-Oriented Organization](#building-a-jobs-oriented-organization)
+5. [Change Management Playbook](#change-management-playbook)
+6. [Handling Resistance](#handling-resistance)
+7. [Measuring Adoption](#measuring-adoption)
+
+---
+
 ## Common Objections to JTBD
 
 ### "We already know our customers"

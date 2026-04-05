@@ -2,6 +2,19 @@
 
 Deep-dive into experiment design, statistical rigor, and test prioritization from the CRE Methodology.
 
+
+## Table of Contents
+1. [The Philosophy of Bold Testing](#the-philosophy-of-bold-testing)
+2. [A/B Testing vs. Multivariate Testing](#ab-testing-vs-multivariate-testing)
+3. [Statistical Significance](#statistical-significance)
+4. [ICE Prioritization Framework](#ice-prioritization-framework)
+5. [Test Documentation](#test-documentation)
+6. [When Tests Fail](#when-tests-fail)
+7. [CRO Team Dynamics](#cro-team-dynamics)
+8. [Testing Platform Comparison](#testing-platform-comparison)
+
+---
+
 ## The Philosophy of Bold Testing
 
 ### Why "Meek Tweaks" Fail

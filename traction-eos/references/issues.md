@@ -2,6 +2,19 @@
 
 Every organization has issues. The difference between great companies and mediocre ones is how quickly and permanently they solve them. The Issues Component provides a disciplined process called IDS -- Identify, Discuss, Solve -- that turns chronic problems into resolved action items. This guide covers the full IDS framework, facilitation techniques, issue types, list management, and practice scenarios.
 
+
+## Table of Contents
+1. [The IDS Framework](#the-ids-framework)
+2. [Step 1: Identify the Real Issue](#step-1-identify-the-real-issue)
+3. [Step 2: Discuss](#step-2-discuss)
+4. [Step 3: Solve](#step-3-solve)
+5. [Three Types of Issues](#three-types-of-issues)
+6. [Issues List Management](#issues-list-management)
+7. [Common IDS Facilitation Mistakes](#common-ids-facilitation-mistakes)
+8. [Practice Scenarios for IDS Training](#practice-scenarios-for-ids-training)
+
+---
+
 ## The IDS Framework
 
 IDS stands for Identify, Discuss, Solve. It is the core problem-solving methodology in EOS, used in every Level 10 meeting and every quarterly session. The framework is deliberately simple because simplicity drives discipline.

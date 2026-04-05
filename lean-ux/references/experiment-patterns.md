@@ -2,6 +2,17 @@
 
 Experiments are the engine of learning in Lean UX. The right experiment answers the hypothesis with the least effort. Choosing the wrong experiment type wastes time, money, or both. This reference covers the full spectrum of UX experiments, from napkin sketches to coded A/B tests.
 
+
+## Table of Contents
+1. [Types of UX Experiments](#types-of-ux-experiments)
+2. [Choosing the Right Experiment](#choosing-the-right-experiment)
+3. [Experiment Design Template](#experiment-design-template)
+4. [Minimum Viable Tests](#minimum-viable-tests)
+5. [Running Experiments in Practice](#running-experiments-in-practice)
+6. [Experiment Cheat Sheet](#experiment-cheat-sheet)
+
+---
+
 ## Types of UX Experiments
 
 ### 1. Paper Prototypes

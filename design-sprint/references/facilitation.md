@@ -2,6 +2,19 @@
 
 The Sprint Master makes or breaks the design sprint. This role is equal parts timekeeper, therapist, traffic cop, and energy manager. A great facilitator creates the conditions for the team's best thinking while preventing the dysfunction that derails most group work.
 
+
+## Table of Contents
+1. [The Sprint Master Role](#the-sprint-master-role)
+2. [Time-Boxing Techniques](#time-boxing-techniques)
+3. [Energy Management](#energy-management)
+4. [Dealing with Difficult Participants](#dealing-with-difficult-participants)
+5. [Decision-Making Protocols](#decision-making-protocols)
+6. [Room Setup and Materials Checklist](#room-setup-and-materials-checklist)
+7. [Day-by-Day Facilitation Tips](#day-by-day-facilitation-tips)
+8. [Logistics: Music, Snacks, and Breaks](#logistics-music-snacks-and-breaks)
+
+---
+
 ## The Sprint Master Role
 
 ### Core Responsibilities

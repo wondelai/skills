@@ -2,6 +2,20 @@
 
 The fastest network request is one that never happens. A well-designed caching strategy eliminates redundant data transfer, reduces server load, and dramatically improves load times for repeat visitors and subsequent navigations.
 
+
+## Table of Contents
+1. [The Cache Hierarchy](#the-cache-hierarchy)
+2. [HTTP Cache-Control Headers](#http-cache-control-headers)
+3. [Conditional Requests and Revalidation](#conditional-requests-and-revalidation)
+4. [Content Hashing for Cache Busting](#content-hashing-for-cache-busting)
+5. [Service Workers for Cache Control](#service-workers-for-cache-control)
+6. [CDN Configuration](#cdn-configuration)
+7. [Stale-While-Revalidate](#stale-while-revalidate)
+8. [Caching Strategy by Resource Type](#caching-strategy-by-resource-type)
+9. [Common Caching Mistakes](#common-caching-mistakes)
+
+---
+
 ## The Cache Hierarchy
 
 Browsers check caches in a specific order before making a network request:

@@ -4,6 +4,20 @@ The distinction between deployment (placing code on infrastructure) and release 
 
 Most production outages are caused by changes. Deployment strategies exist to make changes safe.
 
+
+## Table of Contents
+1. [Zero-Downtime Deployment](#zero-downtime-deployment)
+2. [Rolling Deployment](#rolling-deployment)
+3. [Blue-Green Deployment](#blue-green-deployment)
+4. [Canary Releases](#canary-releases)
+5. [Feature Flags](#feature-flags)
+6. [Database Migrations Without Downtime](#database-migrations-without-downtime)
+7. [Immutable Infrastructure](#immutable-infrastructure)
+8. [Infrastructure as Code](#infrastructure-as-code)
+9. [Rollback Strategy](#rollback-strategy)
+
+---
+
 ## Zero-Downtime Deployment
 
 Zero-downtime deployment is not optional for any system with users. Users should never see an error page because you are deploying code.

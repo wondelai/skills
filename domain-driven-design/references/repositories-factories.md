@@ -2,6 +2,15 @@
 
 Repositories and Factories are infrastructure-facing patterns in Domain-Driven Design that separate domain logic from persistence and object creation concerns. The Repository provides the illusion of an in-memory collection of aggregates. The Factory encapsulates complex creation logic. Together, they keep the domain model clean and focused on business rules.
 
+
+## Table of Contents
+1. [The Repository Pattern](#the-repository-pattern)
+2. [The Factory Pattern](#the-factory-pattern)
+3. [The Specification Pattern](#the-specification-pattern)
+4. [Ports and Adapters Relationship](#ports-and-adapters-relationship)
+
+---
+
 ## The Repository Pattern
 
 A Repository mediates between the domain and data mapping layers, acting like an in-memory collection of domain objects. Domain code uses the repository to obtain aggregates without knowing how they are stored, queried, or reconstructed.

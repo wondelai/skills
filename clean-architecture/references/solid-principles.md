@@ -4,6 +4,16 @@ The SOLID principles are five design principles for managing dependencies at the
 
 This reference covers each principle with definitions, code examples, common violations, and practical application guidance.
 
+
+## Table of Contents
+1. [SRP: The Single Responsibility Principle](#srp-the-single-responsibility-principle)
+2. [OCP: The Open-Closed Principle](#ocp-the-open-closed-principle)
+3. [LSP: The Liskov Substitution Principle](#lsp-the-liskov-substitution-principle)
+4. [ISP: The Interface Segregation Principle](#isp-the-interface-segregation-principle)
+5. [DIP: The Dependency Inversion Principle](#dip-the-dependency-inversion-principle)
+
+---
+
 ## SRP: The Single Responsibility Principle
 
 **"A module should have one, and only one, reason to change."**

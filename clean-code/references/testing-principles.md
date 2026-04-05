@@ -2,6 +2,19 @@
 
 Comprehensive guide to writing clean, maintainable tests that serve as executable documentation. Based on Robert C. Martin's *Clean Code*, Chapter 9.
 
+
+## Table of Contents
+1. [Why Tests Matter](#why-tests-matter)
+2. [The Three Laws of TDD](#the-three-laws-of-tdd)
+3. [Clean Tests](#clean-tests)
+4. [One Concept Per Test](#one-concept-per-test)
+5. [F.I.R.S.T. Principles](#first-principles)
+6. [Test Naming](#test-naming)
+7. [Test Patterns and Practices](#test-patterns-and-practices)
+8. [Tests as Documentation](#tests-as-documentation)
+
+---
+
 ## Why Tests Matter
 
 Test code is just as important as production code. It is not a second-class citizen. It requires thought, design, and care. Dirty tests are equivalent to, if not worse than, having no tests. Tests that are hard to read, fragile, or slow become a liability that developers avoid and eventually delete.

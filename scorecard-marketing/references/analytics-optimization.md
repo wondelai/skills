@@ -2,6 +2,19 @@
 
 Metrics, A/B testing elements, funnel analysis, and CRM integration for scorecard marketing.
 
+
+## Table of Contents
+1. [Key Metrics to Track](#key-metrics-to-track)
+2. [A/B Testing Elements](#ab-testing-elements)
+3. [Funnel Analysis Framework](#funnel-analysis-framework)
+4. [Score-Based Segmentation](#score-based-segmentation)
+5. [CRM Integration](#crm-integration)
+6. [Optimization Playbook](#optimization-playbook)
+7. [Advanced Tracking](#advanced-tracking)
+8. [Reporting Dashboard](#reporting-dashboard)
+
+---
+
 ## Key Metrics to Track
 
 ### Landing Page Metrics

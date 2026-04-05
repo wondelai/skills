@@ -2,6 +2,21 @@
 
 Practical patterns for implementing web typography in CSS.
 
+
+## Table of Contents
+1. [@font-face Fundamentals](#font-face-fundamentals)
+2. [font-display Strategies](#font-display-strategies)
+3. [Font Loading Optimization](#font-loading-optimization)
+4. [Variable Fonts](#variable-fonts)
+5. [System Font Stacks](#system-font-stacks)
+6. [Fallback Strategies](#fallback-strategies)
+7. [OpenType Features](#opentype-features)
+8. [Core Typography CSS](#core-typography-css)
+9. [Performance Checklist](#performance-checklist)
+10. [Quick Reference](#quick-reference)
+
+---
+
 ## @font-face Fundamentals
 
 ### Basic Syntax

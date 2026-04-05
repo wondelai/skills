@@ -2,6 +2,18 @@
 
 Platform comparison, conditional logic patterns, PDF generation, and integration architecture.
 
+
+## Table of Contents
+1. [Platform Comparison](#platform-comparison)
+2. [Scoring Logic Patterns](#scoring-logic-patterns)
+3. [Conditional Logic Patterns](#conditional-logic-patterns)
+4. [PDF Report Generation](#pdf-report-generation)
+5. [Integration Architecture](#integration-architecture)
+6. [Performance Optimization](#performance-optimization)
+7. [Security Considerations](#security-considerations)
+
+---
+
 ## Platform Comparison
 
 ### Dedicated Quiz/Scorecard Platforms

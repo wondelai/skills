@@ -2,6 +2,19 @@
 
 Best practices for permission requests, privacy UI, and building user trust.
 
+
+## Table of Contents
+1. [Permission Request Philosophy](#permission-request-philosophy)
+2. [Permission Request Timing](#permission-request-timing)
+3. [Permission Types & Best Practices](#permission-types-best-practices)
+4. [Handling Denied Permissions](#handling-denied-permissions)
+5. [Privacy UI Patterns](#privacy-ui-patterns)
+6. [App Privacy Labels](#app-privacy-labels)
+7. [Usage String Best Practices](#usage-string-best-practices)
+8. [Testing Permissions](#testing-permissions)
+
+---
+
 ## Permission Request Philosophy
 
 **Core principle:** Request permissions only when needed, explain why, and respect "no."

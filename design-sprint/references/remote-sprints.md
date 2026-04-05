@@ -2,6 +2,21 @@
 
 Running a design sprint with a distributed team requires deliberate adaptation of every exercise. The core principles remain the same: time-box, work individually, let the Decider decide, prototype, and test. But the tools, energy management, and communication patterns must change to account for screen fatigue, time zones, and the absence of a shared physical space.
 
+
+## Table of Contents
+1. [Tool Stack](#tool-stack)
+2. [Time Zone Considerations](#time-zone-considerations)
+3. [Adapting Each Day for Remote](#adapting-each-day-for-remote)
+4. [Compressed Schedule Options](#compressed-schedule-options)
+5. [Remote-Specific Exercise Adaptations](#remote-specific-exercise-adaptations)
+6. [Energy Management for Remote Participants](#energy-management-for-remote-participants)
+7. [Async vs Sync Quick Reference](#async-vs-sync-quick-reference)
+8. [Remote Prototype Testing Tools](#remote-prototype-testing-tools)
+9. [Common Remote Sprint Failures and Fixes](#common-remote-sprint-failures-and-fixes)
+10. [Remote Sprint Checklist](#remote-sprint-checklist)
+
+---
+
 ## Tool Stack
 
 ### Essential Tools

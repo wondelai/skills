@@ -2,6 +2,17 @@
 
 Information hiding is the most important technique for achieving deep modules. It was first articulated by David Parnas in 1971 and remains the foundation of good software design. Information leakage is its opposite -- and one of the most common sources of unnecessary complexity.
 
+
+## Table of Contents
+1. [The Information Hiding Principle](#the-information-hiding-principle)
+2. [Information Leakage](#information-leakage)
+3. [Reducing Information Leakage](#reducing-information-leakage)
+4. [Case Study: HTTP Request Handling](#case-study-http-request-handling)
+5. [Information Hiding Checklist](#information-hiding-checklist)
+6. [Relationship to Other Principles](#relationship-to-other-principles)
+
+---
+
 ## The Information Hiding Principle
 
 **Each module should encapsulate a few design decisions, and its interface should reveal as little as possible about those decisions.**

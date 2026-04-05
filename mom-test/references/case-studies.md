@@ -2,6 +2,13 @@
 
 Four realistic scenarios showing Mom Test principles applied to different startup contexts. Each case study follows a founder through bad conversations, identifies what went wrong, and shows how applying The Mom Test produces genuinely useful data.
 
+## Table of Contents
+1. [Case Study 1: TaskFlow (B2B SaaS -- Project Management)](#case-study-1-taskflow-b2b-saas-project-management)
+2. [Case Study 2: FreshPlate (Consumer App -- Meal Planning)](#case-study-2-freshplate-consumer-app-meal-planning)
+3. [Case Study 3: SupplyLink (B2B -- Marketplace for Wholesale Suppliers)](#case-study-3-supplylink-b2b-marketplace-for-wholesale-suppliers)
+4. [Case Study 4: StudyBuddy (Marketplace -- Peer Tutoring)](#case-study-4-studybuddy-marketplace-peer-tutoring)
+5. [Patterns Across All Four Cases](#patterns-across-all-four-cases)
+
 ---
 
 ## Case Study 1: TaskFlow (B2B SaaS -- Project Management)

@@ -2,6 +2,22 @@
 
 Practical guide to designing charts, tables, and data displays that communicate clearly.
 
+
+## Table of Contents
+1. [Chart Selection](#chart-selection)
+2. [Bar Charts](#bar-charts)
+3. [Line Charts](#line-charts)
+4. [Pie Charts](#pie-charts)
+5. [Color in Data Visualization](#color-in-data-visualization)
+6. [Tables](#tables)
+7. [Dashboard Layout](#dashboard-layout)
+8. [Chart Annotations](#chart-annotations)
+9. [Accessibility in Data Viz](#accessibility-in-data-viz)
+10. [Common Mistakes](#common-mistakes)
+11. [Quick Reference](#quick-reference)
+
+---
+
 ## Chart Selection
 
 ### Choosing the Right Chart Type

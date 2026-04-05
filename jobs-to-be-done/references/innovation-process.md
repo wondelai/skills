@@ -2,6 +2,19 @@
 
 Systematic methodology for discovering jobs and translating them into successful innovations.
 
+
+## Table of Contents
+1. [Job Hunting: Finding Undiscovered Jobs](#job-hunting-finding-undiscovered-jobs)
+2. [Passive vs. Active Job Seeking](#passive-vs-active-job-seeking)
+3. [The Job Atlas](#the-job-atlas)
+4. [Prototype Testing Through the JTBD Lens](#prototype-testing-through-the-jtbd-lens)
+5. [Job Statements: The Right Level of Abstraction](#job-statements-the-right-level-of-abstraction)
+6. [From Job to Innovation](#from-job-to-innovation)
+7. [Common Innovation Traps](#common-innovation-traps)
+8. [Job Discovery Interview Guide](#job-discovery-interview-guide)
+
+---
+
 ## Job Hunting: Finding Undiscovered Jobs
 
 ### Where Jobs Hide

@@ -2,6 +2,18 @@
 
 Structured email nurture sequences that move subscribers through the SB7 framework toward conversion.
 
+
+## Table of Contents
+1. [The Philosophy of Nurture Emails](#the-philosophy-of-nurture-emails)
+2. [The Welcome Sequence (5-Email Foundation)](#the-welcome-sequence-5-email-foundation)
+3. [The Nurture Sequence (Ongoing)](#the-nurture-sequence-ongoing)
+4. [Subject Line Formulas](#subject-line-formulas)
+5. [Segmentation Strategies](#segmentation-strategies)
+6. [Re-Engagement Sequence](#re-engagement-sequence)
+7. [Metrics to Track](#metrics-to-track)
+
+---
+
 ## The Philosophy of Nurture Emails
 
 Email isn't about broadcasting—it's about building a relationship with a potential customer who has a problem you can solve. Every email should:

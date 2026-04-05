@@ -2,6 +2,19 @@
 
 The Six Paths Framework provides six systematic ways to look beyond the conventional boundaries of an industry and discover blue ocean opportunities. Most companies define their competitive landscape narrowly: same industry, same strategic group, same buyer, same scope of product, same appeal, same point in time. Each path challenges one of these boundaries. This reference provides detailed exercises and real-world examples for each path.
 
+
+## Table of Contents
+1. [Overview of the Six Paths](#overview-of-the-six-paths)
+2. [Path 1: Look Across Alternative Industries](#path-1-look-across-alternative-industries)
+3. [Path 2: Look Across Strategic Groups](#path-2-look-across-strategic-groups)
+4. [Path 3: Look Across the Chain of Buyers](#path-3-look-across-the-chain-of-buyers)
+5. [Path 4: Look Across Complementary Products and Services](#path-4-look-across-complementary-products-and-services)
+6. [Path 5: Look Across Functional or Emotional Appeal](#path-5-look-across-functional-or-emotional-appeal)
+7. [Path 6: Look Across Time](#path-6-look-across-time)
+8. [Workshop Format: Exploring All Six Paths](#workshop-format-exploring-all-six-paths)
+
+---
+
 ## Overview of the Six Paths
 
 | Path | Boundary Challenged | Core Question |

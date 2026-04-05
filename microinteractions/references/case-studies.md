@@ -2,6 +2,14 @@
 
 Detailed design breakdowns of common UI patterns, analyzed through the four-part microinteraction structure: Trigger, Rules, Feedback, and Loops & Modes. Each case study documents the interaction from first use through edge cases, providing a practical blueprint for implementation.
 
+## Table of Contents
+1. [Case Study 1: Form Submission](#case-study-1-form-submission)
+2. [Case Study 2: Toggle / Switch](#case-study-2-toggle-switch)
+3. [Case Study 3: Pull-to-Refresh](#case-study-3-pull-to-refresh)
+4. [Case Study 4: Loading States](#case-study-4-loading-states)
+5. [Case Study 5: Notifications (Toast / Snackbar)](#case-study-5-notifications-toast-snackbar)
+6. [Cross-Cutting Patterns](#cross-cutting-patterns)
+
 ---
 
 ## Case Study 1: Form Submission

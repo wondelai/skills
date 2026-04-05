@@ -2,6 +2,17 @@
 
 Detailed reference for refactorings that redistribute responsibilities between classes. The fundamental question of object-oriented design is: where should this behavior live? These refactorings provide the mechanical steps to move things to the right place.
 
+## Table of Contents
+1. [Move Method](#move-method)
+2. [Move Field](#move-field)
+3. [Extract Class](#extract-class)
+4. [Inline Class](#inline-class)
+5. [Hide Delegate](#hide-delegate)
+6. [Remove Middle Man](#remove-middle-man)
+7. [Introduce Foreign Method](#introduce-foreign-method)
+8. [Introduce Local Extension](#introduce-local-extension)
+9. [Decision Guide: Where Does This Behavior Belong?](#decision-guide-where-does-this-behavior-belong)
+
 ---
 
 ## Move Method

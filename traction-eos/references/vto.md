@@ -2,6 +2,23 @@
 
 The Vision/Traction Organizer is the single most important document in EOS. It captures your company's vision on two pages by answering eight critical questions. When the leadership team is aligned on the V/TO, every decision becomes clearer, every hire becomes easier, and every meeting becomes more productive. This guide walks through each question with exercises, templates, and facilitation tips.
 
+
+## Table of Contents
+1. [The Eight Questions](#the-eight-questions)
+2. [Question 1: Core Values](#question-1-core-values)
+3. [Question 2: Core Focus](#question-2-core-focus)
+4. [Question 3: 10-Year Target](#question-3-10-year-target)
+5. [Question 4: Marketing Strategy](#question-4-marketing-strategy)
+6. [Question 5: 3-Year Picture](#question-5-3-year-picture)
+7. [Question 6: 1-Year Plan](#question-6-1-year-plan)
+8. [Question 7: Quarterly Rocks](#question-7-quarterly-rocks)
+9. [Question 8: Issues List](#question-8-issues-list)
+10. [Complete V/TO Template](#complete-vto-template)
+11. [Filled-In V/TO Example: CloudSync (B2B SaaS, $4M ARR)](#filled-in-vto-example-cloudsync-b2b-saas-4m-arr)
+12. [Facilitation Tips for V/TO Sessions](#facilitation-tips-for-vto-sessions)
+
+---
+
 ## The Eight Questions
 
 The V/TO is divided into two pages: the Vision side (questions 1-4) and the Traction side (questions 5-8). Vision defines where you are going. Traction defines how you will get there.

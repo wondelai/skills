@@ -1,10 +1,10 @@
 ---
 name: ddia-systems
-description: 'Design data systems by understanding storage engines, replication, partitioning, transactions, and consistency models. Use when the user mentions "database choice", "replication lag", "partitioning strategy", "consistency vs availability", or "stream processing". Covers data models, batch/stream processing, and distributed consensus. For system design, see system-design. For resilience, see release-it.'
+description: 'Design data systems by understanding storage engines, replication, partitioning, transactions, and consistency models. Use when the user mentions "database choice", "replication lag", "partitioning strategy", "consistency vs availability", "stream processing", "ACID transactions", "eventual consistency", or "LSM tree vs B-tree". Also trigger when choosing between SQL and NoSQL, designing data pipelines, or debugging distributed system consistency issues. Covers data models, batch/stream processing, and distributed consensus. For system design, see system-design. For resilience, see release-it.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Designing Data-Intensive Applications Framework

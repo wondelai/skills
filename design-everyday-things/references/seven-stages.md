@@ -2,6 +2,22 @@
 
 Don Norman's Seven Stages of Action is a model of how humans interact with products. Every interaction, from flipping a light switch to completing an online checkout, follows the same seven-stage cycle. Understanding these stages lets designers identify exactly where users get stuck and apply targeted fixes. The model divides neatly into two sides: execution (stages 1-4, bridging the Gulf of Execution) and evaluation (stages 5-7, bridging the Gulf of Evaluation).
 
+
+## Table of Contents
+1. [The Seven Stages in Detail](#the-seven-stages-in-detail)
+2. [Stage 1: Goal Formation](#stage-1-goal-formation)
+3. [Stage 2: Plan Formation](#stage-2-plan-formation)
+4. [Stage 3: Specification of Action](#stage-3-specification-of-action)
+5. [Stage 4: Execution (Perform)](#stage-4-execution-perform)
+6. [Stage 5: Perception](#stage-5-perception)
+7. [Stage 6: Interpretation](#stage-6-interpretation)
+8. [Stage 7: Comparison](#stage-7-comparison)
+9. [Using the Seven Stages as an Evaluation Tool](#using-the-seven-stages-as-an-evaluation-tool)
+10. [Worked Examples](#worked-examples)
+11. [Seven Stages Audit Worksheet](#seven-stages-audit-worksheet)
+
+---
+
 ## The Seven Stages in Detail
 
 ```

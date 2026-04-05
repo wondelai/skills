@@ -2,6 +2,20 @@
 
 Eight detailed case studies of companies that created blue oceans, analyzed through the lens of the Four Actions Framework (ERRC). Each case illustrates how the company escaped head-to-head competition and unlocked new demand rather than fighting for existing market share.
 
+
+## Table of Contents
+1. [Cirque du Soleil: Reinventing the Circus](#cirque-du-soleil-reinventing-the-circus)
+2. [Yellow Tail: Wine for Everyone](#yellow-tail-wine-for-everyone)
+3. [Nintendo Wii: Gaming for the Whole Family](#nintendo-wii-gaming-for-the-whole-family)
+4. [Southwest Airlines: Flying for the Driving Class](#southwest-airlines-flying-for-the-driving-class)
+5. [Netflix: From Late Fees to Streaming Empire](#netflix-from-late-fees-to-streaming-empire)
+6. [Uber: Ride-Hailing Reimagined](#uber-ride-hailing-reimagined)
+7. [Curves: 30-Minute Fitness for Women](#curves-30-minute-fitness-for-women)
+8. [iTunes: Legal Music at a Fair Price](#itunes-legal-music-at-a-fair-price)
+9. [Cross-Cutting Patterns](#cross-cutting-patterns)
+
+---
+
 ## Cirque du Soleil: Reinventing the Circus
 
 ### Industry Context

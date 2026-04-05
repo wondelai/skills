@@ -2,6 +2,18 @@
 
 Designing for global audiences: RTL languages, color meanings, form conventions, and localization.
 
+
+## Table of Contents
+1. [Right-to-Left (RTL) Languages](#right-to-left-rtl-languages)
+2. [Color Meanings Across Cultures](#color-meanings-across-cultures)
+3. [Form Conventions](#form-conventions)
+4. [Text Considerations](#text-considerations)
+5. [Icons and Imagery](#icons-and-imagery)
+6. [Localization Best Practices](#localization-best-practices)
+7. [Quick Reference Checklist](#quick-reference-checklist)
+
+---
+
 ## Right-to-Left (RTL) Languages
 
 ### Languages That Use RTL

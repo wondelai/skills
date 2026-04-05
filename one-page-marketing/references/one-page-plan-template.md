@@ -2,6 +2,16 @@
 
 This reference file contains everything you need to complete your 1-Page Marketing Plan: a blank template with fill-in prompts, two fully worked examples, and a guided planning exercise.
 
+
+## Table of Contents
+1. [The Blank Template](#the-blank-template)
+2. [Worked Example 1: B2B SaaS (Project Management Tool for Creative Agencies)](#worked-example-1-b2b-saas-project-management-tool-for-creative-agencies)
+3. [Worked Example 2: Local Service Business (Premium Residential Cleaning)](#worked-example-2-local-service-business-premium-residential-cleaning)
+4. [Planning Exercise Guide](#planning-exercise-guide)
+5. [Checklist: One-Page Plan Complete](#checklist-one-page-plan-complete)
+
+---
+
 ## The Blank Template
 
 Print this, fill it in, and put it on your wall. This single page is your entire marketing strategy.

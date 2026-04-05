@@ -2,6 +2,22 @@
 
 Siri, Shortcuts, Handoff, drag and drop, and other system-level integrations.
 
+
+## Table of Contents
+1. [Siri Integration](#siri-integration)
+2. [Shortcuts App Integration](#shortcuts-app-integration)
+3. [Handoff](#handoff)
+4. [Drag and Drop](#drag-and-drop)
+5. [Universal Links](#universal-links)
+6. [Spotlight Search](#spotlight-search)
+7. [Focus & Notifications](#focus-notifications)
+8. [Quick Note Integration](#quick-note-integration)
+9. [SharePlay](#shareplay)
+10. [System Appearance](#system-appearance)
+11. [Best Practices Summary](#best-practices-summary)
+
+---
+
 ## Siri Integration
 
 ### SiriKit Domains

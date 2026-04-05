@@ -2,6 +2,18 @@
 
 Implementing EOS transforms companies across every industry. This collection of case studies illustrates how different types of organizations -- from SaaS startups to manufacturing companies -- used the Entrepreneurial Operating System to overcome specific challenges and achieve measurable results. Each case follows a consistent structure and concludes with lessons that apply broadly.
 
+
+## Table of Contents
+1. [Case Study 1: CloudStack Solutions (SaaS Startup)](#case-study-1-cloudstack-solutions-saas-startup)
+2. [Case Study 2: Meridian Consulting Group (Professional Services)](#case-study-2-meridian-consulting-group-professional-services)
+3. [Case Study 3: Precision Metal Works (Manufacturing)](#case-study-3-precision-metal-works-manufacturing)
+4. [Case Study 4: Spark Digital Agency (Marketing Agency)](#case-study-4-spark-digital-agency-marketing-agency)
+5. [Case Study 5: Summit Health Partners (Healthcare)](#case-study-5-summit-health-partners-healthcare)
+6. [Common Patterns in Successful EOS Implementations](#common-patterns-in-successful-eos-implementations)
+7. [Typical Results Timeline](#typical-results-timeline)
+
+---
+
 ## Case Study 1: CloudStack Solutions (SaaS Startup)
 
 ### Company Profile

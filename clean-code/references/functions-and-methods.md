@@ -2,6 +2,22 @@
 
 Comprehensive guide to writing small, focused functions that do one thing well. Based on Robert C. Martin's *Clean Code*, Chapters 3 and 4.
 
+
+## Table of Contents
+1. [The First Rule of Functions](#the-first-rule-of-functions)
+2. [Do One Thing](#do-one-thing)
+3. [Function Arguments](#function-arguments)
+4. [Flag Arguments](#flag-arguments)
+5. [Command-Query Separation](#command-query-separation)
+6. [Side Effects](#side-effects)
+7. [Extract Till You Drop](#extract-till-you-drop)
+8. [Structured Programming](#structured-programming)
+9. [DRY: Don't Repeat Yourself](#dry-dont-repeat-yourself)
+10. [Function Organization Within a Class](#function-organization-within-a-class)
+11. [Common Function Anti-Patterns](#common-function-anti-patterns)
+
+---
+
 ## The First Rule of Functions
 
 **Functions should be small.** The second rule of functions is that they should be smaller than that.

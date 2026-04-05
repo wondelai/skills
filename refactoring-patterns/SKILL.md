@@ -1,10 +1,10 @@
 ---
 name: refactoring-patterns
-description: 'Apply named refactoring transformations to improve code structure without changing behavior. Use when the user mentions "refactor this", "code smells", "extract method", "replace conditional", or "technical debt". Covers smell-driven refactoring, safe transformation sequences, and testing guards. For code quality foundations, see clean-code. For managing complexity, see software-design-philosophy.'
+description: 'Apply named refactoring transformations to improve code structure without changing behavior. Use when the user mentions "refactor this", "code smells", "extract method", "replace conditional", "technical debt", "move method", "inline variable", or "decompose conditional". Also trigger when cleaning up legacy code, preparing code for new features by restructuring, or identifying which transformation to apply to a specific code smell. Covers smell-driven refactoring, safe transformation sequences, and testing guards. For code quality foundations, see clean-code. For managing complexity, see software-design-philosophy.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Refactoring Patterns Framework

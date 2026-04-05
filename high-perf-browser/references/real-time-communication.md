@@ -2,6 +2,18 @@
 
 When data must flow continuously between client and server, the standard HTTP request-response model introduces unnecessary overhead. Real-time communication protocols -- WebSocket, Server-Sent Events (SSE), and WebRTC -- each solve different use cases with different trade-offs.
 
+
+## Table of Contents
+1. [Choosing the Right Approach](#choosing-the-right-approach)
+2. [WebSocket Protocol](#websocket-protocol)
+3. [Server-Sent Events (SSE)](#server-sent-events-sse)
+4. [Long Polling](#long-polling)
+5. [WebRTC Basics](#webrtc-basics)
+6. [Connection Management Best Practices](#connection-management-best-practices)
+7. [Scaling Real-Time Systems](#scaling-real-time-systems)
+
+---
+
 ## Choosing the Right Approach
 
 | Requirement | Best transport | Why |

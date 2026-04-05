@@ -2,6 +2,25 @@
 
 This is your working document for building a Grand Slam Offer from scratch. Work through each section in order. Fill in the prompts, score your offer on each element, and use the templates to assemble your final offer. By the end of this checklist, you will have a complete, ready-to-sell Grand Slam Offer.
 
+
+## Table of Contents
+1. [Step 1: Identify Your Starving Crowd](#step-1-identify-your-starving-crowd)
+2. [Step 2: Define the Dream Outcome](#step-2-define-the-dream-outcome)
+3. [Step 3: List Every Obstacle](#step-3-list-every-obstacle)
+4. [Step 4: Create Solutions for Each Obstacle](#step-4-create-solutions-for-each-obstacle)
+5. [Step 5: Apply the Trim & Stack Method](#step-5-apply-the-trim-stack-method)
+6. [Step 6: Set Value-Based Pricing](#step-6-set-value-based-pricing)
+7. [Step 7: Design Your Bonuses](#step-7-design-your-bonuses)
+8. [Step 8: Choose Your Guarantee](#step-8-choose-your-guarantee)
+9. [Step 9: Add Scarcity and Urgency](#step-9-add-scarcity-and-urgency)
+10. [Step 10: Name the Offer](#step-10-name-the-offer)
+11. [Grand Slam Offer Scoring Rubric](#grand-slam-offer-scoring-rubric)
+12. [Final Offer Assembly Template](#final-offer-assembly-template)
+13. [Post-Launch Optimization Checklist](#post-launch-optimization-checklist)
+14. [Quick Reference: The 10-Step Offer Creation Process](#quick-reference-the-10-step-offer-creation-process)
+
+---
+
 ## Step 1: Identify Your Starving Crowd
 
 ### Market Selection Worksheet

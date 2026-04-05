@@ -2,6 +2,20 @@
 
 Comprehensive guide to keyboard handling, text input, and hardware keyboard support.
 
+
+## Table of Contents
+1. [Software Keyboard Types](#software-keyboard-types)
+2. [Text Content Types](#text-content-types)
+3. [Input Accessory Views](#input-accessory-views)
+4. [Keyboard Avoidance](#keyboard-avoidance)
+5. [Hardware Keyboard Support](#hardware-keyboard-support)
+6. [Text Editing](#text-editing)
+7. [Secure Text Entry](#secure-text-entry)
+8. [Search Input](#search-input)
+9. [Common Patterns](#common-patterns)
+
+---
+
 ## Software Keyboard Types
 
 ### Choosing the Right Keyboard

@@ -2,6 +2,20 @@
 
 Deep methodology for mapping, analyzing, and optimizing conversion funnels.
 
+
+## Table of Contents
+1. [Funnel Philosophy](#funnel-philosophy)
+2. [Mapping Your Funnel](#mapping-your-funnel)
+3. [Blocked Arteries](#blocked-arteries)
+4. [Missing Links](#missing-links)
+5. [Industry Funnel Patterns](#industry-funnel-patterns)
+6. [Funnel Prioritization Framework](#funnel-prioritization-framework)
+7. [Funnel Visualization](#funnel-visualization)
+8. [Funnel Optimization Checklist](#funnel-optimization-checklist)
+9. [Advanced: Multi-Touch Attribution](#advanced-multi-touch-attribution)
+
+---
+
 ## Funnel Philosophy
 
 A funnel isn't just a visualization—it's a diagnostic tool. Every business has a funnel, whether they've mapped it or not. The question is: where is it leaking?

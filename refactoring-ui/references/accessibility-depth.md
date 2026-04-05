@@ -2,6 +2,17 @@
 
 Comprehensive WCAG 2.1 AA compliance checklist with practical implementation guidance.
 
+
+## Table of Contents
+1. [Accessibility Philosophy](#accessibility-philosophy)
+2. [WCAG 2.1 AA Checklist](#wcag-21-aa-checklist)
+3. [Focus Management](#focus-management)
+4. [Screen Reader Considerations](#screen-reader-considerations)
+5. [Testing Tools](#testing-tools)
+6. [Common Fixes Quick Reference](#common-fixes-quick-reference)
+
+---
+
 ## Accessibility Philosophy
 
 Accessibility isn't just compliance—it improves UX for everyone:

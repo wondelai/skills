@@ -2,6 +2,16 @@
 
 Detailed reference for refactorings that improve how data is represented. Raw primitives, magic numbers, exposed fields, and mutable collections create subtle bugs and scatter domain knowledge. These refactorings replace primitive representations with objects that encapsulate behavior and enforce invariants.
 
+## Table of Contents
+1. [Replace Data Value with Object](#replace-data-value-with-object)
+2. [Change Value to Reference](#change-value-to-reference)
+3. [Replace Array with Object](#replace-array-with-object)
+4. [Replace Magic Number with Symbolic Constant](#replace-magic-number-with-symbolic-constant)
+5. [Encapsulate Field](#encapsulate-field)
+6. [Encapsulate Collection](#encapsulate-collection)
+7. [Replace Type Code with Class](#replace-type-code-with-class)
+8. [Decision Guide: Which Data Refactoring to Use](#decision-guide-which-data-refactoring-to-use)
+
 ---
 
 ## Replace Data Value with Object

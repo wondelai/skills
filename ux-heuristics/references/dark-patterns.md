@@ -2,6 +2,17 @@
 
 Understanding manipulative design practices to recognize and avoid them. Ethical alternatives that achieve business goals without deceiving users.
 
+
+## Table of Contents
+1. [What Are Dark Patterns?](#what-are-dark-patterns)
+2. [Categories of Dark Patterns](#categories-of-dark-patterns)
+3. [Regulatory Context](#regulatory-context)
+4. [How to Audit for Dark Patterns](#how-to-audit-for-dark-patterns)
+5. [Ethical Alternatives That Work](#ethical-alternatives-that-work)
+6. [The Business Case Against Dark Patterns](#the-business-case-against-dark-patterns)
+
+---
+
 ## What Are Dark Patterns?
 
 Dark patterns are user interface designs that trick users into doing things they didn't intend. They exploit cognitive biases and psychological vulnerabilities for business benefit at user expense.

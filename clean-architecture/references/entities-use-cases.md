@@ -4,6 +4,15 @@ Entities and Use Cases form the two innermost circles of Clean Architecture. Ent
 
 This reference covers entity design, use case structure, the interactor pattern, input/output boundaries, request/response models, and strategies for keeping use cases focused.
 
+
+## Table of Contents
+1. [Enterprise Business Rules (Entities)](#enterprise-business-rules-entities)
+2. [Application Business Rules (Use Cases)](#application-business-rules-use-cases)
+3. [Request and Response Models](#request-and-response-models)
+4. [Keeping Use Cases Focused](#keeping-use-cases-focused)
+
+---
+
 ## Enterprise Business Rules (Entities)
 
 ### What Is an Entity?

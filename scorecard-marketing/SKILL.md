@@ -1,10 +1,10 @@
 ---
 name: scorecard-marketing
-description: 'Build quiz and assessment funnels that generate qualified leads at 30-50% conversion. Use when the user mentions "lead magnet", "quiz funnel", "assessment tool", "lead generation", or "score-based segmentation". Covers question design, dynamic results by tier, and automated follow-up sequences. For landing page conversion, see cro-methodology. For full marketing plans, see one-page-marketing.'
+description: 'Build quiz and assessment funnels that generate qualified leads at 30-50%% conversion. Use when the user mentions "lead magnet", "quiz funnel", "assessment tool", "lead generation", "score-based segmentation", "interactive content", "lead qualification", or "quiz marketing". Also trigger when designing self-assessment tools, building calculators or graders for marketing, or creating personalized result pages that drive conversions. Covers question design, dynamic results by tier, and automated follow-up sequences. For landing page conversion, see cro-methodology. For full marketing plans, see one-page-marketing.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.1"
+  version: "1.2.0"
 ---
 
 # Scorecard Marketing Skill

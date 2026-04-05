@@ -2,6 +2,19 @@
 
 Blue oceans are built on new demand, not on stealing market share from competitors. The largest untapped opportunity for any business lies in the people who are NOT its customers. W. Chan Kim and Renee Mauborgne identified three tiers of non-customers, each representing a different distance from your current market. Understanding and converting these non-customers is how blue oceans generate explosive growth.
 
+
+## Table of Contents
+1. [Why Non-Customers Matter More Than Customers](#why-non-customers-matter-more-than-customers)
+2. [The Three Tiers](#the-three-tiers)
+3. [Non-Customer Analysis Worksheet](#non-customer-analysis-worksheet)
+4. [Interview Guides for Each Tier](#interview-guides-for-each-tier)
+5. [Case Studies of Non-Customer Conversion](#case-studies-of-non-customer-conversion)
+6. [From Non-Customers to Market Sizing](#from-non-customers-to-market-sizing)
+7. [Non-Customer Conversion Checklist](#non-customer-conversion-checklist)
+8. [Common Mistakes in Non-Customer Analysis](#common-mistakes-in-non-customer-analysis)
+
+---
+
 ## Why Non-Customers Matter More Than Customers
 
 Most companies obsess over existing customers: satisfaction scores, retention rates, share of wallet. This focus is important for operational excellence, but it is the wrong starting point for strategic innovation.

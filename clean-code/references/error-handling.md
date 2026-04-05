@@ -2,6 +2,21 @@
 
 Comprehensive guide to writing clean error handling that keeps business logic readable. Based on Robert C. Martin's *Clean Code*, Chapter 7.
 
+
+## Table of Contents
+1. [The Core Problem](#the-core-problem)
+2. [Use Exceptions, Not Return Codes](#use-exceptions-not-return-codes)
+3. [Write Your Try-Catch-Finally Statement First](#write-your-try-catch-finally-statement-first)
+4. [Use Unchecked Exceptions](#use-unchecked-exceptions)
+5. [Provide Context with Exceptions](#provide-context-with-exceptions)
+6. [Define Exception Classes in Terms of the Caller's Needs](#define-exception-classes-in-terms-of-the-callers-needs)
+7. [Don't Return Null](#dont-return-null)
+8. [Don't Pass Null](#dont-pass-null)
+9. [Error Handling Patterns Summary](#error-handling-patterns-summary)
+10. [Common Error Handling Anti-Patterns](#common-error-handling-anti-patterns)
+
+---
+
 ## The Core Problem
 
 Error handling is important, but if it obscures logic, it's wrong. Code that mixes business logic with error handling is hard to read, test, and maintain. The goal is to write code where the happy path reads cleanly and error handling is a separate, well-organized concern.

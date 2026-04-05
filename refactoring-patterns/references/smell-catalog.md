@@ -2,6 +2,18 @@
 
 A comprehensive catalog of code smells organized by family. Each smell includes a description, detection heuristics, and the named refactorings that fix it.
 
+
+## Table of Contents
+1. [What Is a Code Smell?](#what-is-a-code-smell)
+2. [Family 1: Bloaters](#family-1-bloaters)
+3. [Family 2: Object-Orientation Abusers](#family-2-object-orientation-abusers)
+4. [Family 3: Change Preventers](#family-3-change-preventers)
+5. [Family 4: Dispensables](#family-4-dispensables)
+6. [Family 5: Couplers](#family-5-couplers)
+7. [Smell-to-Refactoring Quick Reference](#smell-to-refactoring-quick-reference)
+
+---
+
 ## What Is a Code Smell?
 
 A code smell is a surface indication that usually corresponds to a deeper structural problem. Smells are not bugs -- the code works correctly -- but they make the code harder to understand, extend, and maintain. The term was coined by Kent Beck and popularized by Martin Fowler.

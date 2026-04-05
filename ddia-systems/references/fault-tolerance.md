@@ -2,6 +2,19 @@
 
 Reliability means the system continues to work correctly even when things go wrong. Things going wrong are called faults, and a system that can cope with faults is called fault-tolerant. The distinction between a fault and a failure is critical: a fault is when one component of the system deviates from its specification, while a failure is when the system as a whole stops providing the required service.
 
+
+## Table of Contents
+1. [Faults vs. Failures](#faults-vs-failures)
+2. [Types of Faults](#types-of-faults)
+3. [Reliability Metrics](#reliability-metrics)
+4. [Detecting Faults in Distributed Systems](#detecting-faults-in-distributed-systems)
+5. [Byzantine Faults](#byzantine-faults)
+6. [Safety and Liveness](#safety-and-liveness)
+7. [Designing for Reliability](#designing-for-reliability)
+8. [Practical Reliability Patterns](#practical-reliability-patterns)
+
+---
+
 ## Faults vs. Failures
 
 | Term | Definition | Example |

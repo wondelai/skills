@@ -4,6 +4,20 @@ Stability patterns are the countermeasures to the anti-patterns that cause produ
 
 These patterns are not theoretical -- they are battle-tested responses to the recurring failure modes described in the anti-patterns reference.
 
+
+## Table of Contents
+1. [1. Circuit Breaker](#1-circuit-breaker)
+2. [2. Bulkheads](#2-bulkheads)
+3. [3. Timeouts](#3-timeouts)
+4. [4. Retry with Backoff](#4-retry-with-backoff)
+5. [5. Steady State](#5-steady-state)
+6. [6. Fail Fast](#6-fail-fast)
+7. [7. Let It Crash](#7-let-it-crash)
+8. [8. Handshaking](#8-handshaking)
+9. [Pattern Combinations](#pattern-combinations)
+
+---
+
 ## 1. Circuit Breaker
 
 The Circuit Breaker is the single most important stability pattern. It prevents a failing downstream dependency from taking down the calling service by short-circuiting requests when failures exceed a threshold.

@@ -4,6 +4,18 @@ Boundaries are the lines that separate software elements. In Clean Architecture,
 
 This reference covers boundary anatomy, boundary crossing mechanisms, the Humble Object pattern, partial boundaries, layers and boundaries, services as boundaries, test boundaries, and the Main component as the ultimate plugin.
 
+
+## Table of Contents
+1. [Boundary Anatomy](#boundary-anatomy)
+2. [Boundary Crossing](#boundary-crossing)
+3. [The Humble Object Pattern](#the-humble-object-pattern)
+4. [Partial Boundaries](#partial-boundaries)
+5. [Services as Boundaries](#services-as-boundaries)
+6. [Test Boundaries](#test-boundaries)
+7. [The Main Component as a Plugin](#the-main-component-as-a-plugin)
+
+---
+
 ## Boundary Anatomy
 
 ### What Is a Boundary?

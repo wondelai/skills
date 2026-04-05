@@ -2,6 +2,20 @@
 
 The concept of module depth is one of the most powerful ideas in Ousterhout's philosophy. It provides a concrete way to evaluate whether a module is pulling its weight in the system.
 
+
+## Table of Contents
+1. [The Core Idea](#the-core-idea)
+2. [Visualizing Module Depth](#visualizing-module-depth)
+3. [Examples of Deep Modules](#examples-of-deep-modules)
+4. [Examples of Shallow Modules](#examples-of-shallow-modules)
+5. [The Disease of Classitis](#the-disease-of-classitis)
+6. [When Shallow Is Acceptable](#when-shallow-is-acceptable)
+7. [Designing for Depth](#designing-for-depth)
+8. [Measuring Depth in Practice](#measuring-depth-in-practice)
+9. [Common Objections](#common-objections)
+
+---
+
 ## The Core Idea
 
 Every module has two parts:

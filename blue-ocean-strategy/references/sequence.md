@@ -2,6 +2,18 @@
 
 A blue ocean idea must pass through four sequential tests before it becomes a commercially viable strategy: Buyer Utility, Strategic Price, Target Cost, and Adoption. Each test is a gate. If the idea fails at any gate, it must be reworked before proceeding. Skipping a gate or reversing the order leads to strategies that look promising on paper but fail in the market.
 
+
+## Table of Contents
+1. [The Four-Gate Sequence](#the-four-gate-sequence)
+2. [Gate 1: Buyer Utility Map](#gate-1-buyer-utility-map)
+3. [Gate 2: Strategic Pricing](#gate-2-strategic-pricing)
+4. [Gate 3: Target Cost](#gate-3-target-cost)
+5. [Gate 4: Adoption Hurdles](#gate-4-adoption-hurdles)
+6. [Sequence Validation Checklist](#sequence-validation-checklist)
+7. [Common Sequencing Mistakes](#common-sequencing-mistakes)
+
+---
+
 ## The Four-Gate Sequence
 
 ```

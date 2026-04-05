@@ -6,6 +6,17 @@ Chaos engineering is the discipline of experimenting on a system in order to bui
 
 The fundamental insight is simple: you cannot know how your system handles failure until it actually fails. Waiting for production incidents to discover weaknesses is reactive and expensive. Chaos engineering is proactive and controlled.
 
+
+## Table of Contents
+1. [Principles of Chaos Engineering](#principles-of-chaos-engineering)
+2. [Chaos Experiment Design](#chaos-experiment-design)
+3. [Failure Injection Techniques](#failure-injection-techniques)
+4. [Chaos Monkey and Netflix's Approach](#chaos-monkey-and-netflixs-approach)
+5. [GameDay Exercises](#gameday-exercises)
+6. [Building Confidence Through Controlled Failure](#building-confidence-through-controlled-failure)
+
+---
+
 ## Principles of Chaos Engineering
 
 ### 1. Define Steady State

@@ -4,6 +4,17 @@ Interface Adapters and Frameworks & Drivers form the two outermost circles of Cl
 
 This reference covers controllers, presenters, gateways, the nature of frameworks as details, database and web as details, keeping frameworks at arm's length, and the plugin architecture.
 
+
+## Table of Contents
+1. [Interface Adapters](#interface-adapters)
+2. [Frameworks as Details](#frameworks-as-details)
+3. [The Database Is a Detail](#the-database-is-a-detail)
+4. [The Web Is a Detail](#the-web-is-a-detail)
+5. [Plugin Architecture](#plugin-architecture)
+6. [Keeping Frameworks at Arm's Length](#keeping-frameworks-at-arms-length)
+
+---
+
 ## Interface Adapters
 
 ### Controllers

@@ -2,6 +2,17 @@
 
 Detailed reference for the refactorings that break down long methods into well-named, cohesive pieces. These are the most frequently used refactorings and the foundation of all code improvement.
 
+## Table of Contents
+1. [Extract Method](#extract-method)
+2. [Inline Method](#inline-method)
+3. [Extract Variable](#extract-variable)
+4. [Inline Variable](#inline-variable)
+5. [Replace Temp with Query](#replace-temp-with-query)
+6. [Split Temporary Variable](#split-temporary-variable)
+7. [Remove Assignments to Parameters](#remove-assignments-to-parameters)
+8. [Replace Method with Method Object](#replace-method-with-method-object)
+9. [Decision Guide: Which Composing Refactoring to Use](#decision-guide-which-composing-refactoring-to-use)
+
 ---
 
 ## Extract Method

@@ -2,6 +2,19 @@
 
 The browser converts raw bytes into rendered pixels through a precise pipeline. Understanding this pipeline reveals exactly which resources block rendering and how to eliminate or defer them.
 
+
+## Table of Contents
+1. [The Critical Rendering Path](#the-critical-rendering-path)
+2. [Render-Blocking Resources](#render-blocking-resources)
+3. [Async and Defer](#async-and-defer)
+4. [Resource Hints](#resource-hints)
+5. [Font Loading Strategies](#font-loading-strategies)
+6. [Image Optimization](#image-optimization)
+7. [Resource Loading Priority](#resource-loading-priority)
+8. [Practical Loading Strategy](#practical-loading-strategy)
+
+---
+
 ## The Critical Rendering Path
 
 Every page load follows this sequence:

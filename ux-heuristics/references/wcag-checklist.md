@@ -2,6 +2,18 @@
 
 Complete checklist for WCAG 2.1 Level AA compliance with testing guidance.
 
+
+## Table of Contents
+1. [Perceivable](#perceivable)
+2. [Operable](#operable)
+3. [Understandable](#understandable)
+4. [Robust](#robust)
+5. [Testing Tools](#testing-tools)
+6. [Quick Reference: Common Failures](#quick-reference-common-failures)
+7. [Testing Checklist Summary](#testing-checklist-summary)
+
+---
+
 ## Perceivable
 
 Content must be presentable in ways users can perceive.

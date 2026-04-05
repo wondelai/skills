@@ -2,6 +2,19 @@
 
 One of the most important design decisions is how general-purpose or special-purpose a module's interface should be. Ousterhout advocates for a "somewhat general-purpose" approach: general enough to avoid special cases, specific enough to avoid over-engineering.
 
+
+## Table of Contents
+1. [The Spectrum](#the-spectrum)
+2. [The Key Question](#the-key-question)
+3. [Push Complexity Downward](#push-complexity-downward)
+4. [Configuration Parameters: Complexity Amplifiers](#configuration-parameters-complexity-amplifiers)
+5. [When Specialization Is Justified](#when-specialization-is-justified)
+6. [Practical Guidelines](#practical-guidelines)
+7. [The Relationship to Information Hiding](#the-relationship-to-information-hiding)
+8. [Summary](#summary)
+
+---
+
 ## The Spectrum
 
 ```
