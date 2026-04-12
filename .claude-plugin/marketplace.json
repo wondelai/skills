@@ -1,13 +1,13 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "wondelai-skills",
-  "description": "41 agent skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture — based on bestselling books",
+  "description": "42 agent skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture — based on bestselling books",
   "owner": {
     "name": "Wondel.ai",
     "email": "hello@wondel.ai"
   },
   "metadata": {
-    "description": "41 agent skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture — based on bestselling books",
+    "description": "42 agent skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture — based on bestselling books",
     "version": "1.3.0"
   },
   "plugins": [
@@ -125,7 +125,8 @@
         "./design-sprint",
         "./design-everyday-things",
         "./inspired-product",
-        "./continuous-discovery"
+        "./continuous-discovery",
+        "./37signals-way"
       ]
     },
     {

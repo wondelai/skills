@@ -15,7 +15,7 @@ Agent skills for Claude Code and agentskills.io-compatible agents. Browse all sk
 /plugin install ux-design@wondelai-skills             # Refactoring UI, iOS HIG, UX Heuristics, Hooked, Improve Retention, Web Typography, Top Design, Design of Everyday Things, Lean UX, Microinteractions
 /plugin install marketing-cro@wondelai-skills         # CRO Methodology, StoryBrand, Scorecard Marketing, Contagious, 1-Page Marketing
 /plugin install sales-influence@wondelai-skills       # Influence Psychology, Predictable Revenue, Made to Stick, $100M Offers
-/plugin install product-innovation@wondelai-skills    # Lean Startup, Design Sprint, Design of Everyday Things, Inspired, Continuous Discovery
+/plugin install product-innovation@wondelai-skills    # Lean Startup, Design Sprint, Design of Everyday Things, Inspired, Continuous Discovery, 37signals Way
 /plugin install strategy-growth@wondelai-skills       # Crossing the Chasm, Blue Ocean Strategy, Traction/EOS, Obviously Awesome
 /plugin install team-motivation@wondelai-skills       # Drive (Autonomy, Mastery, Purpose)
 /plugin install code-craftsmanship@wondelai-skills    # Clean Code, Refactoring Patterns, Software Design Philosophy, Pragmatic Programmer, DDD
@@ -72,6 +72,7 @@ npx skills add wondelai/skills/system-design
 npx skills add wondelai/skills/clean-architecture
 npx skills add wondelai/skills/release-it
 npx skills add wondelai/skills/high-perf-browser
+npx skills add wondelai/skills/37signals-way
 ```
 
 ## Available Skills
@@ -119,6 +120,7 @@ npx skills add wondelai/skills/high-perf-browser
 | [clean-architecture](https://skills.wondel.ai/skills/clean-architecture/) | The Dependency Rule: dependencies point inward from frameworks to entities | [Robert C. Martin](https://x.com/unclebobmartin)'s [*"Clean Architecture"*](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164?tag=wondelai00-20) |
 | [release-it](https://skills.wondel.ai/skills/release-it/) | Production-ready systems: circuit breakers, bulkheads, timeouts, retry logic | [Michael Nygard](https://x.com/mtnygard)'s [*"Release It!"*](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=wondelai00-20) |
 | [high-perf-browser](https://skills.wondel.ai/skills/high-perf-browser/) | Web performance: network protocols, resource loading, browser rendering | [Ilya Grigorik](https://x.com/igrigorik)'s [*"High Performance Browser Networking"*](https://www.amazon.com/High-Performance-Browser-Networking-performance/dp/1449344763?tag=wondelai00-20) |
+| [37signals-way](https://skills.wondel.ai/skills/37signals-way/) | Build less, shape work, ship in six-week cycles with small autonomous teams | [Jason Fried](https://x.com/jasonfried) & [DHH](https://x.com/dhh)'s [*"Getting Real"*](https://www.amazon.com/Getting-Real-Smarter-Successful-Application/dp/0578012812?tag=wondelai00-20), [*"Rework"*](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745?tag=wondelai00-20) & [Ryan Singer](https://x.com/rjs)'s [*"Shape Up"*](https://www.amazon.com/Shape-Up-Circles-Ship-Work/dp/B09ZSY1MWP?tag=wondelai00-20) |
 
 > **Looking for real-world scenarios?** See [EXAMPLES.md](EXAMPLES.md) for 49 copy-pasteable prompts organized by persona (founders, PMs, marketers, designers, sales, copywriters, solopreneurs).
 
@@ -1035,6 +1037,28 @@ Optimize web performance through network protocols, resource loading, and browse
 
 ---
 
+### [37signals-way](https://skills.wondel.ai/skills/37signals-way/)
+
+Build lean, opinionated products using the 37signals philosophy: build less, shape work before building, ship in fixed six-week cycles with small autonomous teams, and say no to almost everything by default.
+
+**About the authors:** [Jason Fried](https://x.com/jasonfried) is the co-founder and CEO of 37signals (Basecamp, HEY), a prominent advocate for calm companies and product simplicity. [David Heinemeier Hansson (DHH)](https://x.com/dhh) is the co-founder and CTO of 37signals and creator of Ruby on Rails. Together they wrote [*"Getting Real"*](https://www.amazon.com/Getting-Real-Smarter-Successful-Application/dp/0578012812?tag=wondelai00-20) and [*"Rework"*](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745?tag=wondelai00-20). [Ryan Singer](https://x.com/rjs) is the former Head of Strategy at 37signals and author of [*"Shape Up"*](https://www.amazon.com/Shape-Up-Circles-Ship-Work/dp/B09ZSY1MWP?tag=wondelai00-20).
+
+**Use when you need to:**
+- Shape work before giving it to a team (breadboarding, fat marker sketches, pitches)
+- Run fixed-time, variable-scope development cycles (six-week bets)
+- Cut features and scope ruthlessly to ship on time
+- Structure small autonomous teams (3-person teams, no PMs)
+- Replace backlogs and roadmaps with a betting table
+- Track progress with hill charts instead of burndowns or standups
+
+**Example prompts:**
+- *"We have a 200-item backlog and nothing ships on time. Help us switch to Shape Up cycles. Use 37signals-way skill."*
+- *"Shape this feature idea into a pitch with appetite, breadboard, rabbit holes, and no-gos. Use 37signals-way skill."*
+- *"Our product has too many features and users are overwhelmed. Help us apply the 'build less' philosophy. Use 37signals-way skill."*
+- *"Review our team process and score it against 37signals principles. Use 37signals-way skill."*
+
+---
+
 ## Learn More: The Skills Ecosystem
 
 Want to go deeper with skills — how they work, how to create your own, and what's available across the community?
@@ -1096,6 +1120,9 @@ The methodologies and frameworks referenced in these skills are the intellectual
 - **Clean Architecture**: Robert C. Martin
 - **Release It!**: Michael Nygard
 - **High Performance Browser Networking**: Ilya Grigorik
+- **Getting Real**: Jason Fried, David Heinemeier Hansson
+- **Rework**: Jason Fried, David Heinemeier Hansson
+- **Shape Up**: Ryan Singer
 
 These skills were created without directly copying or reproducing content from the original books or materials. They are based on:
 - Publicly available information about the methodologies
