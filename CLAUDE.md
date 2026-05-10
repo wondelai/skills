@@ -111,6 +111,7 @@ The YAML frontmatter `description` field is critical for skill discovery - it sh
    - Add "Skill Details" section (description, About the author, Use when, Example prompts)
    - Add to "Copyright & Disclaimer" section
 5. Add the skill to `.claude-plugin/marketplace.json` under the appropriate plugin collection
+6. Run `bash scripts/sync-ide-skills.sh` to add symlinks in `.claude/skills/`, `.cursor/skills/`, `.windsurf/skills/`, `.pi/skills/`
 
 ## Installation
 
