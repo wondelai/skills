@@ -73,6 +73,9 @@ npx skills add wondelai/skills/clean-architecture
 npx skills add wondelai/skills/release-it
 npx skills add wondelai/skills/high-perf-browser
 npx skills add wondelai/skills/37signals-way
+npx skills add wondelai/skills/gestalt-ui
+npx skills add wondelai/skills/laws-of-ux
+npx skills add wondelai/skills/ui-patterns
 ```
 
 ## Available Skills
@@ -121,6 +124,9 @@ npx skills add wondelai/skills/37signals-way
 | [release-it](https://skills.wondel.ai/skills/release-it/) | Production-ready systems: circuit breakers, bulkheads, timeouts, retry logic | [Michael Nygard](https://x.com/mtnygard)'s [*"Release It!"*](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=wondelai00-20) |
 | [high-perf-browser](https://skills.wondel.ai/skills/high-perf-browser/) | Web performance: network protocols, resource loading, browser rendering | [Ilya Grigorik](https://x.com/igrigorik)'s [*"High Performance Browser Networking"*](https://www.amazon.com/High-Performance-Browser-Networking-performance/dp/1449344763?tag=wondelai00-20) |
 | [37signals-way](https://skills.wondel.ai/skills/37signals-way/) | Build less, shape work, ship in six-week cycles with small autonomous teams | [Jason Fried](https://x.com/jasonfried) & [DHH](https://x.com/dhh)'s [*"Getting Real"*](https://www.amazon.com/Getting-Real-Smarter-Successful-Application/dp/0578012812?tag=wondelai00-20), [*"Rework"*](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745?tag=wondelai00-20) & [Ryan Singer](https://x.com/rjs)'s [*"Shape Up"*](https://www.amazon.com/Shape-Up-Circles-Ship-Work/dp/B09ZSY1MWP?tag=wondelai00-20) |
+| [gestalt-ui](https://skills.wondel.ai/skills/gestalt-ui/) | Apply Gestalt principles of visual perception to UI design | Gestalt psychology research (Wertheimer, Koffka, Köhler) applied to digital interfaces |
+| [laws-of-ux](https://skills.wondel.ai/skills/laws-of-ux/) | Apply evidence-based UX laws to interaction design decisions | [Jon Yablonski](https://x.com/jonyablonski)'s [*"Laws of UX"*](https://www.amazon.com/Laws-UX-Using-Psychology-Products/dp/149205531X?tag=wondelai00-20) |
+| [ui-patterns](https://skills.wondel.ai/skills/ui-patterns/) | Apply proven UI component patterns and scanning behaviour to build effective interfaces | Nielsen Norman Group research, Smashing Magazine best practices |
 
 > **Looking for real-world scenarios?** See [EXAMPLES.md](EXAMPLES.md) for 49 copy-pasteable prompts organized by persona (founders, PMs, marketers, designers, sales, copywriters, solopreneurs).
 
@@ -1059,6 +1065,70 @@ Build lean, opinionated products using the 37signals philosophy: build less, sha
 
 ---
 
+### [gestalt-ui](https://skills.wondel.ai/skills/gestalt-ui/)
+
+Apply Gestalt principles of visual perception to UI design. Understand how users automatically group, separate, and interpret visual elements -- and use these principles intentionally to make interfaces self-explanatory.
+
+**Based on:** Gestalt psychology research (Max Wertheimer, Kurt Koffka, Wolfgang Köhler) applied to digital interface design, synthesised from [Smashing Magazine](https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/) and [Interaction Design Foundation](https://www.interaction-design.org/literature/topics/gestalt-principles).
+
+**Use when you need to:**
+- Group and organize UI elements effectively using spacing, borders, and visual connections
+- Create intuitive visual relationships between components
+- Audit layouts for perceptual clarity and unintended grouping
+- Design navigation, cards, forms, or dashboards that users understand instantly
+- Resolve conflicting visual signals between proximity, similarity, and containers
+
+**Example prompts:**
+- *"Audit this dashboard layout for Gestalt violations. Use gestalt-ui skill."*
+- *"These form fields feel disconnected. Fix the visual grouping. Use gestalt-ui skill."*
+- *"How should I use proximity and common region to group these settings? Use gestalt-ui skill."*
+- *"Score this card layout on Gestalt principle adherence. Use gestalt-ui skill."*
+
+---
+
+### [laws-of-ux](https://skills.wondel.ai/skills/laws-of-ux/)
+
+Apply evidence-based UX laws to interaction design decisions. These behavioural psychology principles describe how humans perceive, decide, and act -- use them to design interfaces that work with human cognition, not against it.
+
+**About the author:** [Jon Yablonski](https://x.com/jonyablonski) is a designer and author of [*"Laws of UX"*](https://www.amazon.com/Laws-UX-Using-Psychology-Products/dp/149205531X?tag=wondelai00-20), synthesising decades of research from Fitts, Hick, Miller, Nielsen, and others into actionable design principles at [lawsofux.com](https://lawsofux.com/).
+
+**Use when you need to:**
+- Size and position interactive targets effectively (Fitts's Law)
+- Reduce cognitive load and decision complexity (Hick's Law, Miller's Law)
+- Design progress indicators and memory-friendly interfaces (Goal-Gradient, Serial Position)
+- Resolve design trade-offs with psychological evidence
+- Optimise response times and perceived performance (Doherty Threshold)
+- Follow platform conventions or decide when to break them (Jakob's Law)
+
+**Example prompts:**
+- *"Our mobile buttons feel too small and hard to tap. Audit using Fitts's Law. Use laws-of-ux skill."*
+- *"Users abandon our settings page. Too many choices? Diagnose with Hick's Law. Use laws-of-ux skill."*
+- *"Design a progress indicator for our 6-step onboarding. Use laws-of-ux skill."*
+- *"Score this checkout flow against UX laws. Use laws-of-ux skill."*
+
+---
+
+### [ui-patterns](https://skills.wondel.ai/skills/ui-patterns/)
+
+Apply proven UI component patterns and scanning behaviour to build effective interfaces. Concrete guidance for navigation, forms, buttons, cards, modals, tables, loading states, and notifications -- plus a decision reference for choosing between competing patterns.
+
+**Based on:** Nielsen Norman Group eye-tracking research, [Smashing Magazine](https://www.smashingmagazine.com/) best practices (navigation, forms, buttons), and industry-standard component design patterns.
+
+**Use when you need to:**
+- Design navigation that answers "Where am I? Where can I go? Where have I been?"
+- Build forms with optimal label placement, validation, and friction reduction
+- Choose between competing UI patterns (dropdown vs radio, modal vs inline, carousel vs static)
+- Apply F-pattern and Z-pattern scanning knowledge to content placement
+- Design appropriate loading states and notification patterns
+
+**Example prompts:**
+- *"Should I use a hamburger menu or visible nav for this site? Use ui-patterns skill."*
+- *"Improve this form's completion rate. Use ui-patterns skill."*
+- *"Where should I place the CTA on this landing page for maximum visibility? Use ui-patterns skill."*
+- *"Design loading states for our dashboard. Use ui-patterns skill."*
+
+---
+
 ## Learn More: The Skills Ecosystem
 
 Want to go deeper with skills — how they work, how to create your own, and what's available across the community?
@@ -1123,6 +1193,9 @@ The methodologies and frameworks referenced in these skills are the intellectual
 - **Getting Real**: Jason Fried, David Heinemeier Hansson
 - **Rework**: Jason Fried, David Heinemeier Hansson
 - **Shape Up**: Ryan Singer
+- **Laws of UX**: Jon Yablonski
+- **Gestalt psychology**: Max Wertheimer, Kurt Koffka, Wolfgang Köhler (public domain research)
+- **UI Patterns**: Nielsen Norman Group (Jakob Nielsen, Don Norman), Smashing Magazine
 
 These skills were created without directly copying or reproducing content from the original books or materials. They are based on:
 - Publicly available information about the methodologies
