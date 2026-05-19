@@ -73,6 +73,7 @@ npx skills add wondelai/skills/clean-architecture
 npx skills add wondelai/skills/release-it
 npx skills add wondelai/skills/high-perf-browser
 npx skills add wondelai/skills/37signals-way
+npx skills add wondelai/skills/microsoft-workspace
 ```
 
 ## Available Skills
@@ -121,6 +122,7 @@ npx skills add wondelai/skills/37signals-way
 | [release-it](https://skills.wondel.ai/skills/release-it/) | Production-ready systems: circuit breakers, bulkheads, timeouts, retry logic | [Michael Nygard](https://x.com/mtnygard)'s [*"Release It!"*](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=wondelai00-20) |
 | [high-perf-browser](https://skills.wondel.ai/skills/high-perf-browser/) | Web performance: network protocols, resource loading, browser rendering | [Ilya Grigorik](https://x.com/igrigorik)'s [*"High Performance Browser Networking"*](https://www.amazon.com/High-Performance-Browser-Networking-performance/dp/1449344763?tag=wondelai00-20) |
 | [37signals-way](https://skills.wondel.ai/skills/37signals-way/) | Build less, shape work, ship in six-week cycles with small autonomous teams | [Jason Fried](https://x.com/jasonfried) & [DHH](https://x.com/dhh)'s [*"Getting Real"*](https://www.amazon.com/Getting-Real-Smarter-Successful-Application/dp/0578012812?tag=wondelai00-20), [*"Rework"*](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745?tag=wondelai00-20) & [Ryan Singer](https://x.com/rjs)'s [*"Shape Up"*](https://www.amazon.com/Shape-Up-Circles-Ship-Work/dp/B09ZSY1MWP?tag=wondelai00-20) |
+| [microsoft-workspace](https://skills.wondel.ai/skills/microsoft-workspace/) | Outlook integration for email, calendar, contacts via Microsoft Graph API | Community skill — [Andrew Girgis](https://github.com/Andrew-Girgis) |
 
 > **Looking for real-world scenarios?** See [EXAMPLES.md](EXAMPLES.md) for 49 copy-pasteable prompts organized by persona (founders, PMs, marketers, designers, sales, copywriters, solopreneurs).
 
@@ -1130,3 +1132,23 @@ These skills were created without directly copying or reproducing content from t
 - Common industry practices and terminology
 
 We encourage users to purchase and read the original books for the complete, authoritative treatment of each methodology. The skills in this repository are intended as practical aids, not replacements for the source materials.
+
+### [microsoft-workspace](https://skills.wondel.ai/skills/microsoft-workspace/)
+
+Full Outlook/Hotmail integration via Microsoft Graph API. Email management, calendar operations, and contact lookup — all through a single skill with OAuth2 authentication.
+
+**About the author:** [Andrew Girgis](https://github.com/Andrew-Girgis) — Data Scientist and open-source contributor. Built this skill to give AI agents full Microsoft workspace access with a focus on safe email sending (prevents shell `$` variable mangling).
+
+**Use when you need to:**
+- Send, read, search, reply to, or forward emails via Outlook/Hotmail
+- Manage calendar events, check free/busy, find open time slots
+- Look up contacts or user profile info
+- Safely compose emails with dollar amounts or special characters
+
+**Example prompts:**
+- "Search my inbox for emails about the project report"
+- "Check if I'm free tomorrow at 2pm and schedule a meeting"
+- "Reply to that email saying I'll be there"
+- "Forward this to my manager"
+
+**Source:** [github.com/Andrew-Girgis/microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill)
