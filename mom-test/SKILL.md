@@ -1,10 +1,10 @@
 ---
 name: mom-test
-description: 'Talk to customers without leading them using Mom Test rules: discuss their life not your idea, ask about specifics in the past, and talk less. Use when the user mentions "customer interviews", "validate my idea", "users say they want it but dont buy", "leading questions", "The Mom Test", "customer feedback bias", or "interview script". Also trigger when preparing user research questions, interpreting ambiguous customer feedback, or designing customer discovery processes that avoid false positives. Covers commitment and advancement, avoiding compliments, and extracting signal from noise. For product-market fit, see jobs-to-be-done. For rapid prototype testing, see design-sprint.'
+description: 'Talk to customers without leading them using Mom Test rules: discuss their life not your idea, ask about specifics in the past, and talk less. Use when the user mentions "customer interviews", "validate my idea", "users say they want it but dont buy", "leading questions", "The Mom Test", "customer feedback bias", "interview script", "how do I interview customers", "am I asking leading questions", or "is my customer feedback reliable". Also trigger when preparing user-research questions, interpreting ambiguous feedback, or designing customer-discovery that avoids false positives. Covers commitment and advancement, avoiding compliments, and extracting signal from noise. For product-market fit, see jobs-to-be-done. For rapid prototype testing, see design-sprint.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # The Mom Test Framework

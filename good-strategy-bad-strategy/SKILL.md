@@ -1,10 +1,10 @@
 ---
 name: good-strategy-bad-strategy
-description: 'Formulate and audit real strategy using Richard Rumelt''s "Good Strategy Bad Strategy": an honest diagnosis, a guiding policy, and coherent action instead of goals, vision, and wishful thinking. Use when the user mentions "good strategy bad strategy", "strategy kernel", "diagnosis guiding policy coherent action", "our strategy is just goals", "strategic planning", "mission vs strategy", "review my strategy", or "annual plan". Also trigger when auditing strategy docs or pitch decks for fluff, turning goal lists into real strategy, formulating strategy for a product or company, or identifying leverage and proximate objectives. Covers the kernel of strategy, bad-strategy detection, and sources of power. For product positioning, see obviously-awesome. For creating uncontested markets, see blue-ocean-strategy.'
+description: 'Formulate and audit real strategy using Richard Rumelt''s "Good Strategy Bad Strategy": an honest diagnosis, a guiding policy, and coherent action instead of goals, vision, and wishful thinking. Use when the user mentions "good strategy bad strategy", "strategy kernel", "diagnosis guiding policy coherent action", "our strategy is just goals", "strategic planning", "mission vs strategy", "review my strategy", "annual plan", "our strategy is vague", or "is this actually a strategy". Also trigger when auditing a strategy doc or pitch deck for fluff, turning a goal list into real strategy, formulating strategy for a product or company, or finding leverage and proximate objectives. Covers the kernel of strategy, bad-strategy detection, and sources of power. For product positioning, see obviously-awesome. For uncontested markets, see blue-ocean-strategy.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Good Strategy Bad Strategy

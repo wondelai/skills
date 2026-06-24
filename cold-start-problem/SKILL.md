@@ -1,10 +1,10 @@
 ---
 name: cold-start-problem
-description: 'Start and scale networked products using Andrew Chen''s "The Cold Start Problem" framework for network effects. Use when the user mentions "network effects", "chicken and egg", "cold start", "two-sided marketplace", "atomic network", "hard side", "liquidity", "critical mass", "invite-only launch", or "come for the tool stay for the network". Also trigger when launching a marketplace, social, or collaboration product that is worthless without other users, deciding launch sequencing and seeding tactics, or diagnosing stalled network growth or degradation at scale. Covers the five stages: the cold start, the tipping point, escape velocity, hitting the ceiling, and the moat. For word-of-mouth virality, see contagious. For habit-driven retention, see hooked-ux.'
+description: 'Start and scale networked products using Andrew Chen''s "The Cold Start Problem" framework for network effects. Use when the user mentions "network effects", "chicken and egg", "cold start", "two-sided marketplace", "atomic network", "hard side", "liquidity", "critical mass", "invite-only launch", "no one uses it because no one uses it", "how do I get my first users", or "the marketplace has no buyers or sellers". Also trigger when launching a marketplace, social, or collaboration product that is worthless without other users, deciding launch sequencing and seeding tactics, or diagnosing stalled network growth at scale. Covers the five stages: cold start, tipping point, escape velocity, hitting the ceiling, and the moat. For word-of-mouth virality, see contagious. For habit-driven retention, see hooked-ux.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # The Cold Start Problem

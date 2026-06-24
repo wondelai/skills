@@ -1,10 +1,10 @@
 ---
 name: high-output-management
-description: 'Manage for output using Andrew S. Grove''s "High Output Management": a manager''s output is their organization''s output, raised by choosing high-leverage activities. Use when the user mentions "high output management", "managerial leverage", "one-on-ones", "1:1 agenda", "OKRs", "performance review", "task-relevant maturity", "delegation", "meeting overload", or "new manager". Also trigger when structuring a manager''s calendar and meeting cadence, designing team metrics and indicators, running planning processes, coaching managers on delegation and training, or preparing and auditing performance reviews. Covers output-focused management, production principles, leverage, meetings as the medium of management, decisions, OKRs, and task-relevant maturity. For intrinsic motivation design, see drive-motivation. For a company-wide operating system, see traction-eos.'
+description: 'Manage for output using Grove''s "High Output Management": a manager''s output is their organization''s output, raised by high-leverage activities. Use when the user mentions "high output management", "managerial leverage", "one-on-ones", "1:1 agenda", "OKRs", "performance review", "task-relevant maturity", "delegation", "meeting overload", "new manager", "how do I run a 1:1", or "just got promoted to manager". Also trigger when structuring a manager''s calendar and meeting cadence, designing team metrics, running planning, coaching delegation, or preparing performance reviews. Covers leverage, production principles, meetings as the medium of management, decisions, OKRs, and task-relevant maturity. For intrinsic motivation, see drive-motivation. For a company operating system, see traction-eos.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # High Output Management

@@ -1,10 +1,10 @@
 ---
 name: system-design
-description: 'Design scalable distributed systems using structured approaches for load balancing, caching, database scaling, and message queues. Use when the user mentions "system design", "scale this", "high availability", "rate limiter", "design a URL shortener", "system design interview", "capacity planning", or "distributed architecture". Also trigger when estimating infrastructure requirements, choosing between microservices and monoliths, or designing for millions of concurrent users. Covers common system designs and back-of-the-envelope estimation. For data fundamentals, see ddia-systems. For resilience, see release-it.'
+description: 'Design scalable distributed systems using structured approaches for load balancing, caching, database scaling, and message queues. Use when the user mentions "system design", "scale this", "high availability", "rate limiter", "design a URL shortener", "design Twitter", "design Uber", "design a news feed", "system design interview", "interview prep", "capacity planning", or "distributed architecture". Also trigger when estimating infrastructure requirements, choosing between microservices and monoliths, or designing for millions of concurrent users. Covers common system designs (TinyURL, feeds, chat) and back-of-the-envelope estimation. For data fundamentals, see ddia-systems. For resilience, see release-it.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # System Design Framework

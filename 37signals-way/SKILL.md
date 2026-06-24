@@ -1,10 +1,10 @@
 ---
 name: 37signals-way
-description: 'Build lean, opinionated products using the 37signals philosophy from Getting Real, Rework, and Shape Up. Use when the user mentions "Getting Real", "Rework", "Shape Up", "37signals", "Basecamp method", "six-week cycles", "fixed time variable scope", "appetite vs estimates", "betting table", "breadboarding", "fat marker sketch", "build less", "underdo the competition", or "opinionated software". Also trigger when cutting scope to ship faster, running small teams, avoiding long-term roadmaps, or eliminating meetings. Covers shaping, betting, building, and the art of saying no. For MVP validation, see lean-startup. For design sprints, see design-sprint.'
+description: 'Build lean, opinionated products using the 37signals philosophy from "Getting Real", "Rework", and "Shape Up". Use when the user mentions "Getting Real", "Rework", "Shape Up", "37signals", "Basecamp method", "six-week cycles", "fixed time variable scope", "appetite vs estimates", "betting table", "breadboarding", "build less", "we have too many meetings", "the project keeps growing", "how do we ship faster", or "stop overbuilding". Also trigger when cutting scope to ship sooner, fighting feature creep, running a small team, avoiding long-term roadmaps, or killing unnecessary meetings. Covers shaping, betting, building, and the art of saying no. For MVP validation, see lean-startup. For design sprints, see design-sprint.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # The 37signals Product Development Framework

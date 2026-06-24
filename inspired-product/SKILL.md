@@ -1,10 +1,10 @@
 ---
 name: inspired-product
-description: 'Build empowered product teams using discovery and delivery dual-track. Use when the user mentions "product discovery", "empowered teams", "feature factory", "product roadmap", "opportunity assessment", "product vision", "product-led growth", or "discovery vs delivery". Also trigger when restructuring product teams away from output-driven models, setting product strategy, or defining what to build next based on outcomes. Covers product discovery techniques, team structure, and continuous value delivery. For customer interviews, see mom-test. For ongoing discovery systems, see continuous-discovery.'
+description: 'Build empowered product teams using discovery and delivery dual-track. Use when the user mentions "product discovery", "empowered teams", "feature factory", "product roadmap", "opportunity assessment", "product vision", "product-led growth", "discovery vs delivery", "what should we build", "our roadmap is just a feature list", or "set our product strategy". Also trigger when restructuring product teams away from output-driven models, setting product strategy, or deciding what to build next based on outcomes. Covers product discovery techniques, team structure, and continuous value delivery. For customer interviews, see mom-test. For ongoing discovery systems, see continuous-discovery.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Empowered Product Teams Framework

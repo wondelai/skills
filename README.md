@@ -158,6 +158,7 @@ Strategic framework for discovering and designing product innovations. Customers
 - Diagnose why a product isn't selling or customers are churning
 - Create positioning and messaging strategy
 - Reframe product metrics around customer progress
+- Understand why customers actually buy and what job they hire the product for
 
 **Example prompts:**
 - *"Help me write interview questions to discover the job our customers hire our app for. Use jobs-to-be-done skill."*
@@ -181,6 +182,7 @@ Scientific, customer-centric approach to conversion rate optimization. Rejects "
 - Find hidden "persuasion assets" you're not using
 - Map and optimize a conversion funnel
 - Create an objection/counter-objection framework
+- Increase signups or fix a checkout where people add to cart but don't buy
 
 **Example prompts:**
 - *"Audit this landing page and list the top 5 objections a visitor might have. Use cro-methodology skill."*
@@ -204,6 +206,7 @@ Practical, opinionated UI design system for developers. Design in grayscale firs
 - Add depth with shadows and layering
 - Review UI code for common design mistakes
 - Style components in Tailwind CSS
+- Fix a UI that looks off, amateur, or unprofessional and make it look polished
 
 **Example prompts:**
 - *"This dashboard looks cluttered. Fix the hierarchy. Use refactoring-ui skill."*
@@ -228,6 +231,7 @@ Design native iOS apps that feel intuitive and aligned with Apple's platform con
 - Ensure accessibility (VoiceOver, Dynamic Type, contrast)
 - Handle safe areas, notch, and Dynamic Island correctly
 - Choose correct touch target sizes and spacing
+- Make an iPhone or iPad app feel native and follow Apple's guidelines
 
 **Example prompts:**
 - *"Review this SwiftUI view and check if it follows HIG guidelines. Use ios-hig-design skill."*
@@ -251,6 +255,7 @@ Lead generation system using interactive quiz/assessment funnels. Converts 30-50
 - Write dynamic results content based on score tiers
 - Set up automated follow-up sequences by segment
 - Generate scorecard concepts for any industry
+- Build a quiz or assessment that captures and qualifies leads
 
 **Example prompts:**
 - *"Create a scorecard concept for a B2B accounting software company. Use scorecard-marketing skill."*
@@ -275,6 +280,7 @@ StoryBrand framework for clarifying your message so customers will listen. Posit
 - Position your customer as the hero (not your brand)
 - Diagnose why your current messaging isn't resonating
 - Develop a brand script for consistent communication
+- Rewrite confusing homepage copy so the customer is the hero
 
 **Example prompts:**
 - *"Create a StoryBrand brand script for my SaaS project management tool. Use storybrand-messaging skill."*
@@ -300,6 +306,7 @@ Hook Model framework for building habit-forming products. The four-phase process
 - Increase investment and switching costs
 - Evaluate the ethics of your engagement tactics
 - Optimize onboarding for habit formation
+- Build a habit loop so users come back instead of churning after signup
 
 **Example prompts:**
 - *"What's the internal trigger for our meditation app? Use hooked-ux skill."*
@@ -324,6 +331,7 @@ Behavior design framework for diagnosing and fixing retention problems. Uses BJ 
 - Audit motivation-ability mismatches
 - Design onboarding that builds lasting habits
 - Apply B=MAP to improve activation and retention metrics
+- Fix a product where people sign up but don't stick around
 
 **Example prompts:**
 - *"Our Day-7 retention is 20%. Diagnose using B=MAP — is it a motivation, ability, or prompt problem? Use improve-retention skill."*
@@ -349,6 +357,7 @@ Usability heuristics and evaluation principles combining Steve Krug's practical 
 - Review designs before development
 - Improve form usability
 - Validate that interfaces follow established UX principles
+- Check whether something is easy to use and find concrete usability problems
 
 **Example prompts:**
 - *"Run a heuristic evaluation on this checkout flow. Use ux-heuristics skill."*
@@ -373,6 +382,7 @@ Web typography principles for choosing, pairing, and implementing typefaces. Typ
 - Implement responsive typography with CSS
 - Build type hierarchies that guide readers
 - Optimize web font loading for performance
+- Choose a font and improve readability when text is hard to read
 
 **Example prompts:**
 - *"Recommend a typeface pairing for a legal services website. Use web-typography skill."*
@@ -395,6 +405,7 @@ Create award-winning websites and applications with design and typography rated 
 - Implement exceptional typography with dramatic scale contrast
 - Design scroll-based compositions with purposeful motion
 - Match the quality of Awwwards-winning sites
+- Give a site a wow factor and make it genuinely impressive
 
 **Example prompts:**
 - *"Build a portfolio site at the level of Studio Freight or Locomotive. Use top-design skill."*
@@ -420,6 +431,7 @@ Tactical empathy-based negotiation framework from FBI hostage negotiator Chris V
 - De-escalate tense situations
 - Build rapport in adversarial settings
 - Close deals without compromising your position
+- Ask for a raise or get a better deal when the other side won't budge
 
 **Example prompts:**
 - *"I'm negotiating a 20% raise. Help me prepare using the Ackerman method. Use negotiation skill."*
@@ -445,6 +457,7 @@ Persuasion science framework applying Robert Cialdini's seven universal principl
 - Design referral programs using reciprocity
 - Audit for ethical persuasion
 - Apply influence psychology to product, marketing, or sales
+- Make copy more persuasive and build trust so more people say yes
 
 **Example prompts:**
 - *"Audit this landing page for Cialdini's influence principles. Which are missing? Use influence-psychology skill."*
@@ -468,6 +481,7 @@ Build-Measure-Learn methodology for startups and new products. Test assumptions 
 - Set up actionable metrics vs. vanity metrics
 - Reduce product development waste
 - Apply scientific method to entrepreneurship
+- Decide whether to pivot and test a business idea with the smallest version first
 
 **Example prompts:**
 - *"What's the smallest MVP we can build to test our riskiest assumption? Use lean-startup skill."*
@@ -489,6 +503,7 @@ Google Ventures' 5-day process for answering critical business questions through
 - Align teams on product direction
 - De-risk product development before building
 - Make fast strategic decisions through structured process
+- Decide whether to build something by validating it fast before investing
 
 **Example prompts:**
 - *"Plan a 5-day design sprint for our new checkout flow. Use design-sprint skill."*
@@ -511,6 +526,7 @@ Strategic framework for marketing and selling disruptive technology products, fo
 - Position against incumbent competition
 - Transition from early adopters to mainstream market
 - Develop B2B tech marketing strategy
+- Restart growth that stalled after early adopters and reach mainstream buyers
 
 **Example prompts:**
 - *"Where is our product in the Technology Adoption Life Cycle? Use crossing-the-chasm skill."*
@@ -533,6 +549,7 @@ Create uncontested market space using value innovation. Use the Strategy Canvas,
 - Design value innovation propositions
 - Identify non-customers and convert them
 - Break the value-cost trade-off
+- Escape a crowded market or price war and stand out instead of competing head-to-head
 
 **Example prompts:**
 - *"Create a strategy canvas for our market. Here are the competing factors. Use blue-ocean-strategy skill."*
@@ -555,6 +572,7 @@ Complete Entrepreneurial Operating System (EOS) for running a business. Covers V
 - Run Level 10 meetings
 - Build accountability charts
 - Solve issues using IDS (Identify-Discuss-Solve)
+- Bring order to a chaotic company that keeps having the same problems
 
 **Example prompts:**
 - *"Help us create a V/TO for our startup. Use traction-eos skill."*
@@ -577,6 +595,7 @@ Foundational design principles: affordances, signifiers, mappings, constraints, 
 - Design clear feedback mechanisms
 - Bridge gulfs of execution and evaluation
 - Understand why users make errors and design fault-tolerant systems
+- Figure out why users keep making mistakes or find something unintuitive
 
 **Example prompts:**
 - *"Audit this form for missing affordances and signifiers. Use design-everyday-things skill."*
@@ -599,6 +618,7 @@ Outbound sales process and Cold Calling 2.0 methodology. Build a scalable sales 
 - Design lead qualification frameworks
 - Scale B2B SaaS sales predictably
 - Calculate pipeline math and capacity planning
+- Build an outbound sales team and fill a pipeline with cold outreach that works
 
 **Example prompts:**
 - *"Design a Cold Calling 2.0 email sequence for our B2B SaaS product. Use predictable-revenue skill."*
@@ -621,6 +641,7 @@ SUCCESs framework for creating memorable, impactful messaging. Make ideas stick 
 - Design memorable onboarding experiences
 - Craft internal communications that stick
 - Diagnose why messaging isn't resonating
+- Make a message memorable when people keep forgetting the pitch
 
 **Example prompts:**
 - *"Score this landing page copy on the SUCCESs framework. Use made-to-stick skill."*
@@ -644,6 +665,7 @@ Intrinsic motivation science: Autonomy, Mastery, Purpose (AMP). Design products,
 - Design team structures and incentives with AMP principles
 - Understand why gamification fails
 - Replace carrot-and-stick approaches with intrinsic motivation
+- Re-engage a disengaged team when rewards and incentives aren't working
 
 **Example prompts:**
 - *"Audit our gamification system—is it intrinsic or extrinsic motivation? Use drive-motivation skill."*
@@ -668,6 +690,7 @@ Grand Slam Offer creation framework for building offers so good people feel stup
 - Design risk-reversing guarantees
 - Apply ethical scarcity and urgency
 - Name your offer using the MAGIC formula
+- Make an offer so compelling people stop saying it's too expensive
 
 **Example prompts:**
 - *"Redesign our SaaS pricing using the Value Equation. Use hundred-million-offers skill."*
@@ -692,6 +715,7 @@ Product positioning framework for defining how your product wins in customers' m
 - Create a positioning canvas for team alignment
 - Run a team positioning workshop
 - Diagnose why your product messaging isn't resonating
+- Fix positioning when prospects don't understand what you do or which category you're in
 
 **Example prompts:**
 - *"Help us identify the real competitive alternatives for our project management tool. Use obviously-awesome skill."*
@@ -716,6 +740,7 @@ Word-of-mouth and virality framework using the STEPPS model (Social Currency, Tr
 - Design environmental triggers that keep your brand top-of-mind
 - Craft high-arousal emotional content
 - Make your product publicly visible and imitable
+- Get people to share something when nobody is sharing it yet
 
 **Example prompts:**
 - *"Audit our product launch plan using the STEPPS framework. Which principles are we missing? Use contagious skill."*
@@ -743,6 +768,7 @@ Complete end-to-end marketing plan on a single page using Allan Dib's 9-square g
 - Create world-class customer experiences
 - Increase customer lifetime value
 - Build referral and advocacy systems
+- Build a marketing plan from scratch when you don't know where to start
 
 **Example prompts:**
 - *"Create a 1-page marketing plan for our B2B SaaS product. Use one-page-marketing skill."*
@@ -765,6 +791,7 @@ Customer interview framework that teaches you to talk about customers' lives ins
 - Identify if users are giving you compliments instead of commitments
 - Process and share learnings from customer conversations
 - Distinguish real demand from polite encouragement
+- Run customer interviews without leading them or asking biased questions
 
 **Example prompts:**
 - *"Help me write interview questions for our B2B SaaS idea without leading the witness. Use mom-test skill."*
@@ -785,6 +812,7 @@ Build empowered product teams using discovery and delivery dual-track. Replace f
 - Create compelling product vision and strategy
 - Manage stakeholders without surrendering team empowerment
 - Assess product opportunities systematically
+- Decide what to build next when the roadmap is just a feature list
 
 **Example prompts:**
 - *"Are we a feature factory? Diagnose our product team structure. Use inspired-product skill."*
@@ -805,6 +833,7 @@ Hypothesis-driven UX design that replaces heavy deliverables with rapid experime
 - Integrate UX work into Agile sprints
 - Run collaborative design sessions with cross-functional teams
 - Measure UX outcomes instead of outputs
+- Cut heavy design documentation and get the whole team designing together
 
 **Example prompts:**
 - *"Write a hypothesis statement for our new onboarding flow. Use lean-ux skill."*
@@ -825,6 +854,7 @@ Build a weekly cadence of customer touchpoints using Opportunity Solution Trees,
 - Map and prioritize assumptions by risk
 - Synthesize customer interviews into actionable insights
 - Prioritize which opportunities to pursue
+- Set up a habit of talking to customers so you stop building things nobody uses
 
 **Example prompts:**
 - *"Help me build an Opportunity Solution Tree for our retention OKR. Use continuous-discovery skill."*
@@ -845,6 +875,7 @@ Design the small details — triggers, rules, feedback, loops and modes — that
 - Audit interactions for missing feedback or unclear states
 - Design progressive loops that evolve over time
 - Reduce and simplify complex interactions
+- Add polish to an interface that feels dead or unresponsive
 
 **Example prompts:**
 - *"Design the microinteraction for our save button — trigger, rules, feedback, and loop. Use microinteractions skill."*
@@ -865,6 +896,7 @@ Write readable, maintainable code through disciplined naming, small functions, a
 - Write clean error handling
 - Apply the Single Responsibility Principle
 - Write clean, readable unit tests
+- Clean up code that's hard to read or a function that's become a mess
 
 **Example prompts:**
 - *"Review this function for clean code principles. Use clean-code skill."*
@@ -885,6 +917,7 @@ Apply named refactoring transformations to improve code structure without changi
 - Simplify complex conditional logic
 - Extract methods, classes, or modules
 - Plan a safe refactoring workflow with tests
+- Restructure messy code safely without changing its behavior
 
 **Example prompts:**
 - *"This method has nested conditionals. Which refactoring pattern should I apply? Use refactoring-patterns skill."*
@@ -905,6 +938,7 @@ Manage software complexity through deep modules, information hiding, and strateg
 - Choose between general-purpose and special-purpose interfaces
 - Write comments that serve as design documentation
 - Decide between strategic and tactical programming approaches
+- Simplify a design that's over-engineered or buried under too many layers
 
 **Example prompts:**
 - *"Is this class deep or shallow? Evaluate the interface-to-functionality ratio. Use software-design-philosophy skill."*
@@ -925,6 +959,7 @@ Meta-principles of software craftsmanship: DRY, orthogonality, tracer bullets, a
 - Choose between tracer bullets and prototypes
 - Apply design by contract and assertive programming
 - Estimate software projects with ranges
+- Level up as a developer and avoid the technical debt that slows teams down
 
 **Example prompts:**
 - *"Is this duplication a DRY violation or coincidental? Use pragmatic-programmer skill."*
@@ -945,6 +980,7 @@ Model software around the business domain using bounded contexts, aggregates, an
 - Build a ubiquitous language with domain experts
 - Design domain events for integration between contexts
 - Identify your core domain vs supporting subdomains
+- Model the business in code when the code no longer matches how the business works
 
 **Example prompts:**
 - *"Help me define bounded contexts for our e-commerce platform. Use domain-driven-design skill."*
@@ -965,6 +1001,7 @@ Design data systems by understanding storage engines, replication, partitioning,
 - Understand consistency vs availability tradeoffs
 - Choose appropriate isolation levels for transactions
 - Design batch or stream processing pipelines
+- Pick the right database (SQL vs NoSQL) or fix queries that are slow at scale
 
 **Example prompts:**
 - *"Should we use a relational or document database for this use case? Use ddia-systems skill."*
@@ -985,6 +1022,7 @@ Design scalable distributed systems using structured approaches for load balanci
 - Choose the right caching strategy
 - Design common systems (URL shortener, rate limiter, chat, etc.)
 - Scale database reads and writes
+- Prep for a system design interview (design Twitter, Uber, a URL shortener)
 
 **Example prompts:**
 - *"Design a URL shortener service. Walk me through the four-step process. Use system-design skill."*
@@ -1005,6 +1043,7 @@ Structure software around the Dependency Rule: source code dependencies point in
 - Apply SOLID principles at the architecture level
 - Design component boundaries and their interactions
 - Keep frameworks at arm's length
+- Decide where business logic belongs and decouple it from the database or framework
 
 **Example prompts:**
 - *"Review our architecture — do dependencies point inward? Use clean-architecture skill."*
@@ -1025,6 +1064,7 @@ Build production-ready systems with stability patterns: circuit breakers, bulkhe
 - Plan capacity and availability
 - Choose deployment strategies (blue-green, canary, rolling)
 - Design health checks and observability
+- Stop a service from crashing and prevent cascading failures in production
 
 **Example prompts:**
 - *"We had a cascading failure yesterday. Diagnose the anti-patterns. Use release-it skill."*
@@ -1045,6 +1085,7 @@ Optimize web performance through network protocols, resource loading, and browse
 - Choose between HTTP/2 and HTTP/3
 - Implement effective caching strategies
 - Choose between WebSocket, SSE, and long polling for real-time features
+- Speed up a site that's slow to load and improve Core Web Vitals
 
 **Example prompts:**
 - *"Our LCP is 4.5 seconds. Diagnose and fix it. Use high-perf-browser skill."*
@@ -1066,6 +1107,7 @@ Build lean, opinionated products using the 37signals philosophy: build less, sha
 - Structure small autonomous teams (3-person teams, no PMs)
 - Replace backlogs and roadmaps with a betting table
 - Track progress with hill charts instead of burndowns or standups
+- Cut scope and ship faster when the project keeps growing or meetings pile up
 
 **Example prompts:**
 - *"We have a 200-item backlog and nothing ships on time. Help us switch to Shape Up cycles. Use 37signals-way skill."*
@@ -1088,6 +1130,7 @@ Review designs, products, and features the way Steve Jobs ran reviews: start fro
 - Pressure-test the complete experience from first run to cancellation
 - Replace spec/slide reviews with a working-demo culture
 - Audit "back of the fence" surfaces: empty states, error copy, invoices
+- Pressure-test whether something is simple and good enough to ship
 
 **Example prompts:**
 - *"Here's my app's onboarding flow. Review it like Steve Jobs would — what gets cut? Use steve-jobs-design-review skill."*
@@ -1109,6 +1152,7 @@ Formulate and audit real strategy using the kernel — an honest diagnosis of th
 - Find sources of power: leverage, proximate objectives, chain-link systems, design
 - Ride waves of change and exploit incumbent inertia
 - Turn a list of ambitions into a focused, resourced plan
+- Turn a vague goals-and-vision deck into a real strategy with an honest diagnosis
 
 **Example prompts:**
 - *"Here's our annual plan. Audit it for bad strategy — fluff, missing diagnosis, goals instead of strategy. Use good-strategy-bad-strategy skill."*
@@ -1130,6 +1174,7 @@ Design the product around the price instead of bolting a price onto a finished p
 - Design pricing tiers and packages (good-better-best, leader/filler/killer features)
 - Choose between subscription, usage-based, freemium, and outcome-based models
 - Diagnose why a launch is underperforming its revenue potential
+- Figure out what to charge and stop leaving money on the table
 
 **Example prompts:**
 - *"We're launching a SaaS product in 3 months and haven't validated pricing. Design the WTP research. Use monetizing-innovation skill."*
@@ -1151,6 +1196,7 @@ Start and scale products with network effects: launch one atomic network at a ti
 - Identify and win the hard side (creators, sellers, supply)
 - Design invite-only launches, seeding, and subsidies that tip markets
 - Diagnose stalled network growth, degradation, or competitive attacks
+- Get the first users for a marketplace or network when it's empty (chicken-and-egg)
 
 **Example prompts:**
 - *"We're launching a B2B marketplace. Define our atomic network and the first market to tip. Use cold-start-problem skill."*
@@ -1172,6 +1218,7 @@ Safely change untested codebases: find seams, break dependencies just enough to 
 - Write characterization tests that pin down current behavior before refactoring
 - Apply sprout method/class or wrap method when there's no time to test first
 - Untangle monster methods and god classes incrementally
+- Safely change a codebase you inherited that has no tests and you're scared to touch
 
 **Example prompts:**
 - *"I need to change this 800-line untested service class. Walk me through the legacy code change algorithm. Use working-with-legacy-code skill."*
@@ -1193,6 +1240,7 @@ Organize teams for fast flow using four fundamental team types (stream-aligned, 
 - Reduce cross-team dependencies, handoffs, and meeting overload
 - Split a monolith along fracture planes and assign clear ownership
 - Design an internal platform that teams actually want to use
+- Plan a reorg so teams stop stepping on each other and handoffs shrink
 
 **Example prompts:**
 - *"We have 40 engineers and every feature needs 4 teams. Redesign our team topology. Use team-topologies skill."*
@@ -1214,6 +1262,7 @@ Manage for output, not activity: a manager's output is the output of their organ
 - Design team indicators with pairing metrics that can't be gamed
 - Write OKRs the way Grove intended (and keep them away from compensation)
 - Match management style to task-relevant maturity and fix performance reviews
+- Find your footing as a new manager: run 1:1s, set OKRs, escape meeting overload
 
 **Example prompts:**
 - *"I'm a new engineering manager drowning in meetings. Audit my week for leverage. Use high-output-management skill."*
@@ -1235,6 +1284,7 @@ Choose the One Metric That Matters for your business model and stage, kill vanit
 - Instrument a product by business model (SaaS, marketplace, e-commerce, media, UGC, mobile)
 - Figure out which stage you're at (empathy, stickiness, virality, revenue, scale) and what gates the next one
 - Set realistic targets and baselines when you have no benchmarks
+- Pick the one metric that matters and stop tracking vanity numbers
 
 **Example prompts:**
 - *"Our dashboard has 34 widgets and no one looks at it. Pick our OMTM and counter-metric. Use lean-analytics skill."*

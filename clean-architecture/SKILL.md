@@ -1,10 +1,10 @@
 ---
 name: clean-architecture
-description: 'Structure software around the Dependency Rule: source code dependencies point inward from frameworks to use cases to entities. Use when the user mentions "architecture layers", "dependency rule", "ports and adapters", "hexagonal architecture", "use case boundary", "onion architecture", "screaming architecture", or "framework independence". Also trigger when decoupling business logic from databases or frameworks, defining module boundaries, or debating where to put business rules. Covers component principles, boundaries, and SOLID. For code quality, see clean-code. For domain modeling, see domain-driven-design.'
+description: 'Structure software around the Dependency Rule: source code dependencies point inward from frameworks to use cases to entities. Use when the user mentions "architecture layers", "dependency rule", "ports and adapters", "hexagonal architecture", "onion architecture", "screaming architecture", "where should business logic go", "decouple from the database", "swap the framework without a rewrite", "business logic is tangled with the framework", or "keep business rules independent". Also trigger when deciding which layer code belongs in, isolating core logic from infrastructure, defining module boundaries, or debating whether the framework should call your code or the reverse. Covers component principles, boundaries, and SOLID. For code-level quality, see clean-code. For domain modeling, see domain-driven-design.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Clean Architecture Framework

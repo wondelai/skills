@@ -8,13 +8,13 @@
   },
   "metadata": {
     "description": "50 agent skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture — based on bestselling books",
-    "version": "1.5.0"
+    "version": "1.6.0"
   },
   "plugins": [
     {
       "name": "product-strategy",
       "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design, tactical negotiation skills (Chris Voss), willingness-to-pay pricing (Monetizing Innovation), and startup metrics (Lean Analytics)",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -23,7 +23,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["product-strategy", "jobs-to-be-done", "negotiation", "customer-discovery", "innovation", "pricing", "willingness-to-pay", "metrics", "analytics", "omtm"],
+      "keywords": ["product-strategy", "jobs-to-be-done", "negotiation", "customer-discovery", "innovation", "pricing", "willingness-to-pay", "metrics", "analytics", "omtm", "customer-interviews", "salary-negotiation", "what-to-charge", "north-star-metric", "product-market-fit"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -37,7 +37,7 @@
     {
       "name": "ux-design",
       "description": "UX and UI design skills including Refactoring UI, iOS HIG design, usability heuristics, habit-forming product design, behavior design for retention, web typography, award-winning top-design, Steve Jobs-style design reviews, and Don Norman's foundational design principles",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -46,7 +46,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "design",
-      "keywords": ["ux", "ui", "design", "ios", "hig", "typography", "usability", "refactoring-ui", "hooked", "retention", "behavior-design", "tiny-habits", "steve-jobs", "design-review", "simplicity"],
+      "keywords": ["ux", "ui", "design", "ios", "hig", "typography", "usability", "refactoring-ui", "hooked", "retention", "behavior-design", "tiny-habits", "steve-jobs", "design-review", "simplicity", "make-it-look-better", "ui-polish", "font-pairing", "microinteractions", "usability-audit"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -66,7 +66,7 @@
     {
       "name": "marketing-cro",
       "description": "Marketing and conversion optimization skills including CRO methodology, StoryBrand messaging, Scorecard Marketing lead generation, viral marketing (Contagious), and 1-Page Marketing Plan",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -75,7 +75,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["marketing", "cro", "conversion", "storybrand", "copywriting", "lead-generation", "virality"],
+      "keywords": ["marketing", "cro", "conversion", "storybrand", "copywriting", "lead-generation", "virality", "landing-page", "ab-testing", "quiz-funnel", "go-viral", "homepage-copy"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -89,7 +89,7 @@
     {
       "name": "sales-influence",
       "description": "Sales, persuasion, and messaging skills including Cialdini's influence psychology, Aaron Ross's outbound sales methodology, Heath Brothers' sticky messaging, and Alex Hormozi's offer creation",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -98,7 +98,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["sales", "influence", "persuasion", "outbound", "messaging", "offers", "copywriting"],
+      "keywords": ["sales", "influence", "persuasion", "outbound", "messaging", "offers", "copywriting", "social-proof", "cold-email", "irresistible-offer", "objection-handling", "pricing"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -111,7 +111,7 @@
     {
       "name": "product-innovation",
       "description": "Product innovation and validation frameworks including Lean Startup methodology, Google Ventures Design Sprint, and Don Norman's design principles",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -120,7 +120,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["lean-startup", "mvp", "design-sprint", "validation", "innovation", "prototyping"],
+      "keywords": ["lean-startup", "mvp", "design-sprint", "validation", "innovation", "prototyping", "pivot-or-persevere", "validate-an-idea", "product-discovery", "empowered-teams"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -135,7 +135,7 @@
     {
       "name": "strategy-growth",
       "description": "Business strategy and growth frameworks including Crossing the Chasm tech adoption, Blue Ocean Strategy value innovation, EOS business operating system, Obviously Awesome positioning, Good Strategy Bad Strategy kernels, and Cold Start Problem network effects",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -144,7 +144,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["strategy", "growth", "positioning", "blue-ocean", "eos", "go-to-market", "traction", "strategy-kernel", "network-effects", "marketplace", "cold-start"],
+      "keywords": ["strategy", "growth", "positioning", "blue-ocean", "eos", "go-to-market", "traction", "strategy-kernel", "network-effects", "marketplace", "cold-start", "stop-competing-on-price", "crossing-the-chasm", "category-creation", "annual-planning"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -159,7 +159,7 @@
     {
       "name": "team-motivation",
       "description": "Team motivation and management skills including Daniel Pink's Autonomy, Mastery, Purpose (AMP) principles and Andy Grove's High Output Management (leverage, one-on-ones, OKRs, task-relevant maturity)",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -168,7 +168,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["motivation", "autonomy", "mastery", "purpose", "engagement", "team-management", "management", "one-on-ones", "okrs", "leverage"],
+      "keywords": ["motivation", "autonomy", "mastery", "purpose", "engagement", "team-management", "management", "one-on-ones", "okrs", "leverage", "new-manager", "team-disengaged", "performance-review", "delegation"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -179,7 +179,7 @@
     {
       "name": "code-craftsmanship",
       "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), and Working Effectively with Legacy Code (Michael Feathers)",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -188,7 +188,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["clean-code", "refactoring", "code-quality", "software-design", "ddd", "domain-driven-design", "pragmatic", "legacy-code", "characterization-tests", "seams"],
+      "keywords": ["clean-code", "refactoring", "code-quality", "software-design", "ddd", "domain-driven-design", "pragmatic", "legacy-code", "characterization-tests", "seams", "code-review", "code-smells", "technical-debt", "over-engineered", "untested-code"],
       "source": "./",
       "strict": false,
       "skills": [
@@ -203,7 +203,7 @@
     {
       "name": "systems-architecture",
       "description": "Systems architecture and distributed systems skills including Designing Data-Intensive Applications (Martin Kleppmann), System Design Interview (Alex Xu), Clean Architecture (Robert C. Martin), Release It! (Michael Nygard), High Performance Browser Networking (Ilya Grigorik), and Team Topologies (Skelton & Pais)",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Wondel.ai",
         "url": "https://wondel.ai"
@@ -212,7 +212,7 @@
       "repository": "https://github.com/wondelai/skills",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["system-design", "architecture", "distributed-systems", "scalability", "resilience", "performance", "clean-architecture", "team-topologies", "conways-law", "platform-teams", "org-design"],
+      "keywords": ["system-design", "architecture", "distributed-systems", "scalability", "resilience", "performance", "clean-architecture", "team-topologies", "conways-law", "platform-teams", "org-design", "system-design-interview", "database-choice", "circuit-breaker", "core-web-vitals", "sql-or-nosql"],
       "source": "./",
       "strict": false,
       "skills": [

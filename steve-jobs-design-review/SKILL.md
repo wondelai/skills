@@ -1,10 +1,10 @@
 ---
 name: steve-jobs-design-review
-description: 'Review designs, products, and features with Steve Jobs'' standards: ruthless simplicity, focus, and end-to-end excellence. Use when the user mentions "Steve Jobs review", "design review", "product review", "what would Steve do", "insanely great", "simplify this product", "too many features", "product taste", or "saying no". Also trigger when critiquing a UI, feature, or roadmap for focus and simplicity, when cutting scope to the essential, or when pressure-testing the complete experience from first run to daily use. Covers the simplicity audit, the no list, design-is-how-it-works, end-to-end experience ownership, demo culture, and a Jobs-style review protocol with binary verdicts. For visual design fundamentals, see refactoring-ui. For usability audits, see ux-heuristics. For detail polish, see microinteractions.'
+description: 'Review designs, products, and features with Steve Jobs'' standards: ruthless simplicity, focus, and end-to-end excellence. Use when the user mentions "Steve Jobs review", "design review", "product review", "what would Steve do", "insanely great", "simplify this product", "too many features", "product taste", "saying no", "is this good enough to ship", "make it simpler", or "this feels too complicated". Also trigger when critiquing a UI, feature, or roadmap for focus and simplicity, cutting scope to the essential, or pressure-testing the whole experience from first run to daily use. Covers the simplicity audit, the no list, design-is-how-it-works, end-to-end ownership, demo culture, and a Jobs-style review protocol with binary verdicts. For visual design fundamentals, see refactoring-ui. For usability audits, see ux-heuristics. For detail polish, see microinteractions.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Steve Jobs Design Review
