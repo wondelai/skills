@@ -28,59 +28,59 @@ Install via [skills.sh](https://skills.sh):
 
 ```bash
 # Install all skills
-npx skills add wondelai/skills
+npx skills add wondelai/skills --all --global
 
 # Or install individual skills
-npx skills add wondelai/skills/jobs-to-be-done
-npx skills add wondelai/skills/cro-methodology
-npx skills add wondelai/skills/refactoring-ui
-npx skills add wondelai/skills/ios-hig-design
-npx skills add wondelai/skills/scorecard-marketing
-npx skills add wondelai/skills/storybrand-messaging
-npx skills add wondelai/skills/hooked-ux
-npx skills add wondelai/skills/improve-retention
-npx skills add wondelai/skills/ux-heuristics
-npx skills add wondelai/skills/web-typography
-npx skills add wondelai/skills/top-design
-npx skills add wondelai/skills/negotiation
-npx skills add wondelai/skills/influence-psychology
-npx skills add wondelai/skills/lean-startup
-npx skills add wondelai/skills/design-sprint
-npx skills add wondelai/skills/crossing-the-chasm
-npx skills add wondelai/skills/blue-ocean-strategy
-npx skills add wondelai/skills/traction-eos
-npx skills add wondelai/skills/design-everyday-things
-npx skills add wondelai/skills/predictable-revenue
-npx skills add wondelai/skills/made-to-stick
-npx skills add wondelai/skills/drive-motivation
-npx skills add wondelai/skills/hundred-million-offers
-npx skills add wondelai/skills/obviously-awesome
-npx skills add wondelai/skills/contagious
-npx skills add wondelai/skills/one-page-marketing
-npx skills add wondelai/skills/mom-test
-npx skills add wondelai/skills/inspired-product
-npx skills add wondelai/skills/lean-ux
-npx skills add wondelai/skills/continuous-discovery
-npx skills add wondelai/skills/microinteractions
-npx skills add wondelai/skills/clean-code
-npx skills add wondelai/skills/refactoring-patterns
-npx skills add wondelai/skills/software-design-philosophy
-npx skills add wondelai/skills/pragmatic-programmer
-npx skills add wondelai/skills/domain-driven-design
-npx skills add wondelai/skills/ddia-systems
-npx skills add wondelai/skills/system-design
-npx skills add wondelai/skills/clean-architecture
-npx skills add wondelai/skills/release-it
-npx skills add wondelai/skills/high-perf-browser
-npx skills add wondelai/skills/37signals-way
-npx skills add wondelai/skills/steve-jobs-design-review
-npx skills add wondelai/skills/good-strategy-bad-strategy
-npx skills add wondelai/skills/monetizing-innovation
-npx skills add wondelai/skills/cold-start-problem
-npx skills add wondelai/skills/working-with-legacy-code
-npx skills add wondelai/skills/team-topologies
-npx skills add wondelai/skills/high-output-management
-npx skills add wondelai/skills/lean-analytics
+npx skills add wondelai/skills/jobs-to-be-done --global
+npx skills add wondelai/skills/cro-methodology --global
+npx skills add wondelai/skills/refactoring-ui --global
+npx skills add wondelai/skills/ios-hig-design --global
+npx skills add wondelai/skills/scorecard-marketing --global
+npx skills add wondelai/skills/storybrand-messaging --global
+npx skills add wondelai/skills/hooked-ux --global
+npx skills add wondelai/skills/improve-retention --global
+npx skills add wondelai/skills/ux-heuristics --global
+npx skills add wondelai/skills/web-typography --global
+npx skills add wondelai/skills/top-design --global
+npx skills add wondelai/skills/negotiation --global
+npx skills add wondelai/skills/influence-psychology --global
+npx skills add wondelai/skills/lean-startup --global
+npx skills add wondelai/skills/design-sprint --global
+npx skills add wondelai/skills/crossing-the-chasm --global
+npx skills add wondelai/skills/blue-ocean-strategy --global
+npx skills add wondelai/skills/traction-eos --global
+npx skills add wondelai/skills/design-everyday-things --global
+npx skills add wondelai/skills/predictable-revenue --global
+npx skills add wondelai/skills/made-to-stick --global
+npx skills add wondelai/skills/drive-motivation --global
+npx skills add wondelai/skills/hundred-million-offers --global
+npx skills add wondelai/skills/obviously-awesome --global
+npx skills add wondelai/skills/contagious --global
+npx skills add wondelai/skills/one-page-marketing --global
+npx skills add wondelai/skills/mom-test --global
+npx skills add wondelai/skills/inspired-product --global
+npx skills add wondelai/skills/lean-ux --global
+npx skills add wondelai/skills/continuous-discovery --global
+npx skills add wondelai/skills/microinteractions --global
+npx skills add wondelai/skills/clean-code --global
+npx skills add wondelai/skills/refactoring-patterns --global
+npx skills add wondelai/skills/software-design-philosophy --global
+npx skills add wondelai/skills/pragmatic-programmer --global
+npx skills add wondelai/skills/domain-driven-design --global
+npx skills add wondelai/skills/ddia-systems --global
+npx skills add wondelai/skills/system-design --global
+npx skills add wondelai/skills/clean-architecture --global
+npx skills add wondelai/skills/release-it --global
+npx skills add wondelai/skills/high-perf-browser --global
+npx skills add wondelai/skills/37signals-way --global
+npx skills add wondelai/skills/steve-jobs-design-review --global
+npx skills add wondelai/skills/good-strategy-bad-strategy --global
+npx skills add wondelai/skills/monetizing-innovation --global
+npx skills add wondelai/skills/cold-start-problem --global
+npx skills add wondelai/skills/working-with-legacy-code --global
+npx skills add wondelai/skills/team-topologies --global
+npx skills add wondelai/skills/high-output-management --global
+npx skills add wondelai/skills/lean-analytics --global
 ```
 
 ## Available Skills
