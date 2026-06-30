@@ -193,14 +193,6 @@ See: [references/case-studies.md](references/case-studies.md)
 | Are enabling engagements time-boxed with exit criteria? | Permanent dependency replaces learning | Set end dates and capability-transfer goals up front |
 | Is there a recurring mechanism to sense and evolve the topology? | Design rots as system and market shift | Quarterly review of friction, wait times, and on-call signals |
 
-## Reference Files
-
-- [team-types.md](references/team-types.md): Each team type in depth — responsibilities, staffing, success metrics, failure modes, converting existing teams, and a "which type is this team really?" decision guide
-- [interaction-modes.md](references/interaction-modes.md): Mode-by-mode mechanics, team interaction contracts, time-boxing collaboration, designing X-as-a-Service interfaces, the facilitation playbook, and mode-evolution triggers
-- [cognitive-load.md](references/cognitive-load.md): Assessing team cognitive load (survey, domain counting, on-call and tooling proxies), the full team API template, domain-allocation heuristics, and overload warning signs
-- [fracture-planes.md](references/fracture-planes.md): The fracture-plane catalog with selection criteria, a monolith-to-team-ownership mapping exercise, DDD alignment, shared-code options, and sequencing an inverse Conway reorg
-- [case-studies.md](references/case-studies.md): Three scenarios — a scale-up redesigned into stream-aligned plus platform teams, an ops team converted to platform-as-product, and a monolith split with explicit interaction modes
-
 ## Further Reading
 
 - [*"Team Topologies: Organizing Business and Technology Teams for Fast Flow"*](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819?tag=wondelai00-20) by Matthew Skelton & Manuel Pais

@@ -208,15 +208,6 @@ See [references/code-smells.md](references/code-smells.md) when a smell is hard 
 | Are magic numbers named constants? | Intent hidden behind raw values | Name the constant (§6) |
 | Do all tests run in under 10 seconds? | Slow tests don't get run | Mock external deps; split integration tests |
 
-## Reference Files
-
-- [naming-conventions.md](references/naming-conventions.md): Intention-revealing names, avoiding disinformation, class vs. method naming, before/after examples
-- [functions-and-methods.md](references/functions-and-methods.md): Small functions, argument counts, command-query separation, the step-down rule, side effects
-- [comments-formatting.md](references/comments-formatting.md): Good vs. bad comments, the newspaper metaphor, vertical formatting, team rules
-- [error-handling.md](references/error-handling.md): Exceptions over return codes, null handling, Special Case pattern, wrapping third-party APIs
-- [testing-principles.md](references/testing-principles.md): TDD laws, F.I.R.S.T. principles, clean test patterns, test readability
-- [code-smells.md](references/code-smells.md): Comprehensive smell catalog organized by category, with targeted refactorings
-
 ## Further Reading
 
 Based on Robert C. Martin's seminal guide to software craftsmanship:
