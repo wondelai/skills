@@ -4,7 +4,7 @@ description: 'Design scalable distributed systems using structured approaches fo
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # System Design Framework
@@ -17,7 +17,7 @@ A structured approach to designing large-scale distributed systems. Apply these 
 
 ## Scoring
 
-**Goal: 10/10.** Score a design by counting how many of the eight Quick Diagnostic rows it satisfies (1 point each): 9-10 = all/nearly all rows pass — explicit requirements, real estimates, redundancy, a stated DB-scaling and caching strategy, async via queues, monitoring, and a deployment plan, with tradeoffs named; 5-6 = the design works but skips estimation, redundancy, or operations; <=3 = architecture proposed before requirements or estimates exist. Always state the current score, name the failing diagnostic rows, and give the specific fix for each.
+**Goal: 10/10.** Score a design by how many of the eight Quick Diagnostic rows it satisfies — `score = round(passed / 8 × 10)`: 9-10 = all/nearly all rows pass — explicit requirements, real estimates, redundancy, a stated DB-scaling and caching strategy, async via queues, monitoring, and a deployment plan, with tradeoffs named; 5-6 = the design works but skips estimation, redundancy, or operations; <=3 = architecture proposed before requirements or estimates exist. Always state the current score, name the failing diagnostic rows, and give the specific fix for each.
 
 ## The System Design Framework
 

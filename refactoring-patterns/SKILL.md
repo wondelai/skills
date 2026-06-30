@@ -4,7 +4,7 @@ description: 'Apply named refactoring transformations to improve code structure 
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Refactoring Patterns Framework
@@ -19,7 +19,7 @@ A disciplined approach to improving the internal structure of existing code with
 
 ## Scoring
 
-**Goal: 10/10.** Score structural quality by counting satisfied rows in the [Quick Diagnostic](#quick-diagnostic) (8 rows): roughly one point per satisfied row, plus margin for severity. Bands:
+**Goal: 10/10.** Score structural quality by how many of the eight [Quick Diagnostic](#quick-diagnostic) rows pass — `score = round(passed / 8 × 10)`, adjusting down when a single smell is severe. Bands:
 - **9-10**: no obvious smells remain, each function does one thing, names reveal intent, duplication is eliminated, conditionals use polymorphism where apt, and tests cover the refactored paths.
 - **5-6**: a few smells remain (a Long Method, some duplication) but structure is mostly sound.
 - **≤3**: pervasive smells — tangled conditionals, God classes, duplication everywhere — or no tests to refactor safely.

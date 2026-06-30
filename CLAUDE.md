@@ -59,7 +59,7 @@ Intro paragraph about the framework.
 
 ## Scoring
 
-**Goal: 10/10.** Score with concrete, checkable bands tied to the Quick Diagnostic (e.g. "1 point per satisfied row"; spell out 9-10 / 7-8 / 5-6 / <=3) so the rating is reproducible across runs.
+**Goal: 10/10.** Score with a reproducible rule tied to the Quick Diagnostic that spans the full 0-10 — e.g. `score = round(rows passed / N × 10)` — then spell out the 9-10 / 7-8 / 5-6 / <=3 bands. (Don't write "1 point per row" when there are fewer than 10 rows: the top band becomes unreachable.)
 
 ## Framework Sections
 

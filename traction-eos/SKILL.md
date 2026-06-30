@@ -4,7 +4,7 @@ description: 'Implement the Entrepreneurial Operating System (EOS) to align visi
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Entrepreneurial Operating System (EOS)
@@ -17,7 +17,7 @@ A complete system for running a business with six key components. Designed for e
 
 ## Scoring
 
-**Goal: 10/10.** Score the business by counting satisfied rows in the Quick Diagnostic (one point per "yes", six rows): each component is either in place or it is not. Bands: **9-10** = all six diagnostic rows pass and rocks consistently hit 80%+ completion; **7-8** = five rows pass, one component weak; **5-6** = three to four rows pass; **3-4** = one to two rows pass; **<=2** = no operating rhythm in place. Always state the current score, the failing diagnostic rows, and the next action for each.
+**Goal: 10/10.** Score the business by how many of the six Quick Diagnostic rows pass (each component is either in place or not), mapped to the bands below. Bands: **9-10** = all six diagnostic rows pass and rocks consistently hit 80%+ completion; **7-8** = five rows pass, one component weak; **5-6** = three to four rows pass; **3-4** = one to two rows pass; **<=2** = no operating rhythm in place. Always state the current score, the failing diagnostic rows, and the next action for each.
 
 ## The Six Key Components
 

@@ -4,7 +4,7 @@ description: 'Design habit-forming product loops using the Hook Model (Trigger, 
 license: MIT
 metadata:
   author: wondelai
-  version: "1.5.0"
+  version: "1.5.1"
 ---
 
 # Hook Model Framework
@@ -23,7 +23,7 @@ Trigger → Action → Variable Reward → Investment
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing or creating product engagement mechanics, score the loop by the four Quick Diagnostic rows (internal trigger, dead-simple action, variable reward, investment loads next trigger): award 2 points per row fully satisfied, 1 if partial, 0 if absent. Then apply the ethics gate: if the Manipulation Matrix places the product as Dealer (or it hits any "When NOT to Use" condition), cap the score at 3 regardless of mechanics. Bands: 9-10 = complete loop, internal trigger identified, ethics clear; 5-6 = loop runs but leans on external triggers or predictable rewards; <=3 = broken loop or extractive design. Always state the current score and the specific diagnostic rows blocking 10/10.
+**Goal: 10/10.** When reviewing or creating product engagement mechanics, score the loop by the four Quick Diagnostic rows (internal trigger, dead-simple action, variable reward, investment loads next trigger): each row earns 2 (fully satisfied), 1 (partial), or 0 (absent), then `score = round(total / 8 × 10)`. Then apply the ethics gate: if the Manipulation Matrix places the product as Dealer (or it hits any "When NOT to Use" condition), cap the score at 3 regardless of mechanics. Bands: 9-10 = complete loop, internal trigger identified, ethics clear; 5-6 = loop runs but leans on external triggers or predictable rewards; <=3 = broken loop or extractive design. Always state the current score and the specific diagnostic rows blocking 10/10.
 
 ## The Four Phases
 

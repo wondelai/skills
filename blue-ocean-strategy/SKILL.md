@@ -4,7 +4,7 @@ description: 'Create uncontested market space using value innovation instead of 
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Blue Ocean Strategy Framework
@@ -17,7 +17,7 @@ Strategic framework for creating uncontested market space that makes the competi
 
 ## Scoring
 
-**Goal: 10/10.** Score a strategy by counting how many of the five Quick Diagnostic rows it satisfies (1 point each):
+**Goal: 10/10.** Score a strategy by how many of the five Quick Diagnostic rows it satisfies, mapped to the bands below:
 
 - **9-10** — divergent strategy-canvas curve, eliminates AND creates factors, breaks the value-cost trade-off, converts non-customers, and delivers a 10x utility leap (all 5 rows).
 - **7-8** — value innovation is real but one gate is weak (e.g. strong divergence and cost cuts, but still chasing existing customers rather than non-customers).

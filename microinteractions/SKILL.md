@@ -4,7 +4,7 @@ description: 'Design the small details -- triggers, rules, feedback, loops and m
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Microinteractions Framework
@@ -17,7 +17,7 @@ Design the tiny, contained product moments users touch every day -- toggles, pas
 
 ## Scoring
 
-**Goal: 10/10.** Score by counting how many of the 8 Quick Diagnostic rows the microinteraction passes (one point each), then map to a band:
+**Goal: 10/10.** Score by how many of the 8 Quick Diagnostic rows the microinteraction passes — `score = round(passed / 8 × 10)`, then read the band:
 - **9-10** = passes all 8 rows: deliberate discoverable trigger with visible states, simple predictable rules, sub-100ms feedback scaled to event significance, evolves over time, mode-free or mode-visible, learnable without help.
 - **5-6** = 4-5 rows pass: it works but has a generic feel -- e.g. feedback exists but is uniform, or the trigger lacks distinct states.
 - **<=3** = 2 or fewer rows pass: missing feedback, invisible triggers, or hidden modes that break trust.
