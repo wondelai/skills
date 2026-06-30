@@ -1,0 +1,57 @@
+name: Sync marketplace versions
+
+# Keeps .claude-plugin/marketplace.json versions equal to the latest GitHub
+# release, so plugin consumers (/plugin install <collection>@wondelai-skills)
+# are offered refreshed skills after every release. Runs automatically on each
+# published release; can also be triggered manually with an explicit version.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to sync, e.g. 1.4.0 (defaults to the latest release/tag)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-marketplace-version
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Resolve version
+        id: ver
+        run: |
+          v="${{ github.event.release.tag_name }}"
+          [ -z "$v" ] && v="${{ github.event.inputs.version }}"
+          [ -z "$v" ] && v="$(git describe --tags --abbrev=0)"
+          v="${v#v}"
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          echo "Resolved version: $v"
+
+      - name: Sync marketplace.json
+        run: scripts/sync-marketplace-versions.sh "${{ steps.ver.outputs.version }}"
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- .claude-plugin/marketplace.json; then
+            echo "marketplace.json already in sync — nothing to do"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .claude-plugin/marketplace.json
+          git commit -m "chore: sync marketplace.json versions to ${{ steps.ver.outputs.version }} [skip ci]"
+          git push origin main

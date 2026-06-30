@@ -107,7 +107,7 @@ The YAML frontmatter `description` field is critical for skill discovery - it sh
    - Add row to "Available Skills" table
    - Add "Skill Details" section (description, About the author, Use when, Example prompts)
    - Add to "Copyright & Disclaimer" section
-5. Add the skill to `.claude-plugin/marketplace.json` under the appropriate plugin collection
+5. Add the skill's path to `.claude-plugin/marketplace.json` under the appropriate plugin collection (add the `./skill-name` entry only — do **not** hand-pick a version; see Versioning Policy)
 
 ## Installation
 
@@ -149,6 +149,10 @@ metadata:
   author: wondelai
   version: "1.1.0"
 ```
+
+### Marketplace versions (automated)
+
+The versions in `.claude-plugin/marketplace.json` (top-level `metadata.version` and every `plugins[].version`) are **not** hand-edited. They are auto-synced to the latest GitHub release by `.github/workflows/sync-marketplace-version.yml`, which runs `scripts/sync-marketplace-versions.sh` on each published release and commits the result to `main`. To ship: bump the affected skills' `SKILL.md` versions, merge, then publish a `vX.Y.Z` GitHub release — the workflow sets all marketplace versions to `X.Y.Z`. To sync without a release, run `scripts/sync-marketplace-versions.sh X.Y.Z` locally.
 
 ## Commit Policy
 
