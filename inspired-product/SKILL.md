@@ -1,10 +1,10 @@
 ---
 name: inspired-product
-description: 'Build empowered product teams using discovery and delivery dual-track. Use when the user mentions "product discovery", "empowered teams", "feature factory", "product roadmap", "opportunity assessment", "product vision", "product-led growth", "discovery vs delivery", "what should we build", "our roadmap is just a feature list", or "set our product strategy". Also trigger when restructuring product teams away from output-driven models, setting product strategy, or deciding what to build next based on outcomes. Covers product discovery techniques, team structure, and continuous value delivery. For customer interviews, see mom-test. For ongoing discovery systems, see continuous-discovery.'
+description: 'Build empowered product teams using discovery and delivery dual-track. Use when the user mentions "product discovery", "empowered teams", "feature factory", "opportunity assessment", "product vision", "product strategy", "what should we build", or "our roadmap is just a feature list". Also trigger when restructuring teams away from output-driven models, or deciding what to build next based on outcomes. Covers discovery techniques, team structure, opportunity assessment, vision/strategy, and continuous delivery. For customer interviews, see mom-test. For ongoing discovery systems, see continuous-discovery.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Empowered Product Teams Framework
@@ -19,7 +19,7 @@ Most product failures come not from bad engineering or design but from building 
 
 ## Scoring
 
-**Goal: 10/10.** Rate product team structures, discovery practices, or delivery processes 0-10 against the principles below. Always state the current score and the specific improvements needed to reach 10/10.
+**Goal: 7/7.** Score product team structures, discovery practices, or delivery processes by the Quick Diagnostic below -- **1 point per satisfied row**, scored 0-7. Bands: **6-7** = empowered teams own outcomes and discovery runs continuously with engineers; **4-5** = discovery happens but inconsistently, or teams own output with partial outcome accountability; **<=3** = a feature factory: teams receive a roadmap of dated features and skip discovery. Always state the current score and the specific failed diagnostic rows to fix to reach 7/7.
 
 ## Framework
 
@@ -43,15 +43,15 @@ Most product failures come not from bad engineering or design but from building 
 | Roadmap prioritization | Prioritize strongest discovery evidence | Ship the feature with 4/5 successful user tests, not the CEO's request |
 | Sprint planning | Feed backlog from validated discovery output | Only discovery-tested items enter the sprint |
 
-**Ethical boundary:** Never cherry-pick discovery evidence to justify a predetermined conclusion -- discovery is honest inquiry, not confirmation theater.
+**Ethical boundary:** Never cherry-pick discovery evidence to justify a conclusion you already chose; report the tests that failed alongside the ones that passed.
 
-See: [references/discovery-techniques.md](references/discovery-techniques.md) for the four risks framework, prototyping techniques, and user testing.
+See [references/discovery-techniques.md](references/discovery-techniques.md) when planning a discovery cycle -- the four-risks framework, a 5-stage interview script, prototyping techniques, and concrete evidence thresholds for "validated".
 
 ### 2. Empowered Product Teams
 
 **Core concept:** A small, durable, cross-functional group (product manager, product designer, engineers) given a problem to solve, owning discovery and delivery, accountable for outcomes rather than output.
 
-**Why it works:** Teams that own problems end-to-end develop the domain expertise, customer empathy, and creative solutions no top-down roadmap can match -- missionaries who believe in what they build because they discovered it.
+**Why it works:** The people closest to the customer and the technology find better solutions than a remote roadmap author -- and a team that discovered the solution itself defends and refines it under pressure, where a team handed a spec ships it and moves on.
 
 **Key insights:**
 - The PM is not a project manager or backlog administrator -- they own value and viability and need deep knowledge of customers, data, business, and industry
@@ -70,7 +70,7 @@ See: [references/discovery-techniques.md](references/discovery-techniques.md) fo
 
 **Ethical boundary:** Never claim to empower teams while overriding their discovery findings with executive mandates -- if leadership dictates the solution, the team is not empowered.
 
-See: [references/empowered-teams.md](references/empowered-teams.md) for roles, missionary vs mercenary dynamics, coaching, and accountability.
+See [references/empowered-teams.md](references/empowered-teams.md) when staffing or diagnosing a team -- role-by-role competence breakdowns with red flags, missionary vs mercenary dynamics, coaching, and a feature-factory-to-empowered transformation table.
 
 ### 3. Product Discovery Techniques
 
@@ -117,7 +117,9 @@ See: [references/empowered-teams.md](references/empowered-teams.md) for roles, m
 | Stakeholder requests | Respond with assessment, not commitment | "Let me assess this and share findings before we commit engineering" |
 | Resource allocation | Fund highest-assessed opportunities | Severe pain + clear business alignment beats the nice-to-have |
 
-See: [references/opportunity-assessment.md](references/opportunity-assessment.md) for evaluation questions, market assessment, and prioritization.
+See [references/opportunity-assessment.md](references/opportunity-assessment.md) when sizing a new opportunity before design work -- the full evaluation-question set, market-timing assessment, and prioritization scoring.
+
+See [references/stakeholder-management.md](references/stakeholder-management.md) when an executive or sales stakeholder hands you a solution or a HiPPO is steering the roadmap -- stakeholder mapping, turning a mandate into a problem to assess, evangelism, and building executive trust.
 
 ### 5. Product Vision and Strategy
 
@@ -140,9 +142,9 @@ See: [references/opportunity-assessment.md](references/opportunity-assessment.md
 | Team autonomy | Strategy scopes each team's focus | "This quarter: cut mid-market churn via top 3 pain points" |
 | Decision-making | Principles resolve tradeoffs | "When in doubt, choose simplicity over power" |
 
-**Ethical boundary:** Never present a vision you know is unachievable to motivate teams or attract investment -- ambitious but honest.
+**Ethical boundary:** Never present a vision you know is unachievable to motivate teams or attract investment.
 
-See: [references/product-vision.md](references/product-vision.md) for vision, strategy, principles, OKRs, and outcome-based roadmaps.
+See [references/product-vision.md](references/product-vision.md) when drafting or revisiting vision and strategy -- how to write each, product principles, translating strategy into OKRs, and building outcome-based roadmaps.
 
 ### 6. Continuous Value Delivery
 
@@ -165,9 +167,9 @@ See: [references/product-vision.md](references/product-vision.md) for vision, st
 | Risk management | Feature flags for controlled rollout | Ship to 5%, measure, expand or roll back |
 | Learning loops | Instrument every release to feed discovery | Low search usage triggers a discovery investigation |
 
-**Ethical boundary:** Never ship changes you cannot roll back -- continuous delivery requires continuous responsibility for the user experience.
+**Ethical boundary:** Never ship a change you cannot roll back; gate anything risky behind a flag you can flip off.
 
-See: [references/case-studies.md](references/case-studies.md) for these principles applied at different company stages.
+See [references/case-studies.md](references/case-studies.md) when you want a worked example before applying the framework -- these principles played out at startup, growth, and enterprise stages.
 
 ## Common Mistakes
 
@@ -179,7 +181,6 @@ See: [references/case-studies.md](references/case-studies.md) for these principl
 | Handing teams solutions, not problems | Feature factories with no motivation or creativity | Assign objectives and key results; let teams discover solutions |
 | Isolating engineers from customers | Best source of innovation never sees the problem | Include engineers in interviews, discovery, prototype testing |
 | Roadmaps of promised features with dates | Commitments calcify before discovery can validate | Use outcome-based roadmaps: problems to solve, not features |
-| Discovery as a one-time phase | Learning stops once building starts | Run discovery continuously in parallel with delivery |
 
 ## Quick Diagnostic
 
@@ -192,15 +193,6 @@ See: [references/case-studies.md](references/case-studies.md) for these principl
 | Can team members explain the vision and strategy? | No context for autonomous decisions | Create and evangelize a vision doc and quarterly strategy |
 | Do stakeholders bring problems, not solutions? | Leadership dictating features | Coach stakeholders on discovery; pre-sell with opportunity assessments |
 | Do you ship validated increments at least every two weeks? | Too slow to learn | Smaller increments; invest in CI/CD and feature flags |
-
-## Reference Files
-
-- [discovery-techniques.md](references/discovery-techniques.md): Opportunity discovery, solution discovery, prototyping techniques, user testing, and the four risks framework
-- [empowered-teams.md](references/empowered-teams.md): Product team structure, roles, missionary vs mercenary teams, coaching, and accountability
-- [opportunity-assessment.md](references/opportunity-assessment.md): Evaluating product opportunities, business alignment, market assessment, and prioritization
-- [product-vision.md](references/product-vision.md): Creating product vision, strategy, principles, OKRs, and outcome-based roadmaps
-- [stakeholder-management.md](references/stakeholder-management.md): Managing stakeholders, evangelism, getting buy-in, dealing with HiPPOs, and building executive trust
-- [case-studies.md](references/case-studies.md): Scenarios showing empowered product team principles applied to different company stages
 
 ## Further Reading
 

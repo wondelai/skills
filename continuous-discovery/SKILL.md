@@ -4,7 +4,7 @@ description: 'Build a weekly cadence of customer touchpoints using Opportunity S
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Continuous Discovery Habits Framework
@@ -17,7 +17,7 @@ Framework for building a sustainable weekly practice of customer discovery that 
 
 ## Scoring
 
-**Goal: 10/10.** Rate any discovery practice 0-10: a 10/10 means a weekly interview cadence, a living Opportunity Solution Tree, systematic assumption testing, and evidence-driven build decisions. Report the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score a discovery practice by the seven Quick Diagnostic rows below — start at 3, add 1 point per row answered "yes" (max 10). Bands: **9-10** = weekly cadence, a living Opportunity Solution Tree, systematic assumption testing, and every shipped feature traceable to a customer opportunity; **5-6** = some discovery happening but ad hoc, PM-only, or disconnected from delivery; **≤3** = intuition- and stakeholder-driven with no regular customer contact. Report the current score, the failing rows, and the specific fix for each.
 
 ## Framework
 
@@ -44,7 +44,7 @@ Framework for building a sustainable weekly practice of customer discovery that 
 
 **Ethical boundary:** Never cherry-pick opportunities to justify a predetermined solution — the tree must reflect needs discovered through research.
 
-See: [references/opportunity-trees.md](references/opportunity-trees.md)
+See [references/opportunity-trees.md](references/opportunity-trees.md) when building or auditing a tree — adds the 4-layer diagram, good-vs-poor outcome tables, solution-generation techniques, a weekly update rhythm, healthy/dying-tree signals, two worked examples, and four anti-patterns.
 
 ### 2. Experience Mapping
 
@@ -67,9 +67,7 @@ See: [references/opportunity-trees.md](references/opportunity-trees.md)
 | Churn analysis | Map churned users' experience to find failure points | Users abandon onboarding at step 4 — they lack data they need on hand |
 | Cross-functional alignment | Build the map together | A three-hour collaborative session produces one shared reference artifact |
 
-**Ethical boundary:** Maps must reflect real customer experiences from interviews, not the team's projection of what customers feel.
-
-See: [references/experience-mapping.md](references/experience-mapping.md)
+See [references/experience-mapping.md](references/experience-mapping.md) when mapping a new problem space or churn flow — adds the current-state map template, the experience-vs-journey-map distinction, and the collaborative mapping exercise.
 
 ### 3. Interview Snapshots
 
@@ -94,7 +92,7 @@ See: [references/experience-mapping.md](references/experience-mapping.md)
 
 **Ethical boundary:** Never lead participants toward conclusions — ask open-ended questions about past behavior and let the story reveal what matters.
 
-See: [references/interview-snapshots.md](references/interview-snapshots.md)
+See [references/interview-snapshots.md](references/interview-snapshots.md) when running interviews or setting up recruitment — adds story-based interview structure, the one-page snapshot format, synthesis across snapshots, and how to automate weekly recruitment.
 
 ### 4. Assumption Testing
 
@@ -119,7 +117,7 @@ See: [references/interview-snapshots.md](references/interview-snapshots.md)
 
 **Ethical boundary:** Never deceive participants — painted-door tests should say the feature is coming soon, not fake functionality without disclosure.
 
-See: [references/assumption-mapping.md](references/assumption-mapping.md)
+See [references/assumption-mapping.md](references/assumption-mapping.md) when designing a test for a risky assumption — adds the four assumption types in depth, the importance-vs-evidence 2x2, the test-design menu, and how to set success criteria for leap-of-faith assumptions.
 
 ### 5. Prioritizing Opportunities
 
@@ -142,15 +140,13 @@ See: [references/assumption-mapping.md](references/assumption-mapping.md)
 | Sprint planning | Pick the opportunity with the strongest current evidence | Choose where you have the most interview data and a testable solution |
 | Portfolio decisions | Spread effort by risk and impact | 60% high-confidence, 30% medium, 10% exploratory |
 
-**Ethical boundary:** Prioritization should surface real customer needs, not be gamed to justify features that serve business metrics at users' expense.
-
-See: [references/prioritization-methods.md](references/prioritization-methods.md)
+See [references/prioritization-methods.md](references/prioritization-methods.md) when ranking your top opportunities — adds the opportunity-sizing method, the compare-and-contrast technique, how to weigh data, and how to avoid analysis paralysis.
 
 ### 6. Building the Habit
 
 **Core concept:** Continuous discovery only works as a sustainable weekly habit for the trio — automate recruitment, create lightweight rituals, and embed discovery into the existing workflow rather than treating it as extra work.
 
-**Why it works:** Most teams do a research burst and stop; structural support (automated recruitment, standing slots, shared artifacts) makes the habit compound into deep customer intuition that transforms every decision.
+**Why it works:** Discovery that depends on "finding time" loses to delivery pressure every week; structural support (automated recruitment, standing slots, shared artifacts) removes the per-week decision so the habit survives and compounds.
 
 **Key insights:**
 - The whole trio participates — not just the PM
@@ -169,7 +165,7 @@ See: [references/prioritization-methods.md](references/prioritization-methods.md
 
 **Ethical boundary:** Respect participant time — keep interviews to 30 minutes, compensate fairly, and never disguise a sales pitch as discovery.
 
-See: [references/case-studies.md](references/case-studies.md)
+See [references/case-studies.md](references/case-studies.md) when adapting the habit to your context — worked walkthroughs of continuous discovery in B2B SaaS, consumer mobile, platform, and growth teams.
 
 ## Common Mistakes
 
@@ -194,15 +190,6 @@ See: [references/case-studies.md](references/case-studies.md)
 | Can you trace a shipped feature to a customer opportunity? | Delivery disconnected from discovery | Link backlog items to OST opportunities |
 | Interview snapshots visible to the whole team? | Knowledge trapped in one head | Shared snapshot board, filled after each interview |
 | Comparing opportunities, not just listing them? | Prioritization by opinion | Run a structured comparison on your top 5 |
-
-## Reference Files
-
-- [opportunity-trees.md](references/opportunity-trees.md): OST structure, how to build and maintain one, mapping opportunities to solutions
-- [interview-snapshots.md](references/interview-snapshots.md): Story-based interviewing, snapshot format, synthesis, automating recruitment
-- [assumption-mapping.md](references/assumption-mapping.md): Assumption types, mapping technique, designing tests, leap-of-faith assumptions
-- [experience-mapping.md](references/experience-mapping.md): Current-state maps, identifying pain points, collaborative mapping exercises
-- [prioritization-methods.md](references/prioritization-methods.md): Opportunity scoring, compare-and-contrast, using data, avoiding analysis paralysis
-- [case-studies.md](references/case-studies.md): Continuous discovery applied to B2B SaaS, consumer mobile, platform, and growth teams
 
 ## Further Reading
 

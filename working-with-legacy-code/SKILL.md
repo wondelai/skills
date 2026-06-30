@@ -1,10 +1,10 @@
 ---
 name: working-with-legacy-code
-description: 'Safely change and test untested codebases using Feathers'' "Working Effectively with Legacy Code". Use when the user mentions "legacy code", "no tests", "untested codebase", "how do I test this", "seams", "characterization tests", "sprout method", "afraid to change this code", "monster method", "dependency breaking", "inherited a messy codebase", or "scared to touch this code". Also trigger when changing code without tests safely, getting a class under test when constructors, statics, or singletons block it, adding features to tangled modules, or planning incremental test coverage for an old codebase. Covers the legacy-code change algorithm, seams, characterization tests, sprout/wrap, and dependency-breaking techniques. For refactoring code that already has tests, see refactoring-patterns. For day-to-day code quality, see clean-code.'
+description: 'Safely change and test untested codebases using Feathers'' "Working Effectively with Legacy Code". Use when the user mentions "legacy code", "no tests", "untested codebase", "how do I test this", "seams", "characterization tests", "golden master", "sprout method", "afraid to change this code", "monster method", "dependency breaking", or "inherited a messy codebase". Also trigger when changing code without tests safely, getting a class under test when constructors, statics, or singletons block it, adding features to tangled modules, or planning incremental test coverage for an old codebase. Covers the legacy-code change algorithm, seams, characterization tests, sprout/wrap, and dependency-breaking techniques. For refactoring code that already has tests, see refactoring-patterns. For day-to-day code quality, see clean-code.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Working Effectively with Legacy Code
@@ -48,7 +48,7 @@ A field manual for changing code that has no tests, distilled from Michael C. Fe
 | PR mixing cleanup and a feature | Split into structure-only and behavior-only commits | Extract and rename first, tests green, then add the discount rule |
 | "It's just a one-line change" | Find the nearest test point first | One pin test at the public method that calls the private one you edit |
 
-See: [references/change-algorithm.md](references/change-algorithm.md)
+See [references/change-algorithm.md](references/change-algorithm.md) when running the five steps on a real change — the algorithm as a working procedure with change-point/test-point checklists and triage for "no time" situations.
 
 ### 2. Seams: Where to Pry Code Apart
 
@@ -72,7 +72,7 @@ See: [references/change-algorithm.md](references/change-algorithm.md)
 | Module calls a top-level `send_email()` | Import/link seam | `mocker.patch("billing.send_email")` or `jest.mock("./mailer")` |
 | Logic reads the wall clock directly | Seam at the clock | Inject a `now()` provider; tests freeze time |
 
-See: [references/seams.md](references/seams.md)
+See [references/seams.md](references/seams.md) when hunting a seam in a specific stack — the seam catalog with code, enabling points, and seams in modern tooling (DI containers, jest.mock, pytest monkeypatch, clock and config seams).
 
 ### 3. Characterization Tests
 
@@ -96,13 +96,13 @@ See: [references/seams.md](references/seams.md)
 | Legacy report generator | Golden master diff | Generate the report, compare to a checked-in master file |
 | Off-by-one found while pinning | Pin the wrong value, document it | `assert days == 30  # BUG? expected 31 — TICKET-482` |
 
-See: [references/characterization-tests.md](references/characterization-tests.md)
+See [references/characterization-tests.md](references/characterization-tests.md) when writing your first probe through to a pinned suite — golden masters, snapshot tests done right, and a worked before/after refactor.
 
 ### 4. Sprout and Wrap: Changing Without Tests First
 
 **Core concept:** When you genuinely cannot get the area under test today, don't weave new logic into the untested mass. Sprout Method or Sprout Class: write the new behavior as fresh, fully tested code and call it from a single line in the legacy spot. Wrap Method or Wrap Class: rename the old code aside and add behavior before or after the call to it, decorator-style.
 
-**Why it works:** New code in a fresh method or class can be test-driven even when its host can't be instantiated in a harness. The untested host changes by one call site — old behavior remains byte-for-byte intact, new behavior arrives fully verified, and the risk stays contained to a single line.
+**Why it works:** New code in a fresh method or class can be test-driven even when its host can't be instantiated in a harness — testability no longer waits on getting the host into a harness. The untested host changes by exactly one call site, so the unverified blast radius is a single line instead of the whole method.
 
 **Key insights:**
 - Sprout Method when new logic plugs in at one point; Sprout Class when the host class won't even instantiate in a test harness
@@ -142,7 +142,7 @@ See: [references/characterization-tests.md](references/characterization-tests.md
 | Static `Billing.charge()` called everywhere | Introduce Instance Delegator | Instance `charge()` delegates to the static; tests override it |
 | 900-line method hoarding locals | Break Out Method Object | `new RateCalculation(order, rates).run()` — locals become fields |
 
-See: [references/dependency-breaking.md](references/dependency-breaking.md)
+See [references/dependency-breaking.md](references/dependency-breaking.md) when a specific blocker stops instantiation or sensing — before/after code for each technique plus a decision table mapping blockers to the right move.
 
 ### 6. Untangling and Understanding
 
@@ -166,7 +166,7 @@ See: [references/dependency-breaking.md](references/dependency-breaking.md)
 | Feature due in a 5,000-line class | Pinch-point tests, then sprout | Cover `postInvoice()`, sprout the new rule as a class |
 | Code nobody on the team understands | Scratch refactor on a branch | Extract and rename to learn, revert, plan the real moves |
 
-See: [references/case-studies.md](references/case-studies.md)
+See [references/case-studies.md](references/case-studies.md) when you want a full worked walkthrough — three scenarios: a feature in an untested 800-line service, a singleton-ridden module brought under test, and a monster method tamed before a bug fix.
 
 ## Common Mistakes
 
@@ -188,19 +188,11 @@ See: [references/case-studies.md](references/case-studies.md)
 | Do tests cover the code you're about to change? | You're editing and praying | Run the change algorithm; pin behavior before editing |
 | Can you construct the class in a test harness? | Dependencies block separation | Parameterize Constructor, Extract Interface, or Sprout Class |
 | Can a test sense the effect of your change? | Effects are invisible to assertions | Find a sensing point; Extract and Override Getter |
-| Is this commit behavior-only or structure-only? | Mixed changes are unverifiable | Split it; run the tests between the two |
+| Is this commit behavior-only or structure-only? | Mixed | Split it; run the tests between the two |
 | Do you know everything this change can affect? | Unknown blast radius | Draw an effect sketch; test at the pinch points |
-| Do your assertions state observed behavior? | You're testing wishes, not code | Probe, read the failure, pin the actual value |
-| Is the seam you chose the cheapest one available? | Needless surgery risks behavior | Prefer constructor parameters and import seams first |
+| Do your assertions state observed behavior? | Testing wishes | Probe, read the failure, pin the actual value |
+| Is the seam you chose the cheapest one available? | Needless surgery | Prefer constructor parameters and import seams first |
 | Will the code be better covered after this change? | The next change costs as much as this one | Leave at least one pin test at the nearest test point |
-
-## Reference Files
-
-- [change-algorithm.md](references/change-algorithm.md): The five-step algorithm as a working procedure — change points, test points, safety checklists, triage for "no time" situations, behavior-vs-structure discipline
-- [seams.md](references/seams.md): Seam catalog with code — object, link/import, and preprocessing seams, enabling points, seams in modern stacks (DI containers, jest.mock, pytest monkeypatch, clock and config seams)
-- [characterization-tests.md](references/characterization-tests.md): From first failing probe to a pinned suite — golden masters, snapshot tests done right, and a worked before/after refactor
-- [dependency-breaking.md](references/dependency-breaking.md): Before/after code for each major technique plus a decision table mapping blockers to techniques
-- [case-studies.md](references/case-studies.md): Three scenarios — a feature in an untested 800-line service, a singleton-ridden module brought under test, a monster method tamed before a bug fix
 
 ## Further Reading
 

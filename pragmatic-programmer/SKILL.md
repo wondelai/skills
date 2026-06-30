@@ -1,10 +1,10 @@
 ---
 name: pragmatic-programmer
-description: 'Apply meta-principles of software craftsmanship: DRY, orthogonality, tracer bullets, and design by contract. Use when the user mentions "best practices", "pragmatic approach", "broken windows", "tracer bullet", "software craftsmanship", "technical debt prevention", "code ownership", "how do I become a better developer", "level up my engineering", "avoid technical debt", or "work more effectively as a dev". Also trigger when evaluating build-vs-buy decisions, designing estimation approaches, or choosing between reversible and irreversible architectural decisions. Covers estimation, domain languages, and reversibility. For code-level quality, see clean-code. For refactoring techniques, see refactoring-patterns.'
+description: 'Apply meta-principles of software craftsmanship: DRY, orthogonality, tracer bullets, and design by contract. Use when the user mentions "best practices", "pragmatic approach", "broken windows", "tracer bullet", "software craftsmanship", "avoid technical debt", "code ownership", or "how do I become a better developer". Also trigger when evaluating build-vs-buy decisions, designing estimation approaches, or choosing between reversible and irreversible architectural decisions. Covers estimation, domain languages, and reversibility. For code-level quality, see clean-code. For refactoring techniques, see refactoring-patterns.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # The Pragmatic Programmer Framework
@@ -17,11 +17,16 @@ A systems-level approach to software craftsmanship from Hunt & Thomas' "The Prag
 
 ## Scoring
 
-**Goal: 10/10.** Rate software designs, architecture, or code 0-10 based on adherence to the principles below; a 10/10 means full alignment, lower scores indicate gaps to address. Always state the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score against the seven Quick Diagnostic rows: award ~1.4 points per row answered "yes" (7 yes = 10). Then band the result:
+- **9-10**: every principle holds -- DRY knowledge, orthogonal layers, a working tracer slice, contracts at boundaries, no broken windows, reversible vendor/DB choices, ranged estimates.
+- **5-6**: 1-2 violations that cost real change-effort (e.g. business logic coupled to the DB, single-point estimates).
+- **<=3**: pervasive duplication, global state, or accumulated broken windows -- entropy is winning.
 
-## The Pragmatic Programmer Framework
+Always state the score, name the failing diagnostic rows, and give the specific fix from the Action column to reach 10/10.
 
-Seven meta-principles for building software that lasts:
+## The Seven Meta-Principles
+
+Seven principles for building software that lasts:
 
 ### 1. DRY (Don't Repeat Yourself)
 
@@ -44,13 +49,13 @@ Seven meta-principles for building software that lasts:
 | **Validation rules** | Shared schema | One JSON Schema or Zod schema for client and server |
 | **API contracts** | Generate from spec | OpenAPI spec generates types, docs, and client code |
 
-See: [references/dry-orthogonality.md](references/dry-orthogonality.md) for the four duplication types and orthogonal design in depth.
+See: [references/dry-orthogonality.md](references/dry-orthogonality.md) when classifying a specific duplication or deciding whether two code blocks are truly the same knowledge -- per-type examples and mitigations for the four duplication types.
 
 ### 2. Orthogonality
 
 **Core concept:** Two components are orthogonal if changes in one do not affect the other. Design systems where components are self-contained, independent, and have a single, well-defined purpose.
 
-**Why it works:** Orthogonal systems are easier to test, easier to change, and produce fewer side effects. Change the database layer and the UI should not break; change the auth provider and business logic should not care.
+**Why it works:** Decoupling localizes change -- a fix in one module can't ripple into unrelated ones, so blast radius stays bounded. Change the database layer and the UI should not break; change the auth provider and business logic should not care.
 
 **Key insights:**
 - Ask: "If I dramatically change the requirements behind a function, how many modules are affected?" The answer should be one
@@ -66,6 +71,8 @@ See: [references/dry-orthogonality.md](references/dry-orthogonality.md) for the 
 | **Architecture** | Layered separation | Controller -> Service -> Repository, each replaceable |
 | **Dependencies** | Dependency injection | Pass a `Notifier` interface, not a `SlackClient` concrete class |
 | **Testing** | Isolated unit tests | Test business logic without database, network, or filesystem |
+
+See: [references/dry-orthogonality.md](references/dry-orthogonality.md) when measuring coupling or refactoring toward decoupled layers -- the change-impact and stranger tests, layered-architecture diagram, and the helicopter analogy.
 
 ### 3. Tracer Bullets and Prototypes
 
@@ -88,7 +95,7 @@ See: [references/dry-orthogonality.md](references/dry-orthogonality.md) for the 
 | **Uncertain tech** | Spike prototype | Test WebSocket performance before committing |
 | **Microservice** | Walking skeleton | Hello-world service through the full CI/CD pipeline |
 
-See: [references/tracer-bullets.md](references/tracer-bullets.md) for tracer vs. prototype decisions and walking skeletons.
+See: [references/tracer-bullets.md](references/tracer-bullets.md) when deciding tracer vs. prototype on a new project or building a walking skeleton -- the shooting-in-the-dark decision, iteration loop, and common pitfalls.
 
 ### 4. Design by Contract and Assertive Programming
 
@@ -112,7 +119,7 @@ See: [references/tracer-bullets.md](references/tracer-bullets.md) for tracer vs.
 | **Class state** | Invariant validation | `validate!` called after every state mutation |
 | **API boundary** | Schema validation | Validate request body against schema before processing |
 
-See: [references/contracts-assertions.md](references/contracts-assertions.md) for contract patterns and assertive programming.
+See: [references/contracts-assertions.md](references/contracts-assertions.md) when adding contracts to a routine or deciding assertion vs. error handling -- worked pre/post/invariant patterns, dynamic-language guard clauses, and the assertions-vs-error-handling boundary.
 
 ### 5. The Broken Window Theory
 
@@ -135,7 +142,7 @@ See: [references/contracts-assertions.md](references/contracts-assertions.md) fo
 | **Code review** | Zero-tolerance for new debt | Reject PRs adding `// TODO: fix later` without a ticket |
 | **Tech debt** | Debt budget | Allocate 20% of each sprint to fixing broken windows |
 
-See: [references/broken-windows.md](references/broken-windows.md) for entropy fighting and the stone soup strategy.
+See: [references/broken-windows.md](references/broken-windows.md) when a team is normalizing neglect or you need to drive a turnaround -- repair strategies, the stone-soup catalyst play, and building a culture of quality.
 
 ### 6. Reversibility and Flexibility
 
@@ -158,7 +165,7 @@ See: [references/broken-windows.md](references/broken-windows.md) for entropy fi
 | **External API** | Adapter/wrapper | `PaymentGateway` interface wraps Stripe; swap to Braintree later |
 | **Feature flags** | Runtime toggles | New checkout flow behind a flag, rollback in seconds |
 
-See: [references/reversibility.md](references/reversibility.md) for decoupling strategies and avoiding vendor lock-in.
+See: [references/reversibility.md](references/reversibility.md) when committing to a vendor or framework, or weighing how reversible a decision must be -- per-layer reversibility patterns, the forking-road test, and when NOT to optimize for reversibility.
 
 ### 7. Estimation and Knowledge Portfolio
 
@@ -181,7 +188,7 @@ See: [references/reversibility.md](references/reversibility.md) for decoupling s
 | **New technology** | Time-boxed spike | "2 days evaluating; then I can estimate properly" |
 | **Learning** | Weekly investment | 1 hour/week on a new language, tool, or domain |
 
-See: [references/estimation-portfolio.md](references/estimation-portfolio.md) for PERT and portfolio management.
+See: [references/estimation-portfolio.md](references/estimation-portfolio.md) when producing an estimate you'll be held to or calibrating past misses -- the PERT and decomposition procedures, an estimation-log calibration loop, and portfolio rebalancing.
 
 ## Common Mistakes
 
@@ -206,15 +213,6 @@ See: [references/estimation-portfolio.md](references/estimation-portfolio.md) fo
 | Do my estimates include ranges and confidence levels? | Estimation problem | Switch to PERT or range-based estimates |
 | Can I roll back this deployment in under 5 minutes? | Reversibility gap | Add feature flags and blue-green deploys |
 | Am I learning something new every week? | Knowledge portfolio stagnant | Schedule weekly learning time and track it |
-
-## Reference Files
-
-- [references/dry-orthogonality.md](references/dry-orthogonality.md) -- DRY knowledge vs. code duplication, four types of duplication, orthogonality in design and testing
-- [references/tracer-bullets.md](references/tracer-bullets.md) -- Tracer bullet vs. prototype development, building walking skeletons, iterating on tracer code
-- [references/contracts-assertions.md](references/contracts-assertions.md) -- Design by Contract, preconditions/postconditions/invariants, assertive programming patterns
-- [references/broken-windows.md](references/broken-windows.md) -- Software entropy, broken window theory, stone soup strategy, fighting degradation
-- [references/reversibility.md](references/reversibility.md) -- Flexible architecture, decoupling strategies, avoiding vendor lock-in, forking road decisions
-- [references/estimation-portfolio.md](references/estimation-portfolio.md) -- PERT estimation, decomposition techniques, knowledge portfolio management
 
 ## Further Reading
 

@@ -1,10 +1,10 @@
 ---
 name: lean-analytics
-description: 'Choose and audit startup metrics using Croll and Yoskovitz''s "Lean Analytics". Use when the user mentions "what metrics should we track", "KPIs", "north star metric", "One Metric That Matters", "OMTM", "vanity metrics", "analytics dashboard", "DAU/MAU", "churn benchmark", "measure product-market fit", "are we tracking the right things", or "which number actually matters". Also trigger when choosing metrics for a startup or feature, auditing a dashboard for vanity metrics, setting metric targets and baselines, or instrumenting a product by business model and stage. Covers good-vs-vanity metrics, the One Metric That Matters, metrics by business model, the five startup stages, and benchmarks. For the build-measure-learn loop, see lean-startup. For fixing activation and retention, see improve-retention.'
+description: 'Choose and audit startup metrics using Croll and Yoskovitz''s "Lean Analytics". Use when the user mentions "what metrics should we track", "KPIs", "north star metric", "One Metric That Matters (OMTM)", "vanity metrics", "analytics dashboard", "DAU/MAU", "churn benchmark", or "measure product-market fit". Also trigger when choosing metrics for a startup or feature, auditing a dashboard for vanity metrics, setting metric targets and baselines, or instrumenting a product by business model and stage. Covers good-vs-vanity metrics, the One Metric That Matters, metrics by business model, the five startup stages, and benchmarks. For the build-measure-learn loop, see lean-startup. For fixing activation and retention, see improve-retention.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Lean Analytics
@@ -49,9 +49,7 @@ A data discipline for startups distilled from Alistair Croll and Benjamin Yoskov
 | Board reporting | Show cohorts, not cumulative curves | Retention by signup month replaces "users over time" |
 | Feature decision | Demand a behavior-changing metric | "If D7 retention doesn't rise 10%, the feature comes out" |
 
-**Ethical boundary:** Metrics exist to describe and serve users, not manipulate them — instrument only what you need and respect privacy in what you collect.
-
-See: [references/good-metrics.md](references/good-metrics.md)
+See references/good-metrics.md when auditing a dashboard or running a metric through the four tests — full test definitions, the 10-row vanity rewrite table, a worked cohort-retention example, segmentation rules, the correlation-to-causation experiment loop, and a metric-definition template.
 
 ### 2. The One Metric That Matters (OMTM)
 
@@ -77,7 +75,7 @@ See: [references/good-metrics.md](references/good-metrics.md)
 
 **Ethical boundary:** The line in the sand disciplines the company's bets, not individuals — turning the OMTM into personal quotas invites gaming and hides truth.
 
-See: [references/omtm.md](references/omtm.md)
+See references/omtm.md when choosing or rotating the OMTM, pairing a counter-metric, or drawing the line in the sand — the six-step selection procedure, the 6x3 stage x model matrix, a 7-row counter-metric gaming table, line-in-the-sand and rotation-trigger rules, and three worked examples.
 
 ### 3. Metrics by Business Model
 
@@ -101,7 +99,7 @@ See: [references/omtm.md](references/omtm.md)
 | North-star debate | Derive from model mechanics, don't copy | Marketplace adopts fill rate, not a SaaS-style MRR target |
 | Investor dashboard | Report the model's canonical ratios | SaaS deck: MRR growth, net churn, LTV:CAC, CAC payback |
 
-See: [references/business-model-metrics.md](references/business-model-metrics.md)
+See references/business-model-metrics.md when instrumenting a product or picking a model's canonical ratios — metric trees for all six models with formulas, instrumentation notes, measurement failure modes, and hybrid-model guidance.
 
 ### 4. Metrics by Stage: The Lean Analytics Stages
 
@@ -125,7 +123,7 @@ See: [references/business-model-metrics.md](references/business-model-metrics.md
 | Roadmap prioritization | Stage picks the OMTM; OMTM picks the work | Stickiness stage ships onboarding fixes, not a referral program |
 | Fundraising narrative | Pitch the passed gate and its evidence | "Week-4 retention flat at 35% — raising to scale acquisition" |
 
-See: [references/five-stages.md](references/five-stages.md)
+See references/five-stages.md when locating your stage or deciding whether you've passed a gate — the per-stage playbook with gating metrics, exit-criteria checklists, premature-scaling symptoms, and funding/runway interactions.
 
 ### 5. Baselines and Lines in the Sand
 
@@ -149,7 +147,7 @@ See: [references/five-stages.md](references/five-stages.md)
 | Anomaly triage | Compare to your own baseline before benchmarks | Conversion fell 2.4% → 1.9% in a week — investigate the release |
 | Channel evaluation | Re-derive benchmarks per channel | Paid social converts 0.8%, search 4% — budget follows the line |
 
-See: [references/case-studies.md](references/case-studies.md)
+See references/case-studies.md when you want a full worked walkthrough — three scenarios: SaaS dashboard to OMTM, marketplace liquidity discovery, and a mobile app fixing stickiness before growth.
 
 ## Common Mistakes
 
@@ -176,14 +174,6 @@ See: [references/case-studies.md](references/case-studies.md)
 | Is there a target with a date and a miss plan? | Goalposts will move after results | Draw the line in the sand in writing |
 | Is the data cohorted and segmented? | Averages are hiding the truth | Build cohort tables; split by channel and segment |
 | Is a counter-metric guarding the OMTM? | The OMTM will be gamed | Pair it, e.g. signup growth × 30-day retention |
-
-## Reference Files
-
-- [references/good-metrics.md](references/good-metrics.md) — Four tests of a good metric, vanity-metric rewrite table, cohort analysis how-to, segmentation discipline, correlation-to-causation loop, metric definition template
-- [references/omtm.md](references/omtm.md) — Choosing the OMTM step by step, stage × model matrix, counter-metric pairing, lines in the sand, dashboard design, rotation triggers, worked examples
-- [references/business-model-metrics.md](references/business-model-metrics.md) — Metric trees for all six business models with formulas, instrumentation notes, measurement failure modes, hybrid-model guidance
-- [references/five-stages.md](references/five-stages.md) — Stage-by-stage playbook: gating metrics, exit-criteria checklists, premature-scaling symptoms, funding and runway interactions
-- [references/case-studies.md](references/case-studies.md) — Three scenarios: SaaS dashboard to OMTM, marketplace liquidity discovery, mobile app fixing stickiness before growth
 
 ## Further Reading
 

@@ -1,10 +1,10 @@
 ---
 name: domain-driven-design
-description: 'Model software around the business domain using bounded contexts, aggregates, and ubiquitous language. Use when the user mentions "domain modeling", "bounded context", "aggregate root", "ubiquitous language", "anti-corruption layer", "context mapping", "domain events", "strategic design", "model the business in code", "the code doesnt match the business", or "how do we split this big system". Also trigger when breaking a monolith into services, defining service boundaries, or aligning code structure with business processes. Covers entities vs value objects, domain events, and context mapping strategies. For architecture layers, see clean-architecture. For complexity, see software-design-philosophy.'
+description: 'Model software around the business domain using bounded contexts, aggregates, and ubiquitous language. Use when the user mentions "domain modeling", "bounded context", "aggregate root", "ubiquitous language", "anti-corruption layer", "context mapping", "domain events", "strategic design", "the code doesnt match the business", or "how do we split this big system". Also trigger when breaking a monolith into services, defining service boundaries, or aligning code structure with business processes. Covers entities vs value objects, domain events, and context mapping strategies. For architecture layers, see clean-architecture. For complexity, see software-design-philosophy.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Domain-Driven Design Framework
@@ -17,7 +17,7 @@ Framework for tackling software complexity by modeling code around the business 
 
 ## Scoring
 
-**Goal: 10/10.** Rate any domain model 0-10 against the principles below. A 10/10 means full alignment with all guidelines; lower scores indicate gaps. Report the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score a domain model by awarding **1 point per satisfied row of the Quick Diagnostic** (7 rows) plus up to 3 points for depth: +1 if the Core Domain has a genuinely rich model (not just CRUD), +1 if invariants live inside aggregates rather than in services, +1 if the ubiquitous language is consistent across conversation, code, and tests. Bands: **9-10** = expert-readable names, explicit context boundaries with ACLs, small aggregates, behavior-rich entities, events for cross-aggregate flow, an identified Core Domain; **5-6** = some domain language but leaky boundaries or anemic objects; **<=3** = technical naming, one model for everything, logic scattered in services. Report the score and the specific diagnostic rows failing.
 
 ## Framework
 
@@ -41,7 +41,7 @@ Framework for tackling software complexity by modeling code around the business 
 | Module structure | Organize by domain concept | `shipping/`, `billing/` -- not `controllers/`, `services/` |
 | Code review | Reject technical-only names | Flag `Manager`, `Helper`, `Processor`, `Utils` as naming smells |
 
-See: [references/ubiquitous-language.md](references/ubiquitous-language.md) for glossary maintenance and language evolution practices.
+See: [references/ubiquitous-language.md](references/ubiquitous-language.md) when running modeling sessions or maintaining a glossary -- covers how the language evolves and feeds back into code.
 
 ### 2. Bounded Contexts and Context Mapping
 
@@ -118,7 +118,7 @@ See: [references/domain-events.md](references/domain-events.md) for event naming
 
 **Core concept:** Repositories provide the illusion of an in-memory collection of domain objects, hiding persistence. Factories encapsulate complex creation logic so aggregates are always born in a valid state.
 
-**Why it works:** Domain logic should never depend on how objects are stored or constructed. Repositories hide SQL and ORMs so domain code reads like business logic; factories ensure invariants hold from the moment an aggregate exists.
+**Why it works:** When persistence and assembly details leak into domain code, every storage change ripples through business rules and aggregates can be constructed in half-valid states. Repositories confine SQL/ORM concerns to infrastructure so the domain stays testable in memory; factories make the only path to an aggregate one that enforces its invariants, so an invalid instance is unrepresentable.
 
 **Key insights:**
 - The Repository interface belongs in the domain layer; its implementation belongs in infrastructure
@@ -157,7 +157,7 @@ See: [references/repositories-factories.md](references/repositories-factories.md
 | Team allocation | Best developers on Core Domain | Seniors model underwriting rules; juniors integrate the email service |
 | Code organization | Separate core from generic | `domain/pricing/` (deep model) vs. `infrastructure/email/` (thin adapter) |
 
-See: [references/strategic-design.md](references/strategic-design.md) for subdomain classification and distillation techniques.
+See: [references/strategic-design.md](references/strategic-design.md) when deciding where to invest engineering effort -- subdomain classification and distillation techniques.
 
 ## Common Mistakes
 
@@ -182,15 +182,6 @@ See: [references/strategic-design.md](references/strategic-design.md) for subdom
 | Are domain events used for cross-aggregate communication? | Tight coupling, synchronous chains | Introduce events; let aggregates react asynchronously |
 | Is there an Anti-Corruption Layer at every external integration? | Foreign models pollute your domain | Add a translation layer at each boundary |
 | Have you identified which subdomain is core? | Best talent spread thin | Classify subdomains; focus deep modeling on the Core Domain |
-
-## Reference Files
-
-- [ubiquitous-language.md](references/ubiquitous-language.md): Building a shared language, glossary maintenance, naming in code, language evolution
-- [bounded-contexts.md](references/bounded-contexts.md): Context boundaries, nine mapping patterns, team relationships, integration strategies
-- [building-blocks.md](references/building-blocks.md): Entities, Value Objects, Aggregates, aggregate design rules, consistency boundaries
-- [domain-events.md](references/domain-events.md): Event naming, event sourcing, event-driven architecture, integration events
-- [repositories-factories.md](references/repositories-factories.md): Repository pattern, Factory pattern, Specification pattern, ports and adapters
-- [strategic-design.md](references/strategic-design.md): Core Domain, Generic and Supporting Subdomains, distillation, build vs. buy
 
 ## Further Reading
 

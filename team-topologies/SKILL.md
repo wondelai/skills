@@ -1,10 +1,10 @@
 ---
 name: team-topologies
-description: 'Organize business and technology teams for fast flow using Skelton & Pais''s "Team Topologies". Use when the user mentions "team topologies", "Conway''s law", "platform team", "stream-aligned team", "team boundaries", "cognitive load", "how should we split teams", "org design", "who owns this service", "team dependencies", "reorg", or "teams keep stepping on each other". Also trigger when reorganizing engineering teams, aligning team and service boundaries, splitting a monolith and deciding ownership, reducing cross-team handoffs, or designing an internal platform. Covers the four team types, three interaction modes, the inverse Conway maneuver, and fracture planes. For bounded contexts, see domain-driven-design. For dependency direction in code, see clean-architecture.'
+description: 'Organize business and technology teams for fast flow using Skelton & Pais''s "Team Topologies". Use when the user mentions "team topologies", "Conway''s law", "platform team", "stream-aligned team", "team boundaries", "cognitive load", "how should we split teams", "who owns this service", "team dependencies", or "reorg". Also trigger when reorganizing engineering teams, aligning team and service boundaries, splitting a monolith and deciding ownership, reducing cross-team handoffs, or designing an internal platform. Covers the four team types, three interaction modes, the inverse Conway maneuver, and fracture planes. For bounded contexts, see domain-driven-design. For dependency direction in code, see clean-architecture.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Team Topologies
@@ -59,7 +59,7 @@ A team-first approach to organization design from Matthew Skelton and Manuel Pai
 - Stream-aligned is the default; the other three types are justified only by the load they remove from streams
 - An enabling team that never disengages has become a dependency — measure it by capabilities transferred, not tickets closed
 - Complicated-subsystem teams are justified by genuine specialism, never by managerial convenience — most orgs need zero or one
-- A platform is judged by cognitive load removed: if using it is harder than self-hosting, it is a liability with a roadmap
+- A platform exists to remove load from streams: if adopting it is harder than self-hosting, it is a liability, not a platform
 - Anti-patterns: shared-services teams become ticket-queue bottlenecks; a "DevOps team" between dev and ops adds a third silo; component teams everywhere mean every feature crosses many teams
 
 **Applications:**

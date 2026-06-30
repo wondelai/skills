@@ -1,10 +1,10 @@
 ---
 name: 37signals-way
-description: 'Build lean, opinionated products using the 37signals philosophy from "Getting Real", "Rework", and "Shape Up". Use when the user mentions "Getting Real", "Rework", "Shape Up", "37signals", "Basecamp method", "six-week cycles", "fixed time variable scope", "appetite vs estimates", "betting table", "breadboarding", "fat marker sketch", "build less", "underdo the competition", "opinionated software", "we have too many meetings", "the project keeps growing", "how do we ship faster", or "stop overbuilding". Also trigger when cutting scope to ship sooner, fighting feature creep, running a small team, avoiding long-term roadmaps, or killing unnecessary meetings. Covers shaping, betting, building, and the art of saying no. For MVP validation, see lean-startup. For design sprints, see design-sprint.'
+description: 'Build lean, opinionated products using the 37signals philosophy from "Getting Real", "Rework", and "Shape Up". Use when the user mentions "Getting Real", "Rework", "Shape Up", "37signals", "Basecamp method", "six-week cycles", "fixed time variable scope", "appetite vs estimates", "betting table", "breadboarding", "fat marker sketch", "build less", "underdo the competition", "opinionated software", "we have too many meetings", "how do we ship faster", or "stop overbuilding". Also trigger when cutting scope to ship sooner, running a small team, or avoiding long-term roadmaps. Covers shaping, betting, building, and the art of saying no. For MVP validation, see lean-startup. For design sprints, see design-sprint.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # The 37signals Product Development Framework
@@ -46,9 +46,7 @@ A system for building profitable software without bloat, bureaucracy, or burnout
 | **MVP scoping** | Cut until it hurts, then cut more | Drop user accounts for v1; use email magic links |
 | **Competitive strategy** | Underdo, don't outdo | Competitor has 50 integrations; ship 3 that work flawlessly |
 
-**Ethical boundary:** Cut complexity, not accessibility or safety — "less" means focused, not neglectful.
-
-See: [references/build-less.md](references/build-less.md)
+See [references/build-less.md](references/build-less.md) when deciding what to cut — curation tactics, the constraints-as-feature argument, and worked scope-cut examples.
 
 ### 2. Shaping the Work
 
@@ -73,7 +71,7 @@ See: [references/build-less.md](references/build-less.md)
 
 **Ethical boundary:** Set appetites that reflect the problem's genuine value — never artificially small to pressure teams.
 
-See: [references/shaping-work.md](references/shaping-work.md)
+See [references/shaping-work.md](references/shaping-work.md) when drafting a pitch — the five-element pitch format, a worked breadboard, fat-marker rules, the rabbit-hole pattern table, good/bad no-go examples, and a 6-step shaping procedure.
 
 ### 3. Betting and Cycles
 
@@ -98,7 +96,7 @@ See: [references/shaping-work.md](references/shaping-work.md)
 
 **Ethical boundary:** Apply the circuit breaker honestly — to kill zombies, not politically inconvenient projects; the point is focus, not unsustainable pressure.
 
-See: [references/betting-cycles.md](references/betting-cycles.md)
+See [references/betting-cycles.md](references/betting-cycles.md) when running a betting table or planning a cycle — how the table decides, structuring the six-week/two-week rhythm, applying the circuit breaker, and the case against backlogs.
 
 ### 4. Small Teams and Execution
 
@@ -123,13 +121,13 @@ See: [references/betting-cycles.md](references/betting-cycles.md)
 
 **Ethical boundary:** Autonomy requires genuinely manageable scope — if a team consistently works overtime to hit six weeks, fix the shaping, not the team.
 
-See: [references/small-teams-execution.md](references/small-teams-execution.md)
+See [references/small-teams-execution.md](references/small-teams-execution.md) when a team is mid-build — reading and updating hill charts, slicing scopes, async communication norms, and getting real with working HTML.
 
 ### 5. Opinionated Software and Clear Communication
 
 **Core concept:** Great software makes choices instead of burying users in preferences — every preference is a decision the team could not or would not make. The same honesty applies to copy: say what you mean, skip buzzwords, teach what you know openly.
 
-**Why it works:** Software with 47 settings has no opinion; sensible defaults reduce cognitive load and create cohesion. Clear copy builds trust where marketing-speak erodes it, and teaching openly attracts customers who share your values.
+**Why it works:** Every added preference splits the product into more states to design, test, and support, and pushes a decision onto users who lack the context to make it well; sensible defaults reduce cognitive load and create cohesion. Clear copy builds trust where marketing-speak erodes it, and teaching openly attracts customers who share your values.
 
 **Key insights:**
 - Pick the best default and ship it — revisit only if data shows it fails most users
@@ -148,9 +146,7 @@ See: [references/small-teams-execution.md](references/small-teams-execution.md)
 | **Preferences** | Eliminate; choose defaults | Detect timezone from the browser; ship one good theme |
 | **Marketing** | Honest positioning | "Basecamp is not for everyone. Here's who it's for and who it's not for." |
 
-**Ethical boundary:** Opinionated means having a point of view, not ignoring feedback — listen carefully, then curate thoughtfully.
-
-See: [references/opinionated-software.md](references/opinionated-software.md), [references/ux-ui-copy.md](references/ux-ui-copy.md)
+See [references/opinionated-software.md](references/opinionated-software.md) when responding to feature requests or removing settings, and [references/ux-ui-copy.md](references/ux-ui-copy.md) when writing interface copy, empty states, or error messages.
 
 ## Common Mistakes
 
@@ -178,15 +174,7 @@ See: [references/opinionated-software.md](references/opinionated-software.md), [
 | Is there a cool-down after this cycle? | Burnout; no cleanup time | Schedule two unstructured weeks between cycles |
 | Does the software have a clear opinion here? | Decisions deferred to users via preferences | Pick the best default; remove the setting |
 
-## Reference Files
-
-- [references/build-less.md](references/build-less.md) — Underdoing the competition, embracing constraints, curation over accumulation, the art of cutting scope
-- [references/shaping-work.md](references/shaping-work.md) — Breadboarding, fat marker sketches, appetite setting, the pitch format, identifying rabbit holes
-- [references/betting-cycles.md](references/betting-cycles.md) — Six-week cycles, the betting table, the circuit breaker, cool-downs, why backlogs must die
-- [references/small-teams-execution.md](references/small-teams-execution.md) — Three-person teams, hill charts, async communication, getting real with HTML, launch-first thinking
-- [references/opinionated-software.md](references/opinionated-software.md) — Defaults over preferences, clear copywriting, saying no to feature requests, teaching openly
-- [references/ux-ui-copy.md](references/ux-ui-copy.md) — Browser-first design, visual hierarchy, clear copy rules, empty states, error messages, anti-patterns
-- [references/case-studies.md](references/case-studies.md) — Three scenarios: adopting Shape Up, resisting feature creep, replacing status meetings with hill charts
+See [references/case-studies.md](references/case-studies.md) for end-to-end worked scenarios when you want a model to follow — adopting Shape Up, resisting feature creep, and replacing status meetings with hill charts.
 
 ## Further Reading
 

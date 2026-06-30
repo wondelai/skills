@@ -4,7 +4,7 @@ description: 'Manage for output using Grove''s "High Output Management": a manag
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # High Output Management
@@ -48,9 +48,9 @@ Manage teams the way Andy Grove ran Intel: a manager's output is not what the ma
 | Quality gates | Inspect at the lowest-value stage | Spec review kills a flawed design before a three-week build |
 | Hiring pipeline | Batch and build to forecast | Phone screens batched Tue/Thu; interviewer capacity staffed to the offer-date forecast |
 
-**Ethical boundary:** Production thinking applies to the work, never to people as interchangeable machines — run systems hot, not humans.
+**Ethical boundary:** Run systems hot, not humans — production thinking optimizes the work, never treats people as interchangeable machines.
 
-See: [references/indicators-and-production.md](references/indicators-and-production.md)
+See: [references/indicators-and-production.md](references/indicators-and-production.md) when finding a limiting step or building a dashboard — limiting-step analysis, worked indicator pairs, leading vs trend indicators, stagger charts, and how to run an operation review.
 
 ### 2. Indicators That Don't Lie
 
@@ -99,7 +99,7 @@ See: [references/indicators-and-production.md](references/indicators-and-product
 
 **Ethical boundary:** Leverage means multiplying others' output, never hoarding information or approvals until you become the bottleneck everyone must visit.
 
-See: [references/leverage-and-calendar.md](references/leverage-and-calendar.md)
+See: [references/leverage-and-calendar.md](references/leverage-and-calendar.md) when auditing a calendar or setting up delegation — the weekly leverage audit, positive/negative-leverage catalog, delegation protocol with TRM-based monitoring depth, calendar-redesign procedure, and interruption management.
 
 ### 4. Meetings Are the Medium of Management
 
@@ -125,7 +125,7 @@ See: [references/leverage-and-calendar.md](references/leverage-and-calendar.md)
 
 **Ethical boundary:** Hijacking the 1:1 for status extraction teaches people to stop bringing real problems — status belongs in writing.
 
-See: [references/meetings-and-one-on-ones.md](references/meetings-and-one-on-ones.md)
+See: [references/meetings-and-one-on-ones.md](references/meetings-and-one-on-ones.md) when designing a meeting cadence or running a 1:1 — the full 1:1 playbook with agenda templates, staff-meeting design, operation-review roles, and meeting-cost math for when to kill a meeting.
 
 ### 5. Decisions and Planning (incl. OKRs)
 
@@ -149,15 +149,13 @@ See: [references/meetings-and-one-on-ones.md](references/meetings-and-one-on-one
 | Decision prep | Six-question brief | "Pick payments vendor by Jun 30; platform PM decides; eng and finance consulted; VP ratifies" |
 | Quarterly planning | Cascading OKRs | Company KR "checkout p95 under 800ms" becomes the platform team's objective |
 
-**Ethical boundary:** Disagree-and-commit is legitimate only when the disagreement was genuinely heard; commitment extracted without discussion is mere compliance.
-
-See: [references/decisions-planning-okrs.md](references/decisions-planning-okrs.md)
+See: [references/decisions-planning-okrs.md](references/decisions-planning-okrs.md) when prepping a contentious decision or a planning cycle — the six-question brief, peer-group-syndrome counters, three-step planning, and a Grove-style OKR cascade with pitfalls.
 
 ### 6. Task-Relevant Maturity, Reviews, and Training
 
 **Core concept:** There is no universally good management style. The right style depends on the subordinate's task-relevant maturity (TRM) — their experience, training, and confidence for this specific task: low TRM calls for structured "how" instruction, medium for mutual reasoning about "what and why", high for agreed objectives with light monitoring. TRM is task-specific, not seniority, so style must shift the moment the task does.
 
-**Why it works:** Mismatched style fails in both directions — hands-off at low TRM is abandonment dressed as empowerment; detailed instruction at high TRM is meddling that destroys ownership. Matching style to TRM is what makes delegation safe and growth fast, and the performance review is the most consequential place to apply it.
+**Why it works:** Mismatched style fails in both directions — hands-off at low TRM is abandonment dressed as empowerment; detailed instruction at high TRM is meddling that destroys ownership. The performance review is where the cost of a mismatch compounds: a year's feedback delivered in the wrong register lands as either neglect or insult.
 
 **Key insights:**
 - A star promoted into management is high-TRM on engineering and low-TRM on managing — structure the new task even for your best person
@@ -175,9 +173,7 @@ See: [references/decisions-planning-okrs.md](references/decisions-planning-okrs.
 | Review prep | Assess first, message second | Full written assessment, then the three messages that change next year |
 | Team capability | Manager-taught training | EM personally teaches a four-session incident-response course |
 
-**Ethical boundary:** Reviews exist to develop people, not to punish them — and matching style to TRM is coaching, not condescension.
-
-See: [references/case-studies.md](references/case-studies.md)
+See: [references/case-studies.md](references/case-studies.md) when preparing a review or coaching a newly promoted manager — three worked scenarios (meeting-drowned new manager, velocity-up/quality-down, a botched review repaired with TRM coaching).
 
 ## Common Mistakes
 
@@ -204,14 +200,6 @@ See: [references/case-studies.md](references/case-studies.md)
 | Was your last big decision made at the lowest competent level? | Rank decided; knowledge watched | Name decider, consulted, and ratifier before the meeting |
 | Would your team set the same OKRs if pay weren't attached? | Objectives are sandbagged | Decouple OKRs from the compensation formula |
 | Have you personally taught your team anything this quarter? | Highest-leverage activity skipped | Schedule a manager-taught course now |
-
-## Reference Files
-
-- [references/leverage-and-calendar.md](references/leverage-and-calendar.md) — Weekly leverage audit, positive/negative leverage catalog, delegation protocol with TRM-based monitoring depth, calendar redesign procedure, interruption management
-- [references/indicators-and-production.md](references/indicators-and-production.md) — Limiting step analysis, pairing indicators with worked examples, leading vs trend indicators, stagger charts, running an operation review
-- [references/meetings-and-one-on-ones.md](references/meetings-and-one-on-ones.md) — Full 1:1 playbook with agenda templates, staff meeting design, operation review roles, meeting-cost math and when to kill a meeting
-- [references/decisions-planning-okrs.md](references/decisions-planning-okrs.md) — Decision protocol and six-question brief, peer-group syndrome counters, three-step planning, Grove-style OKR cascade with pitfalls
-- [references/case-studies.md](references/case-studies.md) — Three scenarios: a meeting-drowned new manager, velocity-up-quality-down fixed with pairing indicators, a botched review repaired with TRM coaching
 
 ## Further Reading
 

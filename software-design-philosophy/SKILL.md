@@ -1,10 +1,10 @@
 ---
 name: software-design-philosophy
-description: 'Manage software complexity through deep modules, information hiding, and strategic programming. Use when the user mentions "module design", "API too complex", "shallow class", "complexity budget", "strategic vs tactical", "deep module", "information leakage", "pass-through method", "this code is over-engineered", "too many layers", "the abstraction isnt worth it", or "simplify this design". Also trigger when reviewing an interface for simplicity, evaluating whether an abstraction is pulling its weight, or choosing between general-purpose and special-purpose approaches. Covers deep vs shallow modules, red flags for complexity, and comments as design documentation. For code quality, see clean-code. For boundaries, see clean-architecture.'
+description: 'Manage software complexity through deep modules, information hiding, and strategic programming. Use when the user mentions "module design", "API too complex", "shallow class", "complexity budget", "strategic vs tactical", "deep module", "information leakage", "pass-through method", "this code is over-engineered", or "simplify this design". Also trigger when reviewing an interface for simplicity, evaluating whether an abstraction is pulling its weight, deciding whether a comment is worth writing, or choosing between general-purpose and special-purpose approaches. Covers deep vs shallow modules, red flags for complexity, and comments as design documentation. For code quality, see clean-code. For architecture boundaries, see clean-architecture.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # A Philosophy of Software Design Framework
@@ -17,7 +17,14 @@ A practical framework for managing the fundamental challenge of software enginee
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing or creating software designs, rate them 0-10: a 10/10 means deep modules with clean abstractions, excellent information hiding, strategic thinking, and comments that capture design intent; lower scores indicate shallow modules, leakage, or tactical shortcuts. Always give the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** When reviewing or creating a design, score it by counting how many of the eight Quick Diagnostic rows it satisfies (≈1.25 points each), then sanity-check against the bands:
+
+- **9-10** — deep modules with interfaces far simpler than implementations; no information leakage (an implementation can change without touching callers); interface comments capture design intent; design improvement is routine. All eight diagnostics pass.
+- **6-8** — mostly deep, but one or two leaks, shallow classes, or undocumented abstractions. 5-6 diagnostics pass.
+- **3-5** — classitis or temporal decomposition, recurring leakage, comments that only restate code. 2-4 diagnostics pass.
+- **≤2** — tactical-tornado code: shallow modules, pervasive leakage, no design intent recorded. 0-1 diagnostics pass.
+
+Always state the current score, the diagnostic rows that failed, and the specific change each one needs to reach 10/10.
 
 ## The Software Design Framework
 
@@ -26,8 +33,6 @@ Six principles for managing complexity and producing systems that are easy to un
 ### 1. Complexity and Its Causes
 
 **Core concept:** Complexity is anything about a system's structure that makes it hard to understand and modify. It shows three symptoms — change amplification, cognitive load, and unknown unknowns — and has two causes: dependencies and obscurity.
-
-**Why it works:** Naming the specific symptoms lets developers diagnose problems precisely instead of relying on vague notions of "messy code," and the two causes provide clear targets for improvement.
 
 **Key insights:**
 - Change amplification: a simple change requires edits in many places
@@ -44,13 +49,13 @@ Six principles for managing complexity and producing systems that are easy to un
 | Unknown unknowns | Make dependencies explicit | Type systems and interfaces surface what a change affects |
 | Obscurity | Name things precisely | `numBytesReceived` not `n`; `retryDelayMs` not `delay` |
 
-See: [references/complexity-symptoms.md](references/complexity-symptoms.md) for symptom diagnosis and how complexity accumulates.
+See [references/complexity-symptoms.md](references/complexity-symptoms.md) when you need to name *which* symptom a codebase has before fixing it — per-symptom recognition tests, the dependency taxonomy (syntactic/semantic/temporal/hidden), the C = Σ(cp·tp) cost formula, and a 10-row red-flag table.
 
 ### 2. Deep vs Shallow Modules
 
 **Core concept:** The best modules are deep: powerful functionality behind a simple interface. Shallow modules have complex interfaces relative to the functionality they provide — they add complexity rather than hiding it.
 
-**Why it works:** The interface is the complexity a module imposes on the rest of the system; the implementation is the functionality it provides. Deep modules maximize benefit per unit of interface cost.
+**Why it works:** The interface is the *cost* a module imposes on the rest of the system; the implementation is the benefit. So a method that is harder to learn than to re-implement yourself is net-negative — depth, not line count, decides whether a module earns its place.
 
 **Key insights:**
 - Depth = functionality provided / interface complexity imposed (Unix file I/O is deep; thin Java I/O wrappers are shallow)
@@ -66,13 +71,13 @@ See: [references/complexity-symptoms.md](references/complexity-symptoms.md) for 
 | Classitis cure | Merge related shallow classes | `RequestParser` + `RequestValidator` + `RequestProcessor` → one `RequestHandler` |
 | Interface simplicity | Fewer parameters, fewer methods | `config.get(key)` with sensible defaults, not 15 constructor parameters |
 
-See: [references/deep-modules.md](references/deep-modules.md) when judging whether an abstraction pulls its weight.
+See [references/deep-modules.md](references/deep-modules.md) when judging whether an abstraction pulls its weight — before/after code for the depth ratio, the classitis cure worked out, and case studies (Unix I/O, GC, TCP/IP).
 
 ### 3. Information Hiding and Leakage
 
 **Core concept:** Each module should encapsulate knowledge not needed by other modules. Information leakage — one design decision reflected in multiple modules — is one of the most important red flags in software design.
 
-**Why it works:** Hidden knowledge can change inside one module; leaked knowledge makes changes propagate through the system. Hiding attacks both causes of complexity: dependencies and obscurity.
+**Why it works:** A decision that lives in one module can change there and nowhere else; the same decision leaked into N modules turns one edit into N edits that no compiler will remind you to make. Hiding is what converts change amplification back into a local change.
 
 **Key insights:**
 - Temporal decomposition causes leakage: splitting code by *when* things happen forces shared knowledge across phases — organize by knowledge instead
@@ -88,13 +93,13 @@ See: [references/deep-modules.md](references/deep-modules.md) when judging wheth
 | Temporal decomposition | Organize by knowledge, not time | Combine "read config" and "apply config" into one config module |
 | Protocol leakage | Abstract transport details | `MessageBus.send(event)` hides HTTP vs. gRPC vs. queue |
 
-See: [references/information-hiding.md](references/information-hiding.md) for leakage red flags and decorator pitfalls.
+See [references/information-hiding.md](references/information-hiding.md) when a change forces you to edit two modules in lockstep — the four leakage forms with code (interface, back-door, temporal, decorator), five reduction strategies, the HTTP-handling case study, and a detection table.
 
 ### 4. General-Purpose vs Special-Purpose Modules
 
 **Core concept:** Design modules that are "somewhat general-purpose": an interface general enough to support multiple uses, with an implementation that handles current needs. Ask: "What is the simplest interface that will cover all my current needs?"
 
-**Why it works:** General-purpose interfaces are usually simpler because they eliminate special cases, and new use cases often fit the existing abstraction — while over-generalization wastes effort on speculative complexity.
+**Why it works:** Counterintuitively, the general interface is usually the *simpler* one — special-case methods multiply as requirements grow, while one general method absorbs them. The trap is the other direction: generality the current needs don't demand is speculative complexity, paid now for a use case that may never arrive.
 
 **Key insights:**
 - "Somewhat general-purpose" is the sweet spot between too specific and too generic
@@ -110,13 +115,13 @@ See: [references/information-hiding.md](references/information-hiding.md) for le
 | Reduce configuration | Determine behavior automatically | Auto-detect file encoding instead of an `encoding` parameter |
 | Avoid over-specialization | One general method over many specific ones | `store(key, value, options)` instead of `storeUser()`, `storeProduct()`, `storeOrder()` |
 
-See: [references/general-vs-special.md](references/general-vs-special.md) when choosing how general an interface should be.
+See [references/general-vs-special.md](references/general-vs-special.md) when choosing how general an interface should be — the "simplest interface for all current needs" test, the configuration-parameter antipattern, and push-complexity-downward worked through.
 
 ### 5. Comments as Design Documentation
 
 **Core concept:** Comments should describe what is not obvious from the code: design intent, abstraction rationale, invariants, and assumptions. "Good code is self-documenting" is a myth for anything beyond low-level implementation detail.
 
-**Why it works:** Code tells you what the program does, not why, what the alternatives were, or what it assumes — comments capture the designer's mental model, the most valuable and most perishable information in a system.
+**Why it works:** Code can only ever record *what* it does — never why this approach over the alternatives, or what it silently assumes. That rationale is the most perishable information in a system: it lives only in the author's head and is gone the moment they move on, so a comment is the single chance to capture it.
 
 **Key insights:**
 - Four types: interface comments (most important — they define the abstraction), data structure member comments, implementation comments, cross-module comments
@@ -133,7 +138,7 @@ See: [references/general-vs-special.md](references/general-vs-special.md) when c
 | Implementation comment | Explain why, not what | "// Binary search: list is always sorted, can hold 100k+ items" |
 | Cross-module comment | Link related decisions | "// This timeout must match the retry interval in RetryPolicy.java" |
 
-See: [references/comments-as-design.md](references/comments-as-design.md) for comment-driven design and the self-documenting-code myth.
+See [references/comments-as-design.md](references/comments-as-design.md) when writing or reviewing comments and unsure what belongs in one — the four comment types with examples, the comment-driven-design procedure, and the rebuttal to the self-documenting-code myth.
 
 ### 6. Strategic vs Tactical Programming
 
@@ -155,7 +160,7 @@ See: [references/comments-as-design.md](references/comments-as-design.md) for co
 | Strategic investment | Improve structure during feature work | Refactor an awkward module interface while adding the feature |
 | Design reviews | Evaluate structure, not just correctness | Ask "does this make the system simpler?" not just "does it work?" |
 
-See: [references/strategic-programming.md](references/strategic-programming.md) for the investment mindset and startup considerations.
+See [references/strategic-programming.md](references/strategic-programming.md) when deciding how much design effort a change deserves, or making the case for it — the 10-20% investment math, the tactical-tornado pattern, and why startups need strategic programming most.
 
 ## Common Mistakes
 
@@ -165,9 +170,9 @@ See: [references/strategic-programming.md](references/strategic-programming.md) 
 | **Splitting modules by temporal order** | "Read, then process, then write" forces shared knowledge across modules | Group code that shares knowledge into one module |
 | **Exposing implementation in interfaces** | Callers depend on internals; changes propagate | Design interfaces around abstractions; hide formats and protocols |
 | **Treating comments as optional** | Design intent and assumptions are lost; newcomers guess wrong | Write interface comments first; maintain with the code |
-| **Configuration parameters for everything** | Each parameter pushes a decision onto the caller | Determine behavior automatically; provide sensible defaults |
+| **Configuration parameters for everything** | A parameter offloaded to the caller is a decision you declined to make (see §4) | Determine behavior automatically; provide sensible defaults |
 | **Quick-and-dirty tactical fixes** | Shortcuts compound until the system is unworkable | Invest 10-20% extra; treat every change as a design opportunity |
-| **Pass-through methods** | Delegation-only methods add interface without depth | Merge the pass-through into the caller or the callee |
+| **Pass-through methods** | A method that only forwards its arguments to another adds an interface but no functionality | Merge the pass-through into the caller or the callee |
 | **Designing for specific use cases** | Special-purpose interfaces accumulate special cases | Ask: simplest interface covering all current needs? |
 
 ## Quick Diagnostic
@@ -182,15 +187,6 @@ See: [references/strategic-programming.md](references/strategic-programming.md) 
 | Does each module hide an important design decision? | Modules organized around code, not information | Reorganize so each module owns specific knowledge |
 | Can a newcomer understand module boundaries without reading implementations? | Abstractions undocumented or leaky | Improve interface comments; simplify interfaces |
 | Are you spending 10-20% of time on design improvement? | Debt accumulates with every feature | Include design improvement in every PR |
-
-## Reference Files
-
-- [complexity-symptoms.md](references/complexity-symptoms.md): Three symptoms of complexity, two causes, measuring complexity, its incremental nature
-- [deep-modules.md](references/deep-modules.md): Deep vs shallow modules, interface-to-functionality ratio, classitis, designing for depth
-- [information-hiding.md](references/information-hiding.md): Information hiding principle, leakage red flags, temporal decomposition, decorator pitfalls
-- [general-vs-special.md](references/general-vs-special.md): Somewhat general-purpose approach, pushing complexity down, configuration parameter antipattern
-- [comments-as-design.md](references/comments-as-design.md): Four comment types, comment-driven design, self-documenting code myth, maintaining comments
-- [strategic-programming.md](references/strategic-programming.md): Strategic vs tactical mindset, tactical tornado, investment approach, startup considerations
 
 ## Further Reading
 

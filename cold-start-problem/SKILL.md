@@ -1,10 +1,10 @@
 ---
 name: cold-start-problem
-description: 'Start and scale networked products using Andrew Chen''s "The Cold Start Problem" framework for network effects. Use when the user mentions "network effects", "chicken and egg", "cold start", "two-sided marketplace", "atomic network", "hard side", "liquidity", "critical mass", "invite-only launch", "no one uses it because no one uses it", "how do I get my first users", or "the marketplace has no buyers or sellers". Also trigger when launching a marketplace, social, or collaboration product that is worthless without other users, deciding launch sequencing and seeding tactics, or diagnosing stalled network growth at scale. Covers the five stages: cold start, tipping point, escape velocity, hitting the ceiling, and the moat. For word-of-mouth virality, see contagious. For habit-driven retention, see hooked-ux.'
+description: 'Start and scale networked products using Andrew Chen''s "The Cold Start Problem" framework for network effects. Use when the user mentions "network effects", "chicken and egg", "cold start", "two-sided marketplace", "atomic network", "hard side", "liquidity", "critical mass", "invite-only launch", "how do I get my first users", or "the marketplace has no buyers or sellers". Also trigger when launching a marketplace, social, or collaboration product that is worthless without other users, deciding launch sequencing and seeding tactics, or diagnosing stalled network growth at scale. Covers the five stages: cold start, tipping point, escape velocity, hitting the ceiling, and the moat. For word-of-mouth virality, see contagious. For habit-driven retention, see hooked-ux.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # The Cold Start Problem
@@ -48,7 +48,7 @@ A framework for starting and scaling products that live or die by network effect
 | Growth diagnosis | Attribute growth to the three effects separately | Viral factor vs. session frequency vs. conversion, each per network |
 | Strategy review | Map the product as a network of networks | A marketplace is one network per city-category pair |
 
-See: [references/case-studies.md](references/case-studies.md)
+See [references/case-studies.md](references/case-studies.md) for three end-to-end worked scenarios — a B2B tool finding its atomic network, a services marketplace seeding one city, a social app recovering from a big-bang launch — when you want a full example to model a plan on.
 
 ### 2. The Cold Start: Atomic Networks
 
@@ -68,12 +68,12 @@ See: [references/case-studies.md](references/case-studies.md)
 | Context | Application | Example |
 |---------|-------------|---------|
 | Launch scoping | Pick a network, not a market | "Agents in one Austin brokerage," not "the US housing market" |
-| Activation | Define and instrument the magic moment | Team exchanges 2,000 messages → long-term retention bar |
+| Activation | Define and instrument the magic moment | New member posts and gets a teammate reply within minutes |
 | Empty side | Flintstone missing supply manually | Founders personally fulfill the first 100 marketplace orders |
 
 **Ethical boundary:** Flintstoning means doing real work manually behind the scenes — never fabricating fake users, reviews, or activity that deceives the people on the network.
 
-See: [references/atomic-networks.md](references/atomic-networks.md)
+See [references/atomic-networks.md](references/atomic-networks.md) when scoping the first launch — it has the 5-step minimum-size derivation, the actor/action/response/time magic-moment template, instrumentation and zero-rate steps, honest-flintstoning rules, single-player fallbacks, and a launch checklist.
 
 ### 3. Solve the Hard Side
 
@@ -98,7 +98,7 @@ See: [references/atomic-networks.md](references/atomic-networks.md)
 
 **Ethical boundary:** Hard-side economics must be honest — present launch subsidies as temporary incentives, and never build people's livelihoods on terms you plan to quietly degrade.
 
-See: [references/hard-side.md](references/hard-side.md)
+See [references/hard-side.md](references/hard-side.md) when designing supply-side acquisition and economics — it maps money/status/utility motivations to product investments and details three named playbooks (tools-first, content-first, subsidies).
 
 ### 4. Tipping Point and Escape Velocity
 
@@ -123,7 +123,7 @@ See: [references/hard-side.md](references/hard-side.md)
 
 **Ethical boundary:** Scarcity and exclusivity must be real — fake waitlists and manufactured "limited spots" are deception, not strategy.
 
-See: [references/tipping-playbooks.md](references/tipping-playbooks.md)
+See [references/tipping-playbooks.md](references/tipping-playbooks.md) when planning network #2 onward — invite-only and referral-tree mechanics, paid-launch and supply pre-commitment tactics, market selection, anti-patterns, and the liquidity metrics to gate on.
 
 ### 5. The Ceiling and the Moat
 
@@ -149,7 +149,7 @@ See: [references/tipping-playbooks.md](references/tipping-playbooks.md)
 
 **Ethical boundary:** Fixing revolts and spam means addressing root causes for users — not silencing legitimate hard-side grievances with PR.
 
-See: [references/scale-ceiling-moat.md](references/scale-ceiling-moat.md)
+See [references/scale-ceiling-moat.md](references/scale-ceiling-moat.md) when growth stalls or a rival appears — it runs the three forces as growth workstreams, diagnoses which ceiling hit first, and details quality interventions and cherry-picking defense at scale.
 
 ## Common Mistakes
 
@@ -176,14 +176,6 @@ See: [references/scale-ceiling-moat.md](references/scale-ceiling-moat.md)
 | Are you measuring liquidity (fill rate, time-to-match)? | Growth optics hide network health | Add per-network density metrics to the core dashboard |
 | Do you know which ceiling will hit first? | The stall will arrive as a mystery | Model saturation, CAC creep, and quality decay now |
 | Is anything defending the hard side from rivals? | Cherry-pickers will peel off your best segments | Deepen hard-side economics and pro tooling |
-
-## Reference Files
-
-- [references/atomic-networks.md](references/atomic-networks.md) — Choosing and launching the smallest viable network: constraints, minimum-size logic, magic-moment instrumentation, flintstoning, single-player fallbacks, sequencing networks #2..N
-- [references/hard-side.md](references/hard-side.md) — Identifying the hard side, motivation mapping (money/status/utility), acquisition playbooks (tools-first, content-first, subsidies), pro-feature design, balancing both sides
-- [references/tipping-playbooks.md](references/tipping-playbooks.md) — Invite-only mechanics, waitlists and referral trees, paid launches, supply pre-commitment, market selection, anti-patterns, liquidity metrics
-- [references/scale-ceiling-moat.md](references/scale-ceiling-moat.md) — The three forces as growth workstreams, diagnosing ceilings, quality interventions at scale, moat and cherry-picking defense
-- [references/case-studies.md](references/case-studies.md) — Three scenarios: a B2B tool finds its atomic network, a services marketplace seeds one city, a social app recovers from a big-bang launch
 
 ## Further Reading
 

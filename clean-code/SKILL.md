@@ -1,10 +1,10 @@
 ---
 name: clean-code
-description: 'Write readable, maintainable code through disciplined naming, small functions, and clean error handling. Use when the user mentions "code review", "naming conventions", "function too long", "code smells", "readable code", "boy scout rule", "single responsibility", "unit test quality", "my code is hard to read", "this function is a mess", "clean up this code", or "hard to maintain". Also trigger when reviewing pull requests for readability, untangling messy functions, debating comment styles, or improving error handling patterns. Covers SRP, comment discipline, formatting, and unit testing. For refactoring techniques, see refactoring-patterns. For architecture, see clean-architecture.'
+description: 'Write readable, maintainable code through disciplined naming, small functions, and clean error handling. Use when the user mentions "clean up this code", "this function is too long", "code smells", "naming conventions", "boy scout rule", "single responsibility", or "unit test quality". Also trigger when reviewing a pull request for readability, untangling a messy function, debating comment styles, or improving error-handling patterns. Covers SRP, comment discipline, formatting, and unit testing. For refactoring techniques, see refactoring-patterns. For architecture and dependency rules, see clean-architecture.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Clean Code Framework
@@ -52,7 +52,7 @@ Six disciplines for writing code that communicates clearly and adapts to change:
 | **Functions** | Verb + noun | `calculateMonthlyRevenue()` not `calc()` |
 | **Classes** | Noun naming the responsibility | `InvoiceGenerator` not `InvoiceManager` |
 
-See: [references/naming-conventions.md](references/naming-conventions.md)
+See [references/naming-conventions.md](references/naming-conventions.md) when renaming or reviewing names — per-language conventions, pronounceable/searchable tables, and before/after examples.
 
 ### 2. Functions
 
@@ -78,7 +78,7 @@ See: [references/naming-conventions.md](references/naming-conventions.md)
 | **Many arguments** | Introduce parameter object | `new DateRange(start, end)` not `report(start, end, format, locale)` |
 | **Side effects** | Make effects explicit | `checkPassword()` that starts a session → rename or separate |
 
-See: [references/functions-and-methods.md](references/functions-and-methods.md)
+See [references/functions-and-methods.md](references/functions-and-methods.md) when splitting a long function — argument-count rules, command-query separation, and step-down worked examples.
 
 ### 3. Comments and Formatting
 
@@ -102,7 +102,7 @@ See: [references/functions-and-methods.md](references/functions-and-methods.md)
 | **Commented-out code** | Delete it | Trust version control |
 | **Team formatting** | Decide once, automate | Prettier, Black, gofmt |
 
-See: [references/comments-formatting.md](references/comments-formatting.md)
+See [references/comments-formatting.md](references/comments-formatting.md) when deciding whether a comment earns its place — good-vs-bad comment catalog and vertical-formatting rules.
 
 ### 4. Error Handling
 
@@ -127,7 +127,7 @@ See: [references/comments-formatting.md](references/comments-formatting.md)
 | **Special cases** | Null Object pattern | `GuestUser` with default behavior instead of null checks |
 | **Context in errors** | Include operation + state | `"Failed to save invoice #1234 for customer 'Acme'"` |
 
-See: [references/error-handling.md](references/error-handling.md)
+See [references/error-handling.md](references/error-handling.md) when designing exception or null strategy — Special Case pattern and third-party-API wrapping examples.
 
 ### 5. Unit Testing
 
@@ -151,7 +151,7 @@ See: [references/error-handling.md](references/error-handling.md)
 | **Shared setup** | Builder/factory helpers | `aUser().withRole(ADMIN).build()` |
 | **Flaky tests** | Remove external dependencies | Mock time, network, file system |
 
-See: [references/testing-principles.md](references/testing-principles.md)
+See [references/testing-principles.md](references/testing-principles.md) when writing or cleaning tests — TDD laws, F.I.R.S.T. expanded, and clean-test patterns.
 
 ### 6. Code Smells and Heuristics
 
@@ -176,7 +176,7 @@ See: [references/testing-principles.md](references/testing-principles.md)
 | **Magic numbers** | Named constants | `MAX_LOGIN_ATTEMPTS = 5` not bare `5` |
 | **Shotgun surgery** | Consolidate related changes | Group scattered logic into a single module |
 
-See: [references/code-smells.md](references/code-smells.md)
+See [references/code-smells.md](references/code-smells.md) when a smell is hard to name — the full catalog by category, each paired with its targeted refactoring.
 
 ## Common Mistakes
 
@@ -204,8 +204,8 @@ See: [references/code-smells.md](references/code-smells.md)
 | Does every class have a single responsibility? | Classes accumulate unrelated duties | Split into focused, well-named classes |
 | Is there a test for every public method? | No safety net for changes | Add tests before changing further |
 | Are test names descriptive of behavior? | Failures are hard to interpret | Rename to `shouldDoXWhenY` |
-| Is duplication below 3 occurrences? | Copy-paste spreading bugs | Extract a shared function or module |
-| Are magic numbers named constants? | Intent hidden behind raw values | Extract descriptive constants |
+| Is duplication below 3 occurrences? | Copy-paste spreading bugs | Extract shared logic (§6) |
+| Are magic numbers named constants? | Intent hidden behind raw values | Name the constant (§6) |
 | Do all tests run in under 10 seconds? | Slow tests don't get run | Mock external deps; split integration tests |
 
 ## Reference Files

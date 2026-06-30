@@ -1,10 +1,10 @@
 ---
 name: good-strategy-bad-strategy
-description: 'Formulate and audit real strategy using Richard Rumelt''s "Good Strategy Bad Strategy": an honest diagnosis, a guiding policy, and coherent action instead of goals, vision, and wishful thinking. Use when the user mentions "good strategy bad strategy", "strategy kernel", "diagnosis guiding policy coherent action", "our strategy is just goals", "strategic planning", "mission vs strategy", "review my strategy", "annual plan", "our strategy is vague", or "is this actually a strategy". Also trigger when auditing a strategy doc or pitch deck for fluff, turning a goal list into real strategy, formulating strategy for a product or company, or finding leverage and proximate objectives. Covers the kernel of strategy, bad-strategy detection, and sources of power. For product positioning, see obviously-awesome. For uncontested markets, see blue-ocean-strategy.'
+description: 'Formulate and audit real strategy using Richard Rumelt''s "Good Strategy Bad Strategy": an honest diagnosis, a guiding policy, and coherent action instead of goals, vision, and wishful thinking. Use when the user mentions "good strategy bad strategy", "strategy kernel", "diagnosis guiding policy coherent action", "our strategy is just goals", "strategic planning", "mission vs strategy", "annual plan", or "is this actually a strategy". Also trigger when auditing a strategy doc or pitch deck for fluff, turning a goal list into real strategy, formulating strategy for a product or company, or finding leverage and proximate objectives. Covers the kernel of strategy, bad-strategy detection, and sources of power. For product positioning, see obviously-awesome. For uncontested markets, see blue-ocean-strategy.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Good Strategy Bad Strategy
@@ -17,13 +17,13 @@ A framework for creating and auditing strategy, distilled from Richard Rumelt's 
 
 ## Scoring
 
-**Goal: 10/10.** Rate strategies, plans, and strategy documents 0-10 against the principles below. Report the current score and the specific changes needed to reach 10/10.
+**Goal: 10/10.** Score strategies, plans, and strategy documents by walking the eight rows of the Quick Diagnostic and counting how many pass. Report the current score and the specific changes needed to reach 10/10. The bands below name what each tier looks like; the row count keeps the rating reproducible run to run.
 
-- **9-10:** Complete kernel — honest diagnosis, choiceful guiding policy, coordinated resource-backed actions — aimed at a pivot point, with an explicit list of what will not be done
-- **7-8:** Kernel present but one element weak: thin diagnosis, a policy that rules little out, or actions not yet coordinated and funded
-- **5-6:** The challenge is named, but the plan is a list of independent initiatives and some goals masquerade as strategy
-- **3-4:** Mostly goals, targets, and vision statements; no diagnosis; fluff in key passages; nothing ruled out
-- **0-2:** Pure bad strategy — buzzword fluff, dog's-dinner objective lists, denial of the real challenge
+- **9-10 (8 rows pass):** Complete kernel — honest diagnosis, choiceful guiding policy, coordinated resource-backed actions — aimed at a pivot point, with an explicit list of what will not be done
+- **7-8 (6-7 pass):** Kernel present but one element weak: thin diagnosis, a policy that rules little out, or actions not yet coordinated and funded
+- **5-6 (4-5 pass):** The challenge is named, but the plan is a list of independent initiatives and some goals masquerade as strategy
+- **3-4 (2-3 pass):** Mostly goals, targets, and vision statements; no diagnosis; fluff in key passages; nothing ruled out
+- **0-2 (0-1 pass):** Pure bad strategy — buzzword fluff, dog's-dinner objective lists, denial of the real challenge
 
 ## Framework
 
@@ -51,7 +51,7 @@ A framework for creating and auditing strategy, distilled from Richard Rumelt's 
 
 **Ethical boundary:** An honest diagnosis names internal causes too — never soften it to protect egos or settle politics.
 
-See: [references/kernel.md](references/kernel.md)
+See [references/kernel.md](references/kernel.md) when you actually draft a kernel — diagnosis craft, guiding-policy formulation, coherent-action design, a fill-in template, and two worked examples with owners and done-tests.
 
 ### 2. Detecting Bad Strategy
 
@@ -75,9 +75,7 @@ See: [references/kernel.md](references/kernel.md)
 | OKR review | Separate ambitions from mechanisms | "Double signups" kept as goal, paired with an explicit how |
 | Board update | Demand the challenge slide | "What we're up against" before "what we'll achieve" |
 
-**Ethical boundary:** Audit the document, not the people — bad strategy is usually a process failure, not bad faith.
-
-See: [references/bad-strategy.md](references/bad-strategy.md)
+See [references/bad-strategy.md](references/bad-strategy.md) when auditing a deck or plan — per-hallmark detection checklists, before/after rewrites, why bad strategy proliferates, and a step-by-step deck-audit procedure with a report format.
 
 ### 3. Sources of Power
 
@@ -103,7 +101,7 @@ See: [references/bad-strategy.md](references/bad-strategy.md)
 
 **Ethical boundary:** Build isolating mechanisms on delivered value — lock-in engineered purely to trap users eventually isolates you from them.
 
-See: [references/sources-of-power.md](references/sources-of-power.md)
+See [references/sources-of-power.md](references/sources-of-power.md) when choosing where to apply strength — leverage, proximate objectives, chain-link systems, design, focus, and advantage, each with a when-to-use test (unlock test, addressability test, coherence check).
 
 ### 4. Riding Dynamics and Fighting Inertia
 
@@ -128,7 +126,7 @@ See: [references/sources-of-power.md](references/sources-of-power.md)
 
 **Ethical boundary:** Ride waves by serving the new need better — never by manufacturing fear about the old one.
 
-See: [references/dynamics-inertia.md](references/dynamics-inertia.md)
+See [references/dynamics-inertia.md](references/dynamics-inertia.md) when a market is shifting or an incumbent is stuck — guideposts for spotting waves, diagnosing the three inertia types and entropy, and attacker playbooks for exploiting a rival's inertia.
 
 ### 5. Thinking Like a Strategist
 
@@ -154,7 +152,7 @@ See: [references/dynamics-inertia.md](references/dynamics-inertia.md)
 
 **Ethical boundary:** Use the virtual panel to find flaws, not to stage imagined authority blessing a foregone conclusion.
 
-See: [references/case-studies.md](references/case-studies.md)
+See [references/case-studies.md](references/case-studies.md) for fully worked end-to-end examples — a SaaS annual-plan audit, a startup concentration decision, and a vision deck rewritten into a kernel.
 
 ## Common Mistakes
 
@@ -182,14 +180,6 @@ See: [references/case-studies.md](references/case-studies.md)
 | Does the plan exploit a wave, asymmetry, or rival's inertia? | Strength is matched against strength | Find leverage: anticipation, pivot point, concentration |
 | Is there an explicit list of what you will not do? | Scope creeps back to everything | Write the no-list next to the action list |
 | Has anyone tried to destroy this strategy before adopting it? | First conclusions ship untested | Run create-destroy with a virtual panel of experts |
-
-## Reference Files
-
-- [references/kernel.md](references/kernel.md) — Writing a kernel: diagnosis craft, guiding-policy formulation, coherent-action design, a full template, two worked examples
-- [references/bad-strategy.md](references/bad-strategy.md) — Detection checklists for the four hallmarks, before/after rewrites, why bad strategy proliferates, deck-audit procedure
-- [references/sources-of-power.md](references/sources-of-power.md) — Leverage, proximate objectives, chain-link systems, design, focus, and advantage, with when-to-use guidance
-- [references/dynamics-inertia.md](references/dynamics-inertia.md) — Guideposts for spotting waves of change, diagnosing inertia types and entropy, attacker playbooks
-- [references/case-studies.md](references/case-studies.md) — Three scenarios: a SaaS annual plan audit, a startup concentration decision, a vision deck rewritten into a kernel
 
 ## Further Reading
 

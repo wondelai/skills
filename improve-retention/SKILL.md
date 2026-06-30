@@ -1,10 +1,10 @@
 ---
 name: improve-retention
-description: 'Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions "users drop off", "activation rate", "onboarding friction", "retention metrics", "why users dont complete", "churn analysis", "user activation", "aha moment", "people sign up but dont stick around", "boost retention", or "improve activation". Also trigger when analyzing cohort retention curves, designing activation milestones, reducing time-to-value for new users, or investigating why users quit after their first session. Covers the Ability Chain, prompt design, and tiny behaviors that compound. For habit loops and variable rewards, see hooked-ux. For intrinsic motivation, see drive-motivation.'
+description: 'Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions "users sign up but dont stick around", "activation rate", "onboarding friction", "retention metrics", "why users dont complete", "churn analysis", or "aha moment". Also trigger when analyzing cohort retention curves, designing activation milestones, reducing time-to-value for new users, or investigating why users quit after their first session. Covers the Ability Chain, prompt design, and tiny behaviors that compound. For habit loops and variable rewards, see hooked-ux. For intrinsic motivation, see drive-motivation.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Behavior Design Framework
@@ -32,9 +32,11 @@ Framework for designing products that reliably change behavior. Behavior is not 
 
 **The Action Line:** When motivation and ability are sufficient, a prompt causes the behavior; below the line, no prompt works. High motivation compensates for low ability and vice versa. The reliable strategy is making behaviors easier (move right), not pumping up motivation (move up).
 
+See: [references/behavior-model.md](references/behavior-model.md) when you need the curve mechanics behind this model — the full Action Line math, behavior types (dot/span/path), and a step-by-step failure diagnostic for a behavior that isn't happening.
+
 ## Scoring
 
-**Goal: 10/10.** When reviewing or creating product behavior design, rate it 0-10 based on adherence to the principles below. A 10/10 means full alignment with all guidelines; lower scores indicate gaps to address. Always provide the current score and specific improvements needed to reach 10/10.
+**Goal: 10/10.** The six Quick Diagnostic rows are the single source of score-movers. Rate each pass/fail, then start at 10 and subtract per failing row: low motivation or below the Action Line (rows 1-2) cost **-2** each; prompts, celebration, bottleneck, and scaling (rows 3-6) cost **-1.5** each. A design that passes all six scores 10; one that fails every row scores 0. Map to bands: **9-10** = behavior reliably crosses the Action Line at low motivation, prompts are event/anchor-tied, key actions are celebrated; **5-6** = depends on a motivation spike or optimizes a non-bottleneck factor; **<=3** = core action below the Action Line, prompts are spam, no habit wiring. Always state the score and name the specific failing rows.
 
 ## The Three Elements
 
@@ -63,7 +65,7 @@ Framework for designing products that reliably change behavior. Behavior is not 
 - "Join 50,000 teams who..." (belonging motivator)
 - "Don't lose your 7-day streak" (anticipation/fear motivator)
 
-**Ethical boundary:** Never manufacture false hope or exploit fear — motivation tactics should connect users to genuine outcomes, not anxiety-driven compulsive usage.
+**Ethical boundary:** A fear motivator (the streak pattern above) is fair only when the loss is real and user-owned (their data, their progress); never invent a loss that exists solely to drive a session.
 
 See: [references/motivation-waves.md](references/motivation-waves.md) for the three motivators, motivation waves, and designing for troughs.
 
@@ -121,7 +123,7 @@ See: [references/ability-chain.md](references/ability-chain.md) for the six fact
 - "One thing left to complete your setup" (action prompt with progress)
 - Never: "We miss you!" (product need, not user need)
 
-**Ethical boundary:** Every prompt should pass the test "Would I appreciate receiving this right now?" — never manipulate through anxiety or manufactured urgency.
+**Ethical boundary:** Every prompt must pass the test "Would I appreciate receiving this right now?" — if it serves a product metric (DAU, re-engagement) but not the user's current goal, cut it.
 
 See: [references/prompt-design.md](references/prompt-design.md) for prompt types, timing strategies, notification design, and anchor moments.
 
@@ -174,6 +176,8 @@ Shrink the best-matched behavior to its Starter Step; design the prompt; add cel
 ### Step 5: Optimize
 Expand once wired. Fix bottlenecks with the Ability Chain; refine prompt timing from data.
 
+See: [references/product-applications.md](references/product-applications.md) when applying this process to a specific category — B=MAP mapped to SaaS onboarding, mobile, e-commerce, health, and education with per-category motivation timelines and bottlenecks.
+
 ## The Action Line
 
 ### Moving Behaviors Above the Action Line
@@ -194,6 +198,8 @@ Map B=MAP to product metrics:
 | **Day-30 drop-off** | Habit didn't form, no internal prompt | Create tiny habit recipe; add celebration loops |
 | **Low feature adoption** | Feature below the Action Line for most users | Friction-audit it; prompt only when motivation is present |
 | **Notification fatigue** | Prompts sent below the Action Line | Cut volume; send only with motivation + ability |
+
+See: [references/case-studies.md](references/case-studies.md) for a worked diagnosis of Instagram, Duolingo, Slack, Calm, and Peloton — read it to see how M, A, and P are scored independently on a real product before diagnosing your own.
 
 ## Common Mistakes
 
@@ -216,16 +222,6 @@ Map B=MAP to product metrics:
 | Is there immediate feedback after key actions? | No celebration = no habit wiring | Add success states, progress, social feedback |
 | Have you found the weakest Ability Chain link? | Optimizing the wrong thing | Rate each of the six factors 1-5 for the core behavior |
 | Do users scale naturally from tiny behaviors? | Forcing complexity too early | Starter Steps; let behaviors grow organically |
-
-## Reference Files
-
-- [behavior-model.md](references/behavior-model.md): B=MAP deep dive, the Action Line, behavior types, failure diagnostics
-- [ability-chain.md](references/ability-chain.md): Six simplicity factors, friction audit templates, simplification strategies
-- [prompt-design.md](references/prompt-design.md): Three prompt types, timing strategies, notification design, anchor moments
-- [tiny-habits.md](references/tiny-habits.md): Tiny Habits recipe, Starter Steps, celebration, scaling patterns
-- [motivation-waves.md](references/motivation-waves.md): Three motivators, motivation waves, designing for troughs
-- [product-applications.md](references/product-applications.md): B=MAP applied to SaaS, mobile, e-commerce, health, education
-- [case-studies.md](references/case-studies.md): Instagram, Duolingo, Slack, Calm, Peloton through Fogg's lens
 
 ## Further Reading
 

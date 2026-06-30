@@ -1,10 +1,10 @@
 ---
 name: steve-jobs-design-review
-description: 'Review designs, products, and features with Steve Jobs'' standards: ruthless simplicity, focus, and end-to-end excellence. Use when the user mentions "Steve Jobs review", "design review", "product review", "what would Steve do", "insanely great", "simplify this product", "too many features", "product taste", "saying no", "is this good enough to ship", "make it simpler", or "this feels too complicated". Also trigger when critiquing a UI, feature, or roadmap for focus and simplicity, cutting scope to the essential, or pressure-testing the whole experience from first run to daily use. Covers the simplicity audit, the no list, design-is-how-it-works, end-to-end ownership, demo culture, and a Jobs-style review protocol with binary verdicts. For visual design fundamentals, see refactoring-ui. For usability audits, see ux-heuristics. For detail polish, see microinteractions.'
+description: 'Review designs, products, and features with Steve Jobs'' standards: ruthless simplicity, focus, and end-to-end excellence. Use when the user mentions "Steve Jobs review", "design review", "product review", "what would Steve do", "insanely great", "this feels too complicated", "too many features", "product taste", "saying no", or "is this good enough to ship". Also trigger when critiquing a UI, feature, or roadmap for focus and simplicity, cutting scope to the essential, or pressure-testing the whole experience from first run to daily use. Covers the simplicity audit, the no list, design-is-how-it-works, end-to-end ownership, demo culture, and a Jobs-style review protocol with binary verdicts. For visual design fundamentals, see refactoring-ui. For usability audits, see ux-heuristics. For detail polish, see microinteractions.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Steve Jobs Design Review
@@ -17,7 +17,7 @@ Run design and product reviews the way Steve Jobs ran them: start from the custo
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing a design, product, feature, or roadmap, rate it 0-10 against the principles below. State the current score, exactly what fails, and the specific cuts or fixes required to reach 10/10. There is no "pretty good" — anything below 10 is not done yet.
+**Goal: 10/10.** Count how many of the 7 Quick Diagnostic rows the product passes, then map to 0-10: 7/7 = 10, 6/7 = 9, 5/7 = 7, 4/7 = 6, 3/7 = 4, ≤2/7 ≤ 3. Bands: **9-10** = insanely great, ships; **5-8** = real cuts and fixes required; **≤4** = not done, back to demos. There is no "pretty good"; state the score, the exact rows that failed, and the specific cuts or fixes required to reach 10/10.
 
 ## Framework
 
@@ -49,7 +49,7 @@ Run design and product reviews the way Steve Jobs ran them: start from the custo
 
 **Ethical boundary:** Simplify by solving complexity for the user, never by burying necessary controls or costs (pricing, privacy, cancellation) where they can't be found.
 
-See: [references/simplicity-and-focus.md](references/simplicity-and-focus.md)
+See [references/simplicity-and-focus.md](references/simplicity-and-focus.md) when running a simplicity audit — the 5-step subtraction method, steps-to-value measurement, and the surface-vs-deep simplicity table.
 
 ### 2. Focus Means Saying No
 
@@ -79,7 +79,7 @@ See: [references/simplicity-and-focus.md](references/simplicity-and-focus.md)
 
 **Ethical boundary:** Say no to scope, never to evidence — killing a feature is strategy; ignoring user pain that contradicts your vision is vanity.
 
-See: [references/review-protocol.md](references/review-protocol.md)
+See [references/review-protocol.md](references/review-protocol.md) for the saying-no rituals — the force-rank-to-three exercise, the kill-for-every-add rule, and how to run a no list in a live review.
 
 ### 3. Design Is How It Works
 
@@ -107,9 +107,7 @@ See: [references/review-protocol.md](references/review-protocol.md)
 - "How does this feel after the 100th use, not the demo?"
 - "Where does the user wait, and what did we do about it?"
 
-**Ethical boundary:** "How it works" includes how it respects the user — dark patterns that work for the business but against the user fail this review by definition.
-
-See: [references/end-to-end-experience.md](references/end-to-end-experience.md)
+See [references/end-to-end-experience.md](references/end-to-end-experience.md) when reviewing behavior over visuals — the daily-use and failure/support stages cover how to walk the slow moments, error paths, and offline states most demos skip.
 
 ### 4. Own the Whole Experience
 
@@ -139,7 +137,7 @@ See: [references/end-to-end-experience.md](references/end-to-end-experience.md)
 
 **Ethical boundary:** Owning the whole experience means owning failures too — never design a polished entrance and a hostile exit.
 
-See: [references/end-to-end-experience.md](references/end-to-end-experience.md)
+See [references/end-to-end-experience.md](references/end-to-end-experience.md) when mapping the journey — the 7-stage touchpoint map from discovery to offboarding, the worst-touchpoint rule, and the org seams that produce undesigned surfaces.
 
 ### 5. Demo or It Doesn't Exist
 
@@ -169,7 +167,7 @@ See: [references/end-to-end-experience.md](references/end-to-end-experience.md)
 
 **Ethical boundary:** Demos must show honest state — a staged demo that hides known breakage is a lie with a UI.
 
-See: [references/demo-culture.md](references/demo-culture.md)
+See [references/demo-culture.md](references/demo-culture.md) when setting up a demo-driven review — the creative-selection loop, how to run a demo derby, the decider role, and honest-demo rules.
 
 ### 6. Taste and the Back of the Fence
 
@@ -197,9 +195,7 @@ See: [references/demo-culture.md](references/demo-culture.md)
 - "Would you sign your name inside this?"
 - "Where did we use plywood?"
 
-**Ethical boundary:** High standards apply to the work, never to a person's worth — demand excellence without demeaning people.
-
-See: [references/case-studies.md](references/case-studies.md)
+See [references/case-studies.md](references/case-studies.md) for worked examples of the standard in action — the original Mac circuit board redone for unseen beauty, the iMac's opinionated subtraction, plus the MobileMe and antenna-gate failure reviews and what each teaches a reviewer.
 
 ### 7. Running the Review
 
@@ -226,9 +222,7 @@ ALWAYS output reviews in this format:
 **Back of the fence:** [unseen surfaces that fail the bar]
 ```
 
-**Ethical boundary:** Channel Jobs' standards, not his cruelty — total candor about the work, zero contempt for the people who made it.
-
-See: [references/review-protocol.md](references/review-protocol.md)
+See [references/review-protocol.md](references/review-protocol.md) when running an actual review session — the timed 5-step agenda, the fix-item specificity test, the candor rules (brutal on work, decent on people), review cadence, and how to adapt the protocol for solo or async reviews.
 
 ## Common Mistakes
 
@@ -253,14 +247,6 @@ See: [references/review-protocol.md](references/review-protocol.md)
 | Was anything removed this cycle? | Roadmap is accreting, not focusing | Add a cut list to every review |
 | Do error, empty, and edge states match hero-screen quality? | Back of the fence is plywood | Audit and fix unseen surfaces |
 | Would the team proudly use it daily and sign it? | The bar is "acceptable", not "insanely great" | Hold the binary verdict until pride is real |
-
-## Reference Files
-
-- [review-protocol.md](references/review-protocol.md): Full Jobs-style review session — agenda, walkthrough order, verdict format, saying-no rituals
-- [simplicity-and-focus.md](references/simplicity-and-focus.md): Simplicity audit method, steps-to-value, the 2×2 product matrix, the no list
-- [end-to-end-experience.md](references/end-to-end-experience.md): Whole-widget touchpoint audit from discovery to offboarding, first-run theater
-- [demo-culture.md](references/demo-culture.md): Creative selection loop, demo derbies, decider roles, honest-demo rules
-- [case-studies.md](references/case-studies.md): iMac, iPod, iPhone keyboard, Apple Stores, MobileMe failure review — what each teaches reviewers
 
 ## About the Author
 

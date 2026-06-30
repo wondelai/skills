@@ -1,10 +1,10 @@
 ---
 name: refactoring-patterns
-description: 'Apply named refactoring transformations to improve code structure without changing behavior. Use when the user mentions "refactor this", "code smells", "extract method", "replace conditional", "technical debt", "move method", "inline variable", "decompose conditional", "clean up this messy code", "restructure without breaking anything", or "this code needs reorganizing". Also trigger when cleaning up legacy code, preparing code for new features by restructuring, or identifying which transformation fits a specific code smell. Covers smell-driven refactoring, safe transformation sequences, and testing guards. For code-quality foundations, see clean-code. For managing complexity, see software-design-philosophy.'
+description: 'Apply named refactoring transformations to improve code structure without changing behavior. Use when the user mentions "refactor this", "code smells", "extract method", "replace conditional", "technical debt", "move method", "inline variable", "decompose conditional", or "clean up this messy code". Also trigger when cleaning up legacy code, preparing code for new features by restructuring, or identifying which transformation fits a specific code smell. Covers smell-driven refactoring, safe transformation sequences, and testing guards. For code-quality foundations, see clean-code. For managing complexity, see software-design-philosophy.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Refactoring Patterns Framework
@@ -19,7 +19,12 @@ A disciplined approach to improving the internal structure of existing code with
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing or refactoring code, rate structural quality 0-10: a 10/10 means no obvious smells remain, each function does one thing, names reveal intent, duplication is eliminated, and tests cover the refactored paths. Always give the current score and the specific refactorings needed to reach 10/10.
+**Goal: 10/10.** Score structural quality by counting satisfied rows in the [Quick Diagnostic](#quick-diagnostic) (8 rows): roughly one point per satisfied row, plus margin for severity. Bands:
+- **9-10**: no obvious smells remain, each function does one thing, names reveal intent, duplication is eliminated, conditionals use polymorphism where apt, and tests cover the refactored paths.
+- **5-6**: a few smells remain (a Long Method, some duplication) but structure is mostly sound.
+- **≤3**: pervasive smells — tangled conditionals, God classes, duplication everywhere — or no tests to refactor safely.
+
+Always state the current score, name the smells driving it down, and list the specific refactorings needed to reach 10/10.
 
 ## The Refactoring Patterns Framework
 
@@ -43,11 +48,11 @@ Six areas of focus for systematically improving code structure:
 | Context | Pattern | Example |
 |---------|---------|---------|
 | Method > 10 lines | Extract Method | Pull loop body into `calculateLineTotal()` |
-| Switch on type code | Replace Conditional with Polymorphism | Subclass per order type |
+| One change touches many classes (Shotgun Surgery) | Move Method/Field | Gather the scattered behavior into one class |
 | Same params in many methods | Introduce Parameter Object | `startDate, endDate` → `DateRange` |
 | Copy-pasted logic | Extract Method + Pull Up Method | Share via common method or base class |
 
-See: [references/smell-catalog.md](references/smell-catalog.md) when you need the full smell-to-refactoring mapping.
+See [references/smell-catalog.md](references/smell-catalog.md) when you need to name a smell and its fix — all five families (Bloaters, OO Abusers, Change Preventers, Dispensables, Couplers) with detection heuristics and the refactoring each maps to.
 
 ### 2. Composing Methods
 
@@ -71,13 +76,13 @@ See: [references/smell-catalog.md](references/smell-catalog.md) when you need th
 | Trivial delegating method | Inline Method | Inline `return deliveries > 5` if used once |
 | Method with many tangled locals | Replace Method with Method Object | Locals become fields in a new class |
 
-See: [references/composing-methods.md](references/composing-methods.md) for mechanics and worked examples of each.
+See [references/composing-methods.md](references/composing-methods.md) when applying any method-level transformation — step-by-step mechanics and before/after code for Extract/Inline Method, Extract/Inline Variable, Replace Temp with Query, Split Temporary Variable, and Replace Method with Method Object.
 
 ### 3. Moving Features Between Objects
 
 **Core concept:** The key OO design decision is where responsibilities live. When Feature Envy, excessive coupling, or unbalanced class sizes show a method or field is in the wrong class, move it where it belongs.
 
-**Why it works:** When a method lives with the data it uses, changes affect one class; misplaced methods create invisible dependencies that cause Shotgun Surgery.
+**Why it works:** A method placed away from the data it uses creates invisible cross-class dependencies, so one logical change ripples across many files — Shotgun Surgery. Co-locating method and data confines the change to one class.
 
 **Key insights:**
 - Move Method when a method uses more of another class's features than its own; Move Field likewise
@@ -94,7 +99,7 @@ See: [references/composing-methods.md](references/composing-methods.md) for mech
 | Client calls `a.getB().getC()` | Hide Delegate | Add `a.getCThroughB()` |
 | Class only forwards calls | Remove Middle Man | Let client call the delegate directly |
 
-See: [references/moving-features.md](references/moving-features.md) when deciding where a responsibility belongs.
+See [references/moving-features.md](references/moving-features.md) when deciding where a responsibility belongs — mechanics for Move Method/Field, Extract/Inline Class, Hide Delegate, and Remove Middle Man.
 
 ### 4. Organizing Data
 
@@ -118,7 +123,7 @@ See: [references/moving-features.md](references/moving-features.md) when decidin
 | Getter returns mutable list | Encapsulate Collection | Return `Collections.unmodifiableList(items)` |
 | `int typeCode` with switch | Replace Type Code with Subclasses | `Employee` → `Engineer`, `Manager` |
 
-See: [references/organizing-data.md](references/organizing-data.md) for the full data-refactoring catalog.
+See [references/organizing-data.md](references/organizing-data.md) when replacing primitives with objects — mechanics for Replace Data Value with Object, Change Value to Reference, Replace Magic Number, Encapsulate Field/Collection, and the Replace Type Code variants.
 
 ### 5. Simplifying Conditional Logic
 
@@ -142,7 +147,7 @@ See: [references/organizing-data.md](references/organizing-data.md) for the full
 | Switch on object type | Replace Conditional with Polymorphism | Each type implements its own `calculatePay()` |
 | `if (customer == null)` everywhere | Introduce Special Case | `NullCustomer` with safe default behavior |
 
-See: [references/simplifying-conditionals.md](references/simplifying-conditionals.md) for before/after examples.
+See [references/simplifying-conditionals.md](references/simplifying-conditionals.md) when untangling branches — before/after examples for Decompose/Consolidate Conditional, Guard Clauses, Replace Conditional with Polymorphism, Special Case, and Assertions.
 
 ### 6. Safe Refactoring Workflow
 
@@ -166,7 +171,7 @@ See: [references/simplifying-conditionals.md](references/simplifying-conditional
 | Large API change in production | Branch by Abstraction | Add abstraction layer, migrate callers, remove old path |
 | Renaming a widely-used method | Parallel Change | Add new, deprecate old, migrate, remove |
 
-See: [references/refactoring-workflow.md](references/refactoring-workflow.md) for the full cycle and when-to-refactor guidance.
+See [references/refactoring-workflow.md](references/refactoring-workflow.md) before a large or risky refactoring — the full green-to-green cycle, when (not) to refactor, performance, Branch by Abstraction, and Parallel Change.
 
 ## Common Mistakes
 
@@ -193,15 +198,6 @@ See: [references/refactoring-workflow.md](references/refactoring-workflow.md) fo
 | Do conditionals use polymorphism where apt? | Switch Statements remain | Replace Conditional with Polymorphism |
 | Are you committing after each step? | Risk losing work, mixing changes | Commit after every green-to-green transformation |
 | Is the code easier to read after your change? | Refactoring added complexity | Revert and try a different approach |
-
-## Reference Files
-
-- [smell-catalog.md](references/smell-catalog.md): All smell families (Bloaters, OO Abusers, Change Preventers, Dispensables, Couplers) with detection heuristics and fix mappings
-- [composing-methods.md](references/composing-methods.md): Extract/Inline Method, Extract/Inline Variable, Replace Temp with Query, Split Temporary Variable, Replace Method with Method Object
-- [moving-features.md](references/moving-features.md): Move Method/Field, Extract/Inline Class, Hide Delegate, Remove Middle Man
-- [organizing-data.md](references/organizing-data.md): Replace Data Value with Object, Change Value to Reference, Replace Magic Number, Encapsulate Field/Collection, Replace Type Code variants
-- [simplifying-conditionals.md](references/simplifying-conditionals.md): Decompose/Consolidate Conditional, Guard Clauses, Replace Conditional with Polymorphism, Special Case, Assertions
-- [refactoring-workflow.md](references/refactoring-workflow.md): The refactoring cycle, when (not) to refactor, performance, Branch by Abstraction, Parallel Change
 
 ## Further Reading
 

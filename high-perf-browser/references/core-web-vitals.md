@@ -103,7 +103,7 @@ Fixes:
 
 INP measures the delay between a user interaction (click, tap, keypress) and the next visual update. It replaced FID (First Input Delay) as a Core Web Vital in March 2024.
 
-**Why INP matters more than FID:** FID only measured the delay of the first interaction. INP measures all interactions throughout the page lifecycle and reports the worst (at the 98th percentile). A page can have a good FID but terrible INP if JavaScript blocks the main thread during later interactions.
+**Why INP matters more than FID:** FID only measured the delay of the first interaction. INP measures all interactions throughout the page lifecycle and reports the single worst one — except on pages with many interactions, where it drops roughly one outlier per 50 interactions (approximating the 98th percentile for high-interaction pages). A page can have a good FID but terrible INP if JavaScript blocks the main thread during later interactions.
 
 ### What causes poor INP
 

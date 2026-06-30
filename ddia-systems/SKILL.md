@@ -4,7 +4,7 @@ description: 'Design data systems by understanding storage engines, replication,
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Designing Data-Intensive Applications Framework
@@ -17,7 +17,13 @@ A principled approach to building reliable, scalable, and maintainable data syst
 
 ## Scoring
 
-**Goal: 10/10.** Rate any data architecture 0-10 against the principles below: deliberate trade-off choices for data models, storage, replication, partitioning, transactions, and pipelines score high; accidental complexity and ignored failure modes score low. Report the current score and the improvements needed to reach 10/10.
+**Goal: 10/10.** Score a data architecture by the seven Quick Diagnostic rows below: award ~1.4 points per row answered "yes" with evidence (deliberate, documented trade-off), 0 where the answer is "no" or unknown.
+
+- **9-10:** every domain choice -- data model, storage engine, replication, partitioning, isolation, derived-data, fault handling -- is deliberate, documented, and matched to actual read/write/consistency requirements; failover tested.
+- **5-6:** core choices made but two or three diagnostic rows fail -- e.g. default isolation level unknown, hot-key risk unhandled, or failover untested.
+- **<=3:** choices driven by familiarity, not requirements; ignored failure modes (replication lag, write skew, hot partitions) and accidental complexity dominate.
+
+Report the current score, which diagnostic rows failed, and the improvements needed to reach 10/10.
 
 ## The DDIA Framework
 
@@ -43,13 +49,11 @@ Seven domains for reasoning about data-intensive systems:
 | **Social network connections** | Graph model for relationship traversal | Neo4j Cypher: `MATCH (a)-[:FOLLOWS*2]->(b)` for friend-of-friend |
 | **Financial ledger with joins** | Relational model for referential integrity | PostgreSQL foreign keys between accounts, transactions, entries |
 
-See: [references/data-models.md](references/data-models.md) for relational/document/graph trade-offs and query language comparisons.
+See [references/data-models.md](references/data-models.md) when picking relational vs document vs graph or evaluating schema-on-read -- adds the full trade-off matrix and query-language comparisons.
 
 ### 2. Storage Engines
 
 **Core concept:** Storage engines trade off read performance against write performance. Log-structured engines (LSM trees) optimize writes; page-oriented engines (B-trees) balance reads and writes.
-
-**Why it works:** Understanding your database's storage engine lets you predict performance characteristics, choose appropriate indexes, and avoid pathological workloads.
 
 **Key insights:**
 - LSM trees: append-only writes, periodic compaction, excellent write throughput, higher read amplification
@@ -66,7 +70,7 @@ See: [references/data-models.md](references/data-models.md) for relational/docum
 | **Mixed read/write OLTP** | B-tree engine | PostgreSQL B-tree indexes for transactional point lookups |
 | **Analytical queries** | Column-oriented storage | ClickHouse or Parquet for scanning billions of rows, few columns |
 
-See: [references/storage-engines.md](references/storage-engines.md) for LSM vs B-tree internals, compaction, and column storage.
+See [references/storage-engines.md](references/storage-engines.md) when a workload is read/write-bound or you must choose indexes -- adds write/read-path diagrams, compaction strategies, column storage, and a benchmark-driven decision procedure.
 
 ### 3. Replication
 
@@ -90,13 +94,11 @@ See: [references/storage-engines.md](references/storage-engines.md) for LSM vs B
 | **Multi-region writes** | Multi-leader replication | CockroachDB or Spanner with bounded staleness |
 | **Shopping cart availability** | Leaderless with merge | DynamoDB with last-writer-wins or application-level cart merge |
 
-See: [references/replication.md](references/replication.md) for lag anomalies, conflict resolution, and CRDTs.
+See [references/replication.md](references/replication.md) when choosing single/multi/leaderless or debugging stale reads -- adds lag anomalies, quorum math, conflict resolution, and CRDTs.
 
 ### 4. Partitioning
 
 **Core concept:** Partitioning (sharding) distributes data across nodes so each handles a subset, enabling horizontal scaling beyond a single machine.
-
-**Why it works:** Without partitioning, one node bottlenecks storage and throughput. Effective partitioning spreads load evenly and avoids hotspots.
 
 **Key insights:**
 - Key-range partitioning supports efficient range scans but risks hotspots on sequential keys
@@ -113,7 +115,7 @@ See: [references/replication.md](references/replication.md) for lag anomalies, c
 | **User data at scale** | Hash partitioning on user ID | Cassandra consistent hashing on `user_id` for even distribution |
 | **Celebrity/hot-key problem** | Key splitting with random suffix | Append random digit to hot key, fan out reads across 10 sub-partitions |
 
-See: [references/partitioning.md](references/partitioning.md) for rebalancing, request routing, and secondary index strategies.
+See [references/partitioning.md](references/partitioning.md) when sharding or fighting a hot key -- adds rebalancing strategies, request routing, and local-vs-global secondary index trade-offs.
 
 ### 5. Transactions and Consistency
 
@@ -136,7 +138,7 @@ See: [references/partitioning.md](references/partitioning.md) for rebalancing, r
 | **Inventory reservation** | SELECT FOR UPDATE to prevent write skew | `SELECT stock FROM items WHERE id = X FOR UPDATE` before decrementing |
 | **Cross-service operations** | Saga instead of distributed transaction | Charge card, reserve inventory; on failure, run compensating refund |
 
-See: [references/transactions.md](references/transactions.md) for isolation-level anomalies and serializability techniques.
+See [references/transactions.md](references/transactions.md) when setting isolation levels or chasing a concurrency bug -- adds per-isolation anomaly tables, write-skew examples, 2PL vs SSI, and distributed-transaction pitfalls.
 
 ### 6. Batch and Stream Processing
 
@@ -160,13 +162,11 @@ See: [references/transactions.md](references/transactions.md) for isolation-leve
 | **Syncing search index** | Change data capture | Debezium captures PostgreSQL WAL, Kafka feeds Elasticsearch |
 | **Audit trail / event replay** | Event sourcing | Store `OrderPlaced`, `OrderShipped` events; rebuild state by replaying |
 
-See: [references/batch-stream.md](references/batch-stream.md) for dataflow engines, CDC, and exactly-once semantics.
+See [references/batch-stream.md](references/batch-stream.md) when designing a pipeline or deriving data from a system of record -- adds dataflow engines, CDC wiring, windowing, and exactly-once techniques.
 
 ### 7. Reliability and Fault Tolerance
 
 **Core concept:** Faults are inevitable; failures are not. A reliable system continues operating correctly even when individual components fail. Design for faults, not against them.
-
-**Why it works:** Hardware fails, software has bugs, humans make mistakes. Systems that assume perfect operation are brittle; systems that expect faults are resilient.
 
 **Key insights:**
 - A fault is one component deviating from spec; a failure is the whole system stopping -- fault tolerance prevents the former becoming the latter
@@ -184,7 +184,7 @@ See: [references/batch-stream.md](references/batch-stream.md) for dataflow engin
 | **Leader election** | Consensus algorithm (Raft/Paxos) | etcd or ZooKeeper for distributed locks and leader election |
 | **Graceful degradation** | Circuit breaker | Resilience4j: open circuit after 50% failures in 10-second window |
 
-See: [references/fault-tolerance.md](references/fault-tolerance.md) for consensus, timeout tuning, and safety/liveness guarantees.
+See [references/fault-tolerance.md](references/fault-tolerance.md) when tuning timeouts/retries or adding consensus -- adds fault classification, timeout-tuning math, Raft/Paxos mechanics, and safety/liveness guarantees.
 
 ## Common Mistakes
 
@@ -209,16 +209,6 @@ See: [references/fault-tolerance.md](references/fault-tolerance.md) for consensu
 | Do you separate system of record from derived data? | Every change requires migrating everything | Introduce CDC or event sourcing to decouple |
 | Are timeouts and retries tuned, not defaulted? | Cascading failures or needless delays | Measure p99; set timeouts above p99, below cascade threshold |
 | Have you tested failover in production conditions? | Recovery plan is theoretical | Run chaos experiments: kill leaders, partition networks, fill disks |
-
-## Reference Files
-
-- [data-models.md](references/data-models.md): Relational vs document vs graph models, schema-on-read vs schema-on-write, query languages, polyglot persistence
-- [storage-engines.md](references/storage-engines.md): LSM trees vs B-trees, write amplification, compaction, column-oriented storage, in-memory databases
-- [replication.md](references/replication.md): Single-leader, multi-leader, leaderless replication, replication lag, conflict resolution, CRDTs
-- [partitioning.md](references/partitioning.md): Key-range vs hash partitioning, secondary indexes, rebalancing, request routing, hotspots
-- [transactions.md](references/transactions.md): ACID, isolation levels, write skew, two-phase locking, SSI, distributed transactions
-- [batch-stream.md](references/batch-stream.md): MapReduce, dataflow engines, event sourcing, CDC, stream-table duality, exactly-once semantics
-- [fault-tolerance.md](references/fault-tolerance.md): Faults vs failures, reliability metrics, timeouts, consensus, safety and liveness guarantees
 
 ## Further Reading
 

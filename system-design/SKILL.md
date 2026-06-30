@@ -1,10 +1,10 @@
 ---
 name: system-design
-description: 'Design scalable distributed systems using structured approaches for load balancing, caching, database scaling, and message queues. Use when the user mentions "system design", "scale this", "high availability", "rate limiter", "design a URL shortener", "design Twitter", "design Uber", "design a news feed", "system design interview", "system design interview prep", "capacity planning", or "distributed architecture". Also trigger when estimating infrastructure requirements, choosing between microservices and monoliths, or designing for millions of concurrent users. Covers common system designs (TinyURL, feeds, chat) and back-of-the-envelope estimation. For data fundamentals, see ddia-systems. For resilience, see release-it.'
+description: 'Design scalable distributed systems using structured approaches for load balancing, caching, database scaling, and message queues. Use when the user mentions "system design", "scale this", "high availability", "rate limiter", "design a URL shortener", "design Twitter", "design Uber", "design a news feed", "system design interview", "capacity planning", or "distributed architecture". Also trigger when estimating infrastructure requirements, choosing between microservices and monoliths, or designing for millions of concurrent users. Covers common system designs (TinyURL, feeds, chat) and back-of-the-envelope estimation. For data fundamentals, see ddia-systems. For resilience, see release-it.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # System Design Framework
@@ -17,7 +17,7 @@ A structured approach to designing large-scale distributed systems. Apply these 
 
 ## Scoring
 
-**Goal: 10/10.** Rate any system design 0-10: a 10/10 states requirements explicitly, includes back-of-the-envelope estimates, uses appropriate building blocks, addresses scaling and reliability, and acknowledges tradeoffs. Always state the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score a design by counting how many of the eight Quick Diagnostic rows it satisfies (1 point each): 9-10 = all/nearly all rows pass — explicit requirements, real estimates, redundancy, a stated DB-scaling and caching strategy, async via queues, monitoring, and a deployment plan, with tradeoffs named; 5-6 = the design works but skips estimation, redundancy, or operations; <=3 = architecture proposed before requirements or estimates exist. Always state the current score, name the failing diagnostic rows, and give the specific fix for each.
 
 ## The System Design Framework
 
@@ -44,7 +44,7 @@ Six areas for building reliable, scalable distributed systems:
 | **Architecture review** | Walk reviewers through the steps sequentially | Scope, diagram, deep-dive on riskiest component, open questions |
 | **Incident postmortem** | Trace the failure through the four-step lens | Which requirement was missed? Which block failed? What tradeoff bit us? |
 
-See: [references/four-step-process.md](references/four-step-process.md)
+See [references/four-step-process.md](references/four-step-process.md) when running a design end-to-end — per-stage time allocation, example clarifying questions, and tips for each of the four steps.
 
 ### 2. Back-of-the-Envelope Estimation
 
@@ -68,13 +68,13 @@ See: [references/four-step-process.md](references/four-step-process.md)
 | **Storage budgeting** | Per-record size x volume x retention | 500M tweets/day x 300 bytes x 365 days = ~55 TB/year |
 | **SLA definition** | Convert nines to allowed downtime | Four nines = ~52 minutes downtime per year |
 
-See: [references/estimation-numbers.md](references/estimation-numbers.md)
+See [references/estimation-numbers.md](references/estimation-numbers.md) when sizing a system — full latency table, availability-nines table, and worked QPS/storage/bandwidth calculations.
 
 ### 3. Building Blocks
 
 **Core concept:** Scalable systems are assembled from a standard toolkit: DNS, CDN, load balancers, reverse proxies, application servers, caches, message queues, and consistent hashing.
 
-**Why it works:** Each block solves a specific scaling or reliability problem. Knowing when and why to introduce each prevents both premature complexity and avoidable bottlenecks.
+**Why it works:** Each block trades one cost for another (a cache trades freshness for read speed; a queue trades latency for decoupling), so introduce a block only once its specific bottleneck appears — adding all of them up front just multiplies failure modes.
 
 **Key insights:**
 - Load balancers: L4 (transport layer — fast, simple) vs L7 (application layer — content-aware routing)
@@ -92,7 +92,7 @@ See: [references/estimation-numbers.md](references/estimation-numbers.md)
 | **Global users** | CDN for static assets | Serve JS/CSS/images from edge; origin serves only API |
 | **Uneven load** | Consistent hashing for shard assignment | Adding a node moves only ~1/n keys |
 
-See: [references/building-blocks.md](references/building-blocks.md)
+See [references/building-blocks.md](references/building-blocks.md) when choosing components — how each of DNS, CDN, load balancers, caching strategies, message queues, and consistent hashing works and when to introduce it.
 
 ### 4. Database Design and Scaling
 
@@ -116,7 +116,7 @@ See: [references/building-blocks.md](references/building-blocks.md)
 | **User data at scale** | Hash-based sharding on user_id | hash(user_id) % num_shards; even, independent shards |
 | **Analytics dashboard** | Denormalized materialized views | Pre-join and aggregate nightly; serve from materialized table |
 
-See: [references/database-scaling.md](references/database-scaling.md)
+See [references/database-scaling.md](references/database-scaling.md) when the database is the bottleneck — replication topologies, the three sharding strategies compared, denormalization tradeoffs, and a SQL-vs-NoSQL selection guide.
 
 ### 5. Common System Designs
 
@@ -141,7 +141,7 @@ See: [references/database-scaling.md](references/database-scaling.md)
 | **API protection** | Token bucket at gateway | 100 tokens/min per key; steady refill; reject with 429 |
 | **Social feed** | Hybrid fanout | Precompute feeds for <10K-follower accounts; merge celebrity posts at read time |
 
-See: [references/common-designs.md](references/common-designs.md)
+See [references/common-designs.md](references/common-designs.md) when a problem resembles a known design — full walkthroughs of URL shortener, rate limiter, news feed, chat, autocomplete, web crawler, and unique ID generator.
 
 ### 6. Reliability and Operations
 
@@ -165,7 +165,7 @@ See: [references/common-designs.md](references/common-designs.md)
 | **Gradual rollout** | Canary with metric comparison | 5% traffic to new version; compare errors and latency; promote or rollback |
 | **Data safety** | Define RPO/RTO, implement accordingly | RPO 1 hour = hourly backups; RTO 5 min = automated failover |
 
-See: [references/reliability-operations.md](references/reliability-operations.md)
+See [references/reliability-operations.md](references/reliability-operations.md) when hardening for production — health-check patterns, the observability pillars, deployment strategies, disaster-recovery (RPO/RTO), and autoscaling.
 
 ## Common Mistakes
 
@@ -192,15 +192,6 @@ See: [references/reliability-operations.md](references/reliability-operations.md
 | Are async paths using queues? | Tight coupling, cascading failures | Decouple with Kafka/SQS for jobs, notifications, analytics |
 | Is there a monitoring and alerting plan? | Blind to production failures | Define metrics, log aggregation, tracing, alert thresholds |
 | Is the deployment strategy defined? | Risky all-at-once releases | Rolling, blue-green, or canary with automated rollback |
-
-## Reference Files
-
-- [four-step-process.md](references/four-step-process.md): The complete four-step process with time allocation, example questions, and tips per stage
-- [estimation-numbers.md](references/estimation-numbers.md): Powers of two, latency numbers, availability nines, QPS/storage/bandwidth worked examples
-- [building-blocks.md](references/building-blocks.md): DNS, CDN, load balancers, caching strategies, message queues, consistent hashing
-- [database-scaling.md](references/database-scaling.md): SQL vs NoSQL, replication, sharding strategies, denormalization, selection guide
-- [common-designs.md](references/common-designs.md): URL shortener, rate limiter, news feed, chat, autocomplete, web crawler, unique ID generator
-- [reliability-operations.md](references/reliability-operations.md): Health checks, monitoring, logging, deployment strategies, disaster recovery, autoscaling
 
 ## Further Reading
 

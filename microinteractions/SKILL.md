@@ -1,10 +1,10 @@
 ---
 name: microinteractions
-description: 'Design the small details -- triggers, rules, feedback, loops and modes -- that separate good products from great ones. Use when the user mentions "microinteraction", "button feedback", "loading state", "toggle design", "animation detail", "interaction polish", "state transitions", "input feedback", "the interface feels dead", "make the UI feel responsive", or "add polish to interactions". Also trigger when designing form-validation responses, progress indicators, confirmation dialogs, or any element where the user expects immediate feedback. Covers trigger design, state rules, feedback mechanisms, and progressive loops. For overall UI polish, see refactoring-ui. For affordance design, see design-everyday-things.'
+description: 'Design the small details -- triggers, rules, feedback, loops and modes -- that separate good products from great ones. Use when the user mentions "microinteraction", "button feedback", "loading state", "toggle design", "animation detail", "state transitions", "input feedback", "the interface feels dead", "make the UI feel responsive", or "add polish to interactions". Also trigger when designing form-validation responses, progress indicators, confirmation dialogs, or any element where the user expects immediate feedback. Covers trigger design, state rules, feedback mechanisms, and progressive loops. For overall UI polish, see refactoring-ui. For affordance design, see design-everyday-things.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Microinteractions Framework
@@ -17,17 +17,22 @@ Design the tiny, contained product moments users touch every day -- toggles, pas
 
 ## Scoring
 
-**Goal: 10/10.** Rate microinteractions 0-10 against the principles below: a 10/10 gives every interactive moment a deliberate trigger, clear rules, immediate feedback, and thoughtful loop/mode behavior. Always state the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score by counting how many of the 8 Quick Diagnostic rows the microinteraction passes (one point each), then map to a band:
+- **9-10** = passes all 8 rows: deliberate discoverable trigger with visible states, simple predictable rules, sub-100ms feedback scaled to event significance, evolves over time, mode-free or mode-visible, learnable without help.
+- **5-6** = 4-5 rows pass: it works but has a generic feel -- e.g. feedback exists but is uniform, or the trigger lacks distinct states.
+- **<=3** = 2 or fewer rows pass: missing feedback, invisible triggers, or hidden modes that break trust.
+
+Always state the current score, which diagnostic rows failed, and the specific fix for each.
 
 ## The Microinteraction Structure
 
-Six areas of focus for designing world-class microinteractions:
+Six areas of focus for designing world-class microinteractions. See [references/case-studies.md](references/case-studies.md) when you want a full four-part breakdown of a real pattern -- form submission, toggle/switch, pull-to-refresh, loading states, and notifications, each from first use through edge cases.
 
 ### 1. Triggers
 
 **Core concept:** The trigger initiates a microinteraction -- manual (tap, click, swipe, voice command) or system-initiated (time, location, incoming data, error state). It is the front door of every microinteraction.
 
-**Why it works:** Without a clear trigger, users cannot discover or initiate the interaction, and the product cannot respond to changing conditions. Well-designed triggers make functionality discoverable and set accurate expectations.
+**Why it works:** A trigger's prominence and labeling set the user's expectation before they act -- a button that reads "Delete" in red signals an irreversible, high-stakes outcome, so feedback that follows feels predictable rather than surprising.
 
 **Key insights:**
 - A trigger must communicate three things: that it exists, what it does, and what state it is in
@@ -75,7 +80,7 @@ See: [references/rules-and-state.md](references/rules-and-state.md) for state ma
 
 **Core concept:** Feedback communicates the rules to the user, answering "What is happening right now?" -- visually (color, animation, movement), aurally (clicks, chimes), or haptically (vibration). Show only what matters: minimal, meaningful, contextual.
 
-**Why it works:** Without feedback, users cannot tell if their action registered, the system is working, or the operation succeeded. Too little feedback creates anxiety; too much creates noise; the right feedback at the right time makes interactions feel responsive and trustworthy.
+**Why it works:** Without feedback, users cannot tell if their action registered or the system is working, so they retap, abandon, or distrust the result. Feedback is what converts an invisible system state into a perceived response.
 
 **Key insights:**
 - Feedback must be immediate -- under 100ms for direct manipulation
@@ -141,7 +146,7 @@ See: [references/loops-modes.md](references/loops-modes.md) for long loops, mode
 | **Loading state** | Branded waiting experience | Slack: rotating quotes during load |
 | **Completion** | Celebratory confirmation | Stripe payment: animated checkmark with confetti |
 
-**Ethical boundary:** Never obscure important information or delay the user to show off an animation -- function precedes delight.
+**Ethical boundary:** Never block input or the next step behind a non-skippable celebration animation -- let the user tap through the confetti to proceed.
 
 See: [references/signature-moments.md](references/signature-moments.md) for when to invest and making mundane interactions delightful.
 
@@ -166,7 +171,7 @@ See: [references/signature-moments.md](references/signature-moments.md) for when
 | **Single action** | One tap replaces multi-step flow | Double-tap to like instead of menu + select reaction |
 | **Anticipatory design** | Predict and pre-fill | Shipping form fills city and state from ZIP code |
 
-**Ethical boundary:** Do not auto-opt users into business-serving features or remove control over meaningful choices.
+**Ethical boundary:** A "smart default" must serve the user, not the business -- never pre-check marketing opt-ins, paid add-ons, or data-sharing as the default choice.
 
 ## Common Mistakes
 
@@ -195,15 +200,6 @@ Audit any microinteraction:
 | Does the interaction evolve over time? | Power users still see beginner hints | Add progressive reduction through long loops |
 | Is the interaction free of unnecessary modes? | Users perform the wrong action in the wrong mode | Remove modes or make the current mode highly visible |
 | Could a first-time user figure it out without help? | Interaction needs explanation | Simplify or add a one-time hint via long loop |
-
-## Reference Files
-
-- [trigger-design.md](references/trigger-design.md): Manual and system triggers, trigger affordances, trigger states, invisible trigger design, placement and visibility
-- [rules-and-state.md](references/rules-and-state.md): Defining rules, state management, constraints, error states, edge cases
-- [feedback-patterns.md](references/feedback-patterns.md): Visual, audio, and haptic feedback, timing, progressive disclosure, preventing overload
-- [loops-modes.md](references/loops-modes.md): Open and closed loops, long loops, modes, mode errors, progressive complexity
-- [signature-moments.md](references/signature-moments.md): Brand-defining microinteractions, examples, when to invest, making mundane interactions delightful
-- [case-studies.md](references/case-studies.md): Detailed design breakdowns of form submission, toggle/switch, pull-to-refresh, loading states, and notifications
 
 ## Further Reading
 

@@ -1,10 +1,10 @@
 ---
 name: monetizing-innovation
-description: 'Design products and pricing around validated willingness to pay, from Ramanujam & Tacke''s "Monetizing Innovation". Use when the user mentions "pricing", "how much should we charge", "what should I charge", "willingness to pay", "pricing page", "pricing tiers", "packaging", "freemium vs free trial", "are we leaving money on the table", "nobody buys at this price", "price increase", or "good-better-best". Also trigger when designing or auditing pricing and packaging, validating willingness to pay before building, segmenting customers by value, or choosing between subscription, usage-based, and freemium models. Covers price-before-product, willingness-to-pay talks, the four failures (feature shock, minivation, hidden gem, undead), leader/filler/killer packaging, and behavioral pricing. For offers and guarantees, see hundred-million-offers. For what customers value, see jobs-to-be-done.'
+description: 'Design products and pricing around validated willingness to pay, from Ramanujam & Tacke''s "Monetizing Innovation". Use when the user mentions "pricing", "how much should we charge", "willingness to pay", "pricing page", "packaging", "freemium vs free trial", "are we leaving money on the table", "nobody buys at this price", "price increase", or "good-better-best". Also trigger when designing or auditing pricing and packaging, validating willingness to pay before building, segmenting customers by value, or choosing between subscription, usage-based, and freemium models. Covers price-before-product, willingness-to-pay talks, the four failures (feature shock, minivation, hidden gem, undead), leader/filler/killer packaging, and behavioral pricing. For offers and guarantees, see hundred-million-offers. For what customers value, see jobs-to-be-done.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Monetizing Innovation
@@ -51,7 +51,7 @@ A framework for designing the product around the price, distilled from Simon-Kuc
 
 **Ethical boundary:** WTP research exists to match price to delivered value — not to find each customer's maximum pain and extract it.
 
-See: [references/wtp-conversations.md](references/wtp-conversations.md)
+See [references/wtp-conversations.md](references/wtp-conversations.md) before you run interviews: the exact question scripts (direct, purchase-probability, acceptable/expensive/prohibitive), the simplified-conjoint procedure, sample sizes for B2B vs B2C, how to read the answers, and how to turn a WTP range into specs.
 
 ### 2. The Four Monetization Failures
 
@@ -77,7 +77,7 @@ See: [references/wtp-conversations.md](references/wtp-conversations.md)
 
 **Ethical boundary:** "Kill the undead" applies to products, never to evidence — massaging research to keep a favorite alive creates the next undead.
 
-See: [references/four-failures.md](references/four-failures.md)
+See [references/four-failures.md](references/four-failures.md) when a product is underperforming and you need to classify it: symptom checklists, root causes, the matching countermeasure, and a worked example for each of feature shock, minivation, hidden gems, and undead, plus a classification decision tree.
 
 ### 3. Segment by Willingness to Pay
 
@@ -103,13 +103,13 @@ See: [references/four-failures.md](references/four-failures.md)
 
 **Ethical boundary:** Differentiate prices by value delivered and offer differences — never by exploiting captivity or protected characteristics.
 
-See: [references/case-studies.md](references/case-studies.md)
+See [references/wtp-conversations.md](references/wtp-conversations.md) (the "Build the WTP curve, not the average" section) when your interview data is in hand: reading cliffs and plateaus to find segments, why the mean of a bimodal market describes a customer who does not exist, and the worked WTP-curve example.
 
 ### 4. Packaging and Bundling
 
 **Core concept:** Classify every feature as a leader (drives the purchase decision), a filler (adds modest value), or a killer (actively reduces WTP if customers are forced to pay for it). Build good-better-best tiers around leaders, use fillers to round out and differentiate, and pull killers out into add-ons — or out of the product.
 
-**Why it works:** Packaging decides whether each segment can find the version built for it. Leaders give each tier a reason to exist; a premium tier anchors the middle as reasonable; killers left in a bundle give buyers a reason to say no to the whole thing. The same features, packaged differently, can double or halve revenue.
+**Why it works:** Leaders give each tier a reason to exist; a premium tier anchors the middle as reasonable; a single killer left in a bundle gives buyers a reason to reject the whole thing, not just that feature. The same features, packaged differently, can double or halve revenue.
 
 **Key insights:**
 - A killer is not a bad feature — it is value one segment refuses to fund; on-prem deployment is a killer for SMBs and a leader for banks
@@ -129,7 +129,7 @@ See: [references/case-studies.md](references/case-studies.md)
 
 **Ethical boundary:** Fence tiers on value added, never on essentials held hostage — security, privacy, and data export belong in every tier.
 
-See: [references/packaging-tiers.md](references/packaging-tiers.md)
+See [references/packaging-tiers.md](references/packaging-tiers.md) when you are slotting features into tiers: the leader/filler/killer scoring procedure, good-better-best design rules, a feature-allocation matrix, tier naming, upgrade paths, the bundling checklist, and pricing-page implications.
 
 ### 5. Choosing the Monetization Model
 
@@ -155,7 +155,7 @@ See: [references/packaging-tiers.md](references/packaging-tiers.md)
 
 **Ethical boundary:** Pick metrics customers can predict and audit — a surprise bill monetizes confusion, not value.
 
-See: [references/monetization-models.md](references/monetization-models.md)
+See [references/monetization-models.md](references/monetization-models.md) when you are choosing how to charge: when each model wins (subscription, usage, hybrid, freemium, dynamic, outcome-based), the failure mode of each, how to choose the price metric, and how to migrate between models without churning your base.
 
 ### 6. Behavioral Pricing and Price Communication
 
@@ -207,13 +207,9 @@ See: [references/monetization-models.md](references/monetization-models.md)
 | Is there a living business case linking WTP, price, volume, and cost? | Targets are fiction | Build it before launch; update it on every change |
 | Are post-launch reaction triggers agreed in advance? | Week-one fear will set pricing | Define day-30/60/90 metrics, thresholds, and responses now |
 
-## Reference Files
+## Worked Examples
 
-- [references/wtp-conversations.md](references/wtp-conversations.md) — Question scripts (direct, purchase-probability, acceptable/expensive/prohibitive), simplified conjoint, interpreting answers, sample sizes, B2B vs B2C, turning WTP into specs
-- [references/four-failures.md](references/four-failures.md) — Symptom checklists, root causes, countermeasures, and worked examples for feature shock, minivation, hidden gems, and undead products, plus a classification decision tree
-- [references/packaging-tiers.md](references/packaging-tiers.md) — Leader/filler/killer procedure, good-better-best design rules, tier naming, feature-allocation matrix, upgrade paths, bundling checklist, pricing-page implications
-- [references/monetization-models.md](references/monetization-models.md) — Subscription, usage, hybrid, freemium, dynamic, and outcome-based models: when each wins, failure modes, choosing the price metric, migrating between models
-- [references/case-studies.md](references/case-studies.md) — Three scenarios: flat-to-tiered repricing after WTP interviews, catching feature shock pre-launch, fixing freemium conversion with a leader paywall
+See [references/case-studies.md](references/case-studies.md) to watch the whole framework run end-to-end on three companies: flat-to-tiered repricing after WTP interviews surfaced three segments, catching feature shock pre-launch when the WTP curve stayed flat as scope grew, and fixing a 1.1% freemium conversion by moving the leader behind the paywall.
 
 ## Further Reading
 

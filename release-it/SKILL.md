@@ -1,10 +1,10 @@
 ---
 name: release-it
-description: 'Build production-ready systems with stability patterns: circuit breakers, bulkheads, timeouts, and retry logic. Use when the user mentions "production outage", "circuit breaker", "timeout strategy", "deployment pipeline", "chaos engineering", "bulkhead pattern", "retry with backoff", "health checks", "my service keeps crashing", "prevent cascading failures", or "make it resilient". Also trigger when designing resilient microservices, planning zero-downtime deployments, or investigating cascading-failure scenarios. Covers capacity planning, health checks, and anti-fragility patterns. For data systems, see ddia-systems. For system architecture, see system-design.'
+description: 'Build production-ready systems with stability patterns: circuit breakers, bulkheads, timeouts, and retry logic. Use when the user mentions "production outage", "circuit breaker", "deployment pipeline", "chaos engineering", "retry storm", "health checks", "my service keeps crashing", "prevent cascading failures", or "make it resilient". Also trigger when designing resilient microservices, planning zero-downtime deployments, or capacity-planning for peak load. Covers stability patterns, capacity planning, deploy/release decoupling, and observability. For data systems, see ddia-systems. For system architecture, see system-design.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Release It! Framework
@@ -17,7 +17,7 @@ Framework for designing, deploying, and operating production-ready software. The
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing or creating production systems, rate them 0-10 against the principles below — 10/10 means full alignment, lower scores indicate gaps. Always give the current score and the specific improvements needed to reach 10/10.
+**Goal: 8/8.** Score a production system by the Quick Diagnostic: **1 point per row answered "yes"** across the 8 checks (timeouts, circuit breakers, bulkheads, zero-downtime deploy, deep health checks, correlated telemetry, load-tested past peak, failure injection). Bands: **7-8** = every integration point is bounded, isolated, observable, and deploy/release are decoupled; **4-5** = some patterns present but ≥3 diagnostic rows fail (e.g. unbounded retries, shared pools, shallow health checks); **≤2** = relies on the happy path with no breakers, no capacity model, no failure testing. Always state the current score, the failing rows, and the specific fix for each.
 
 ## The Release It! Framework
 
@@ -27,7 +27,7 @@ Six areas that determine whether software survives contact with production:
 
 **Core concept:** Failures propagate through integration points and cascade across system boundaries. The most dangerous patterns are not bugs in your code — they are emergent behaviors when systems interact under stress.
 
-**Why it works:** Every production outage traces back to one or more of these predictable, recurring patterns; recognizing them lets you eliminate the cracks before production traffic finds them.
+**Why it works:** These patterns recur across outages, so audit by name: walk every integration point and ask which anti-pattern it currently enables, then close that specific crack rather than hardening at random.
 
 **Key insights:**
 - Integration points are the number-one killer — every socket, HTTP call, or queue is a risk
@@ -38,20 +38,20 @@ Six areas that determine whether software survives contact with production:
 
 **Code applications:**
 
-| Context | Pattern | Example |
-|---------|---------|---------|
+| Context | Guard | Example |
+|---------|-------|---------|
 | HTTP calls | Assume every remote call can fail, hang, or return garbage | Wrap all external calls with timeout + circuit breaker |
 | Database queries | Enforce result set limits | Add `LIMIT`; paginate all list endpoints |
 | Thread pools | Isolate pools per dependency | Separate pool for payment gateway vs. search |
 | Marketing events | Coordinate launches with capacity planning | Pre-scale before Black Friday; queue coupon redemptions |
 
-See: [references/anti-patterns.md](references/anti-patterns.md) for each anti-pattern with failure scenarios and detection strategies.
+See [references/anti-patterns.md](references/anti-patterns.md) when triaging an outage or hardening an integration point — each anti-pattern with its failure scenario and the symptom that detects it.
 
 ### 2. Stability Patterns
 
 **Core concept:** Counter each anti-pattern with a stability pattern: circuit breakers stop cascades, bulkheads isolate blast radius, timeouts reclaim stuck resources. Together they make a system bend under load instead of breaking.
 
-**Why it works:** These patterns accept failure as inevitable and design the response to it — a circuit breaker that trips is the system working correctly, protecting itself from a downstream failure.
+**Why it works:** Each pattern caps the damage one failure can do: a breaker trip converts an unbounded cascade into a fast local rejection, a bulkhead confines the outage to one pool. Treat a tripped breaker as expected output, not an incident — page on the breaker *staying* open, not on it opening.
 
 **Key insights:**
 - Circuit Breaker: three states (closed, open, half-open) — trips after threshold failures, periodically tests recovery
@@ -71,7 +71,7 @@ See: [references/anti-patterns.md](references/anti-patterns.md) for each anti-pa
 | Retries | Backoff + jitter + budget | Base 100ms, max 3 retries, 20% fleet retry budget |
 | Data cleanup | Steady State | Purge sessions >24h; rotate logs at 500MB |
 
-See: [references/stability-patterns.md](references/stability-patterns.md) for state machines, threshold tuning, and pattern combinations.
+See [references/stability-patterns.md](references/stability-patterns.md) when implementing a breaker or tuning thresholds — state-machine diagram, parameter ranges, what-counts-as-failure tables, and how to combine patterns.
 
 ### 3. Capacity and Availability
 
@@ -94,7 +94,7 @@ See: [references/stability-patterns.md](references/stability-patterns.md) for st
 | Soak testing | 80% capacity for 24-72 hours | Catch memory/connection/file-handle leaks |
 | Capacity model | Document bottleneck per service | "Service X is memory-bound at 2000 RPS; 4GB per instance" |
 
-See: [references/capacity-planning.md](references/capacity-planning.md) for testing methodologies, pool management, and scalability modeling.
+See [references/capacity-planning.md](references/capacity-planning.md) when planning a load test or sizing pools — test methodologies, pool/thread tuning, and Universal Scalability Law modeling.
 
 ### 4. Deployment and Release
 
@@ -118,13 +118,13 @@ See: [references/capacity-planning.md](references/capacity-planning.md) for test
 | Feature launch | Flags with emergency off switch | Ship behind flag; enable for 10%; monitor; ramp |
 | Schema changes | Expand-contract migration | Add column; write both; backfill; drop old |
 
-See: [references/deployment-strategies.md](references/deployment-strategies.md) for deployment patterns, migration strategies, and infrastructure-as-code.
+See [references/deployment-strategies.md](references/deployment-strategies.md) when planning a release or a schema change — blue-green/canary/rolling mechanics, expand-contract migration steps, and infrastructure-as-code.
 
 ### 5. Health Checks and Observability
 
 **Core concept:** You cannot operate what you cannot observe. Health checks, metrics, logs, and traces are the sensory organs of your system in production — a first-class design concern, not an afterthought.
 
-**Why it works:** Production systems fail invisibly without instrumentation. Done right, observability answers questions about your system that you did not anticipate at design time.
+**Why it works:** Untraced failures are invisible until a user reports them. Emit high-cardinality, structured events (not just pre-aggregated counters) so you can ask new questions of past incidents without shipping new instrumentation first.
 
 **Key insights:**
 - Health checks come in two flavors: shallow (process alive) and deep (dependencies reachable, resources available)
@@ -142,7 +142,7 @@ See: [references/deployment-strategies.md](references/deployment-strategies.md) 
 | Distributed tracing | Propagate trace context | Trace ID in headers; correlate logs across services |
 | Alerting | SLO burn rate, not raw thresholds | "Error budget burning 10x" vs. "CPU > 80%" |
 
-See: [references/observability.md](references/observability.md) for health check design, SLO frameworks, and alerting strategies.
+See [references/observability.md](references/observability.md) when instrumenting a service or setting SLOs — health-check design, RED/USE metric sets, the SLI→SLO→SLA chain, and burn-rate alerting.
 
 ### 6. Adaptation and Chaos Engineering
 
@@ -169,7 +169,7 @@ See: [references/observability.md](references/observability.md) for health check
 | Dependency failure | Simulate downstream outage via chaos tooling | Return 503 from payment API; verify graceful degradation |
 | GameDay | Scheduled team exercise | "Primary DB goes read-only at 2pm" — practice response |
 
-See: [references/chaos-engineering.md](references/chaos-engineering.md) for experiment design, blast radius management, and building the practice.
+See [references/chaos-engineering.md](references/chaos-engineering.md) when designing a failure experiment or GameDay — steady-state hypothesis, blast-radius controls, and how to grow the practice from non-prod outward.
 
 ## Common Mistakes
 
@@ -198,15 +198,6 @@ Audit any production system:
 | Are logs, metrics, and traces correlated? | Debugging means manual log searches | Distributed tracing with correlated IDs |
 | Have you load-tested beyond expected peak? | Unknown failure mode under real load | Test to 2-3x peak; document the breaking point |
 | Do you practice failure injection? | Resilience is theoretical | Start chaos engineering with low-risk experiments |
-
-## Reference Files
-
-- [anti-patterns.md](references/anti-patterns.md): Integration point failures, cascading failures, blocked threads, unbounded result sets, self-denial attacks, slow responses
-- [stability-patterns.md](references/stability-patterns.md): Circuit Breaker, Bulkhead, Timeout, Retry, Fail Fast, Steady State, Let It Crash, Handshaking
-- [capacity-planning.md](references/capacity-planning.md): Load/stress/soak testing, connection pool sizing, thread pool tuning, Universal Scalability Law
-- [deployment-strategies.md](references/deployment-strategies.md): Blue-green, canary, rolling deploys, feature flags, database migrations, immutable infrastructure
-- [observability.md](references/observability.md): Health checks, RED/USE methods, SLIs/SLOs/SLAs, distributed tracing, alerting strategy
-- [chaos-engineering.md](references/chaos-engineering.md): Steady state hypothesis, failure injection, GameDay exercises, blast radius management
 
 ## Further Reading
 

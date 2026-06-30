@@ -1,10 +1,10 @@
 ---
 name: lean-ux
-description: 'Apply lean thinking to UX: hypothesis-driven design, collaborative sketching, and rapid experiments instead of heavy deliverables. Use when the user mentions "Lean UX", "design hypothesis", "UX experiment", "collaborative design", "outcome over output", "design studio method", "assumption mapping", "lightweight research", "too much design documentation", "design faster as a team", or "get the team designing together". Also trigger when reducing design-documentation overhead, getting cross-functional teams to co-design, or running fast usability experiments. Covers hypothesis statements, MVPs for UX, and cross-functional collaboration. For Build-Measure-Learn, see lean-startup. For usability audits, see ux-heuristics.'
+description: 'Apply lean thinking to UX: hypothesis-driven design, collaborative sketching, and rapid experiments instead of heavy deliverables. Use when the user mentions "Lean UX", "design hypothesis", "outcome over output", "design studio method", "assumption mapping", "lightweight research", "too much design documentation", or "get the team designing together". Also trigger when reducing design-documentation overhead, getting cross-functional teams to co-design, or running fast usability experiments. Covers hypothesis statements, MVPs for UX, and cross-functional collaboration. For Build-Measure-Learn, see lean-startup. For usability audits, see ux-heuristics.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Lean UX Framework
@@ -19,7 +19,13 @@ A practice-driven approach to UX that replaces heavy deliverables with rapid exp
 
 ## Scoring
 
-**Goal: 10/10.** Rate UX processes, design plans, or team workflows 0-10 against Lean UX principles: hypothesis-driven design, minimal deliverables, collaborative practices, and outcome-focused metrics score high; heavy-deliverable thinking or untested assumptions lower the score. Always state the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score a UX process, design plan, or team workflow by the eight-row Quick Diagnostic below: award ~1.25 points per row answered "yes" (8 yeses = 10). Bands:
+
+- **9-10** — assumptions declared, hypotheses with pre-committed success criteria, lowest-fidelity experiments, whole-team design, weekly research, outcome (not output) metrics, dual-track agile, and a recently invalidated hypothesis on the books.
+- **5-6** — hypotheses exist but criteria are vague or fidelity is over-invested; design and research still partly siloed.
+- **<=3** — heavy deliverables, untested assumptions, output-counting, no experiment log.
+
+Always state the current score, the diagnostic rows that failed, and the specific fix for each.
 
 ## Framework
 
@@ -45,7 +51,7 @@ A practice-driven approach to UX that replaces heavy deliverables with rapid exp
 
 **Ethical boundary:** Assumptions must be honest assessments, not post-hoc justifications—if leadership has already committed to a direction, acknowledge the constraint rather than pretending it's open to falsification.
 
-See: [references/hypothesis-canvas.md](references/hypothesis-canvas.md) for the assumption prioritization matrix and hypothesis statement formats.
+See [references/hypothesis-canvas.md](references/hypothesis-canvas.md) when running an assumption workshop or writing a hypothesis — the risk/uncertainty prioritization matrix, business-vs-user assumption split, and fillable hypothesis and sub-hypothesis templates.
 
 ### 2. Hypothesis Statements
 
@@ -68,6 +74,8 @@ See: [references/hypothesis-canvas.md](references/hypothesis-canvas.md) for the 
 | **Sprint planning** | Attach hypothesis to each story | Story: "filter by date." Hypothesis: "task completion time drops 30%" |
 
 **Ethical boundary:** Never cherry-pick metrics after the fact to declare a hypothesis validated—pre-commit to success criteria.
+
+See [references/outcome-metrics.md](references/outcome-metrics.md) when picking the measurable signal for a hypothesis or defining team success — outcomes-vs-outputs, leading-vs-lagging indicator pairs, UX OKRs, and the vanity metrics to avoid.
 
 ### 3. MVPs and Experiments
 
@@ -92,7 +100,7 @@ See: [references/hypothesis-canvas.md](references/hypothesis-canvas.md) for the 
 
 **Ethical boundary:** Smoke tests and fake doors must not mislead users into believing a product exists—disclose test status and offer an opt-out.
 
-See: [references/experiment-patterns.md](references/experiment-patterns.md) for experiment types, selection guidance, and design templates.
+See [references/experiment-patterns.md](references/experiment-patterns.md) when choosing or designing an experiment — the full catalog of experiment types with when/when-NOT-to-run notes, the experiment selection matrix and fidelity ladder, and a design template.
 
 ### 4. Collaborative Design
 
@@ -116,13 +124,13 @@ See: [references/experiment-patterns.md](references/experiment-patterns.md) for 
 
 **Ethical boundary:** Collaboration must not become design by committee—a designated designer synthesizes input; the team does not vote on pixels.
 
-See: [references/collaborative-design.md](references/collaborative-design.md) for the Design Studio method and living style guides.
+See [references/collaborative-design.md](references/collaborative-design.md) when facilitating a Design Studio — the step-by-step workshop protocol (timings, materials, remote variants) and how to keep style guides as living documents.
 
 ### 5. Feedback and Research
 
 **Core concept:** Continuous, lightweight research replaces big-bang usability studies—small research activities embedded in every sprint instead of quarterly reports.
 
-**Why it works:** Feedback that arrives months after a design decision is too late to influence it; cheap, frequent research lets teams correct course incrementally.
+**Why it works:** Findings only change a decision while it is still cheap to reverse, so research value decays with every sprint between learning and the decision it informs; small weekly studies keep that gap near zero, which a quarterly report never can.
 
 **Key insights:**
 - Research types: usability tests, customer interviews, A/B tests, analytics review, surveys, diary studies
@@ -163,7 +171,9 @@ See: [references/collaborative-design.md](references/collaborative-design.md) fo
 
 **Ethical boundary:** Never use Lean UX as an excuse to skip accessibility, security, or compliance—these are non-negotiable quality standards, not assumptions to test.
 
-See: [references/agile-integration.md](references/agile-integration.md) for dual-track agile and staggered sprint mechanics.
+See [references/agile-integration.md](references/agile-integration.md) when fitting discovery into a delivery cadence — the staggered dual-track sprint mechanics, how stories carry a hypothesis, and a UX Definition of Done.
+
+See [references/case-studies.md](references/case-studies.md) when you want a worked end-to-end example to model an engagement on — four composite scenarios (enterprise, startup, agency, internal tools) showing assumptions, experiments, and before/after outcome metrics.
 
 ## Common Mistakes
 
@@ -192,15 +202,6 @@ Audit any UX process or design plan:
 | Are you tracking outcomes, not just outputs? | Shipping without learning | Define behavior-change metrics per feature |
 | Does UX work feed into Agile smoothly? | Design bottleneck or sprint-zero trap | Implement dual-track agile with staggered sprints |
 | Can you point to a recently invalidated hypothesis? | Not learning; confirmation bias | Review the experiment log and celebrate a pivot |
-
-## Reference Files
-
-- [hypothesis-canvas.md](references/hypothesis-canvas.md): Hypothesis statement format, assumption prioritization matrix, business vs. user assumptions, sub-hypotheses
-- [experiment-patterns.md](references/experiment-patterns.md): UX experiment types, choosing the right experiment, experiment design template, minimum viable tests
-- [collaborative-design.md](references/collaborative-design.md): Design Studio method, collaborative sketching, cross-functional design, living style guides
-- [agile-integration.md](references/agile-integration.md): Dual-track agile, fitting UX into sprints, staggered sprints, Definition of Done for UX
-- [outcome-metrics.md](references/outcome-metrics.md): Outcomes vs. outputs, leading vs. lagging indicators, OKRs for UX, vanity metrics to avoid
-- [case-studies.md](references/case-studies.md): Enterprise product team, startup, agency, and internal tools team scenarios
 
 ## Further Reading
 

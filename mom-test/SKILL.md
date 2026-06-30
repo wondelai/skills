@@ -1,10 +1,10 @@
 ---
 name: mom-test
-description: 'Talk to customers without leading them using Mom Test rules: discuss their life not your idea, ask about specifics in the past, and talk less. Use when the user mentions "customer interviews", "validate my idea", "users say they want it but dont buy", "leading questions", "The Mom Test", "customer feedback bias", "interview script", "how do I interview customers", "am I asking leading questions", or "is my customer feedback reliable". Also trigger when preparing user-research questions, interpreting ambiguous feedback, or designing customer-discovery that avoids false positives. Covers commitment and advancement, avoiding compliments, and extracting signal from noise. For product-market fit, see jobs-to-be-done. For rapid prototype testing, see design-sprint.'
+description: 'Talk to customers without leading them using Mom Test rules: discuss their life not your idea, ask about specifics in the past, and talk less. Use when the user mentions "customer interviews", "validate my idea", "users say they want it but dont buy", "leading questions", "The Mom Test", "customer feedback bias", or "interview script". Also trigger when preparing user-research questions, interpreting ambiguous feedback, or designing customer-discovery that avoids false positives. Covers commitment and advancement, avoiding compliments, and extracting signal from noise. For product-market fit, see jobs-to-be-done. For rapid prototype testing, see design-sprint.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # The Mom Test Framework
@@ -17,7 +17,12 @@ Framework for customer conversations that won't lead you astray, based on a fund
 
 ## Scoring
 
-**Goal: 10/10.** Rate customer conversations 0-10 against the principles below: a 10/10 focuses entirely on the customer's life and past behavior, with no leading, no pitching, and clear commitment signals. Always state the current score and the specific improvements needed to reach 10/10.
+**Goal: 7/7.** Score a conversation (or interview plan) by the seven-row Quick Diagnostic below: **1 point per row that passes.**
+- **6-7** = focused on their life and past behavior, concrete facts captured, a real commitment (time/reputation/money) secured, they talked 80%+, and beliefs got updated.
+- **4-5** = some past-behavior facts but leaking into hypotheticals, compliments accepted as signal, or ending without an ask.
+- **<=3** = a pitch in disguise: leading questions, opinions and fluff, a polite zombie lead, no learning.
+
+Always state the current score out of 7, name the failing diagnostic rows, and give the specific fix for each.
 
 ## Framework Sections
 
@@ -44,12 +49,10 @@ Framework for customer conversations that won't lead you astray, based on a fund
 
 **Copy patterns:**
 - "Tell me about the last time you..."
-- "How are you dealing with that currently?"
 - "What else have you tried?"
+- "Why does that bother you?"
 
-**Ethical boundary:** Never weaponize someone's honest answers against them -- using vulnerability data to manipulate sales crosses the line.
-
-See: [references/question-patterns.md](references/question-patterns.md) for good vs bad question examples, the three rules in depth, and formulation exercises.
+See: [references/question-patterns.md](references/question-patterns.md) when drafting an interview script -- a 5-tier question hierarchy, domain-specific question banks (SaaS/consumer/marketplace), and four formulation exercises.
 
 ### 2. Good vs Bad Questions
 
@@ -76,9 +79,7 @@ See: [references/question-patterns.md](references/question-patterns.md) for good
 **Copy patterns:**
 - "What's the hardest part about [doing this thing]?"
 - "How often does this come up?"
-- "Talk me through the last time this happened"
-
-**Ethical boundary:** Never use leading or loaded questions that anchor the respondent toward your desired answer -- your job is to learn, not to sell.
+- "Walk me through what happened the last time this came up"
 
 ### 3. Avoiding Compliments and Opinions
 
@@ -106,9 +107,7 @@ See: [references/question-patterns.md](references/question-patterns.md) for good
 - "When you say you'd 'definitely' use this, what would you stop using?"
 - "That's a great feature idea -- what problem would it solve for you specifically?"
 
-**Ethical boundary:** Deflecting compliments is about getting to truth, not pressuring someone into a sale.
-
-See: [references/avoiding-bad-data.md](references/avoiding-bad-data.md) for the three bad-data types and deflection scripts.
+See: [references/avoiding-bad-data.md](references/avoiding-bad-data.md) when a conversation feels good but yields no facts -- how to spot and deflect the three bad-data types (compliments, fluff, ideas) in real time.
 
 ### 4. Commitment and Advancement
 
@@ -136,9 +135,7 @@ See: [references/avoiding-bad-data.md](references/avoiding-bad-data.md) for the 
 - "Would you be willing to try a prototype next week?"
 - "If I built this, would you be willing to pilot it for 30 days?"
 
-**Ethical boundary:** Separate real interest from politeness -- never pressure people into commitments they'll regret.
-
-See: [references/commitment-advancement.md](references/commitment-advancement.md) for commitment currencies and pushing for advancement.
+See: [references/commitment-advancement.md](references/commitment-advancement.md) when a conversation ends without a commitment -- the currency ladder (time/reputation/money) and scripts for advancing instead of spinning wheels.
 
 ### 5. Finding Conversations
 
@@ -168,7 +165,7 @@ See: [references/commitment-advancement.md](references/commitment-advancement.md
 
 **Ethical boundary:** Never disguise a sales call as a learning conversation -- if you already have a product and are selling, be transparent.
 
-See: [references/finding-conversations.md](references/finding-conversations.md) for cold vs warm approaches and keeping it casual.
+See: [references/finding-conversations.md](references/finding-conversations.md) when you need to source interviews -- cold vs warm outreach templates, the five-part meeting ask (vision/framing/weakness/pedestal/ask), and how to keep it casual.
 
 ### 6. Processing and Learning
 
@@ -197,9 +194,7 @@ See: [references/finding-conversations.md](references/finding-conversations.md) 
 - "We've heard this from N of M people -- is that enough signal?"
 - "Time to stop talking and build -- conversations are repeating"
 
-**Ethical boundary:** Never selectively quote conversations to justify a predetermined conclusion -- honest processing means accepting uncomfortable truths.
-
-See: [references/processing-learning.md](references/processing-learning.md) for note-taking systems and knowing when to stop talking.
+See: [references/processing-learning.md](references/processing-learning.md) after a batch of interviews -- the notes-to-beliefs spreadsheet template, team-review cadence, and signals that it's time to stop talking and build.
 
 ## Common Mistakes
 
@@ -225,14 +220,7 @@ See: [references/processing-learning.md](references/processing-learning.md) for 
 | Did you update your beliefs based on the conversation? | You're collecting data but not learning | Review notes with the team; update problem/segment/solution beliefs |
 | Can you summarize the key facts (not opinions)? | Poor notes, or opinions confused with facts | Separate facts from interpretations immediately after |
 
-## Reference Files
-
-- [question-patterns.md](references/question-patterns.md): Good vs bad question examples, the three rules in depth, question formulation exercises
-- [commitment-advancement.md](references/commitment-advancement.md): Commitment currencies, advancing vs spinning wheels, how to push for commitment
-- [avoiding-bad-data.md](references/avoiding-bad-data.md): Compliments, fluff, ideas -- the three types of bad data and how to deflect them
-- [finding-conversations.md](references/finding-conversations.md): Where to find people, cold vs warm approaches, keeping conversations casual
-- [processing-learning.md](references/processing-learning.md): Note-taking, team sharing, updating beliefs, knowing when to stop talking
-- [case-studies.md](references/case-studies.md): Realistic scenarios showing Mom Test principles applied to SaaS, consumer, B2B, and marketplace contexts
+See: [references/case-studies.md](references/case-studies.md) when you want to see the rules applied end-to-end -- realistic SaaS, consumer, B2B, and marketplace interviews scored against this diagnostic.
 
 ## Further Reading
 

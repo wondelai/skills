@@ -1,10 +1,10 @@
 ---
 name: high-perf-browser
-description: 'Optimize web performance through network protocols, resource loading, and browser rendering internals. Use when the user mentions "page load speed", "Core Web Vitals", "HTTP/2", "resource hints", "network latency", "render blocking", "TCP optimization", "service worker", "critical rendering path", "my site is slow", "improve page speed", or "slow to load". Also trigger when diagnosing slow page loads, optimizing time to first byte, choosing between WebSocket and SSE, or reducing bundle sizes. Covers TCP/TLS optimization, caching strategies, WebSocket/SSE, and protocol selection. For UI visual performance, see refactoring-ui. For font loading, see web-typography.'
+description: 'Optimize web performance through network protocols, resource loading, and browser rendering internals. Use when the user mentions "my site is slow", "Core Web Vitals", "HTTP/2 or HTTP/3", "resource hints", "network latency", "render blocking", "TCP/TLS optimization", "service worker", "Cache-Control or caching strategy", or "critical rendering path". Also trigger when diagnosing slow page loads, optimizing time to first byte, choosing between WebSocket and SSE, or reducing bundle sizes. For UI visual performance, see refactoring-ui. For font loading, see web-typography.'
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # High Performance Browser Networking Framework
@@ -19,7 +19,7 @@ A systematic approach to web performance grounded in how browsers, protocols, an
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing or building web applications, rate performance 0-10 based on adherence to the principles below. A 10/10 means full alignment with all guidelines; lower scores indicate gaps to address. Always provide the current score and the specific improvements needed to reach 10/10.
+**Goal: 10/10.** Score by how many of the eight Quick Diagnostic rows pass, weighted toward the field metrics: **9-10** = all eight pass (the four field-metric rows in the green plus content-hashing, HTTP/2+, minimized render-blocking, and compression); **5-6** = the four field-metric rows pass but one or more transport/caching/compression rows fail; **<=3** = any field-metric row is in the red. Always report the score, which diagnostic rows failed, and the specific fix for each.
 
 ## The High Performance Browser Networking Framework
 
@@ -34,7 +34,7 @@ Six domains for building fast, resilient web applications:
 **Key insights:**
 - TCP three-way handshake adds one full RTT before data transfer begins
 - TCP slow start limits initial throughput to ~14KB (10 segments) in the first round trip — keep critical resources under this threshold
-- TLS 1.2 adds 2 RTTs; TLS 1.3 reduces this to 1 RTT (0-RTT with session resumption)
+- Upgrade to TLS 1.3: it halves the handshake round trips of TLS 1.2 and enables 0-RTT resumption for returning visitors
 - Head-of-line blocking in TCP means one lost packet stalls all streams on that connection
 - Bandwidth-delay product caps in-flight data; high-latency links underutilize bandwidth
 
@@ -47,7 +47,7 @@ Six domains for building fast, resilient web applications:
 | **TLS optimization** | TLS 1.3 + session resumption | `ssl_protocols TLSv1.3;` with session tickets |
 | **Connection reuse** | Keep-alive avoids repeated handshakes | `Connection: keep-alive` (default in HTTP/1.1+) |
 
-See: [references/network-fundamentals.md](references/network-fundamentals.md) for TCP congestion control, bandwidth-delay product, and TLS handshake details.
+See [references/network-fundamentals.md](references/network-fundamentals.md) when tuning servers or diagnosing handshake latency — the full TLS 1.2-vs-1.3 RTT derivation, slow-start doubling table, initcwnd/BDP math, OCSP-stapling Nginx config, and the DNS cache hierarchy.
 
 ### 2. HTTP Protocol Evolution
 
@@ -72,7 +72,7 @@ See: [references/network-fundamentals.md](references/network-fundamentals.md) fo
 | **QUIC/HTTP/3** | Advertise HTTP/3 on CDN or origin | `Alt-Svc: h3=":443"` header |
 | **Stream prioritization** | Signal resource importance | CSS and fonts highest priority; images lower |
 
-See: [references/http-protocols.md](references/http-protocols.md) for protocol comparison, migration strategies, and server push vs. Early Hints.
+See [references/http-protocols.md](references/http-protocols.md) when picking or migrating a protocol version — side-by-side HTTP/1.1-vs-2-vs-3 comparison, the step-by-step de-sharding migration, and why Server Push lost to 103 Early Hints.
 
 ### 3. Resource Loading and Critical Rendering Path
 
@@ -95,7 +95,7 @@ See: [references/http-protocols.md](references/http-protocols.md) for protocol c
 | **Resource hints** | Preload critical fonts, hero images | `<link rel="preload" href="font.woff2" as="font" crossorigin>` |
 | **Image optimization** | Lazy-load below-fold; modern formats | `<img loading="lazy" src="photo.avif" srcset="...">` |
 
-See: [references/resource-loading.md](references/resource-loading.md) for async/defer behavior, resource hint strategies, and image and font optimization.
+See [references/resource-loading.md](references/resource-loading.md) when shaving first paint — the exact async/defer/module execution order, the full resource-hint decision tree, and the image/font (`font-display`, `srcset`, AVIF) playbook.
 
 ### 4. Caching Strategies
 
@@ -118,19 +118,19 @@ See: [references/resource-loading.md](references/resource-loading.md) for async/
 | **API responses** | Short TTL + background refresh | `Cache-Control: max-age=60, stale-while-revalidate=3600` |
 | **CDN config** | Cache at edge with correct Vary | `Vary: Accept-Encoding, Accept` |
 
-See: [references/caching-strategies.md](references/caching-strategies.md) for cache hierarchy, service worker patterns, and CDN configuration.
+See [references/caching-strategies.md](references/caching-strategies.md) when designing a cache policy — the full browser/SW/CDN/origin hierarchy, copy-paste service-worker cache-first vs network-first recipes, and the `Vary` pitfalls that pollute a CDN.
 
 ### 5. Core Web Vitals Optimization
 
 **Core concept:** Core Web Vitals — LCP, INP, CLS — are Google's user-centric metrics covering loading, interactivity, and visual stability. They impact search ranking and reflect real user experience.
 
-**Why it works:** These metrics measure what users perceive, not what servers report: a fast TTFB means nothing if the hero image loads late (LCP) or main-thread JavaScript blocks input (INP). Optimizing for them is optimizing for real perception.
+**Why it works:** A fast TTFB means nothing if the hero image still loads late (LCP) or main-thread JavaScript blocks the first input (INP) — so server-side timing can look green while users wait. Optimize the perceived milestones, not the byte-delivery clock.
 
-**Key insights (targets):**
-- LCP < 2.5s — optimize the largest visible element (hero image, heading block, video poster)
-- INP < 200ms — keep the main thread free; break long tasks
-- CLS < 0.1 — reserve space for dynamic content before it loads
-- TTFB < 800ms and FCP < 1.8s feed everything downstream
+**Key insights** (numeric pass/fail thresholds live in the Quick Diagnostic):
+- LCP — optimize the largest visible element (hero image, heading block, video poster)
+- INP — keep the main thread free; break long tasks so input is never blocked
+- CLS — reserve space for dynamic content before it loads
+- TTFB and FCP (< 1.8s) are upstream gates: they bound every downstream milestone, so fix them first
 - Measure with Real User Monitoring (RUM) in production — lab/synthetic tests miss real-device and network variance
 
 **Code applications:**
@@ -140,9 +140,9 @@ See: [references/caching-strategies.md](references/caching-strategies.md) for ca
 | **LCP** | Preload LCP element; raise its priority | `<img src="hero.webp" fetchpriority="high">` |
 | **INP** | Break long tasks; yield to main thread | `scheduler.yield()` or `setTimeout` chunking |
 | **CLS** | Reserve space for async content | `<img width="800" height="600">` or CSS `aspect-ratio` |
-| **Performance budget** | Block deploys that exceed thresholds | LCP < 2.5s, INP < 200ms, CLS < 0.1 in CI |
+| **Performance budget** | Fail CI when a vital regresses past its Quick Diagnostic threshold | Lighthouse CI assertions on LCP/INP/CLS |
 
-See: [references/core-web-vitals.md](references/core-web-vitals.md) for measurement tools, debugging workflows, and optimization checklists.
+See [references/core-web-vitals.md](references/core-web-vitals.md) when a metric is in the red — per-metric debugging workflows (what to inspect for a bad LCP/INP/CLS), the lab-vs-RUM tooling map, and per-vital optimization checklists.
 
 ### 6. Real-Time Communication
 
@@ -166,7 +166,7 @@ See: [references/core-web-vitals.md](references/core-web-vitals.md) for measurem
 | **Connection resilience** | Exponential backoff on reconnect | 1s, 2s, 4s, 8s... capped at 30s |
 | **Scaling** | Pub/sub broker behind WebSocket servers | Redis Pub/Sub or NATS |
 
-See: [references/real-time-communication.md](references/real-time-communication.md) for WebSocket lifecycle, SSE patterns, and scaling strategies.
+See [references/real-time-communication.md](references/real-time-communication.md) when building a live feature — the WebSocket connect/heartbeat/reconnect lifecycle, the SSE `EventSource` pattern, and how to scale fan-out behind a pub/sub broker.
 
 ## Common Mistakes
 
@@ -193,15 +193,6 @@ See: [references/real-time-communication.md](references/real-time-communication.
 | Is HTTP/2 or HTTP/3 enabled? | No multiplexing or header compression | Enable HTTP/2 on server; HTTP/3 via CDN |
 | Are render-blocking resources minimized? | CSS and sync JS delay first paint | Inline critical CSS; `defer` scripts; prune unused CSS |
 | Is compression enabled (Brotli/Gzip)? | Uncompressed text transfers | Enable Brotli on server/CDN; Gzip fallback |
-
-## Reference Files
-
-- [network-fundamentals.md](references/network-fundamentals.md): TCP handshake, congestion control, TLS optimization, DNS resolution, head-of-line blocking
-- [http-protocols.md](references/http-protocols.md): HTTP/1.1 workarounds, HTTP/2 multiplexing, HTTP/3 and QUIC, migration strategies
-- [resource-loading.md](references/resource-loading.md): Critical rendering path, async/defer, resource hints, image and font optimization
-- [caching-strategies.md](references/caching-strategies.md): Cache-Control headers, service workers, CDN configuration, cache invalidation
-- [core-web-vitals.md](references/core-web-vitals.md): LCP, INP, CLS optimization, measurement tools, performance budgets
-- [real-time-communication.md](references/real-time-communication.md): WebSocket, SSE, long polling, connection management, scaling
 
 ## Further Reading
 
