@@ -4,7 +4,7 @@ description: 'Apply the seven principles of ethical persuasion (reciprocity, com
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Influence Psychology Framework
@@ -17,11 +17,12 @@ Apply six decades of persuasion science — Cialdini's research into why people 
 
 ## Scoring
 
-**Goal: 10/10.** When reviewing or creating persuasive elements (features, copy, flows, campaigns), score by counting satisfied rows in the Quick Diagnostic (one point each), then apply the ethics gate. Always report the current score and the specific change needed to reach 10/10.
+**Goal: 10/10.** When reviewing or creating persuasive elements (features, copy, flows, campaigns), run the Quick Diagnostic, then score against the bands below and apply the ethics gate. Always report the current score and the specific change needed to reach 10/10.
 
-- **9-10** — At least two principles deliberately layered, every claim truthful, users can reverse, and the tactic passes the transparency test (still works if the user knows the strategy).
-- **5-6** — One principle present but generic, or leverage left on the table (single principle where layering is possible).
-- **<=3** — No principle is deliberately designed (relying on luck), OR any tactic is deceptive/coercive. Any fabricated proof, fake scarcity, or hidden-cost dark pattern caps the score at 3 regardless of other strengths.
+- **9-10** — Multiple principles deliberately layered; every claim truthful; users can reverse the decision; passes the transparency test (still works if the user knows the strategy); safe for vulnerable users.
+- **7-8** — Principles deliberately layered and honest, but one gap (e.g. weak reversibility, or a single principle where layering was possible).
+- **5-6** — One principle present but generic, or leverage left on the table.
+- **<=3** — No principle deliberately designed (relying on luck), OR any tactic is deceptive/coercive. Any fabricated proof, fake scarcity, or hidden-cost dark pattern caps the score at 3 regardless of other strengths.
 
 ## The Seven Principles of Influence
 

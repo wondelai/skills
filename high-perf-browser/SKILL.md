@@ -4,7 +4,7 @@ description: 'Optimize web performance through network protocols, resource loadi
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # High Performance Browser Networking Framework
@@ -124,11 +124,11 @@ See [references/caching-strategies.md](references/caching-strategies.md) when de
 
 **Core concept:** Core Web Vitals — LCP, INP, CLS — are Google's user-centric metrics covering loading, interactivity, and visual stability. They impact search ranking and reflect real user experience.
 
-**Why it works:** A fast TTFB means nothing if the hero image still loads late (LCP) or main-thread JavaScript blocks the first input (INP) — so server-side timing can look green while users wait. Optimize the perceived milestones, not the byte-delivery clock.
+**Why it works:** A fast TTFB means nothing if the hero image still loads late (LCP) or main-thread JavaScript blocks interactions (INP) — so server-side timing can look green while users wait. Optimize the perceived milestones, not the byte-delivery clock.
 
 **Key insights** (numeric pass/fail thresholds live in the Quick Diagnostic):
 - LCP — optimize the largest visible element (hero image, heading block, video poster)
-- INP — keep the main thread free; break long tasks so input is never blocked
+- INP — keep the main thread free; break long tasks so every interaction (not only the first) stays responsive
 - CLS — reserve space for dynamic content before it loads
 - TTFB and FCP (< 1.8s) are upstream gates: they bound every downstream milestone, so fix them first
 - Measure with Real User Monitoring (RUM) in production — lab/synthetic tests miss real-device and network variance
