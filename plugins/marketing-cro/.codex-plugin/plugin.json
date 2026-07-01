@@ -1,0 +1,23 @@
+{
+  "name": "marketing-cro",
+  "version": "1.4.0",
+  "description": "Marketing and conversion optimization skills including CRO methodology, StoryBrand messaging, Scorecard Marketing lead generation, viral marketing (Contagious), and 1-Page Marketing Plan",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "cro",
+    "conversion",
+    "storybrand",
+    "copywriting",
+    "lead-generation",
+    "virality",
+    "landing-page",
+    "ab-testing",
+    "quiz-funnel",
+    "go-viral",
+    "homepage-copy"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}

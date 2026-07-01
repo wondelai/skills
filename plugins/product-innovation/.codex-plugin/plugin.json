@@ -1,0 +1,21 @@
+{
+  "name": "product-innovation",
+  "version": "1.4.0",
+  "description": "Product innovation and validation frameworks including Lean Startup methodology, Google Ventures Design Sprint, and Don Norman's design principles",
+  "license": "MIT",
+  "keywords": [
+    "lean-startup",
+    "mvp",
+    "design-sprint",
+    "validation",
+    "innovation",
+    "prototyping",
+    "pivot-or-persevere",
+    "validate-an-idea",
+    "product-discovery",
+    "empowered-teams"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}

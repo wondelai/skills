@@ -1,0 +1,25 @@
+{
+  "name": "team-motivation",
+  "version": "1.4.0",
+  "description": "Team motivation and management skills including Daniel Pink's Autonomy, Mastery, Purpose (AMP) principles and Andy Grove's High Output Management (leverage, one-on-ones, OKRs, task-relevant maturity)",
+  "license": "MIT",
+  "keywords": [
+    "motivation",
+    "autonomy",
+    "mastery",
+    "purpose",
+    "engagement",
+    "team-management",
+    "management",
+    "one-on-ones",
+    "okrs",
+    "leverage",
+    "new-manager",
+    "team-disengaged",
+    "performance-review",
+    "delegation"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}

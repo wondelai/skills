@@ -1,0 +1,26 @@
+{
+  "name": "strategy-growth",
+  "version": "1.4.0",
+  "description": "Business strategy and growth frameworks including Crossing the Chasm tech adoption, Blue Ocean Strategy value innovation, EOS business operating system, Obviously Awesome positioning, Good Strategy Bad Strategy kernels, and Cold Start Problem network effects",
+  "license": "MIT",
+  "keywords": [
+    "strategy",
+    "growth",
+    "positioning",
+    "blue-ocean",
+    "eos",
+    "go-to-market",
+    "traction",
+    "strategy-kernel",
+    "network-effects",
+    "marketplace",
+    "cold-start",
+    "stop-competing-on-price",
+    "crossing-the-chasm",
+    "category-creation",
+    "annual-planning"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}

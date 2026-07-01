@@ -11,15 +11,25 @@ This is a collection of 50 agent skills for Claude Code and agentskills.io-compa
 ```
 skills/
 ├── .claude-plugin/
-│   └── marketplace.json   # Marketplace configuration for plugin installation
+│   └── marketplace.json   # Claude plugin marketplace — SOURCE OF TRUTH for collections/versions
 ├── {skill-name}/
 │   ├── SKILL.md           # Main skill file with YAML frontmatter + markdown instructions
 │   └── references/        # Supporting reference files (optional)
 │       └── *.md
-├── scripts/               # Utility scripts
+├── scripts/               # sync-ide-skills.sh, generate-codex-plugins.sh, sync-marketplace-versions.sh
+├── .github/workflows/     # CI: syncs marketplace versions to the GitHub release
 ├── CLAUDE.md              # This file
-└── README.md              # Skill catalog with descriptions and installation instructions
+├── README.md              # Skill catalog with descriptions and installation instructions
+│
+│   # ---- everything below is GENERATED (do not hand-edit) ----
+├── .claude/ .cursor/ .windsurf/ .pi/  # per-IDE skills/ symlink mirrors (sync-ide-skills.sh)
+├── .agents/
+│   ├── skills/            # flat skill symlinks for Codex / .agents-convention agents
+│   └── plugins/marketplace.json   # Codex plugin marketplace (mirrors .claude-plugin/)
+└── plugins/{collection}/  # Codex plugins: .codex-plugin/plugin.json + skills/ symlinks
 ```
+
+The Codex plugin standard (`plugins/` + `.agents/plugins/marketplace.json`) is **generated from `.claude-plugin/marketplace.json`** by `scripts/generate-codex-plugins.sh` — same 9 collections, same skill membership, versions tracked automatically. Never hand-edit the generated trees.
 
 ## Current Skills (50)
 
@@ -108,6 +118,7 @@ The YAML frontmatter `description` field is critical for skill discovery - it sh
    - Add "Skill Details" section (description, About the author, Use when, Example prompts)
    - Add to "Copyright & Disclaimer" section
 5. Add the skill's path to `.claude-plugin/marketplace.json` under the appropriate plugin collection (add the `./skill-name` entry only — do **not** hand-pick a version; see Versioning Policy)
+6. Run `scripts/sync-ide-skills.sh` — regenerates the IDE mirrors (`.claude/.cursor/.windsurf/.pi/.agents`) **and** the Codex plugin marketplace (`plugins/` + `.agents/plugins/`). These are generated; never hand-edit them.
 
 ## Installation
 

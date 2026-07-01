@@ -13,7 +13,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
-IDE_DIRS=(.claude/skills .cursor/skills .windsurf/skills .pi/skills)
+IDE_DIRS=(.claude/skills .cursor/skills .windsurf/skills .pi/skills .agents/skills)
 
 # Discover skills: top-level directories containing SKILL.md
 skills=()
@@ -58,4 +58,10 @@ if [[ $errors -gt 0 ]]; then
   exit 1
 else
   echo "All ${#skills[@]} skills synced to ${#IDE_DIRS[@]} IDE directories."
+fi
+
+# Regenerate the Codex plugin marketplace too (skill set may have changed).
+if [[ -x "$REPO_ROOT/scripts/generate-codex-plugins.sh" ]]; then
+  echo ""
+  "$REPO_ROOT/scripts/generate-codex-plugins.sh"
 fi

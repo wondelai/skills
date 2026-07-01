@@ -83,6 +83,13 @@ npx skills add wondelai/skills/high-output-management --global
 npx skills add wondelai/skills/lean-analytics --global
 ```
 
+### Via OpenAI Codex
+
+Codex adopted the same open `SKILL.md` standard, so every skill here works in Codex CLI too:
+
+- **Individual skills** — the `npx skills add wondelai/skills/<name>` commands above target Codex as well (Codex is a supported [agentskills.io](https://agentskills.io) agent).
+- **As Codex plugins** — this repo ships a Codex plugin marketplace at [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json) with the same 9 collections. In a clone, Codex auto-discovers it (and the skills under `.agents/skills/`); manage installs from the `/plugins` menu in the Codex TUI. The Codex manifests are generated from `.claude-plugin/marketplace.json` (single source of truth) by `scripts/generate-codex-plugins.sh`.
+
 ## Available Skills
 
 | Skill | Description | Based On |

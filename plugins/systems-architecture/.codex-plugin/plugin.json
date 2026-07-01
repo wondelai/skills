@@ -1,0 +1,27 @@
+{
+  "name": "systems-architecture",
+  "version": "1.4.0",
+  "description": "Systems architecture and distributed systems skills including Designing Data-Intensive Applications (Martin Kleppmann), System Design Interview (Alex Xu), Clean Architecture (Robert C. Martin), Release It! (Michael Nygard), High Performance Browser Networking (Ilya Grigorik), and Team Topologies (Skelton & Pais)",
+  "license": "MIT",
+  "keywords": [
+    "system-design",
+    "architecture",
+    "distributed-systems",
+    "scalability",
+    "resilience",
+    "performance",
+    "clean-architecture",
+    "team-topologies",
+    "conways-law",
+    "platform-teams",
+    "org-design",
+    "system-design-interview",
+    "database-choice",
+    "circuit-breaker",
+    "core-web-vitals",
+    "sql-or-nosql"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}

@@ -1,0 +1,116 @@
+{
+  "name": "wondelai-skills",
+  "interface": {
+    "displayName": "Wondel.ai Skills"
+  },
+  "plugins": [
+    {
+      "name": "product-strategy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/product-strategy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "ux-design",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ux-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "design"
+    },
+    {
+      "name": "marketing-cro",
+      "source": {
+        "source": "local",
+        "path": "./plugins/marketing-cro"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "sales-influence",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sales-influence"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "product-innovation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/product-innovation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "strategy-growth",
+      "source": {
+        "source": "local",
+        "path": "./plugins/strategy-growth"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "team-motivation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/team-motivation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "code-craftsmanship",
+      "source": {
+        "source": "local",
+        "path": "./plugins/code-craftsmanship"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "systems-architecture",
+      "source": {
+        "source": "local",
+        "path": "./plugins/systems-architecture"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "product-strategy",
+  "version": "1.4.0",
+  "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design, tactical negotiation skills (Chris Voss), willingness-to-pay pricing (Monetizing Innovation), and startup metrics (Lean Analytics)",
+  "license": "MIT",
+  "keywords": [
+    "product-strategy",
+    "jobs-to-be-done",
+    "negotiation",
+    "customer-discovery",
+    "innovation",
+    "pricing",
+    "willingness-to-pay",
+    "metrics",
+    "analytics",
+    "omtm",
+    "customer-interviews",
+    "salary-negotiation",
+    "what-to-charge",
+    "north-star-metric",
+    "product-market-fit"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}

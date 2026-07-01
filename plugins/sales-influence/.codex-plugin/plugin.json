@@ -1,0 +1,23 @@
+{
+  "name": "sales-influence",
+  "version": "1.4.0",
+  "description": "Sales, persuasion, and messaging skills including Cialdini's influence psychology, Aaron Ross's outbound sales methodology, Heath Brothers' sticky messaging, and Alex Hormozi's offer creation",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "influence",
+    "persuasion",
+    "outbound",
+    "messaging",
+    "offers",
+    "copywriting",
+    "social-proof",
+    "cold-email",
+    "irresistible-offer",
+    "objection-handling",
+    "pricing"
+  ],
+  "repository": "https://github.com/wondelai/skills",
+  "homepage": "https://github.com/wondelai/skills",
+  "skills": "./skills/"
+}
