@@ -1,6 +1,6 @@
 # Wondel.ai Skills
 
-Agent skills for Claude Code and agentskills.io-compatible agents. Browse all skills at [skills.wondel.ai](https://skills.wondel.ai/).
+Agent skills for Claude Code, Codex, OpenClaw, Hermes Agent and other agentskills.io-compatible agents. Browse all skills at [skills.wondel.ai](https://skills.wondel.ai/).
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # Agent Skills Repository Instructions
 
-This repository contains agent skills for Claude Code and agentskills.io-compatible agents.
+This repository contains agent skills for Claude Code, Codex, OpenClaw, Hermes Agent and other agentskills.io-compatible agents.
 
 ## Key Requirements
 
