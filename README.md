@@ -90,6 +90,30 @@ Codex adopted the same open `SKILL.md` standard, so every skill here works in Co
 - **Individual skills** — the `npx skills add wondelai/skills/<name>` commands above target Codex as well (Codex is a supported [agentskills.io](https://agentskills.io) agent).
 - **As Codex plugins** — this repo ships a Codex plugin marketplace at [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json) with the same 9 collections. In a clone, Codex auto-discovers it (and the skills under `.agents/skills/`); manage installs from the `/plugins` menu in the Codex TUI. The Codex manifests are generated from `.claude-plugin/marketplace.json` (single source of truth) by `scripts/generate-codex-plugins.sh`.
 
+### Via Autohand Code
+
+Autohand Code can load the same `SKILL.md` folders from its global or project-local skill roots. To install all skills globally:
+
+```bash
+git clone https://github.com/wondelai/skills.git wondelai-skills
+mkdir -p ~/.autohand/skills
+for skill in wondelai-skills/*/SKILL.md; do
+  cp -R "$(dirname "$skill")" ~/.autohand/skills/
+done
+```
+
+To install into the current project instead:
+
+```bash
+git clone https://github.com/wondelai/skills.git wondelai-skills
+mkdir -p .autohand/skills
+for skill in wondelai-skills/*/SKILL.md; do
+  cp -R "$(dirname "$skill")" .autohand/skills/
+done
+```
+
+For a single skill, copy only that folder, for example `wondelai-skills/jobs-to-be-done`.
+
 ## Available Skills
 
 | Skill | Description | Based On |
