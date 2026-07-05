@@ -1316,6 +1316,18 @@ Developer Toolkit is a comprehensive learning platform for mastering AI-assisted
 
 ---
 
+## Work With Us
+
+These 50 skills are the open-source tip of what we do. **[Wondel.ai](https://skills.wondel.ai/work-with-us/)** builds custom Claude skills, agents, and MCP integrations — shipped to production, not demoed.
+
+- **Skill sprints** — a focused, eval-backed skill scoped and shipped fast
+- **Custom builds** — production AI systems combining skills, agents, and MCP integrations
+- **Skills library** — an ongoing, maintained library of skills for your team
+
+Evals are the deliverable, not an afterthought — shipped to production, or you don't pay the final milestone. **[Book a quick call →](https://skills.wondel.ai/work-with-us/)**
+
+---
+
 ## Copyright & Disclaimer
 
 The methodologies and frameworks referenced in these skills are the intellectual property of their respective authors and publishers. All copyrights belong to:
