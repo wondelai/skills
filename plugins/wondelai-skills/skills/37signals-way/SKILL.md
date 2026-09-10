@@ -4,7 +4,7 @@ description: 'Build lean, opinionated products using the 37signals philosophy fr
 license: MIT
 metadata:
   author: wondelai
-  version: "1.3.0"
+  version: "1.3.1"
 ---
 
 # The 37signals Product Development Framework

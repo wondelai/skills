@@ -4,7 +4,7 @@ description: 'Define product positioning by mapping competitive alternatives, un
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Product Positioning Framework

@@ -4,7 +4,7 @@ description: 'Navigate the technology adoption lifecycle from early adopters to 
 license: MIT
 metadata:
   author: wondelai
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # Crossing the Chasm Framework

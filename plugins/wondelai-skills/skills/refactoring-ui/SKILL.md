@@ -4,7 +4,7 @@ description: 'Audit and fix visual hierarchy, spacing, color, and depth in web U
 license: MIT
 metadata:
   author: wondelai
-  version: "1.5.0"
+  version: "1.5.1"
 ---
 
 # Refactoring UI Design System
