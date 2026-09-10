@@ -287,7 +287,7 @@ For the complete guidelines, platform-specific guidance, and latest updates:
 - [SF Symbols](https://developer.apple.com/sf-symbols/) --- Apple's icon system, 5,000+ configurable symbols
 - [Apple Design Resources](https://developer.apple.com/design/resources/) --- official Figma/Sketch templates and UI kits
 - [WWDC Design Sessions](https://developer.apple.com/videos/design/) --- videos on design principles and new features
-- [*"Designed by Apple in California"*](https://www.amazon.com/Designed-Apple-California/dp/1942303118?tag=wondelai00-20) --- photo book of Apple's design process
+- *"Designed by Apple in California"* --- photo book of Apple's design process (out of print; Apple no longer sells it)
 - [*"The Design of Everyday Things"*](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654?tag=wondelai00-20) by Don Norman --- the human-centered design text that influenced Apple
 - [*"Universal Principles of Design"*](https://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879?tag=wondelai00-20) by William Lidwell, Kritina Holden, and Jill Butler --- 125 principles applicable to iOS
 

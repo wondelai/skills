@@ -241,7 +241,7 @@ Audit any UI design:
 
 For the complete system with visual before/after examples:
 
-- [*"Refactoring UI"*](https://www.amazon.com/Refactoring-UI-Adam-Wathan/dp/B0BLJ7MC21?tag=wondelai00-20) by Adam Wathan & Steve Schoger (the full book with hundreds of visual examples)
+- [*"Refactoring UI"*](https://refactoringui.com/) by Adam Wathan & Steve Schoger (the full book with hundreds of visual examples)
 - [*"The Design of Everyday Things"*](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654?tag=wondelai00-20) by Don Norman (foundational design thinking and usability)
 - [*"Don't Make Me Think"*](https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515?tag=wondelai00-20) by Steve Krug (web usability principles that complement Refactoring UI)
 - [Refactoring UI](https://www.refactoringui.com/) — Official site with resources and examples
