@@ -180,7 +180,7 @@ See [references/case-studies.md](references/case-studies.md) for end-to-end work
 
 - [*"Getting Real"*](https://www.amazon.com/Getting-Real-Smarter-Successful-Application/dp/0578012812?tag=wondelai00-20) by Jason Fried & David Heinemeier Hansson
 - [*"Rework"*](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745?tag=wondelai00-20) by Jason Fried & David Heinemeier Hansson
-- [*"Shape Up: Stop Running in Circles and Ship Work that Matters"*](https://www.amazon.com/Shape-Up-Circles-Ship-Work/dp/B09ZSY1MWP?tag=wondelai00-20) by Ryan Singer
+- [*"Shape Up: Stop Running in Circles and Ship Work that Matters"*](https://basecamp.com/shapeup) by Ryan Singer
 - [*"It Doesn't Have to Be Crazy at Work"*](https://www.amazon.com/Doesnt-Have-Crazy-Work/dp/0062874780?tag=wondelai00-20) by Jason Fried & David Heinemeier Hansson
 - [*"Remote: Office Not Required"*](https://www.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501?tag=wondelai00-20) by Jason Fried & David Heinemeier Hansson
 
