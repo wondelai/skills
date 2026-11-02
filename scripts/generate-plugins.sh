@@ -61,7 +61,7 @@ jq '{
   plugins: [ .plugins[] | {
     name: .name,
     source: { source: "local", path: ("./plugins/" + .name) },
-    policy: { installation: "AVAILABLE", authentication: "ON_FIRST_USE" },
+    policy: { installation: "AVAILABLE", authentication: "ON_USE" },
     category: (.category // "Coding")
   } ]
 }' "$SRC" > "$MP"
