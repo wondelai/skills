@@ -1,0 +1,70 @@
+name: Refresh agent skills index
+
+# Keeps .well-known/agent-skills/index.json (the Agent Skills discovery index,
+# https://schemas.agentskills.io/discovery/0.2.0/schema.json) equal to the SKILL.md
+# files on main. skills.wondel.ai proxies this file from raw.githubusercontent.com,
+# so a merged skill change reaches agents without a landing-site deploy.
+#
+# The commit this workflow pushes is made with GITHUB_TOKEN, and GitHub does not
+# start workflows for pushes made with GITHUB_TOKEN, so it cannot trigger itself.
+# (The index file is not in `paths` either; [skip ci] keeps other CI quiet.)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*/SKILL.md"
+      - "scripts/build-agent-skills-index.mjs"
+      - ".github/workflows/agent-skills-index.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent-skills-index
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Skip if a newer run already published
+        id: stale
+        run: |
+          # Runs are queued, not cancelled, so an older run can start after a newer
+          # one pushed. Never replace an index built for a later commit with an older one.
+          current="$(jq -r '.skills[0].url // empty' .well-known/agent-skills/index.json 2>/dev/null | cut -d/ -f6 || true)"
+          if [ -n "$current" ] && [ "$current" != "$GITHUB_SHA" ] \
+            && git merge-base --is-ancestor "$GITHUB_SHA" "$current" 2>/dev/null; then
+            echo "index already built for newer commit $current — nothing to do"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build index
+        if: steps.stale.outputs.skip != 'true'
+        run: node scripts/build-agent-skills-index.mjs "${{ github.sha }}"
+
+      - name: Commit and push if changed
+        if: steps.stale.outputs.skip != 'true'
+        run: |
+          if [ -z "$(git status --porcelain -- .well-known/agent-skills/index.json)" ]; then
+            echo "agent skills index already current — nothing to do"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .well-known/agent-skills/index.json
+          git commit -m "chore: refresh agent skills index [skip ci]"
+          # main may have moved while this ran. Rebase onto it and retry once; if it
+          # moved again, fail rather than loop — the push that moved it starts a new run.
+          if ! git push origin main; then
+            git pull --rebase origin main
+            git push origin main
+          fi
