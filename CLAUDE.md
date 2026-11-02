@@ -16,8 +16,8 @@ skills/
 │   ├── SKILL.md           # Main skill file with YAML frontmatter + markdown instructions
 │   └── references/        # Supporting reference files (optional)
 │       └── *.md
-├── scripts/               # sync-ide-skills.sh, generate-plugins.sh, sync-marketplace-versions.sh
-├── .github/workflows/     # CI: syncs marketplace versions to the GitHub release
+├── scripts/               # sync-ide-skills.sh, generate-plugins.sh, sync-marketplace-versions.sh, build-agent-skills-index.mjs
+├── .github/workflows/     # CI: syncs marketplace versions to the GitHub release; refreshes the agent skills index on every SKILL.md change
 ├── CLAUDE.md              # This file
 ├── README.md              # Skill catalog with descriptions and installation instructions
 │
@@ -28,6 +28,7 @@ skills/
 │   └── plugins/marketplace.json   # Codex plugin marketplace (mirrors .claude-plugin/)
 ├── plugins/{collection}/  # dual-format: .codex-plugin/plugin.json (Codex) + plugin.json (Agent Plugins) + skills/ copies
 └── plugins/wondelai-skills/   # all-in-one Agent Plugin bundle (every skill; no Codex manifest)
+└── .well-known/agent-skills/index.json  # Agent Skills discovery index (CI-built; skills.wondel.ai serves it)
 ```
 
 The Codex plugin standard (`plugins/` + `.agents/plugins/marketplace.json`) and the [Agent Plugins](https://agent-plugins.org/) standard (root `plugin.json` in each `plugins/*` dir, plus the `plugins/wondelai-skills` all-in-one bundle) are **generated from `.claude-plugin/marketplace.json`** by `scripts/generate-plugins.sh` — same 10 collections, same skill membership, versions tracked automatically. The plugin trees contain **copies** of the skills, not symlinks (the Agent Plugins spec requires all paths to resolve inside the plugin root), so after editing any skill's `SKILL.md` or `references/`, re-run `scripts/sync-ide-skills.sh` to refresh them. Never hand-edit the generated trees.
