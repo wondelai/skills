@@ -39,27 +39,59 @@ const ref = args[0] ?? process.env.AGENT_SKILLS_INDEX_SHA ?? 'HEAD';
 const git = (...gitArgs) => execFileSync('git', ['-C', repoRoot, ...gitArgs], { maxBuffer: 64 * 1024 * 1024 });
 const sha = git('rev-parse', '--verify', `${ref}^{commit}`).toString().trim();
 
-/** Unquote a YAML scalar — descriptions are single-quoted, plain, or double-quoted. */
-function unquote(value) {
-  const trimmed = value.trim();
-  if (trimmed.startsWith("'") && trimmed.endsWith("'")) return trimmed.slice(1, -1).replaceAll("''", "'");
-  if (trimmed.startsWith('"') && trimmed.endsWith('"')) return trimmed.slice(1, -1).replaceAll('\\"', '"');
-  return trimmed;
+// Agent Skills spec limits. Exceeding one fails the build instead of publishing
+// an index that clients reject.
+const NAME_PATTERN = /^[a-z0-9-]{1,64}$/;
+const MAX_DESCRIPTION = 1024;
+
+/**
+ * Parse one single-line YAML scalar, or throw. This is deliberately a subset of
+ * YAML: anything it cannot read exactly (a block scalar, an unclosed or folded
+ * quote, a double-quoted escape other than \", a trailing comment) is an error
+ * rather than a silently truncated value, because the output is published to
+ * third parties without review.
+ */
+function scalar(raw, fail) {
+  const value = raw.trim();
+  if (value.startsWith("'")) {
+    const quoted = value.match(/^'((?:[^']|'')*)'$/);
+    if (!quoted) fail('has an unclosed or folded single-quoted value');
+    return quoted[1].replaceAll("''", "'");
+  }
+  if (value.startsWith('"')) {
+    const quoted = value.match(/^"((?:[^"\\]|\\")*)"$/);
+    if (!quoted) fail('has an unclosed, folded or escaped double-quoted value (only \\" is supported)');
+    return quoted[1].replaceAll('\\"', '"');
+  }
+  if (/^[|>]/.test(value)) fail('is a block scalar (only single-line values are supported)');
+  if (/\s#/.test(value)) fail('has a trailing comment or an unquoted " #"; quote the value');
+  return value;
 }
 
 /** One single-line frontmatter field, or a thrown error naming the file. */
 function field(frontmatter, key, path) {
-  const line = frontmatter.match(new RegExp(`^${key}:[ \\t]*(.*)$`, 'm'));
-  const value = line ? unquote(line[1]) : '';
-  if (!value || /^[|>][+-]?$/.test(value)) {
-    throw new Error(`${path}: frontmatter "${key}" is missing, empty or multi-line (only single-line values are supported).`);
-  }
+  const fail = (why) => {
+    throw new Error(`${path}: frontmatter "${key}" ${why}.`);
+  };
+  const lines = frontmatter.split(/\r?\n/);
+  const index = lines.findIndex((line) => line.startsWith(`${key}:`));
+  if (index < 0) fail('is missing');
+  // An indented next line is a continuation of a plain or quoted multi-line value.
+  if (/^[ \t]+\S/.test(lines[index + 1] ?? '')) fail('continues onto the next line (only single-line values are supported)');
+  const value = scalar(lines[index].slice(key.length + 1), fail);
+  if (!value) fail('is empty');
   return value;
 }
 
-const paths = git('ls-tree', '-r', '--name-only', sha)
+// `ls-tree` lines are "<mode> <type> <object>\t<path>". Only regular files
+// (100644/100755) count: a symlinked SKILL.md would be indexed with the digest of
+// its link-target string, not the content an agent receives.
+const paths = git('ls-tree', '-r', sha)
   .toString()
   .split('\n')
+  .map((line) => line.match(/^(\d+) blob [0-9a-f]+\t(.+)$/))
+  .filter((match) => match && (match[1] === '100644' || match[1] === '100755'))
+  .map((match) => match[2])
   .filter((path) => /^[^/]+\/SKILL\.md$/.test(path));
 
 if (paths.length === 0) throw new Error(`No top-level <dir>/SKILL.md files at ${sha}.`);
@@ -72,6 +104,10 @@ const skills = paths.map((path) => {
   const name = field(frontmatter[1], 'name', path);
   const description = field(frontmatter[1], 'description', path);
   if (name !== dir) throw new Error(`${path}: frontmatter name "${name}" differs from directory "${dir}".`);
+  if (!NAME_PATTERN.test(name)) throw new Error(`${path}: name "${name}" must match ${NAME_PATTERN}.`);
+  if (description.length > MAX_DESCRIPTION) {
+    throw new Error(`${path}: description is ${description.length} characters; the limit is ${MAX_DESCRIPTION}.`);
+  }
   return {
     name,
     type: 'skill-md',
