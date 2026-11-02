@@ -27,6 +27,9 @@ concurrency:
 
 jobs:
   refresh:
+    # A manual dispatch from another branch would build that branch's skills
+    # (github.sha is its head) and push them to main. Only main publishes.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
