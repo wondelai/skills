@@ -1,0 +1,460 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "37signals-way",
+      "type": "skill-md",
+      "description": "Build lean, opinionated products using the 37signals philosophy from \"Getting Real\", \"Rework\", and \"Shape Up\". Use when the user mentions \"Getting Real\", \"Rework\", \"Shape Up\", \"37signals\", \"Basecamp method\", \"six-week cycles\", \"fixed time variable scope\", \"appetite vs estimates\", \"betting table\", \"breadboarding\", \"fat marker sketch\", \"build less\", \"underdo the competition\", \"opinionated software\", \"we have too many meetings\", \"how do we ship faster\", or \"stop overbuilding\". Also trigger when cutting scope to ship sooner, running a small team, or avoiding long-term roadmaps. Covers shaping, betting, building, and the art of saying no. For MVP validation, see lean-startup. For design sprints, see design-sprint.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/37signals-way/SKILL.md",
+      "digest": "sha256:b6882f6f197ed4eee0bfe71518f7aa16a2bf30a3bf6446b7738e6f04d39b08b4"
+    },
+    {
+      "name": "architecture-optimization",
+      "type": "skill-md",
+      "description": "Guided journey from a working codebase grown slow and tangled to one measurably fast, cleanly bounded, and readable. Orchestrates eight skills phase by phase - working-with-legacy-code, clean-architecture, software-design-philosophy, refactoring-patterns, system-design, ddia-systems, release-it, pragmatic-programmer - every phase carries its method inline so it runs standalone, asking the user questions at every decision point and recording results in the project docs/ folder (PERFORMANCE.md, ARCHITECTURE.md, ARCHITECTURE-OPTIMIZATION-PLAN.md) so the journey resumes across sessions. Use when the user wants to make an app faster, untangle drifted boundaries, fix slow endpoints and queries, or says 'it works but it is slow and getting worse'. For an untested prototype, improve-code-quality; for an aged codebase you fear to touch, remove-technical-debt; for greenfield structure, design-code-architecture; for marketing-site page speed, improve-website. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/architecture-optimization/SKILL.md",
+      "digest": "sha256:f52ac42637adf0122a4d4ab9355a68eb4e1b30a29e553fb74f375c9d43de8302"
+    },
+    {
+      "name": "blue-ocean-strategy",
+      "type": "skill-md",
+      "description": "Create uncontested market space using value innovation instead of competing head-to-head. Use when the user mentions \"blue ocean\", \"red ocean\", \"strategy canvas\", \"ERRC framework\", \"value innovation\", \"non-customers\", \"buyer utility map\", \"the market is too crowded\", \"how do we stand out\", or \"escape the price war\". Also trigger when exploring a new market category, or finding underserved or non-customers. Covers the Four Actions Framework, Six Paths, buyer utility map, and value-cost trade-offs. For real strategy formulation and bad-strategy detection, see good-strategy-bad-strategy. For tech adoption strategy, see crossing-the-chasm. For product positioning, see obviously-awesome.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/blue-ocean-strategy/SKILL.md",
+      "digest": "sha256:6fefda23f1673390476244db624ff0fe9c115a445d0a43728d5d5d310a8ae896"
+    },
+    {
+      "name": "clean-architecture",
+      "type": "skill-md",
+      "description": "Structure software around the Dependency Rule: source code dependencies point inward from frameworks to use cases to entities. Use when the user mentions \"architecture layers\", \"dependency rule\", \"ports and adapters (hexagonal)\", \"onion architecture\", \"screaming architecture\", \"where should business logic go\", \"decouple from the database\", \"swap the framework without a rewrite\", or \"keep business rules independent\". Also trigger when deciding which layer code belongs in, isolating core logic from infrastructure, defining module boundaries, or debating whether the framework should call your code or the reverse. Covers component principles, boundaries, and SOLID. For code-level quality, see clean-code. For domain modeling, see domain-driven-design.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/clean-architecture/SKILL.md",
+      "digest": "sha256:fc9fe201ae040df80164bc7a407507882783e2c8cdbc0379a1fbdcf3719e4446"
+    },
+    {
+      "name": "clean-code",
+      "type": "skill-md",
+      "description": "Write readable, maintainable code through disciplined naming, small functions, and clean error handling. Use when the user mentions \"clean up this code\", \"this function is too long\", \"code smells\", \"naming conventions\", \"boy scout rule\", \"single responsibility\", or \"unit test quality\". Also trigger when reviewing a pull request for readability, untangling a messy function, debating comment styles, or improving error-handling patterns. Covers SRP, comment discipline, formatting, and unit testing. For refactoring techniques, see refactoring-patterns. For architecture and dependency rules, see clean-architecture.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/clean-code/SKILL.md",
+      "digest": "sha256:072b309df4ea3e271232f281d8a98d759f6f27a310a74b1fd6e8f70ec3a9b04f"
+    },
+    {
+      "name": "cold-start-problem",
+      "type": "skill-md",
+      "description": "Start and scale networked products using Andrew Chen's \"The Cold Start Problem\" framework for network effects. Use when the user mentions \"network effects\", \"chicken and egg\", \"cold start\", \"two-sided marketplace\", \"atomic network\", \"hard side\", \"liquidity\", \"critical mass\", \"invite-only launch\", \"how do I get my first users\", or \"the marketplace has no buyers or sellers\". Also trigger when launching a marketplace, social, or collaboration product that is worthless without other users, deciding launch sequencing and seeding tactics, or diagnosing stalled network growth at scale. Covers the five stages: cold start, tipping point, escape velocity, hitting the ceiling, and the moat. For word-of-mouth virality, see contagious. For habit-driven retention, see hooked-ux.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/cold-start-problem/SKILL.md",
+      "digest": "sha256:6ee3a73a0ab3c0e0c70c75c1c36222cbca418e3c4fbfec75130f99079683af29"
+    },
+    {
+      "name": "contagious",
+      "type": "skill-md",
+      "description": "Engineer word-of-mouth and virality using the STEPPS framework (Social Currency, Triggers, Emotion, Public, Practical Value, Stories). Use when the user mentions \"go viral\", \"word of mouth\", \"shareable content\", \"social currency\", \"why people share\", \"referral program\", \"nobody is sharing it\", or \"make this spread\". Also trigger when designing shareable features, crafting social campaigns, or building products that spread through peer recommendation. Covers environmental triggers and high-arousal emotional content. For sticky messaging, see made-to-stick. For persuasion tactics, see influence-psychology.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/contagious/SKILL.md",
+      "digest": "sha256:cbebc68767b7e2e2ec881e7e08dd7241f5e50134368c3867eba2646d8fababbe"
+    },
+    {
+      "name": "continuous-discovery",
+      "type": "skill-md",
+      "description": "Build a weekly cadence of customer touchpoints using Opportunity Solution Trees, assumption mapping, and interview snapshots. Use when the user mentions \"continuous discovery\", \"opportunity solution tree\", \"weekly interviews\", \"assumption testing\", \"discovery habits\", \"product trio\", \"outcome-based roadmap\", \"how do I talk to customers regularly\", \"we keep building things nobody uses\", or \"connect research to the roadmap\". Also trigger when setting up regular customer feedback loops, prioritizing which experiments to run, or tying discovery insights to delivery work. Covers experience mapping, co-creation, and prioritizing opportunities. For interview technique, see mom-test. For team structure, see inspired-product.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/continuous-discovery/SKILL.md",
+      "digest": "sha256:44260b572a050417ba3733021eaa1694318fda80794c3e07800c66b4bc4a0c9e"
+    },
+    {
+      "name": "conversion-optimization",
+      "type": "skill-md",
+      "description": "Guided journey from a leaking conversion flow - landing page, signup, checkout, or in-app onboarding - to a measured, tested funnel. Orchestrates six skills phase by phase - lean-analytics, cro-methodology, storybrand-messaging, hundred-million-offers, influence-psychology, design-everyday-things - each phase carries its full method inline so it runs standalone, asking the user questions at every decision point and recording results in the project docs/ folder (FUNNEL.md, METRICS.md, EXPERIMENTS.md, CONVERSION-OPTIMIZATION-PLAN.md) so the journey resumes across sessions. Use when the user wants to raise conversion on a specific flow, fix checkout or signup abandonment, diagnose onboarding drop-off, or says 'people start but never finish'. With no site yet, use create-website; for a whole-site look, message, and speed audit, improve-website; if the flow converts but needs traffic, grow-website; for in-product engagement and retention, improve-app. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/conversion-optimization/SKILL.md",
+      "digest": "sha256:fbf2102e39441b4ea6d5177c52e09fcfaa10ad72cf3beee6b484ea659412324c"
+    },
+    {
+      "name": "create-app",
+      "type": "skill-md",
+      "description": "Guided journey from a raw app idea to a validated, cleanly architected first version that ships on a sustainable cadence. Orchestrates ten skills phase by phase - lean-startup, design-sprint, clean-architecture, domain-driven-design, clean-code, pragmatic-programmer, system-design, ios-hig-design, 37signals-way, software-design-philosophy - asking the user questions at every decision point and recording results in the project docs/ folder (PRODUCT.md, ARCHITECTURE.md, EXPERIMENTS.md, CREATE-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a new app, validate an idea before writing code, architect an MVP that will not need a rewrite, or says 'help me build my app the right way'. App already exists: use improve-app or grow-app. Business idea not yet validated: run create-business first. Marketing site only: use create-website. Architecture-only question: design-code-architecture. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/create-app/SKILL.md",
+      "digest": "sha256:a21ebe41b89bcf7003a2ef7232bea6bebd3713594a72ef9af5076fc7612ad981"
+    },
+    {
+      "name": "create-business",
+      "type": "skill-md",
+      "description": "Guided journey from raw idea to a validated, positioned, priced business with a chosen beachhead. Orchestrates ten skills phase by phase - jobs-to-be-done, mom-test, design-sprint, lean-startup, good-strategy-bad-strategy, blue-ocean-strategy, obviously-awesome, hundred-million-offers, monetizing-innovation, crossing-the-chasm - asking the user questions at every decision point and recording results in the project docs/ folder (CUSTOMER.md, POSITIONING.md, OFFER.md, CREATE-BUSINESS-PLAN.md) so the journey resumes across sessions. Use when the user wants to start a new business, validate a startup idea, find product-market fit before building, or says 'I have an idea for a company'. Do not use once the business has paying customers: use grow-business to add revenue and customers, or improve-business to fix strategy and operations. For building the product itself use create-app or create-website. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/create-business/SKILL.md",
+      "digest": "sha256:2da65aaa976f03e43c638d3d140c44fd9e270f38f8221e7fee495d52d800c925"
+    },
+    {
+      "name": "create-website",
+      "type": "skill-md",
+      "description": "Guided journey from a blank page to a live, high-converting website, built message-first, then design, then conversion. Orchestrates ten skills phase by phase - one-page-marketing, storybrand-messaging, made-to-stick, top-design, web-typography, refactoring-ui, ux-heuristics, cro-methodology, scorecard-marketing, steve-jobs-design-review - asking the user questions at every decision point and recording results in the project docs/ folder (POSITIONING.md, WEBSITE.md, CREATE-WEBSITE-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a new website or landing page from scratch, turn a validated idea into a page that converts, or says 'build me a landing page for my SaaS'. Site already exists: use improve-website site-wide, conversion-optimization for one flow, or grow-website for traffic; building a software product, not a marketing site: create-app; no positioning yet: create-business first, or the positioning phase here. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/create-website/SKILL.md",
+      "digest": "sha256:2ec2d82e4ea3b23937cb35d3e8e22d141904d38c7d5073ff36c287c8911f918c"
+    },
+    {
+      "name": "cro-methodology",
+      "type": "skill-md",
+      "description": "Audit websites and landing pages for conversion issues and design evidence-based A/B tests. Use when the user mentions \"landing page isnt converting\", \"conversion rate\", \"A/B test\", \"why visitors leave\", \"objection handling\", \"bounce rate\", \"conversion funnel\", \"increase signups\", or \"people add to cart but dont buy\". Also trigger when diagnosing why signups are low, designing experiment hypotheses, or auditing checkout flows for friction points. Covers funnel mapping, persuasion assets, and objection/counter-objection frameworks. For overall marketing strategy, see one-page-marketing. For usability issues, see ux-heuristics.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/cro-methodology/SKILL.md",
+      "digest": "sha256:52bfedca17750ad117d838bfdcb5c5db190fb8a7c6e9b82abe44f939830e3897"
+    },
+    {
+      "name": "crossing-the-chasm",
+      "type": "skill-md",
+      "description": "Navigate the technology adoption lifecycle from early adopters to mainstream market. Use when the user mentions \"crossing the chasm\", \"beachhead segment\", \"whole product\", \"early adopters vs mainstream\", \"tech go-to-market\", \"bowling pin strategy\", \"technology adoption lifecycle\", \"pragmatist buyers\", \"growth stalled after early adopters\", or \"our go-to-market plan\". Also trigger when planning go-to-market for a technical product. Covers the D-Day analogy, bowling-pin strategy, the tornado, and positioning against incumbents. For product positioning, see obviously-awesome. For new market creation, see blue-ocean-strategy.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/crossing-the-chasm/SKILL.md",
+      "digest": "sha256:93c266a4aaa2f95b0682e66ce4450d1eb2bbf64a271942f9cec9ecb59b8fde7c"
+    },
+    {
+      "name": "ddia-systems",
+      "type": "skill-md",
+      "description": "Design data systems by understanding storage engines, replication, partitioning, transactions, and consistency models. Use when the user mentions \"database choice\", \"which database should I use\", \"SQL or NoSQL\", \"replication lag\", \"partitioning strategy\", \"consistency vs availability\", \"stream processing\", \"ACID transactions\", \"eventual consistency\", \"my queries are slow at scale\", or \"data is inconsistent across replicas\". Also trigger when choosing a datastore, designing data pipelines, or debugging distributed-system consistency issues. Covers data models, batch/stream processing, and distributed consensus. For system design, see system-design. For resilience, see release-it.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/ddia-systems/SKILL.md",
+      "digest": "sha256:cdcd71bc1ce854f04921c5ff1a63b06872f96b09ef2f0576c91a33ffc8297012"
+    },
+    {
+      "name": "design-code-architecture",
+      "type": "skill-md",
+      "description": "Guided journey from an app idea to a deliberate architecture: boundaries, domain model, data decisions, and resilience, making only the expensive-to-reverse decisions and deferring the rest. Orchestrates eight skills phase by phase - clean-architecture, domain-driven-design, system-design, ddia-systems, software-design-philosophy, release-it, pragmatic-programmer, 37signals-way - asking the user questions at every decision point and recording results in the project docs/ folder (ARCHITECTURE.md, DESIGN-CODE-ARCHITECTURE-PLAN.md) so the journey resumes across sessions. Use when the user wants to design a new app's architecture, choose boundaries and a domain model, decide monolith versus microservices, or says 'how should I structure this app'. If a codebase already exists, use remove-technical-debt (aged), improve-code-quality (fresh prototype), or architecture-optimization (slow but working); if unvalidated, run create-business or create-app first. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/design-code-architecture/SKILL.md",
+      "digest": "sha256:4bf2140050ca60a10bfda878bdb86782df98a9946102461590494134c9cc0e6d"
+    },
+    {
+      "name": "design-everyday-things",
+      "type": "skill-md",
+      "description": "Apply foundational design principles: affordances, signifiers, constraints, feedback, and conceptual models. Use when the user mentions \"why is this confusing\", \"affordance\", \"error prevention\", \"discoverability\", \"human-centered design\", \"mental model\", \"mapping\", \"seven stages of action\", \"users keep making mistakes\", \"this is unintuitive\", or \"people cant figure out how to use it\". Also trigger when reducing product complexity or feature creep. Covers the gulfs of execution and evaluation. For usability scoring, see ux-heuristics. For iOS-specific patterns, see ios-hig-design.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/design-everyday-things/SKILL.md",
+      "digest": "sha256:cd14143973b32c84583e8d94175410188c255f24169e78826f5b4dbf11fa4fa6"
+    },
+    {
+      "name": "design-sprint",
+      "type": "skill-md",
+      "description": "Run a structured 5-day process to prototype, test, and validate product ideas with real users. Use when the user mentions \"design sprint\", \"validate before we build\", \"rapid prototype\", \"test with users\", or \"should we build this\". Also trigger when a team is stuck in endless debate over a high-stakes product decision, or wants to de-risk a costly idea before investing in development. Covers mapping, sketching, deciding, prototyping, and testing across Monday-Friday. For ongoing experimentation and MVPs, see lean-startup. For customer job analysis, see jobs-to-be-done. For non-leading user interviews, see mom-test.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/design-sprint/SKILL.md",
+      "digest": "sha256:2da4890a338abf865e627dbc23af4d5beafb0d66c50a9c79ac3def67a188a7a6"
+    },
+    {
+      "name": "domain-driven-design",
+      "type": "skill-md",
+      "description": "Model software around the business domain using bounded contexts, aggregates, and ubiquitous language. Use when the user mentions \"domain modeling\", \"bounded context\", \"aggregate root\", \"ubiquitous language\", \"anti-corruption layer\", \"context mapping\", \"domain events\", \"strategic design\", \"the code doesnt match the business\", or \"how do we split this big system\". Also trigger when breaking a monolith into services, defining service boundaries, or aligning code structure with business processes. Covers entities vs value objects, domain events, and context mapping strategies. For architecture layers, see clean-architecture. For complexity, see software-design-philosophy.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/domain-driven-design/SKILL.md",
+      "digest": "sha256:14f80bc0c209e8500f52813158afb8b6b819b47a54b92576f0c0586acac38668"
+    },
+    {
+      "name": "drive-motivation",
+      "type": "skill-md",
+      "description": "Design motivation systems using Autonomy, Mastery, and Purpose (AMP) for products and teams. Use when the user mentions \"intrinsic motivation\", \"gamification isnt working\", \"rewards arent working\", \"autonomy\", \"mastery\", \"purpose-driven\", \"my team is disengaged\", or \"how do I motivate people\". Also trigger when designing onboarding progression, fixing broken gamification, or building team structures that sustain high performance. Covers why carrot-and-stick fails and how to build progress systems. For habit-forming product loops, see hooked-ux. For retention behavior design, see improve-retention.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/drive-motivation/SKILL.md",
+      "digest": "sha256:f4683c7ab6846f168272a6905cea24ebfa56218c07f1168230f0991ae3eb6c5b"
+    },
+    {
+      "name": "good-strategy-bad-strategy",
+      "type": "skill-md",
+      "description": "Formulate and audit real strategy using Richard Rumelt's \"Good Strategy Bad Strategy\": an honest diagnosis, a guiding policy, and coherent action instead of goals, vision, and wishful thinking. Use when the user mentions \"good strategy bad strategy\", \"strategy kernel\", \"diagnosis guiding policy coherent action\", \"our strategy is just goals\", \"strategic planning\", \"mission vs strategy\", \"annual plan\", or \"is this actually a strategy\". Also trigger when auditing a strategy doc or pitch deck for fluff, turning a goal list into real strategy, formulating strategy for a product or company, or finding leverage and proximate objectives. Covers the kernel of strategy, bad-strategy detection, and sources of power. For product positioning, see obviously-awesome. For uncontested markets, see blue-ocean-strategy.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/good-strategy-bad-strategy/SKILL.md",
+      "digest": "sha256:7adebf248a5aa40ef6bc34d3f379a9cd22663b8ca8086fc350c95cee6d4d2035"
+    },
+    {
+      "name": "grow-app",
+      "type": "skill-md",
+      "description": "Guided journey from an app people sign up for and then quietly abandon to a sealed retention engine with a habit loop, an activated first run, and one metric the whole team trusts. Orchestrates eight skills phase by phase - hooked-ux, improve-retention, continuous-discovery, lean-ux, inspired-product, lean-analytics, microinteractions, drive-motivation - asking the user questions at every decision point and recording results in the project docs/ folder (PRODUCT.md, METRICS.md, GROW-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to lift activation and retention, design a habit loop, fix a leaky onboarding funnel, or says 'users sign up then disappear'. Do not use to fix broken UX or performance that no engagement mechanic can paper over - run improve-app first; if there is no app yet, use create-app. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/grow-app/SKILL.md",
+      "digest": "sha256:b4c840ff8ae77ebedd97748307658216afeb51277c5655b5a1daf5e179171051"
+    },
+    {
+      "name": "grow-business",
+      "type": "skill-md",
+      "description": "Guided journey from a business with lucky months to a repeatable growth engine that produces a forecast. Orchestrates nine skills phase by phase - one-page-marketing, hundred-million-offers, predictable-revenue, contagious, influence-psychology, crossing-the-chasm, cold-start-problem, lean-analytics, negotiation - asking the user questions at every decision point and recording results in the project docs/ folder (MARKETING.md, OFFER.md, METRICS.md, GROW-BUSINESS-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a marketing and sales system, manufacture predictable pipeline, engineer word-of-mouth and referrals, or says 'revenue is real but lumpy and I need growth that repeats'. If the offer, retention, or operations underneath are broken, run improve-business first; with no paying customers yet, start with create-business; when the product itself must carry the growth loops, use grow-app. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/grow-business/SKILL.md",
+      "digest": "sha256:114d4477a4d53234d3d58a4142a156bc55406137105f733ff6b9213236f762e7"
+    },
+    {
+      "name": "grow-website",
+      "type": "skill-md",
+      "description": "Guided journey from a website with traffic it under-converts to a research-driven growth engine that captures more leads, persuades more buyers, sells a sharper offer, and earns referrals. Orchestrates eight skills phase by phase - cro-methodology, scorecard-marketing, storybrand-messaging, made-to-stick, influence-psychology, hundred-million-offers, contagious, one-page-marketing - asking the user questions at every decision point and recording results in the project docs/ folder (WEBSITE.md, OFFER.md, MARKETING.md, GROW-WEBSITE-PLAN.md) so the journey resumes across sessions. Use when the user wants to raise conversion on a site that already has traffic, capture more leads, sharpen a weak offer, add referral loops, or says 'my site gets visitors but nobody buys'. If a broken funnel or usability friction is the real blocker, run improve-website first; if there is no site yet, use create-website; for one leaking flow, conversion-optimization. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/grow-website/SKILL.md",
+      "digest": "sha256:6ae045554ee3e1ee65a4fd30afad42d40e31c7070ef6b806ec1b8eb8edcec008"
+    },
+    {
+      "name": "high-output-management",
+      "type": "skill-md",
+      "description": "Manage for output using Grove's \"High Output Management\": a manager's output is their organization's output, raised by high-leverage activities. Use when the user mentions \"high output management\", \"managerial leverage\", \"one-on-ones\", \"1:1 agenda\", \"OKRs\", \"performance review\", \"task-relevant maturity\", \"delegation\", \"meeting overload\", \"new manager\", \"how do I run a 1:1\", or \"just got promoted to manager\". Also trigger when structuring a manager's calendar and meeting cadence, designing team metrics, running planning, coaching delegation, or preparing performance reviews. Covers leverage, production principles, meetings as the medium of management, decisions, OKRs, and task-relevant maturity. For intrinsic motivation, see drive-motivation. For a company operating system, see traction-eos.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/high-output-management/SKILL.md",
+      "digest": "sha256:335edd108bc13a9fdaa994200af901bae97671b3f8a50011c752e3fa94bddbb9"
+    },
+    {
+      "name": "high-perf-browser",
+      "type": "skill-md",
+      "description": "Optimize web performance through network protocols, resource loading, and browser rendering internals. Use when the user mentions \"my site is slow\", \"Core Web Vitals\", \"HTTP/2 or HTTP/3\", \"resource hints\", \"network latency\", \"render blocking\", \"TCP/TLS optimization\", \"service worker\", \"Cache-Control or caching strategy\", or \"critical rendering path\". Also trigger when diagnosing slow page loads, optimizing time to first byte, choosing between WebSocket and SSE, or reducing bundle sizes. For UI visual performance, see refactoring-ui. For font loading, see web-typography.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/high-perf-browser/SKILL.md",
+      "digest": "sha256:fed643149198165eadf1bb3bf8b6bfb173e18ba29c886e7f3d6a7681ad03a57d"
+    },
+    {
+      "name": "hooked-ux",
+      "type": "skill-md",
+      "description": "Design habit-forming product loops using the Hook Model (Trigger, Action, Variable Reward, Investment). Use when the user mentions \"users arent coming back\", \"habit formation\", \"engagement loops\", \"habit zone\", or \"the manipulation matrix\". Also trigger when designing notification or re-engagement strategies, building streaks or progress systems, or analyzing why users stop after signup. Covers ethics evaluation and onboarding for habits. For friction reduction and B=MAP, see improve-retention. For viral sharing, see contagious.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/hooked-ux/SKILL.md",
+      "digest": "sha256:775ae946b15f03d787077c35d166a9addb1e241cb9ffea03ceee3a1be198175e"
+    },
+    {
+      "name": "hundred-million-offers",
+      "type": "skill-md",
+      "description": "Create irresistible offers using the Value Equation, bonus stacking, risk-reversing guarantees, and ethical scarcity. Use when the user mentions \"grand slam offer\", \"make my offer more compelling\", \"what bonuses should I add\", \"guarantee strategy\", \"offer naming\", or \"people say its too expensive\". Also trigger when packaging a product for higher perceived value, justifying premium pricing instead of discounting, designing a money-back guarantee, or structuring tiers to maximize conversions. Covers the MAGIC naming formula and starving-crowd targeting. For product positioning, see obviously-awesome. For outbound sales, see predictable-revenue.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/hundred-million-offers/SKILL.md",
+      "digest": "sha256:585779eac550ef8c43114b68e51c2eb1bf9547381fcd7342d54190c0d0cdc314"
+    },
+    {
+      "name": "improve-app",
+      "type": "skill-md",
+      "description": "Guided journey from a shipped app that works but feels rough to a product that fits the job, flows without friction, reads clearly, and persuades honestly. Orchestrates nine skills phase by phase - jobs-to-be-done, ux-heuristics, design-everyday-things, refactoring-ui, microinteractions, made-to-stick, influence-psychology, high-perf-browser, steve-jobs-design-review - asking the user questions at every decision point and recording results in the project docs/ folder (CUSTOMER.md, DESIGN.md, POSITIONING.md, IMPROVE-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to fix a clunky product, cut UX friction, sharpen in-app copy, or says 'the app works but feels rough'. Not for code, tests, or hardening - use improve-code-quality (fresh prototype) or remove-technical-debt (aged); no app yet, create-app; needs growth loops, grow-app; marketing-site friction, improve-website; one leaking flow, conversion-optimization. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/improve-app/SKILL.md",
+      "digest": "sha256:c2843b034b11593cd7fee42cd1467bbf3a570cf29a707c3ac3f6ba7f6079ff69"
+    },
+    {
+      "name": "improve-business",
+      "type": "skill-md",
+      "description": "Guided journey from a stalled, plateaued business to one with an honest diagnosis, a working operating rhythm, and offers repriced to real value. Orchestrates eight skills phase by phase - good-strategy-bad-strategy, traction-eos, high-output-management, team-topologies, drive-motivation, lean-analytics, negotiation, monetizing-innovation - asking the user questions at every decision point and recording results in the project docs/ folder (STRATEGY.md, OPERATIONS.md, METRICS.md, IMPROVE-BUSINESS-PLAN.md) so the journey resumes across sessions. Use when the user wants to fix a business that has plateaued, diagnose why growth stalled, tighten strategy and execution, re-motivate a team, or says 'revenue is flat and I do not know why'. Starting from scratch with no customers: use create-business. Once the fundamentals work and the goal is expansion: use grow-business. When the product itself drags the business down: use improve-app. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/improve-business/SKILL.md",
+      "digest": "sha256:6377e1b69209b8d154f9544a7f28549853d392e065f05eb58f867faa85bea53c"
+    },
+    {
+      "name": "improve-code-quality",
+      "type": "skill-md",
+      "description": "Guided journey from a working-but-untested vibe-coded prototype to a production-ready product with tests, clean structure, a business-rules boundary, and resilience at scale. Orchestrates nine skills phase by phase - working-with-legacy-code, clean-code, refactoring-patterns, software-design-philosophy, clean-architecture, pragmatic-programmer, release-it, system-design, ddia-systems - asking the user questions at every decision point and recording results in the project docs/ folder (TESTING.md, TECH-DEBT.md, IMPROVE-CODE-QUALITY-PLAN.md) so the journey resumes across sessions. Use when the user wants to harden an AI-generated prototype, add tests before refactoring, make code safe to change, or says 'this works on my machine but I am scared to touch it'. For an aged codebase, remove-technical-debt; for greenfield structure, design-code-architecture; for a product and UX pass, improve-app; to optimize speed and structure, architecture-optimization. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/improve-code-quality/SKILL.md",
+      "digest": "sha256:bb4ec46eadb0e1aafbe911920763d11079ecb897dacddb90e81a5896d7020bf5"
+    },
+    {
+      "name": "improve-retention",
+      "type": "skill-md",
+      "description": "Diagnose and fix retention problems using behavior design (B=MAP). Use when the user mentions \"users sign up but dont stick around\", \"activation rate\", \"onboarding friction\", \"retention metrics\", \"why users dont complete\", \"churn analysis\", or \"aha moment\". Also trigger when analyzing cohort retention curves, designing activation milestones, reducing time-to-value for new users, or investigating why users quit after their first session. Covers the Ability Chain, prompt design, and tiny behaviors that compound. For habit loops and variable rewards, see hooked-ux. For intrinsic motivation, see drive-motivation.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/improve-retention/SKILL.md",
+      "digest": "sha256:f25f70aed02080dc62a90ed107623bad3f32d4a79866941cf1b5f7e4a7a77051"
+    },
+    {
+      "name": "improve-website",
+      "type": "skill-md",
+      "description": "Guided journey from a live website that underperforms to a prioritized, evidence-backed backlog of conversion, usability, message, and speed fixes - each shipped as a testable experiment. Orchestrates eight skills phase by phase - cro-methodology, ux-heuristics, refactoring-ui, web-typography, storybrand-messaging, high-perf-browser, made-to-stick, design-everyday-things - asking the user questions at every decision point and recording results in the project docs/ folder (WEBSITE.md, DESIGN.md, IMPROVE-WEBSITE-PLAN.md) so the journey resumes across sessions. Use when the user wants to fix a landing page that isn't converting, diagnose why visitors leave, audit for clarity and usability, or says 'the homepage feels off but a redesign didn't help'. No site yet, create-website; converts but needs traffic, grow-website; if the friction is in a product app, not the marketing site, improve-app; if one specific flow leaks, conversion-optimization. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/improve-website/SKILL.md",
+      "digest": "sha256:2e7256bac97eea6c223b922a9999a073d1611eab83ea06fa085fe36cb3eee84f"
+    },
+    {
+      "name": "influence-psychology",
+      "type": "skill-md",
+      "description": "Apply the seven principles of ethical persuasion (reciprocity, commitment, social proof, authority, liking, scarcity, unity) to product design, copy, and sales. Use when the user mentions \"social proof\", \"persuasive copy\", \"why users dont convert\", \"ethical persuasion\", \"reciprocity\", \"scarcity tactics\", \"commitment and consistency\", \"shared identity\", \"in-group\", \"make my copy more persuasive\", \"increase trust\", or \"get more people to say yes\". Also trigger when designing testimonial sections, crafting urgency messaging, or improving trust signals on landing pages. Covers the principles, when each applies, and ethical limits. For deal negotiation tactics, see negotiation. For viral word-of-mouth, see contagious.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/influence-psychology/SKILL.md",
+      "digest": "sha256:e7cd3142a11a631c56be159374a42341b370efb26cc3adc25a9f5e6627b84994"
+    },
+    {
+      "name": "inspired-product",
+      "type": "skill-md",
+      "description": "Build empowered product teams using discovery and delivery dual-track. Use when the user mentions \"product discovery\", \"empowered teams\", \"feature factory\", \"opportunity assessment\", \"product vision\", \"product strategy\", \"what should we build\", or \"our roadmap is just a feature list\". Also trigger when restructuring teams away from output-driven models, or deciding what to build next based on outcomes. Covers discovery techniques, team structure, opportunity assessment, vision/strategy, and continuous delivery. For customer interviews, see mom-test. For ongoing discovery systems, see continuous-discovery.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/inspired-product/SKILL.md",
+      "digest": "sha256:482ab6a32bb59b087a06812711959624e9afec1b73c34d5d6774c565cc2bdb14"
+    },
+    {
+      "name": "ios-hig-design",
+      "type": "skill-md",
+      "description": "Design native iOS interfaces following Apple Human Interface Guidelines. Use when the user mentions \"iPhone app\", \"iPad layout\", \"SwiftUI\", \"UIKit\", \"Dynamic Island\", \"safe areas\", \"HIG compliance\", \"SF Symbols\", \"haptic feedback\", \"iOS accessibility\", \"make my app feel native\", or \"follow Apple design guidelines\". Also trigger when building tab bars, navigation stacks, sheets, or modals for iOS, implementing dark mode, or adapting layouts across screen sizes. Covers navigation patterns, accessibility, SF Symbols, and platform conventions. For general UI polish, see refactoring-ui. For affordance design, see design-everyday-things.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/ios-hig-design/SKILL.md",
+      "digest": "sha256:30bccd96dc11fd875642f0ef3c0971e3c7ceaf3d38643c524bec07a8927b8b17"
+    },
+    {
+      "name": "jobs-to-be-done",
+      "type": "skill-md",
+      "description": "Discover what customers truly need by analyzing the \"job\" they hire your product to do. Use when the user mentions \"customer discovery\", \"why customers churn\", \"what job does this solve\", \"competing against luck\", \"product-market fit\", \"switching behavior\", \"milkshake moment\", or \"functional vs emotional jobs\". Also trigger when investigating why users choose competitors, designing features around real customer needs, or reframing a value proposition. Covers JTBD interviews, competition analysis, and jobs-oriented roadmaps. For product positioning, see obviously-awesome. For rapid validation, see design-sprint. For non-leading interview technique, see mom-test.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/jobs-to-be-done/SKILL.md",
+      "digest": "sha256:cc227aa837bda4ae0910324e52a90d338354501d005f7ef2fbd0cff9fd73aaf1"
+    },
+    {
+      "name": "lean-analytics",
+      "type": "skill-md",
+      "description": "Choose and audit startup metrics using Croll and Yoskovitz's \"Lean Analytics\". Use when the user mentions \"what metrics should we track\", \"KPIs\", \"north star metric\", \"One Metric That Matters (OMTM)\", \"vanity metrics\", \"analytics dashboard\", \"DAU/MAU\", \"churn benchmark\", or \"measure product-market fit\". Also trigger when choosing metrics for a startup or feature, auditing a dashboard for vanity metrics, setting metric targets and baselines, or instrumenting a product by business model and stage. Covers good-vs-vanity metrics, the One Metric That Matters, metrics by business model, the five startup stages, and benchmarks. For the build-measure-learn loop, see lean-startup. For fixing activation and retention, see improve-retention.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/lean-analytics/SKILL.md",
+      "digest": "sha256:ed66ef399bdfeb2ab56583940b47d58b516162826bb81a40d121c9a17c0c8006"
+    },
+    {
+      "name": "lean-startup",
+      "type": "skill-md",
+      "description": "Design MVPs, validated learning experiments, and pivot-or-persevere decisions using Build-Measure-Learn. Use when the user mentions \"MVP scope\", \"validated learning\", \"pivot or persevere\", \"vanity metrics\", \"test assumptions\", \"innovation accounting\", \"build-measure-learn\", \"minimum viable experiment\", \"should we pivot\", \"test a business idea cheaply\", or \"build the smallest version first\". Also trigger when deciding what to include in a first version, measuring startup progress, or evaluating whether to change direction on a product bet. Covers innovation accounting and actionable metrics. For 5-day prototype testing, see design-sprint. For customer motivation analysis, see jobs-to-be-done.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/lean-startup/SKILL.md",
+      "digest": "sha256:109bf176baf1c56f0d02f6a8a2d59d7969b64768a760bc7624516a8b42b5bf53"
+    },
+    {
+      "name": "lean-ux",
+      "type": "skill-md",
+      "description": "Apply lean thinking to UX: hypothesis-driven design, collaborative sketching, and rapid experiments instead of heavy deliverables. Use when the user mentions \"Lean UX\", \"design hypothesis\", \"outcome over output\", \"design studio method\", \"assumption mapping\", \"lightweight research\", \"too much design documentation\", or \"get the team designing together\". Also trigger when reducing design-documentation overhead, getting cross-functional teams to co-design, or running fast usability experiments. Covers hypothesis statements, MVPs for UX, and cross-functional collaboration. For Build-Measure-Learn, see lean-startup. For usability audits, see ux-heuristics.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/lean-ux/SKILL.md",
+      "digest": "sha256:4fe0a10132650ad36bc79676b12c8f58b19035a40ac6587c864387d0f808cf04"
+    },
+    {
+      "name": "made-to-stick",
+      "type": "skill-md",
+      "description": "Craft messages that are understood, remembered, and drive action using the SUCCESs checklist (Simple, Unexpected, Concrete, Credible, Emotional, Stories). Use when the user mentions \"make it memorable\", \"no one remembers our pitch\", \"tagline\", \"value proposition\", \"why the message isnt landing\", \"curse of knowledge\", or \"concrete language\". Also trigger when writing a pitch deck, simplifying a complex product explanation, or making a presentation more compelling. Covers the six SUCCESs traits and the curse of knowledge. For narrative brand frameworks, see storybrand-messaging. For viral sharing, see contagious.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/made-to-stick/SKILL.md",
+      "digest": "sha256:6eb330f403882d8f944590772170de48847f7025b942ee56f564717229d3965e"
+    },
+    {
+      "name": "microinteractions",
+      "type": "skill-md",
+      "description": "Design the small details -- triggers, rules, feedback, loops and modes -- that separate good products from great ones. Use when the user mentions \"microinteraction\", \"button feedback\", \"loading state\", \"toggle design\", \"animation detail\", \"state transitions\", \"input feedback\", \"the interface feels dead\", \"make the UI feel responsive\", or \"add polish to interactions\". Also trigger when designing form-validation responses, progress indicators, confirmation dialogs, or any element where the user expects immediate feedback. Covers trigger design, state rules, feedback mechanisms, and progressive loops. For overall UI polish, see refactoring-ui. For affordance design, see design-everyday-things.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/microinteractions/SKILL.md",
+      "digest": "sha256:6be3a21ff34d6fb0fa5213b728e2a9e50d7e7ec68dbaf090bef1c518d83a6e31"
+    },
+    {
+      "name": "mom-test",
+      "type": "skill-md",
+      "description": "Talk to customers without leading them using Mom Test rules: discuss their life not your idea, ask about specifics in the past, and talk less. Use when the user mentions \"customer interviews\", \"validate my idea\", \"users say they want it but dont buy\", \"leading questions\", \"The Mom Test\", \"customer feedback bias\", or \"interview script\". Also trigger when preparing user-research questions, interpreting ambiguous feedback, or designing customer-discovery that avoids false positives. Covers commitment and advancement, avoiding compliments, and extracting signal from noise. For product-market fit, see jobs-to-be-done. For rapid prototype testing, see design-sprint.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/mom-test/SKILL.md",
+      "digest": "sha256:fbf036f31e5932e68adc6d26abe8d75f2213b3c50ea345f7dffa2f235b0ce0ae"
+    },
+    {
+      "name": "monetizing-innovation",
+      "type": "skill-md",
+      "description": "Design products and pricing around validated willingness to pay, from Ramanujam & Tacke's \"Monetizing Innovation\". Use when the user mentions \"pricing\", \"how much should we charge\", \"willingness to pay\", \"pricing page\", \"packaging\", \"freemium vs free trial\", \"are we leaving money on the table\", \"nobody buys at this price\", \"price increase\", or \"good-better-best\". Also trigger when designing or auditing pricing and packaging, validating willingness to pay before building, segmenting customers by value, or choosing between subscription, usage-based, and freemium models. Covers price-before-product, willingness-to-pay talks, the four failures (feature shock, minivation, hidden gem, undead), leader/filler/killer packaging, and behavioral pricing. For offers and guarantees, see hundred-million-offers. For what customers value, see jobs-to-be-done.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/monetizing-innovation/SKILL.md",
+      "digest": "sha256:690c57380a24a34f41069d3915366160be8d4db08fa7a643ff5c3751dad14375"
+    },
+    {
+      "name": "negotiation",
+      "type": "skill-md",
+      "description": "Prepare and execute negotiations using tactical empathy, calibrated questions, and the Ackerman method. Use when the user mentions \"salary negotiation\", \"contract terms\", \"handling objections\", \"mirroring and labeling\", \"difficult conversation\", \"deal terms\", \"BATNA\", \"anchoring\", \"how do I ask for a raise\", \"get a better deal\", or \"they wont budge on price\". Also trigger when preparing for a vendor negotiation, resolving a pricing dispute, or navigating a high-stakes conversation where both sides need to feel heard. Covers accusation audits, Black Swan discovery, and the \"Thats Right\" technique. For persuasion in product and marketing, see influence-psychology.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/negotiation/SKILL.md",
+      "digest": "sha256:f808051fc0c50b551de44f66006af298662209d8f39c22cc5600385da45a5e04"
+    },
+    {
+      "name": "obviously-awesome",
+      "type": "skill-md",
+      "description": "Define product positioning by mapping competitive alternatives, unique attributes, and best-fit customers to the right market category. Use when the user mentions \"positioning\", \"competitive alternatives\", \"how to position\", \"market category\", \"positioning canvas\", \"repositioning\", \"category creation\", \"what category are we in\", or \"why prospects dont get what we do\". Also trigger when launching a new product, entering a crowded market, or diagnosing why prospects dont grasp the product's value. Covers the positioning canvas and team workshops. For customer jobs analysis, see jobs-to-be-done. For go-to-market, see crossing-the-chasm.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/obviously-awesome/SKILL.md",
+      "digest": "sha256:403b215c80ce3b124947598e9547c11f6eff142cc18a4f7fe508e15ac8ec35e0"
+    },
+    {
+      "name": "one-page-marketing",
+      "type": "skill-md",
+      "description": "Build a complete marketing plan covering the full customer journey from stranger to raving fan. Use when the user mentions \"marketing plan\", \"marketing strategy\", \"target market\", \"USP\", \"lead nurture\", \"customer lifetime value\", \"PVP Index\", or \"I dont know where to start with marketing\". Also trigger when building a marketing plan from scratch, choosing acquisition channels, or designing end-to-end customer-lifecycle campaigns. Covers the PVP Index, channel selection, and advocacy systems. For brand messaging, see storybrand-messaging. For conversion optimization, see cro-methodology.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/one-page-marketing/SKILL.md",
+      "digest": "sha256:6fc2ef69e1ef36377eebcaea65d172049adc3f5a9806c8254d02b5565d899793"
+    },
+    {
+      "name": "pragmatic-programmer",
+      "type": "skill-md",
+      "description": "Apply meta-principles of software craftsmanship: DRY, orthogonality, tracer bullets, and design by contract. Use when the user mentions \"best practices\", \"pragmatic approach\", \"broken windows\", \"tracer bullet\", \"software craftsmanship\", \"avoid technical debt\", \"code ownership\", or \"how do I become a better developer\". Also trigger when evaluating build-vs-buy decisions, designing estimation approaches, or choosing between reversible and irreversible architectural decisions. Covers estimation, domain languages, and reversibility. For code-level quality, see clean-code. For refactoring techniques, see refactoring-patterns.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/pragmatic-programmer/SKILL.md",
+      "digest": "sha256:7bd0a042aa2dd559f0327916f8d4f2dcf7d21e5f2343a193eaafee932f0f85a3"
+    },
+    {
+      "name": "predictable-revenue",
+      "type": "skill-md",
+      "description": "Build a scalable outbound B2B sales machine with specialized roles (SDR, AE, CSM). Use when the user mentions \"outbound sales\", \"Cold Calling 2.0\", \"cold email sequences\", \"sales pipeline\", \"SDR process\", \"sales development\", \"build an outbound sales team\", or \"fill my pipeline\". Also trigger when setting up a B2B SaaS sales team from scratch or building a lead-qualification framework to improve close rates. Covers the three lead types (seeds/nets/spears), role specialization, the referral-email method, ANUM qualification, and pipeline math. For offer design, see hundred-million-offers. For persuasion science, see influence-psychology.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/predictable-revenue/SKILL.md",
+      "digest": "sha256:1a80df1eba0b27b9be1f398083ada69fddc445a6e189a68174edd294da2fcc3d"
+    },
+    {
+      "name": "refactoring-patterns",
+      "type": "skill-md",
+      "description": "Apply named refactoring transformations to improve code structure without changing behavior. Use when the user mentions \"refactor this\", \"code smells\", \"extract method\", \"replace conditional\", \"technical debt\", \"move method\", \"inline variable\", \"decompose conditional\", or \"clean up this messy code\". Also trigger when cleaning up legacy code, preparing code for new features by restructuring, or identifying which transformation fits a specific code smell. Covers smell-driven refactoring, safe transformation sequences, and testing guards. For code-quality foundations, see clean-code. For managing complexity, see software-design-philosophy.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/refactoring-patterns/SKILL.md",
+      "digest": "sha256:e09d21bcca98b575df0014b3288df75afb556f2dd1d05135e6714d4c413d55d4"
+    },
+    {
+      "name": "refactoring-ui",
+      "type": "skill-md",
+      "description": "Audit and fix visual hierarchy, spacing, color, and depth in web UIs. Use when the user mentions \"my UI looks off\" (or amateur/unprofessional), \"fix the design\", \"Tailwind styling\", \"color palette\", \"visual hierarchy\", \"design system\", \"spacing scale\", or \"component styling\". Also trigger when building consistent design tokens, creating dark mode themes, improving data-visualization clarity, or polishing UI details before launch. Covers grayscale-first workflow, constrained design scales, shadows, and component styling. For typeface selection, see web-typography. For usability audits, see ux-heuristics.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/refactoring-ui/SKILL.md",
+      "digest": "sha256:d10d15b81aa00f427811741d83ac2bb918aabfae3d4489c751615bdf85e1674c"
+    },
+    {
+      "name": "release-it",
+      "type": "skill-md",
+      "description": "Build production-ready systems with stability patterns: circuit breakers, bulkheads, timeouts, and retry logic. Use when the user mentions \"production outage\", \"circuit breaker\", \"deployment pipeline\", \"chaos engineering\", \"retry storm\", \"health checks\", \"my service keeps crashing\", \"prevent cascading failures\", or \"make it resilient\". Also trigger when designing resilient microservices, planning zero-downtime deployments, or capacity-planning for peak load. Covers stability patterns, capacity planning, deploy/release decoupling, and observability. For data systems, see ddia-systems. For system architecture, see system-design.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/release-it/SKILL.md",
+      "digest": "sha256:747c1130a348ede99b6533de5ec75bb77fb5dd05efc8cef35f0524f7a9f87e7e"
+    },
+    {
+      "name": "remove-technical-debt",
+      "type": "skill-md",
+      "description": "Guided journey from a large aged codebase everyone fears to touch to one that is safe to change, legible, bounded, and resilient - paid down in place without a rewrite. Orchestrates eight skills phase by phase - working-with-legacy-code, refactoring-patterns, clean-code, software-design-philosophy, clean-architecture, pragmatic-programmer, release-it, domain-driven-design - asking the user questions at every decision point and recording results in the project docs/ folder (TESTING.md, TECH-DEBT.md, REMOVE-TECHNICAL-DEBT-PLAN.md) so the journey resumes across sessions. Use when the user wants to tame a legacy codebase, pay down technical debt safely, avoid a big-bang rewrite, or says 'we are afraid to touch this code'. For a fresh vibe-coded prototype, improve-code-quality; for greenfield structure, design-code-architecture; for a product-and-UX pass, improve-app; to optimize a working codebase for speed, architecture-optimization. For one framework in isolation, invoke that skill directly.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/remove-technical-debt/SKILL.md",
+      "digest": "sha256:b586292b7611770bb64bd764705c35e579cef267459948a920f0e3d163ca5c1f"
+    },
+    {
+      "name": "scorecard-marketing",
+      "type": "skill-md",
+      "description": "Build quiz and assessment funnels that generate qualified leads at 30-50% conversion. Use when the user mentions \"quiz funnel\", \"scorecard\", \"lead magnet\", \"score-based segmentation\", or \"lead qualification\". Also trigger when designing self-assessment tools, building calculators or graders for marketing, or creating personalized result pages that drive conversions. Covers concept hooks, question design, dynamic results by tier, and automated follow-up sequences. For landing page conversion, see cro-methodology. For full marketing plans, see one-page-marketing.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/scorecard-marketing/SKILL.md",
+      "digest": "sha256:bb8aa862f93ef1004844e0947f3b196db5d8e758617e977b2d90e6c23be506bd"
+    },
+    {
+      "name": "software-design-philosophy",
+      "type": "skill-md",
+      "description": "Manage software complexity through deep modules, information hiding, and strategic programming. Use when the user mentions \"module design\", \"API too complex\", \"shallow class\", \"complexity budget\", \"strategic vs tactical\", \"deep module\", \"information leakage\", \"pass-through method\", \"this code is over-engineered\", or \"simplify this design\". Also trigger when reviewing an interface for simplicity, evaluating whether an abstraction is pulling its weight, deciding whether a comment is worth writing, or choosing between general-purpose and special-purpose approaches. Covers deep vs shallow modules, red flags for complexity, and comments as design documentation. For code quality, see clean-code. For architecture boundaries, see clean-architecture.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/software-design-philosophy/SKILL.md",
+      "digest": "sha256:d5971fdfc51e6a6f729856a9c3874d56628bb6802fdd31eb1c97adbfa4b51a73"
+    },
+    {
+      "name": "steve-jobs-design-review",
+      "type": "skill-md",
+      "description": "Review designs, products, and features with Steve Jobs' standards: ruthless simplicity, focus, and end-to-end excellence. Use when the user mentions \"Steve Jobs review\", \"design review\", \"product review\", \"what would Steve do\", \"insanely great\", \"this feels too complicated\", \"too many features\", \"product taste\", \"saying no\", or \"is this good enough to ship\". Also trigger when critiquing a UI, feature, or roadmap for focus and simplicity, cutting scope to the essential, or pressure-testing the whole experience from first run to daily use. Covers the simplicity audit, the no list, design-is-how-it-works, end-to-end ownership, demo culture, and a Jobs-style review protocol with binary verdicts. For visual design fundamentals, see refactoring-ui. For usability audits, see ux-heuristics. For detail polish, see microinteractions.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/steve-jobs-design-review/SKILL.md",
+      "digest": "sha256:0bbfdcaf8d00ab82877a247369ce08b3ac7c2646d08b28d76f93bbe9456fa2ad"
+    },
+    {
+      "name": "storybrand-messaging",
+      "type": "skill-md",
+      "description": "Clarify brand messaging using narrative structure that positions the customer as hero. Use when the user mentions \"brand message\", \"website copy\", \"elevator pitch\", \"one-liner\", \"brand script\", \"StoryBrand framework\", \"customer as hero\", or \"my messaging isnt resonating\". Also trigger when rewriting homepage copy, crafting email nurture sequences, or creating consistent messaging across sales and marketing collateral. Covers landing page copy, marketing collateral, and consistent communication. For memorable messaging, see made-to-stick. For product positioning, see obviously-awesome.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/storybrand-messaging/SKILL.md",
+      "digest": "sha256:a11d015c33e6d5e66c68f6d4da98e4bd0fda6ca32efc805ff4882d0ce0ab6e1c"
+    },
+    {
+      "name": "system-design",
+      "type": "skill-md",
+      "description": "Design scalable distributed systems using structured approaches for load balancing, caching, database scaling, and message queues. Use when the user mentions \"system design\", \"scale this\", \"high availability\", \"rate limiter\", \"design a URL shortener\", \"design Twitter\", \"design Uber\", \"design a news feed\", \"system design interview\", \"capacity planning\", or \"distributed architecture\". Also trigger when estimating infrastructure requirements, choosing between microservices and monoliths, or designing for millions of concurrent users. Covers common system designs (TinyURL, feeds, chat) and back-of-the-envelope estimation. For data fundamentals, see ddia-systems. For resilience, see release-it.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/system-design/SKILL.md",
+      "digest": "sha256:57548bbec281e73fed47ed8f2e16394ece68129342d04047f44c8c5b9ef64c38"
+    },
+    {
+      "name": "team-topologies",
+      "type": "skill-md",
+      "description": "Organize business and technology teams for fast flow using Skelton & Pais's \"Team Topologies\". Use when the user mentions \"team topologies\", \"Conway's law\", \"platform team\", \"stream-aligned team\", \"team boundaries\", \"cognitive load\", \"how should we split teams\", \"who owns this service\", \"team dependencies\", or \"reorg\". Also trigger when reorganizing engineering teams, aligning team and service boundaries, splitting a monolith and deciding ownership, reducing cross-team handoffs, or designing an internal platform. Covers the four team types, three interaction modes, the inverse Conway maneuver, and fracture planes. For bounded contexts, see domain-driven-design. For dependency direction in code, see clean-architecture.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/team-topologies/SKILL.md",
+      "digest": "sha256:b62a65eee8f0fc170f4223540a0ba6f2bf9248db9de028bccce32cdce41060e4"
+    },
+    {
+      "name": "technical-documentation",
+      "type": "skill-md",
+      "description": "Audit, write, and improve developer documentation using Google's Developer Documentation Style Guide and Technical Writing courses. Use this skill for any documentation work, even when the user names no style guide: \"audit our docs\", \"review this README\", \"write a README\", \"getting started guide\", \"how-to or tutorial\", \"API reference\", \"docstrings\", \"CLI help text\", \"changelog or release notes\", \"migration guide\", or \"our docs are confusing\". Also use it when writing docs from code, rewriting a doc for clarity, fixing headings, procedures, or code samples, or enforcing consistent voice and terminology across a docs set — prefer it over editing documentation unaided. Covers reader and doc-type fit, second person and active voice, procedures, headings, lists and tables, code samples and placeholders, link text, notices, the word list, timeless docs, and accessibility. For code comments and naming, see clean-code. For marketing or landing-page copy, see storybrand-messaging.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/technical-documentation/SKILL.md",
+      "digest": "sha256:3037479dd6cffaf043f27cd6b6eaec3cb5fb209210241f73757d15790271b1f2"
+    },
+    {
+      "name": "top-design",
+      "type": "skill-md",
+      "description": "Create award-winning, immersive web experiences at the level of Awwwards-featured agencies. Use when the user mentions \"Awwwards quality\", \"make my site stunning\", \"scroll animations\", \"parallax storytelling\", \"cinematic web design\", \"portfolio site\", or \"brand experience\". Also trigger when elevating a standard landing page into a memorable digital experience. Covers dramatic typography, purposeful motion, scroll-based composition, and performance-optimized animation. For foundational UI, see refactoring-ui. For type selection, see web-typography.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/top-design/SKILL.md",
+      "digest": "sha256:38e84e4c254697514ec1c2f52c5faafa927baea87b05ae3fa8e31ef76cdf1679"
+    },
+    {
+      "name": "traction-eos",
+      "type": "skill-md",
+      "description": "Implement the Entrepreneurial Operating System (EOS) to align vision and execution across a company. Use when the user mentions \"EOS\", \"Entrepreneurial Operating System\", \"V/TO\", \"quarterly rocks\", \"Level 10 meetings\", \"accountability chart\", \"IDS process\", \"my company feels chaotic\", \"we keep having the same problems\", or \"get the whole team aligned\". Also trigger when a growing company needs meeting structure, goal-setting frameworks, or a systematic way to solve recurring organizational issues. Covers the six EOS components: Vision, People, Data, Issues, Process, Traction. For team motivation design, see drive-motivation. For lean experimentation, see lean-startup.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/traction-eos/SKILL.md",
+      "digest": "sha256:1d58e30d368779e98823324434df5bb31eccb76897737a880c3e855edccdc96a"
+    },
+    {
+      "name": "ux-heuristics",
+      "type": "skill-md",
+      "description": "Evaluate and improve interface usability using heuristic analysis. Use when the user mentions \"usability audit\", \"users are confused\", \"form usability\", \"navigation problems\", \"Nielsen heuristics\", \"cognitive walkthrough\", or \"is this easy to use\". Also trigger when reviewing a design for usability issues, improving form-completion rates, or evaluating information architecture and navigation. Covers Krug's laws, Nielsen's 10 heuristics, severity ratings, dark-pattern recognition, and accessibility. For visual design fixes, see refactoring-ui. For conversion-focused audits, see cro-methodology.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/ux-heuristics/SKILL.md",
+      "digest": "sha256:cb1ea3de8b6e605614cc59b21d41830d2d82af22e51069bb4c5bb53790cd622b"
+    },
+    {
+      "name": "web-typography",
+      "type": "skill-md",
+      "description": "Select, pair, and implement typefaces for web projects. Use when the user mentions \"font pairing\", \"which typeface\", \"line height\", \"responsive typography\", \"web font loading\", \"type hierarchy\", \"variable fonts\", \"FOUT/FOIT\", \"typographic scale\", or \"the text is hard to read\". Also trigger when choosing between system fonts and web fonts, optimizing font-loading performance, or designing readable long-form content. Covers readability evaluation, CSS implementation, and performance optimization. For overall UI design systems, see refactoring-ui. For dramatic typographic experiences, see top-design.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/web-typography/SKILL.md",
+      "digest": "sha256:53fa4e5ef426bced13c56ca13d9e47151d89033f934318dc34f7a8eeb44ce75b"
+    },
+    {
+      "name": "working-with-legacy-code",
+      "type": "skill-md",
+      "description": "Safely change and test untested codebases using Feathers' \"Working Effectively with Legacy Code\". Use when the user mentions \"legacy code\", \"no tests\", \"untested codebase\", \"how do I test this\", \"seams\", \"characterization tests\", \"golden master\", \"sprout method\", \"afraid to change this code\", \"monster method\", \"dependency breaking\", or \"inherited a messy codebase\". Also trigger when changing code without tests safely, getting a class under test when constructors, statics, or singletons block it, adding features to tangled modules, or planning incremental test coverage for an old codebase. Covers the legacy-code change algorithm, seams, characterization tests, sprout/wrap, and dependency-breaking techniques. For refactoring code that already has tests, see refactoring-patterns. For day-to-day code quality, see clean-code.",
+      "url": "https://raw.githubusercontent.com/wondelai/skills/79a0452cef3c98aea75bf98cec0b7f9436f58910/working-with-legacy-code/SKILL.md",
+      "digest": "sha256:4a621798f9a51ad1438f5b25b168615b7caeb540378c8f4d70ab733523135e21"
+    }
+  ]
+}
