@@ -116,6 +116,30 @@ The same collections also ship in the open [Agent Plugins](https://agent-plugins
 - **All-in-one bundle** — [`plugins/wondelai-skills/`](plugins/wondelai-skills/) is a single Agent Plugin containing all 65 skills.
 - **Installing** — the spec defines the package format; installation is client-specific. Clone this repo and point your client at a plugin directory (e.g. `plugins/marketing-cro` or `plugins/wondelai-skills`). The manifests are generated from [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) (single source of truth) by `scripts/generate-plugins.sh`.
 
+### Via Autohand Code
+
+Autohand Code can load the same `SKILL.md` folders from its global or project-local skill roots. To install all skills globally:
+
+```bash
+git clone https://github.com/wondelai/skills.git wondelai-skills
+mkdir -p ~/.autohand/skills
+for skill in wondelai-skills/*/SKILL.md; do
+  cp -R "$(dirname "$skill")" ~/.autohand/skills/
+done
+```
+
+To install into the current project instead:
+
+```bash
+git clone https://github.com/wondelai/skills.git wondelai-skills
+mkdir -p .autohand/skills
+for skill in wondelai-skills/*/SKILL.md; do
+  cp -R "$(dirname "$skill")" .autohand/skills/
+done
+```
+
+For a single skill, copy only that folder, for example `wondelai-skills/jobs-to-be-done`.
+
 ## Available Skills
 
 | Skill | Description | Based On |
