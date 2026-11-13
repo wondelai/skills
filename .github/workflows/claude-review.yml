@@ -1,0 +1,56 @@
+name: Claude review
+
+# One review per pull request, on the Claude subscription (CLAUDE_CODE_OAUTH_TOKEN).
+# Runs when a PR is opened, marked ready or reopened; later pushes are not re-reviewed.
+# Ask for another pass with an "@claude review" comment (claude.yml).
+on:
+  pull_request:
+    types: [opened, ready_for_review, reopened]
+
+concurrency:
+  group: claude-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  claude-review:
+    if: >-
+      github.event.pull_request.draft == false &&
+      github.event.pull_request.user.type != 'Bot' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude review
+        id: claude-review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Review pull request #${{ github.event.pull_request.number }} in ${{ github.repository }}.
+
+            Read the diff with `gh pr diff ${{ github.event.pull_request.number }}` and open the code around
+            each change before judging it. Report only defects a maintainer would fix before merging:
+            wrong behaviour, data loss, security or privacy leaks, money and billing paths, races,
+            broken error handling, and breaches of this repo's CLAUDE.md, AGENTS.md or
+            CODING_STANDARDS.md. For each one state the failure scenario (what input or state leads
+            to what wrong result) and a severity: High, Medium or Low.
+
+            Post each finding as an inline comment on the line it concerns, then one summary comment
+            on the pull request that lists the findings by severity. When nothing qualifies, post one
+            comment saying so and what you checked. Leave out style preferences, praise and
+            descriptions of what the diff does.
+          claude_args: |
+            --model sonnet
+            --max-turns 40
+            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr comment:*),Read,Grep,Glob"
