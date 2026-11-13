@@ -2,7 +2,7 @@ name: Claude review
 
 # One review per pull request, on the Claude subscription (CLAUDE_CODE_OAUTH_TOKEN).
 # Runs when a PR is opened, marked ready or reopened; later pushes are not re-reviewed.
-# Ask for another pass with an "@claude review" comment (claude.yml).
+# To review again after later pushes, close and reopen the pull request.
 on:
   pull_request:
     types: [opened, ready_for_review, reopened]
