@@ -1,6 +1,6 @@
 # Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books
 
-65 agent skills for Claude, Claude Code, Claude Cowork, Codex, Cursor, OpenClaw, Hermes Agent and other agentskills.io-compatible agents — also packaged as spec-conformant [Agent Plugins](https://agent-plugins.org/): 51 expert frameworks from bestselling books and industry style guides, plus 14 **metaskills** — guided journeys that orchestrate them step by step to create, improve, or grow a business, website, or app, and to improve code quality, remove technical debt, design code architecture, optimize a conversion flow, or optimize an existing codebase. Each metaskill asks you the decision questions phase by phase and keeps its state in your project's `docs/` folder, so a journey survives across sessions. Browse all skills at [skills.wondel.ai](https://skills.wondel.ai/).
+66 agent skills for Claude, Claude Code, Claude Cowork, Codex, Cursor, OpenClaw, Hermes Agent and other agentskills.io-compatible agents — also packaged as spec-conformant [Agent Plugins](https://agent-plugins.org/): 52 expert frameworks from bestselling books and industry style guides, plus 14 **metaskills** — guided journeys that orchestrate them step by step to create, improve, or grow a business, website, or app, and to improve code quality, remove technical debt, design code architecture, optimize a conversion flow, or optimize an existing codebase. Each metaskill asks you the decision questions phase by phase and keeps its state in your project's `docs/` folder, so a journey survives across sessions. Browse all skills at [skills.wondel.ai](https://skills.wondel.ai/).
 
 ## Installation
 
@@ -18,7 +18,7 @@
 /plugin install product-innovation@wondelai-skills    # Lean Startup, Design Sprint, Design of Everyday Things, Inspired, Continuous Discovery, 37signals Way
 /plugin install strategy-growth@wondelai-skills       # Crossing the Chasm, Blue Ocean Strategy, Traction/EOS, Obviously Awesome
 /plugin install team-motivation@wondelai-skills       # Drive (Autonomy, Mastery, Purpose)
-/plugin install code-craftsmanship@wondelai-skills    # Clean Code, Refactoring Patterns, Software Design Philosophy, Pragmatic Programmer, DDD, Working with Legacy Code, Google Docs Style
+/plugin install code-craftsmanship@wondelai-skills    # Clean Code, Refactoring Patterns, Software Design Philosophy, Pragmatic Programmer, DDD, Working with Legacy Code, Google Docs Style, Harness Audit
 /plugin install systems-architecture@wondelai-skills  # DDIA, System Design, Clean Architecture, Release It!, High Performance Browser Networking
 /plugin install metaskills@wondelai-skills            # 14 guided journeys: create/improve/grow a business, website, or app + code quality, tech debt, architecture, conversion, optimization
 ```
@@ -83,6 +83,7 @@ npx skills add wondelai/skills/team-topologies --global
 npx skills add wondelai/skills/high-output-management --global
 npx skills add wondelai/skills/lean-analytics --global
 npx skills add wondelai/skills/technical-documentation --global
+npx skills add wondelai/skills/harness-audit --global
 
 # Metaskills — guided journeys that orchestrate the skills above
 npx skills add wondelai/skills/create-business --global
@@ -113,7 +114,7 @@ Codex adopted the same open `SKILL.md` standard, so every skill here works in Co
 The same collections also ship in the open [Agent Plugins](https://agent-plugins.org/) format (spec v1.0.0), so any conforming client can install them:
 
 - **Collection plugins** — each `plugins/<collection>/` directory is a self-contained Agent Plugin: a root `plugin.json` manifest plus real copies of its skills under `skills/` — the same 10 collections as the Claude marketplace.
-- **All-in-one bundle** — [`plugins/wondelai-skills/`](plugins/wondelai-skills/) is a single Agent Plugin containing all 65 skills.
+- **All-in-one bundle** — [`plugins/wondelai-skills/`](plugins/wondelai-skills/) is a single Agent Plugin containing all 66 skills.
 - **Installing** — the spec defines the package format; installation is client-specific. Clone this repo and point your client at a plugin directory (e.g. `plugins/marketing-cro` or `plugins/wondelai-skills`). The manifests are generated from [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) (single source of truth) by `scripts/generate-plugins.sh`.
 
 ## Available Skills
@@ -171,6 +172,7 @@ The same collections also ship in the open [Agent Plugins](https://agent-plugins
 | [high-output-management](https://skills.wondel.ai/skills/high-output-management/) | Managerial leverage, one-on-ones, OKRs, task-relevant maturity | Andrew S. Grove's [*"High Output Management"*](https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884?tag=wondelai00-20) |
 | [lean-analytics](https://skills.wondel.ai/skills/lean-analytics/) | One Metric That Matters, metrics by business model and stage, benchmarks | [Alistair Croll](https://x.com/acroll) & [Ben Yoskovitz](https://x.com/byosko)'s [*"Lean Analytics"*](https://www.amazon.com/Lean-Analytics-Better-Startup-Faster/dp/1449335675?tag=wondelai00-20) |
 | [technical-documentation](https://skills.wondel.ai/skills/technical-documentation/) | Audit, write, and improve developer docs: reader fit, procedures, code samples, API reference, changelogs | [Google](https://developers.google.com/style)'s *Developer Documentation Style Guide* |
+| [harness-audit](https://skills.wondel.ai/skills/harness-audit/) | Audit and harden a repo's AI coding agent harness across the 6 Factory Stations and Autonomy Ladder (L0–L5) | [AI Developer Toolkit](https://developertoolkit.ai/en/ladder/) & [`@wondelai/harness-audit`](https://github.com/wondelai/harness-audit) |
 | [create-business](https://skills.wondel.ai/skills/create-business/) | Guided journey: raw idea → validated, positioned, priced business | Orchestrates 10 skills, from jobs-to-be-done to crossing-the-chasm |
 | [create-website](https://skills.wondel.ai/skills/create-website/) | Guided journey: blank page → high-converting website | Orchestrates 10 skills, from storybrand-messaging to steve-jobs-design-review |
 | [create-app](https://skills.wondel.ai/skills/create-app/) | Guided journey: idea → validated, well-architected app | Orchestrates 10 skills, from lean-startup to software-design-philosophy |
@@ -1364,6 +1366,27 @@ Audit, write, and improve developer documentation the way Google's technical wri
 
 ---
 
+### [harness-audit](https://skills.wondel.ai/skills/harness-audit/)
+
+Audit and harden a repository's AI coding agent harness across the six Software Factory Stations (Intent, Harness, Loop, Graph, Verification, Release) and place it honestly on the Autonomy Ladder (Level 0–5). Pairs with `npx @wondelai/harness-audit` for 30 deterministic checks across Claude Code, OpenAI Codex, and Cursor, catches real traps (duplicated `AGENTS.md`/`CLAUDE.md`, backticked `@AGENTS.md`, retired Codex `untrusted`, archived MCP servers, unguarded `Stop` hooks, hardcoded secrets, tautological tests), and closes every fix with a verified claims-to-output ledger.
+
+**About the source material:** Built on the open [AI Developer Toolkit](https://developertoolkit.ai/en/ladder/) 6-Station Factory methodology and the MIT-licensed [`@wondelai/harness-audit`](https://github.com/wondelai/harness-audit) CLI by Michal Jaskolski / Wondel.ai, incorporating Dan Shapiro's Autonomy Ladder (Levels 0–5).
+
+**Use when you need to:**
+- Audit a repository's readiness for Claude Code, Codex, or Cursor and identify what caps its Autonomy Level
+- Consolidate drifting `AGENTS.md`, `CLAUDE.md`, `.claude/rules/`, and `.cursor/rules/*.mdc` into one clean brief
+- Diagnose and fix broken MCP configs, retired Codex approval policies, secret leaks, or infinite-looping `Stop` hooks
+- Scan tests for `.only()`, empty stubs, tautological assertions, and `@ts-ignore` sprawl, and protect the oracle with `CODEOWNERS`
+- Prepare a repository for parallel worktree runs and move past the Level 3 code-review bottleneck
+
+**Example prompts:**
+- *"Audit this repository's AI agent harness, run `@wondelai/harness-audit`, and show me the top blockers capping our Autonomy Level. Use harness-audit skill."*
+- *"Consolidate our AGENTS.md, CLAUDE.md, and .cursor/rules into a single source of truth under 150 lines without losing existing rules. Use harness-audit skill."*
+- *"Check our MCP configs, Claude settings, and Codex config for broken servers, secret leaks, or retired flags and fix them safely. Use harness-audit skill."*
+- *"Move our repo from Level 2 to Level 4 readiness: harden the verification loop, protect the test oracle, and add an evidence PR template. Use harness-audit skill."*
+
+---
+
 ### [create-business](https://skills.wondel.ai/skills/create-business/)
 
 Guided journey from raw idea to a validated, positioned, priced business with a chosen beachhead. The agent drives every phase, asks you the decision questions, and records everything as living documents in your project's `docs/` folder so the journey resumes across sessions.
@@ -1661,7 +1684,7 @@ Developer Toolkit is a comprehensive learning platform for mastering AI-assisted
 
 ## Work With Us
 
-These 65 skills are the open-source tip of what we do. **[Wondel.ai](https://skills.wondel.ai/work-with-us/)** builds custom Claude skills, agents, and MCP integrations — shipped to production, not demoed.
+These 66 skills are the open-source tip of what we do. **[Wondel.ai](https://skills.wondel.ai/work-with-us/)** builds custom Claude skills, agents, and MCP integrations — shipped to production, not demoed.
 
 - **Skill sprints** — a focused, eval-backed skill scoped and shipped fast
 - **Custom builds** — production AI systems combining skills, agents, and MCP integrations
@@ -1731,6 +1754,7 @@ The methodologies and frameworks referenced in these skills are the intellectual
 - **High Output Management**: Andrew S. Grove
 - **Lean Analytics**: Alistair Croll, Benjamin Yoskovitz
 - **Google Developer Documentation Style Guide**: Google LLC, adapted under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **AI Developer Toolkit & Harness Audit Methodology**: Michal Jaskolski / Wondel.ai (MIT License, [developertoolkit.ai](https://developertoolkit.ai/en/ladder/)); Autonomy Ladder levels originated by Dan Shapiro
 
 The 14 metaskills (create/improve/grow × business/website/app, improve-code-quality, remove-technical-debt, design-code-architecture, conversion-optimization, architecture-optimization) are orchestration workflows authored by Wondel.ai. They sequence and invoke the skills above; the frameworks they reference remain the intellectual property of the authors listed here.
 

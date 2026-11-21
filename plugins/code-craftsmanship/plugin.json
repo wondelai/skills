@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "code-craftsmanship",
   "version": "1.8.0",
-  "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), Working Effectively with Legacy Code (Michael Feathers), and Google's Developer Documentation Style Guide (technical-documentation)",
+  "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), Working Effectively with Legacy Code (Michael Feathers), Google's Developer Documentation Style Guide (technical-documentation), and AI coding agent harness auditing (harness-audit)",
   "author": {
     "name": "Wondel.ai",
     "url": "https://wondel.ai"
@@ -31,6 +31,10 @@
     "style-guide",
     "readme",
     "api-reference",
-    "release-notes"
+    "release-notes",
+    "harness-audit",
+    "agents-md",
+    "autonomy-ladder",
+    "agentic-engineering"
   ]
 }

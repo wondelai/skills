@@ -1,13 +1,13 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "wondelai-skills",
-  "description": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 65 skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture, plus 14 guided-journey metaskills that orchestrate them step by step",
+  "description": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 66 skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, agent harnesses, and systems architecture, plus 14 guided-journey metaskills that orchestrate them step by step",
   "owner": {
     "name": "Wondel.ai",
     "email": "hello@wondel.ai"
   },
   "metadata": {
-    "description": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 65 skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, and systems architecture, plus 14 guided-journey metaskills that orchestrate them step by step",
+    "description": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 66 skills for product strategy, UX design, marketing, sales, motivation, conversion optimization, code quality, agent harnesses, and systems architecture, plus 14 guided-journey metaskills that orchestrate them step by step",
     "version": "1.8.0"
   },
   "plugins": [
@@ -283,7 +283,7 @@
     },
     {
       "name": "code-craftsmanship",
-      "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), Working Effectively with Legacy Code (Michael Feathers), and Google's Developer Documentation Style Guide (technical-documentation)",
+      "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), Working Effectively with Legacy Code (Michael Feathers), Google's Developer Documentation Style Guide (technical-documentation), and AI coding agent harness auditing (harness-audit)",
       "version": "1.8.0",
       "author": {
         "name": "Wondel.ai",
@@ -314,7 +314,11 @@
         "style-guide",
         "readme",
         "api-reference",
-        "release-notes"
+        "release-notes",
+        "harness-audit",
+        "agents-md",
+        "autonomy-ladder",
+        "agentic-engineering"
       ],
       "source": "./",
       "strict": false,
@@ -325,7 +329,8 @@
         "./pragmatic-programmer",
         "./domain-driven-design",
         "./working-with-legacy-code",
-        "./technical-documentation"
+        "./technical-documentation",
+        "./harness-audit"
       ]
     },
     {
