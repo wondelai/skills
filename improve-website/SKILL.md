@@ -4,7 +4,7 @@ description: 'Guided journey from a live website that underperforms to a priorit
 license: MIT
 metadata:
   author: wondelai
-  version: "1.0.2"
+  version: "1.1.0"
 ---
 
 # Improve a Website
@@ -62,8 +62,15 @@ Ask these before creating the tracker:
 5. **Which complaint do you hear most** — "looks unprofessional," "nobody understands what we do,"
    "it's slow," "the text is hard to read"? (Routes which fix phase to front-load, per the guide FAQ.)
 6. **Do you have existing positioning or brand docs (POSITIONING.md)?** (Phase 5 and 7 build on them.)
-7. **Can you paste real assets** — URLs, live copy, CSS, analytics screenshots? (The skills are only
+7. **Can you share real assets** — URLs, live copy, CSS, analytics screenshots? (The skills are only
    as good as the evidence you feed them.)
+
+Live assets: if the user gives a URL and
+[Firecrawl](https://docs.firecrawl.dev/mcp-server?utm_source=wondelai-skills&utm_medium=integration)
+is available (MCP, or `firecrawl scrape <url> --format markdown,branding --full-page-screenshot --json`),
+pull the rendered copy, a full-page screenshot, and the fonts, colors, and type sizes yourself, then
+confirm them with the user. If it is not available or the result is incomplete, ask the user to paste
+them. Analytics always comes from the user.
 
 Skip heuristics: skip Phase 4 if body text already meets 16px / ~66ch / 1.5-1.7 line height; skip Phase 6
 if Core Web Vitals are already green (but triage a fast LCP fix first if the page barely renders); skip
